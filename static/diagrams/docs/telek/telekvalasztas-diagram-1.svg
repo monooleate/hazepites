@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#fafbfc" rx="12"/>
+
+  <text x="450" y="38" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#1e293b">Telekválasztás döntési fa</text>
+  <text x="450" y="58" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#64748b">A legfontosabb ellenőrzési pontok telek vásárlás előtt</text>
+
+  <!-- START -->
+  <rect x="340" y="75" width="220" height="44" rx="22" fill="#16a34a"/>
+  <text x="450" y="102" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" fill="#fff" font-weight="700">Kiszemelt telek</text>
+  <line x1="450" y1="119" x2="450" y2="145" stroke="#16a34a" stroke-width="2"/>
+
+  <!-- 1. Tulajdoni lap -->
+  <rect x="310" y="145" width="280" height="44" rx="8" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="450" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#15803d" font-weight="600">1. Tulajdoni lap ellenőrzés</text>
+  <line x1="450" y1="189" x2="450" y2="210" stroke="#16a34a" stroke-width="2"/>
+
+  <!-- Elágazás 1 -->
+  <line x1="450" y1="210" x2="250" y2="210" stroke="#ef4444" stroke-width="1.5"/>
+  <line x1="250" y1="210" x2="250" y2="230" stroke="#ef4444" stroke-width="1.5"/>
+  <rect x="130" y="230" width="240" height="36" rx="6" fill="#fef2f2" stroke="#ef4444" stroke-width="1"/>
+  <text x="250" y="253" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#dc2626" font-weight="600">⚠ Teher, szolgalmi jog, per → STOP</text>
+
+  <line x1="450" y1="210" x2="650" y2="210" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="650" y1="210" x2="650" y2="230" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="540" y="230" width="220" height="36" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="650" y="253" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#15803d" font-weight="600">✓ Tiszta → tovább</text>
+
+  <line x1="650" y1="266" x2="650" y2="285" stroke="#16a34a" stroke-width="2"/>
+  <line x1="650" y1="285" x2="450" y2="285" stroke="#16a34a" stroke-width="2"/>
+  <line x1="450" y1="285" x2="450" y2="300" stroke="#16a34a" stroke-width="2"/>
+
+  <!-- 2. HÉSZ -->
+  <rect x="310" y="300" width="280" height="44" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="450" y="327" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#1e40af" font-weight="600">2. HÉSZ + övezeti besorolás</text>
+  <line x1="450" y1="344" x2="450" y2="365" stroke="#2563eb" stroke-width="2"/>
+
+  <!-- Elágazás 2 -->
+  <line x1="450" y1="365" x2="200" y2="365" stroke="#f59e0b" stroke-width="1.5"/>
+  <line x1="200" y1="365" x2="200" y2="385" stroke="#f59e0b" stroke-width="1.5"/>
+  <rect x="65" y="385" width="270" height="36" rx="6" fill="#fef9c3" stroke="#f59e0b" stroke-width="1"/>
+  <text x="200" y="408" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#b45309" font-weight="600">⚠ Beépíthetőség &lt;30% → újragondolni</text>
+
+  <line x1="450" y1="365" x2="700" y2="365" stroke="#16a34a" stroke-width="1.5"/>
+  <line x1="700" y1="365" x2="700" y2="385" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="570" y="385" width="260" height="36" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1"/>
+  <text x="700" y="408" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#15803d" font-weight="600">✓ Építhető, méret OK → tovább</text>
+
+  <line x1="700" y1="421" x2="700" y2="440" stroke="#16a34a" stroke-width="2"/>
+  <line x1="700" y1="440" x2="450" y2="440" stroke="#16a34a" stroke-width="2"/>
+  <line x1="450" y1="440" x2="450" y2="455" stroke="#16a34a" stroke-width="2"/>
+
+  <!-- 3. Közművek -->
+  <rect x="310" y="455" width="280" height="44" rx="8" fill="#fef3c7" stroke="#d97706" stroke-width="1.5"/>
+  <text x="450" y="482" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#92400e" font-weight="600">3. Közművek + megközelítés</text>
+  <line x1="450" y1="499" x2="450" y2="520" stroke="#d97706" stroke-width="2"/>
+
+  <!-- Végső döntés -->
+  <rect x="310" y="520" width="280" height="50" rx="10" fill="#16a34a"/>
+  <text x="450" y="543" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#fff" font-weight="600">Mind OK?</text>
+  <text x="450" y="561" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#bbf7d0" font-weight="600">→ VÁSÁRLÁS + talajvizsgálat</text>
+
+  <text x="450" y="595" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8">hazepitesikalauz.hu</text>
+</svg>

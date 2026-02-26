@@ -1,0 +1,229 @@
+---
+title: "MDX Demo – Minden feature egy helyen"
+description: "Bemutató oldal az összes MDX és Markdown feature-rel: JSX komponensek, kódblokkok, matematika, és interaktív elemek."
+canonical: "https://hazepitesikalauz.hu/alapok/mdx-demo"
+published_at: "2026-02-09T12:00:00.000Z"
+refreshed_at: "2026-02-09T12:00:00.000Z"
+keywords: "mdx demo, markdown funkciók, tartalomformázás"
+---
+
+## Mi az MDX?
+
+Az MDX lehetővé teszi, hogy **JSX komponenseket** használjunk Markdown tartalomban. Ez a lap bemutatja az összes elérhető formázási lehetőséget.
+
+## Statikus JSX Komponensek
+
+Az MDX legnagyobb ereje, hogy egyedi HTML/JSX struktúrákat hozhatunk létre közvetlenül a tartalomban:
+
+<div className="mdx-grid">
+  <div className="mdx-card mdx-card-blue">
+    <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🏠</div>
+    <strong>Tervezés</strong>
+    <p>Építészeti tervek, alaprajz, engedélyek</p>
+  </div>
+
+  <div className="mdx-card mdx-card-green">
+    <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>💰</div>
+    <strong>Finanszírozás</strong>
+    <p>Hitel, CSOK, önerő kalkuláció</p>
+  </div>
+
+  <div className="mdx-card mdx-card-amber">
+    <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🔨</div>
+    <strong>Kivitelezés</strong>
+    <p>Alapozás, falazás, tető, gépészet</p>
+  </div>
+</div>
+
+## Összehasonlító táblázat
+
+Markdown táblázat — tökéletesen működik MDX-ben is:
+
+| Szempont | Tégla | Ytong | Könnyűszerkezet |
+|---|---|---|---|
+| **Ár (Ft/m²)** | 400-500K | 380-480K | 350-450K |
+| **Építési idő** | 10-14 hó | 8-12 hó | 4-8 hó |
+| **Hőszigetelés** | Közepes | Jó | Kiváló |
+| **Élettartam** | 100+ év | 80+ év | 50-80 év |
+| **Hangszigtelés** | Kiváló | Jó | Közepes |
+
+## Kódblokok szintaxiskiemeléssel
+
+### TypeScript példa
+
+```typescript
+interface HazEpitesiKoltseg {
+  alpirulet: number;       // m²
+  technologia: string;     // "tegla" | "ytong" | "fa"
+  regio: number;           // szorzó (0.87 - 1.2)
+  tartalek: number;        // 0.15 - 0.25
+}
+
+function szamolKoltseg(params: HazEpitesiKoltseg): number {
+  const BAZIS_ARAK: Record<string, number> = {
+    tegla: 450_000,
+    ytong: 430_000,
+    fa: 400_000,
+  };
+
+  const bazisAr = BAZIS_ARAK[params.technologia] ?? 430_000;
+  return Math.round(
+    params.alpirulet * bazisAr * params.regio * (1 + params.tartalek)
+  );
+}
+
+// Használat:
+const koltseg = szamolKoltseg({
+  alpirulet: 120,
+  technologia: "tegla",
+  regio: 1.0,
+  tartalek: 0.2,
+});
+console.log(`Becsült költség: ${(koltseg / 1_000_000).toFixed(1)} M Ft`);
+// → Becsült költség: 64.8 M Ft
+```
+
+### JSON konfiguráció
+
+```json
+{
+  "projekt": "Családi ház",
+  "alpirulet_m2": 120,
+  "szintek": 1,
+  "technologia": "tegla",
+  "futes": "kondenzacios_kazan",
+  "napelem": true,
+  "koltsegvetes": {
+    "alapozas": 4200000,
+    "falazas": 12600000,
+    "teto": 6800000,
+    "gepeszet": 8500000,
+    "belso_munka": 9400000,
+    "tartalek": 8300000
+  }
+}
+```
+
+### Bash parancsok
+
+```bash
+# Deno projekt indítás
+deno task dev
+
+# Production build
+deno task build
+
+# Sitemap generálás
+deno task sitemap
+```
+
+## Callout / Highlight Box-ok
+
+Három típusú kiemelő doboz érhető el:
+
+<div className="mdx-callout mdx-callout-tip">
+  <strong>💡 Tipp:</strong> Kulcsrakész ár mindig tartalmazza a belső munkákat is — alapozástól a festésig. Kérd el a részletes tételes árajánlatot!
+</div>
+
+<div className="mdx-callout mdx-callout-info">
+  <strong>ℹ️ Tudtad?</strong> Magyarországon 2025-ben a leggyakrabban választott építési technológia továbbra is a falazott téglaépítés, az összes új építés mintegy 45%-ával.
+</div>
+
+<div className="mdx-callout mdx-callout-warn">
+  <strong>⚠️ Figyelem:</strong> Soha ne kezdj építkezést írásos szerződés nélkül! A szóbeli megállapodás jogi vitában szinte érvényesíthetetlen.
+</div>
+
+## Interaktív Progress Bar (statikus JSX)
+
+Egy átlagos házépítés előrehaladása fázisonként:
+
+<div className="mdx-progress-wrapper">
+  {[
+    { label: 'Tervezés', progress: 100, color: '#10b981' },
+    { label: 'Engedélyezés', progress: 100, color: '#3b82f6' },
+    { label: 'Alapozás', progress: 100, color: '#8b5cf6' },
+    { label: 'Falazás', progress: 75, color: '#f59e0b' },
+    { label: 'Tetőszerkezet', progress: 30, color: '#ef4444' },
+    { label: 'Gépészet', progress: 0, color: '#6b7280' },
+    { label: 'Belső munkák', progress: 0, color: '#6b7280' },
+  ].map((item) => (
+    <div key={item.label} className="mdx-progress-item">
+      <div className="mdx-progress-header">
+        <span className="mdx-progress-label">{item.label}</span>
+        <span className="mdx-progress-pct">{item.progress}%</span>
+      </div>
+      <div className="mdx-progress-track">
+        <div className="mdx-progress-bar" style={{
+          width: `${item.progress}%`,
+          background: item.color,
+        }} />
+      </div>
+    </div>
+  ))}
+</div>
+
+## Listák és beágyazott tartalom
+
+### Számozott lista
+
+1. **Igényfelmérés** — Családi megbeszélés az elvárásokról
+2. **Pénzügyi tervezés** — Önerő, hitel, támogatások felmérése
+3. **Telekkeresés** — Lokáció, méret, közműellátottság
+4. **Építész felkérése** — Minimum 3 ajánlatot kérj
+5. **Tervek elkészítése** — Vázlatterv → engedélyezési terv → kiviteli terv
+
+### Beágyazott listák
+
+- **Alapozás típusai**
+  - Sávalap — leggyakoribb, kedvező talajnál
+  - Lemezalap — rossz talajnál, vagy alacsony energiájú háznál
+  - Cölöpalap — magas talajvíznél, lejtős terepen
+- **Falazási technológiák**
+  - Hagyományos tégla (B30)
+  - Porotherm kerámia blokk
+  - Ytong pórusbeton
+  - SIP panel (könnyűszerkezet)
+
+## Inline kód és kiemelések
+
+A költségvetés készítésekor használd a `K = A × P × (1 + r)` képletet, ahol `A` az alapterület m²-ben, `P` a négyzetméter ár, `r` pedig a tartalék aránya.
+
+A `deno task build` parancs automatikusan generálja a sitemap-et is.
+
+## Idézet
+
+> *„A jó ház nem az, amelyik drága, hanem amelyik jól van megtervezve.”*
+> — Ismeretlen építész
+
+## Összefoglaló kártya
+
+<div className="mdx-cta">
+  <h3 style={{ fontSize: '1.5rem', fontWeight: 700, marginBottom: '0.5rem', color: 'white' }}>
+    Készen állsz az építkezésre?
+  </h3>
+  <p style={{ opacity: 0.9, marginBottom: '1.5rem' }}>
+    Használd a kalkulátorunkat a költségbecsléshez, vagy böngészd a részletes útmutatóinkat.
+  </p>
+  <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
+    <a href="/eszkozok/hazepitesi-koltseg-kalkulator" className="mdx-cta-btn-primary">
+      Költségkalkulátor →
+    </a>
+    <a href="/haztipusok/bevezetes" className="mdx-cta-btn-secondary">
+      Háztípusok →
+    </a>
+  </div>
+</div>
+
+## Ez az oldal bemutatja
+
+Összefoglalva, ezen az oldalon a következő MDX / Markdown funkciókat láthattad:
+
+- ✅ **JSX komponensek** — Grid kártyák, callout box-ok, progress bar, CTA
+- ✅ **Markdown táblázatok** — GFM kompatibilis
+- ✅ **Szintaxiskiemeléssel kódblokkok** — TypeScript, JSON, Bash, YAML
+- ✅ **Inline kód** és **kiemelések**
+- ✅ **Számozott és beágyazott listák**
+- ✅ **Idézet blokk** (blockquote)
+- ✅ **Heading hierarchia** (H2, H3) — TOC automatikus
+- ✅ **Belső linkek** — Más oldalakra mutatnak
+- ✅ **YAML frontmatter** — title, description, canonical, stb.

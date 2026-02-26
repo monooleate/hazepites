@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#0f172a" rx="12"/>
+
+  <!-- Cím -->
+  <text x="450" y="40" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#e2e8f0">Babaváró hitel – kedvezményrendszer gyerekszám szerint</text>
+
+  <!-- Időegyenes -->
+  <line x1="80" y1="100" x2="820" y2="100" stroke="#334155" stroke-width="2"/>
+  <circle cx="80" cy="100" r="5" fill="#64748b"/>
+  <text x="80" y="85" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Felvétel</text>
+
+  <!-- 5 éves határ -->
+  <line x1="450" y1="80" x2="450" y2="120" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="450" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#ef4444">5 éves határidő</text>
+
+  <!-- Vég -->
+  <circle cx="820" cy="100" r="5" fill="#64748b"/>
+  <text x="820" y="85" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">20 év</text>
+
+  <!-- ========== GYEREK NÉLKÜL ========== -->
+  <g transform="translate(0, 155)">
+    <rect x="50" y="0" width="800" height="80" rx="8" fill="rgba(239,68,68,0.08)" stroke="#ef4444" stroke-width="1"/>
+    <text x="75" y="25" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ef4444">❌ Nincs gyerek 5 éven belül</text>
+    <text x="75" y="48" font-family="sans-serif" font-size="13" fill="#fca5a5">→ Piaci kamat (THM ~10%) + kamattámogatás visszafizetése</text>
+    <text x="75" y="68" font-family="sans-serif" font-size="13" fill="#fca5a5">→ Havi törlesztő: ~50 400 Ft → ~97 500 Ft | Visszafizetendő: ~4M Ft</text>
+  </g>
+
+  <!-- ========== 1 GYEREK ========== -->
+  <g transform="translate(0, 255)">
+    <rect x="50" y="0" width="800" height="65" rx="8" fill="rgba(34,197,94,0.08)" stroke="#22c55e" stroke-width="1"/>
+    <text x="75" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#22c55e">✓ 1. gyermek születik</text>
+    <text x="75" y="48" font-family="sans-serif" font-size="13" fill="#86efac">→ Végleges kamatmentesség + 3 év törlesztési szünet</text>
+    <!-- Összeg badge -->
+    <rect x="680" y="10" width="150" height="40" rx="20" fill="rgba(34,197,94,0.15)"/>
+    <text x="755" y="36" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#22c55e">0 Ft / 3 év</text>
+  </g>
+
+  <!-- ========== 2 GYEREK ========== -->
+  <g transform="translate(0, 335)">
+    <rect x="50" y="0" width="800" height="65" rx="8" fill="rgba(34,197,94,0.12)" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="75" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#22c55e">✓ 2. gyermek születik</text>
+    <text x="75" y="48" font-family="sans-serif" font-size="13" fill="#86efac">→ Újabb 3 év szünet + tőketartozás 30%-a elengedve</text>
+    <rect x="680" y="10" width="150" height="40" rx="20" fill="rgba(34,197,94,0.2)"/>
+    <text x="755" y="36" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#22c55e">−2-3M Ft</text>
+  </g>
+
+  <!-- ========== 3 GYEREK ========== -->
+  <g transform="translate(0, 415)">
+    <rect x="50" y="0" width="800" height="65" rx="8" fill="rgba(34,197,94,0.18)" stroke="#22c55e" stroke-width="2"/>
+    <text x="75" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#22c55e">✓ 3. gyermek születik</text>
+    <text x="75" y="48" font-family="sans-serif" font-size="13" fill="#86efac">→ Teljes fennálló tartozás elengedve – a hitel megszűnik</text>
+    <rect x="680" y="10" width="150" height="40" rx="20" fill="rgba(34,197,94,0.25)"/>
+    <text x="755" y="36" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#22c55e">0 Ft tartozás</text>
+  </g>
+
+  <!-- Branding -->
+  <text x="450" y="510" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#475569">hazepitesikalauz.hu</text>
+</svg>

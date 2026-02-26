@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "preact": "10.28.3"
+  },
+  "overrides": {
+    "preact": "10.28.3"
+  }
+}

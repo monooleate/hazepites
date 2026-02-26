@@ -1,0 +1,39 @@
+{
+  "nodeModulesDir": "auto",
+  "tasks": {
+    "dev": "deno run -A --node-modules-dir dev.ts",
+    "sitemap": "deno run -A generate-sitemap.ts",
+    "build": "deno run -A generate-sitemap.ts && deno run -A --node-modules-dir npm:vite build",
+    "preview": "deno serve -A _fresh/server.js"
+  },
+  "imports": {
+    "@/": "./",
+    "fresh": "jsr:@fresh/core@^2.2.0",
+    "fresh/runtime": "jsr:@fresh/core@^2.2.0/runtime",
+    "fresh/compat": "jsr:@fresh/core@^2.2.0/compat",
+    "@fresh/plugin-vite": "jsr:@fresh/plugin-vite@^1.0.8",
+    "preact": "npm:preact@^10.27.2",
+    "preact/jsx-runtime": "npm:preact@10.28.3/jsx-runtime",
+    "@preact/signals": "npm:@preact/signals@^2.5.0",
+    "tailwindcss": "npm:tailwindcss@^4.1.18",
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.18",
+    "vite": "npm:vite@^7.1.12",
+    "marked": "npm:marked@^17.0.1",
+    "marked-mangle": "npm:marked-mangle@^1.1.9",
+    "@mdx-js/mdx": "npm:@mdx-js/mdx@^3",
+    "@mdx-js/rollup": "npm:@mdx-js/rollup@^3",
+    "@mdx-js/preact": "npm:@mdx-js/preact@^3",
+    "@std/front-matter": "jsr:@std/front-matter",
+    "@std/html": "jsr:@std/html",
+    "github-slugger": "npm:github-slugger@^2.0.0",
+    "prismjs": "npm:prismjs@^1.29.0",
+    "katex": "npm:katex@^0.16.0",
+    "remark-gfm": "npm:remark-gfm@^4",
+    "$ga4": "https://raw.githubusercontent.com/denoland/ga4/main/mod.ts"
+  },
+  "compilerOptions": {
+    "lib": ["dom", "dom.asynciterable", "deno.ns"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
+}

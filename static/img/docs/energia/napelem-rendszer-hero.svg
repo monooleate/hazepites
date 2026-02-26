@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgNR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2f1a"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="panelGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0f2640"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgNR)"/>
+
+  <!-- Nap ikon -->
+  <g transform="translate(600, 120)">
+    <circle cx="0" cy="0" r="45" fill="#fbbf24" opacity="0.15"/>
+    <circle cx="0" cy="0" r="30" fill="#fbbf24" opacity="0.25"/>
+    <circle cx="0" cy="0" r="18" fill="#fbbf24" opacity="0.5"/>
+    <!-- Sugarak -->
+    <line x1="0" y1="-55" x2="0" y2="-70" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+    <line x1="39" y1="-39" x2="50" y2="-50" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+    <line x1="55" y1="0" x2="70" y2="0" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+    <line x1="39" y1="39" x2="50" y2="50" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+    <line x1="0" y1="55" x2="0" y2="70" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+    <line x1="-39" y1="39" x2="-50" y2="50" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+    <line x1="-55" y1="0" x2="-70" y2="0" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+    <line x1="-39" y1="-39" x2="-50" y2="-50" stroke="#fbbf24" stroke-width="2.5" opacity="0.5"/>
+  </g>
+
+  <!-- Ház + napelem panelek -->
+  <g transform="translate(380, 180)">
+    <!-- Ház test -->
+    <rect x="80" y="130" width="280" height="120" fill="#334155" rx="4"/>
+    <!-- Tető (ferde) -->
+    <polygon points="220,20 50,130 390,130" fill="#475569"/>
+    <!-- Napelem panelek a tetőn -->
+    <g transform="translate(120, 55) rotate(-22)">
+      <rect x="0" y="0" width="60" height="40" fill="url(#panelGrad)" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="40" y1="0" x2="40" y2="40" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="0" y1="13" x2="60" y2="13" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="0" y1="27" x2="60" y2="27" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(190, 40) rotate(-22)">
+      <rect x="0" y="0" width="60" height="40" fill="url(#panelGrad)" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="40" y1="0" x2="40" y2="40" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="0" y1="13" x2="60" y2="13" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="0" y1="27" x2="60" y2="27" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    <g transform="translate(260, 25) rotate(-22)">
+      <rect x="0" y="0" width="60" height="40" fill="url(#panelGrad)" stroke="#3b82f6" stroke-width="1.5" rx="2"/>
+      <line x1="20" y1="0" x2="20" y2="40" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="40" y1="0" x2="40" y2="40" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="0" y1="13" x2="60" y2="13" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+      <line x1="0" y1="27" x2="60" y2="27" stroke="#3b82f6" stroke-width="0.5" opacity="0.5"/>
+    </g>
+    <!-- Ajtó -->
+    <rect x="190" y="190" width="60" height="60" fill="#1e293b" rx="3"/>
+  </g>
+
+  <!-- Ár badge-ek -->
+  <g transform="translate(250, 250)">
+    <rect x="-65" y="-18" width="130" height="36" rx="18" fill="rgba(34,197,94,0.12)" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="0" y="6" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#22c55e">2-5M Ft</text>
+  </g>
+  <g transform="translate(950, 250)">
+    <rect x="-65" y="-18" width="130" height="36" rx="18" fill="rgba(251,191,36,0.12)" stroke="#fbbf24" stroke-width="1.5"/>
+    <text x="0" y="6" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#fbbf24">7-11 év</text>
+  </g>
+  <text x="250" y="290" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#86efac">rendszer ára</text>
+  <text x="950" y="290" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#fde68a">megtérülés</text>
+
+  <!-- Cím -->
+  <text x="600" y="430" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#ffffff">Napelem rendszer 2026</text>
+  <text x="600" y="475" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Költség, megtérülés és amit a telepítők elhallgatnak</text>
+
+  <!-- Badge -->
+  <g transform="translate(600, 520)">
+    <rect x="-55" y="-16" width="110" height="32" rx="16" fill="rgba(59,130,246,0.12)" stroke="#3b82f6" stroke-width="1"/>
+    <text x="0" y="6" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#3b82f6">bruttó vs szaldó</text>
+  </g>
+
+  <!-- Elválasztó -->
+  <line x1="100" y1="560" x2="1100" y2="560" stroke="#334155" stroke-width="1"/>
+
+  <!-- Brand -->
+  <text x="600" y="600" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#64748b">hazepitesikalauz.hu</text>
+</svg>

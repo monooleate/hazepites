@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480">
+  <defs>
+    <linearGradient id="dbg7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="480" fill="url(#dbg7)" rx="12"/>
+  <text x="450" y="32" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="bold" fill="#1e293b">Hőszigetelő anyagok összehasonlítása – 15 cm vastagság, B30 téglán</text>
+  <!-- Fejléc sor -->
+  <rect x="20" y="52" width="860" height="30" rx="6" fill="#1e293b"/>
+  <text x="110" y="72" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff">Anyag</text>
+  <text x="260" y="72" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff">Lambda (W/mK)</text>
+  <text x="390" y="72" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff">U-érték</text>
+  <text x="510" y="72" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff">Anyagár (Ft/m²)</text>
+  <text x="640" y="72" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff">Tűzvédelem</text>
+  <text x="770" y="72" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff">Páraáteresztés</text>
+  <!-- Fehér EPS -->
+  <rect x="20" y="86" width="860" height="48" rx="4" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="20" y="86" width="6" height="48" rx="3" fill="#22c55e"/>
+  <text x="110" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#1e293b">Fehér EPS</text>
+  <text x="260" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">0,033-0,040</text>
+  <text x="390" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">0,21-0,24</text>
+  <text x="510" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#22c55e" font-weight="600">2 500-5 000</text>
+  <text x="640" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ef4444">E (gyúlékony)</text>
+  <text x="770" y="114" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ef4444">Gyenge</text>
+  <!-- Grafitos EPS -->
+  <rect x="20" y="138" width="860" height="48" rx="4" fill="#faf5ff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="20" y="138" width="6" height="48" rx="3" fill="#a855f7"/>
+  <text x="110" y="166" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#1e293b">Grafitos EPS</text>
+  <text x="260" y="166" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">0,031-0,032</text>
+  <text x="390" y="166" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">0,18-0,20</text>
+  <text x="510" y="166" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#a855f7" font-weight="600">5 250-7 600</text>
+  <text x="640" y="166" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ef4444">E (gyúlékony)</text>
+  <text x="770" y="166" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ef4444">Gyenge</text>
+  <!-- Kőzetgyapot -->
+  <rect x="20" y="190" width="860" height="48" rx="4" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="20" y="190" width="6" height="48" rx="3" fill="#f59e0b"/>
+  <text x="110" y="218" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#1e293b">Kőzetgyapot</text>
+  <text x="260" y="218" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">0,035-0,040</text>
+  <text x="390" y="218" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">0,21-0,24</text>
+  <text x="510" y="218" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f59e0b" font-weight="600">6 500-13 000</text>
+  <text x="640" y="218" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#22c55e" font-weight="600">A1 (nem ég!)</text>
+  <text x="770" y="218" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#22c55e" font-weight="600">Kiváló</text>
+  <!-- PIR -->
+  <rect x="20" y="242" width="860" height="48" rx="4" fill="#fef2f2" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="20" y="242" width="6" height="48" rx="3" fill="#ef4444"/>
+  <text x="110" y="270" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#1e293b">PIR</text>
+  <text x="260" y="270" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">0,022-0,026</text>
+  <text x="390" y="270" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#16a34a" font-weight="600">0,14-0,16 ★</text>
+  <text x="510" y="270" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ef4444" font-weight="600">8 000-15 000</text>
+  <text x="640" y="270" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f59e0b">B-C (mérgező füst)</text>
+  <text x="770" y="270" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#ef4444">Záró</text>
+  <!-- Cellulóz -->
+  <rect x="20" y="294" width="860" height="48" rx="4" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="20" y="294" width="6" height="48" rx="3" fill="#3b82f6"/>
+  <text x="110" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#1e293b">Cellulóz (fújt)</text>
+  <text x="260" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">0,035-0,040</text>
+  <text x="390" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#374151">–*</text>
+  <text x="510" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3b82f6" font-weight="600">~5 100 (30 cm)</text>
+  <text x="640" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f59e0b">B-s2 (retardált)</text>
+  <text x="770" y="322" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#22c55e">Jó</text>
+  <!-- Megjegyzés -->
+  <text x="390" y="358" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#94a3b8">*Cellulóz homlokzati ETICS rendszerben nem alkalmazható – padlásfödém, tetőtér alkalmazás</text>
+  <!-- Döntési sáv -->
+  <rect x="20" y="375" width="860" height="85" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="450" y="397" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1e293b">Mikor melyiket?</text>
+  <text x="130" y="420" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#22c55e" font-weight="600">💰 Ár a szempont</text>
+  <text x="130" y="438" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#374151">→ Fehér EPS</text>
+  <text x="310" y="420" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#a855f7" font-weight="600">⚡ Ár-érték bajnok</text>
+  <text x="310" y="438" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#374151">→ Grafitos EPS</text>
+  <text x="490" y="420" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#f59e0b" font-weight="600">🔥 Tűzvéd. + pára</text>
+  <text x="490" y="438" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#374151">→ Kőzetgyapot</text>
+  <text x="660" y="420" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ef4444" font-weight="600">📏 Min. vastagság</text>
+  <text x="660" y="438" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#374151">→ PIR</text>
+  <text x="810" y="420" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3b82f6" font-weight="600">🌿 Öko + padlás</text>
+  <text x="810" y="438" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#374151">→ Cellulóz</text>
+  <!-- Brand -->
+  <text x="450" y="475" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">hazepitesikalauz.hu</text>
+</svg>

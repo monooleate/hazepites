@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#292524"/>
+      <stop offset="100%" style="stop-color:#1c1917"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg4)"/>
+  <!-- Talaj rétegek -->
+  <rect x="0" y="350" width="1200" height="280" fill="#78716c" opacity="0.15"/>
+  <rect x="0" y="400" width="1200" height="230" fill="#78716c" opacity="0.1"/>
+  <rect x="0" y="450" width="1200" height="180" fill="#78716c" opacity="0.08"/>
+  <!-- Alapozás metszet -->
+  <g transform="translate(600,250)">
+    <!-- Talaj vonal -->
+    <line x1="-300" y1="60" x2="300" y2="60" stroke="#a8a29e" stroke-width="1.5" stroke-dasharray="8,4"/>
+    <text x="310" y="65" font-family="sans-serif" font-size="11" fill="#a8a29e">terepszint</text>
+    <!-- Sávalap metszet -->
+    <rect x="-250" y="60" width="60" height="80" fill="none" stroke="#f59e0b" stroke-width="2.5" rx="2"/>
+    <rect x="-100" y="60" width="60" height="80" fill="none" stroke="#f59e0b" stroke-width="2.5" rx="2"/>
+    <rect x="50" y="60" width="60" height="80" fill="none" stroke="#f59e0b" stroke-width="2.5" rx="2"/>
+    <rect x="190" y="60" width="60" height="80" fill="none" stroke="#f59e0b" stroke-width="2.5" rx="2"/>
+    <!-- Ház kontúr az alap felett -->
+    <line x1="-250" y1="60" x2="-250" y2="10" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+    <line x1="250" y1="60" x2="250" y2="10" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+    <line x1="-250" y1="10" x2="250" y2="10" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+    <polygon points="-260,10 0,-55 260,10" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+    <!-- Méretek -->
+    <line x1="-260" y1="145" x2="-260" y2="58" stroke="#78716c" stroke-width="1"/>
+    <line x1="-260" y1="145" x2="-245" y2="145" stroke="#78716c" stroke-width="1"/>
+    <line x1="-260" y1="58" x2="-245" y2="58" stroke="#78716c" stroke-width="1"/>
+    <text x="-275" y="105" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#a8a29e" transform="rotate(-90,-275,105)">80-100cm</text>
+    <!-- Vasalás jelzés -->
+    <line x1="-245" y1="70" x2="-195" y2="70" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
+    <line x1="-245" y1="130" x2="-195" y2="130" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
+    <line x1="-240" y1="70" x2="-240" y2="130" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
+    <line x1="-200" y1="70" x2="-200" y2="130" stroke="#ef4444" stroke-width="1" opacity="0.6"/>
+  </g>
+  <!-- Cím -->
+  <text x="600" y="410" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#ffffff">Alapozás költsége 2026</text>
+  <text x="600" y="455" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#a8a29e">sávalap · lemezalap · cölöpalap</text>
+  <!-- Árak -->
+  <g transform="translate(300,500)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#22c55e">2-3,5M</text>
+    <text x="0" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#78716c">sávalap</text>
+  </g>
+  <g transform="translate(600,500)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f59e0b">3-5,5M</text>
+    <text x="0" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#78716c">lemezalap</text>
+  </g>
+  <g transform="translate(900,500)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#ef4444">4-8M</text>
+    <text x="0" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#78716c">cölöpalap</text>
+  </g>
+  <!-- Brand -->
+  <text x="600" y="590" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#57534e">hazepitesikalauz.hu</text>
+</svg>

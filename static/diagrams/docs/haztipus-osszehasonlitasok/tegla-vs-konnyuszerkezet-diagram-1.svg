@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="diaBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="url(#diaBg)" rx="12"/>
+
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="#1e293b">Tegla vs konnyuszerkezetes haz - szempontonkenti osszehasonlitas</text>
+
+  <!-- Column headers -->
+  <text x="140" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#dc2626">TEGLA</text>
+  <text x="450" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#64748b">SZEMPONT</text>
+  <text x="760" y="80" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#059669">KONNYUSZERKEZET</text>
+
+  <line x1="50" y1="90" x2="850" y2="90" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Row 1: Cost -->
+  <g transform="translate(0, 110)">
+    <rect x="50" y="0" width="180" height="45" fill="#fee2e2" rx="8"/>
+    <text x="140" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#991b1b">600-850K</text>
+    <text x="140" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#b91c1c">Ft/m2 kulcsrakesz</text>
+
+    <rect x="350" y="5" width="200" height="35" fill="#e2e8f0" rx="6"/>
+    <text x="450" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">Koltseg</text>
+
+    <rect x="670" y="0" width="180" height="45" fill="#d1fae5" rx="8"/>
+    <text x="760" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#065f46">500-800K</text>
+    <text x="760" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#047857">Ft/m2 kulcsrakesz</text>
+
+    <!-- Winner indicator -->
+    <circle cx="820" cy="22" r="8" fill="#059669"/>
+    <text x="820" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">+</text>
+  </g>
+
+  <!-- Row 2: Build time -->
+  <g transform="translate(0, 175)">
+    <rect x="50" y="0" width="180" height="45" fill="#fee2e2" rx="8"/>
+    <text x="140" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#991b1b">8-14</text>
+    <text x="140" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#b91c1c">honap</text>
+
+    <rect x="350" y="5" width="200" height="35" fill="#e2e8f0" rx="6"/>
+    <text x="450" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">Epitesi ido</text>
+
+    <rect x="670" y="0" width="180" height="45" fill="#d1fae5" rx="8"/>
+    <text x="760" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#065f46">2-5</text>
+    <text x="760" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#047857">honap</text>
+
+    <circle cx="820" cy="22" r="8" fill="#059669"/>
+    <text x="820" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">+</text>
+  </g>
+
+  <!-- Row 3: Insulation -->
+  <g transform="translate(0, 240)">
+    <rect x="50" y="0" width="180" height="45" fill="#fee2e2" rx="8"/>
+    <text x="140" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#991b1b">0.15-0.24</text>
+    <text x="140" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#b91c1c">W/m2K (U-ertek)</text>
+
+    <rect x="350" y="5" width="200" height="35" fill="#e2e8f0" rx="6"/>
+    <text x="450" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">Hoszigeteles</text>
+
+    <rect x="670" y="0" width="180" height="45" fill="#d1fae5" rx="8"/>
+    <text x="760" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#065f46">0.11-0.15</text>
+    <text x="760" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#047857">W/m2K (U-ertek)</text>
+
+    <circle cx="820" cy="22" r="8" fill="#059669"/>
+    <text x="820" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">+</text>
+  </g>
+
+  <!-- Row 4: Lifespan -->
+  <g transform="translate(0, 305)">
+    <rect x="50" y="0" width="180" height="45" fill="#fee2e2" rx="8"/>
+    <text x="140" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#991b1b">100-150+</text>
+    <text x="140" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#b91c1c">ev elettartam</text>
+
+    <rect x="350" y="5" width="200" height="35" fill="#e2e8f0" rx="6"/>
+    <text x="450" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">Elettartam</text>
+
+    <rect x="670" y="0" width="180" height="45" fill="#fef3c7" rx="8"/>
+    <text x="760" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#92400e">50-80</text>
+    <text x="760" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a16207">ev elettartam</text>
+
+    <circle cx="200" cy="22" r="8" fill="#dc2626"/>
+    <text x="200" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">+</text>
+  </g>
+
+  <!-- Row 5: Resale value -->
+  <g transform="translate(0, 370)">
+    <rect x="50" y="0" width="180" height="45" fill="#fee2e2" rx="8"/>
+    <text x="140" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#991b1b">+20-30%</text>
+    <text x="140" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#b91c1c">masodpiaci ertek</text>
+
+    <rect x="350" y="5" width="200" height="35" fill="#e2e8f0" rx="6"/>
+    <text x="450" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">Ertektartas</text>
+
+    <rect x="670" y="0" width="180" height="45" fill="#fef3c7" rx="8"/>
+    <text x="760" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#92400e">-20-30%</text>
+    <text x="760" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a16207">masodpiaci ertek</text>
+
+    <circle cx="200" cy="22" r="8" fill="#dc2626"/>
+    <text x="200" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">+</text>
+  </g>
+
+  <!-- Row 6: Sound insulation -->
+  <g transform="translate(0, 435)">
+    <rect x="50" y="0" width="180" height="45" fill="#fee2e2" rx="8"/>
+    <text x="140" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#991b1b">Kivalo</text>
+    <text x="140" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#b91c1c">termeszetes tomeg</text>
+
+    <rect x="350" y="5" width="200" height="35" fill="#e2e8f0" rx="6"/>
+    <text x="450" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#334155">Hangszigeteles</text>
+
+    <rect x="670" y="0" width="180" height="45" fill="#fef3c7" rx="8"/>
+    <text x="760" y="18" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#92400e">Kozepes</text>
+    <text x="760" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#a16207">extra reteg kell</text>
+
+    <circle cx="200" cy="22" r="8" fill="#dc2626"/>
+    <text x="200" y="26" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="white">+</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(350, 490)">
+    <circle cx="0" cy="0" r="6" fill="#059669"/>
+    <text x="12" y="4" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Konnyuszerkezet jobb</text>
+    <circle cx="180" cy="0" r="6" fill="#dc2626"/>
+    <text x="192" y="4" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Tegla jobb</text>
+  </g>
+</svg>

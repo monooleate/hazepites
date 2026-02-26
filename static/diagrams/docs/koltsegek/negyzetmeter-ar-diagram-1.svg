@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#fafbfc" rx="12"/>
+
+  <text x="450" y="40" text-anchor="middle" font-family="system-ui,sans-serif" font-size="20" font-weight="700" fill="#1e293b">Miből áll a négyzetméter ár?</text>
+  <text x="450" y="62" text-anchor="middle" font-family="system-ui,sans-serif" font-size="13" fill="#64748b">Kulcsrakész családi ház költségbontása (Ft/m²)</text>
+
+  <!-- Bal oldal: Szerkezetkész -->
+  <g transform="translate(50, 90)">
+    <text x="170" y="0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#1e40af">SZERKEZETKÉSZ</text>
+    <text x="170" y="18" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">250 000–450 000 Ft/m²</text>
+
+    <!-- Sávok -->
+    <rect x="0" y="35" width="340" height="38" rx="6" fill="#dbeafe"/>
+    <rect x="0" y="35" width="200" height="38" rx="6" fill="#3b82f6"/>
+    <text x="10" y="59" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Alapozás</text>
+    <text x="330" y="59" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#1e40af">15-20%</text>
+
+    <rect x="0" y="80" width="340" height="38" rx="6" fill="#dbeafe"/>
+    <rect x="0" y="80" width="260" height="38" rx="6" fill="#3b82f6"/>
+    <text x="10" y="104" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Falazat + födém</text>
+    <text x="330" y="104" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#1e40af">25-30%</text>
+
+    <rect x="0" y="125" width="340" height="38" rx="6" fill="#dbeafe"/>
+    <rect x="0" y="125" width="160" height="38" rx="6" fill="#3b82f6"/>
+    <text x="10" y="149" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Tetőszerkezet</text>
+    <text x="330" y="149" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#1e40af">12-18%</text>
+
+    <rect x="0" y="170" width="340" height="38" rx="6" fill="#dbeafe"/>
+    <rect x="0" y="170" width="140" height="38" rx="6" fill="#3b82f6"/>
+    <text x="10" y="194" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Nyílászárók</text>
+    <text x="330" y="194" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#1e40af">10-15%</text>
+
+    <rect x="0" y="215" width="340" height="38" rx="6" fill="#dbeafe"/>
+    <rect x="0" y="215" width="120" height="38" rx="6" fill="#3b82f6"/>
+    <text x="10" y="239" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Hőszigetelés</text>
+    <text x="330" y="239" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#1e40af">8-12%</text>
+
+    <rect x="0" y="260" width="340" height="38" rx="6" fill="#dbeafe"/>
+    <rect x="0" y="260" width="80" height="38" rx="6" fill="#93c5fd"/>
+    <text x="10" y="284" font-family="system-ui,sans-serif" font-size="12" fill="#1e40af" font-weight="600">Egyéb</text>
+    <text x="330" y="284" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#1e40af">5-10%</text>
+  </g>
+
+  <!-- Jobb oldal: Belső kivitelezés (ami kulcsrakésszé teszi) -->
+  <g transform="translate(480, 90)">
+    <text x="180" y="0" text-anchor="middle" font-family="system-ui,sans-serif" font-size="15" font-weight="700" fill="#7c3aed">+ BELSŐ KIVITELEZÉS</text>
+    <text x="180" y="18" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">+170 000–250 000 Ft/m²</text>
+
+    <rect x="0" y="35" width="360" height="38" rx="6" fill="#ede9fe"/>
+    <rect x="0" y="35" width="240" height="38" rx="6" fill="#7c3aed"/>
+    <text x="10" y="59" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Gépészet (fűtés, víz, csatorna)</text>
+    <text x="350" y="59" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#7c3aed">20-25%</text>
+
+    <rect x="0" y="80" width="360" height="38" rx="6" fill="#ede9fe"/>
+    <rect x="0" y="80" width="200" height="38" rx="6" fill="#7c3aed"/>
+    <text x="10" y="104" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Villanyszerelés</text>
+    <text x="350" y="104" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#7c3aed">10-15%</text>
+
+    <rect x="0" y="125" width="360" height="38" rx="6" fill="#ede9fe"/>
+    <rect x="0" y="125" width="220" height="38" rx="6" fill="#7c3aed"/>
+    <text x="10" y="149" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Burkolatok (padló, csempe)</text>
+    <text x="350" y="149" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#7c3aed">15-20%</text>
+
+    <rect x="0" y="170" width="360" height="38" rx="6" fill="#ede9fe"/>
+    <rect x="0" y="170" width="160" height="38" rx="6" fill="#7c3aed"/>
+    <text x="10" y="194" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Festés, belső vakolat</text>
+    <text x="350" y="194" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#7c3aed">8-12%</text>
+
+    <rect x="0" y="215" width="360" height="38" rx="6" fill="#ede9fe"/>
+    <rect x="0" y="215" width="130" height="38" rx="6" fill="#7c3aed"/>
+    <text x="10" y="239" font-family="system-ui,sans-serif" font-size="12" fill="#fff" font-weight="600">Konyha, szaniterek</text>
+    <text x="350" y="239" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#7c3aed">8-12%</text>
+
+    <rect x="0" y="260" width="360" height="38" rx="6" fill="#ede9fe"/>
+    <rect x="0" y="260" width="100" height="38" rx="6" fill="#a78bfa"/>
+    <text x="10" y="284" font-family="system-ui,sans-serif" font-size="12" fill="#7c3aed" font-weight="600">Kerítés, kert, tereprendezés</text>
+    <text x="350" y="284" text-anchor="end" font-family="system-ui,sans-serif" font-size="11" fill="#7c3aed">5-10%</text>
+  </g>
+
+  <!-- Alsó összegző -->
+  <g transform="translate(50, 420)">
+    <rect x="0" y="0" width="800" height="70" rx="10" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="400" y1="10" x2="400" y2="60" stroke="#e2e8f0" stroke-width="1"/>
+
+    <text x="200" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#1e40af">Szerkezetkész: 250–450e Ft/m²</text>
+    <text x="200" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Fal, tető, nyílászáró, szigetelés kész – belül üres</text>
+
+    <text x="600" y="28" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" font-weight="700" fill="#7c3aed">Kulcsrakész: 420–680e Ft/m²</text>
+    <text x="600" y="48" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#64748b">Beköltözhető – gépészet, burkolat, festés kész</text>
+  </g>
+
+  <text x="450" y="510" text-anchor="middle" font-family="system-ui,sans-serif" font-size="11" fill="#94a3b8">hazepitesikalauz.hu · 2026 · téglaház, átlagos kivitelezés</text>
+</svg>

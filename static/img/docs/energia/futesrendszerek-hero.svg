@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444"/>
+      <stop offset="50%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="cold2warm" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg6)"/>
+  <!-- Háttér hőmérő vonalak -->
+  <g opacity="0.05" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="100" x2="1200" y2="100"/>
+    <line x1="0" y1="200" x2="1200" y2="200"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="0" y1="400" x2="1200" y2="400"/>
+    <line x1="0" y1="500" x2="1200" y2="500"/>
+  </g>
+  <!-- Hőszivattyú szimbólum -->
+  <g transform="translate(300,180)">
+    <rect x="-50" y="-50" width="100" height="100" rx="12" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+    <!-- Ventilátor -->
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+    <path d="M0,-25 Q15,-10 0,0 Q-15,10 0,25" fill="none" stroke="#22c55e" stroke-width="2"/>
+    <path d="M-25,0 Q-10,-15 0,0 Q10,15 25,0" fill="none" stroke="#22c55e" stroke-width="2"/>
+    <circle cx="0" cy="0" r="4" fill="#22c55e"/>
+    <text x="0" y="75" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#22c55e">Hőszivattyú</text>
+  </g>
+  <!-- Gázkazán szimbólum -->
+  <g transform="translate(600,180)">
+    <rect x="-40" y="-50" width="80" height="100" rx="8" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <!-- Láng -->
+    <path d="M-12,15 Q-12,-5 0,-20 Q12,-5 12,15 Q12,25 0,30 Q-12,25 -12,15Z" fill="url(#flame)" opacity="0.7"/>
+    <!-- Kémény -->
+    <rect x="-8" y="-65" width="16" height="20" rx="2" fill="none" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="0" y="75" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#f59e0b">Gázkazán</text>
+  </g>
+  <!-- Padlófűtés szimbólum -->
+  <g transform="translate(900,180)">
+    <rect x="-50" y="-40" width="100" height="80" rx="6" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <!-- Csövek -->
+    <path d="M-35,-10 Q-35,10 -15,10 Q5,10 5,-10 Q5,-25 25,-25 Q40,-25 40,-10" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+    <path d="M-35,15 Q-35,25 -15,25 Q5,25 5,15" fill="none" stroke="#3b82f6" stroke-width="2" opacity="0.6"/>
+    <!-- Hő hullámok -->
+    <path d="M-30,-50 Q-25,-55 -20,-50" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+    <path d="M0,-50 Q5,-58 10,-50" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+    <path d="M25,-50 Q30,-55 35,-50" fill="none" stroke="#ef4444" stroke-width="1" opacity="0.5"/>
+    <text x="0" y="65" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#3b82f6">Padlófűtés</text>
+  </g>
+  <!-- Hőmérséklet sáv -->
+  <rect x="200" y="310" width="800" height="8" rx="4" fill="url(#cold2warm)" opacity="0.4"/>
+  <text x="200" y="340" font-family="sans-serif" font-size="11" fill="#3b82f6">hideg</text>
+  <text x="1000" y="340" text-anchor="end" font-family="sans-serif" font-size="11" fill="#ef4444">meleg</text>
+  <!-- Cím -->
+  <text x="600" y="410" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#ffffff">Fűtésrendszerek 2026</text>
+  <text x="600" y="455" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#94a3b8">hőszivattyú · gázkazán · padlófűtés · radiátor</text>
+  <!-- Költségek -->
+  <g transform="translate(300,510)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#22c55e">2,5-4M</text>
+    <text x="0" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#78716c">hőszivattyú</text>
+  </g>
+  <g transform="translate(600,510)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f59e0b">350-800e</text>
+    <text x="0" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#78716c">gázkazán</text>
+  </g>
+  <g transform="translate(900,510)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#3b82f6">4-7e/m²</text>
+    <text x="0" y="20" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#78716c">padlófűtés</text>
+  </g>
+  <!-- Brand -->
+  <text x="600" y="590" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#57534e">hazepitesikalauz.hu</text>
+</svg>

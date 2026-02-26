@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <linearGradient id="dbg5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc"/>
+      <stop offset="100%" style="stop-color:#f1f5f9"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="500" fill="url(#dbg5)" rx="12"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Kivitelezési modellek összehasonlítása</text>
+  <text x="450" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">100 m²-es családi ház, 2026-os árak</text>
+  <!-- Generálkivitelező -->
+  <rect x="30" y="75" width="270" height="200" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+  <rect x="30" y="75" width="270" height="35" rx="10" fill="#f59e0b"/>
+  <rect x="30" y="95" width="270" height="15" fill="#f59e0b"/>
+  <text x="165" y="97" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">GENERÁLKIVITELEZŐ</text>
+  <text x="165" y="135" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#f59e0b">45-65M Ft</text>
+  <text x="50" y="165" font-family="sans-serif" font-size="11" fill="#374151">✅ Egy felelős, egy szerződés</text>
+  <text x="50" y="182" font-family="sans-serif" font-size="11" fill="#374151">✅ Garanciális ügyintézés egyszerű</text>
+  <text x="50" y="199" font-family="sans-serif" font-size="11" fill="#374151">✅ Kevesebb szervezés neked</text>
+  <text x="50" y="216" font-family="sans-serif" font-size="11" fill="#374151">❌ 15-25% felár a koordinációért</text>
+  <text x="50" y="233" font-family="sans-serif" font-size="11" fill="#374151">❌ Kevesebb ráhatásod van</text>
+  <text x="165" y="265" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#92400e" font-weight="600">Stressz: ★★☆☆☆</text>
+  <!-- Alvállalkozók -->
+  <rect x="315" y="75" width="270" height="200" rx="10" fill="#fff" stroke="#22c55e" stroke-width="2"/>
+  <rect x="315" y="75" width="270" height="35" rx="10" fill="#22c55e"/>
+  <rect x="315" y="95" width="270" height="15" fill="#22c55e"/>
+  <text x="450" y="97" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">ALVÁLLALKOZÓK</text>
+  <text x="450" y="135" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#22c55e">35-52M Ft</text>
+  <text x="335" y="165" font-family="sans-serif" font-size="11" fill="#374151">✅ Akár 20-30%-kal olcsóbb</text>
+  <text x="335" y="182" font-family="sans-serif" font-size="11" fill="#374151">✅ Válogathatod a szakikat</text>
+  <text x="335" y="199" font-family="sans-serif" font-size="11" fill="#374151">✅ Nagyobb kontroll</text>
+  <text x="335" y="216" font-family="sans-serif" font-size="11" fill="#374151">❌ Te vagy a projektmenedzser</text>
+  <text x="335" y="233" font-family="sans-serif" font-size="11" fill="#374151">❌ Szétszórt garancia</text>
+  <text x="450" y="265" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#166534" font-weight="600">Stressz: ★★★★☆</text>
+  <!-- Házilagos -->
+  <rect x="600" y="75" width="270" height="200" rx="10" fill="#fff" stroke="#3b82f6" stroke-width="2"/>
+  <rect x="600" y="75" width="270" height="35" rx="10" fill="#3b82f6"/>
+  <rect x="600" y="95" width="270" height="15" fill="#3b82f6"/>
+  <text x="735" y="97" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">HÁZILAGOS ÉPÍTÉS</text>
+  <text x="735" y="135" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#3b82f6">25-40M Ft</text>
+  <text x="620" y="165" font-family="sans-serif" font-size="11" fill="#374151">✅ Legolcsóbb megoldás</text>
+  <text x="620" y="182" font-family="sans-serif" font-size="11" fill="#374151">✅ Teljes kontroll</text>
+  <text x="620" y="199" font-family="sans-serif" font-size="11" fill="#374151">❌ Szaktudás kell hozzá</text>
+  <text x="620" y="216" font-family="sans-serif" font-size="11" fill="#374151">❌ Nagyon lassú (2-4 év)</text>
+  <text x="620" y="233" font-family="sans-serif" font-size="11" fill="#374151">❌ Bankgarancia nincs</text>
+  <text x="735" y="265" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1e40af" font-weight="600">Stressz: ★★★★★</text>
+  <!-- Döntési sáv -->
+  <text x="450" y="310" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Melyiket válaszd? → A te időd, tudásod és tűrőképességed dönti el!</text>
+  <!-- Idő sáv -->
+  <rect x="30" y="335" width="840" height="40" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="60" y="360" font-family="sans-serif" font-size="12" fill="#64748b">Építési idő:</text>
+  <rect x="175" y="345" width="150" height="20" rx="4" fill="#fef3c7"/>
+  <text x="250" y="360" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#92400e">8-12 hónap</text>
+  <rect x="380" y="345" width="180" height="20" rx="4" fill="#dcfce7"/>
+  <text x="470" y="360" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#166534">10-16 hónap</text>
+  <rect x="615" y="345" width="200" height="20" rx="4" fill="#dbeafe"/>
+  <text x="715" y="360" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#1e40af">24-48 hónap</text>
+  <!-- Ajánlás sáv -->
+  <rect x="30" y="390" width="840" height="55" rx="8" fill="#fff" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="60" y="412" font-family="sans-serif" font-size="11" fill="#374151" font-weight="600">💡 Ajánlás:</text>
+  <text x="60" y="432" font-family="sans-serif" font-size="11" fill="#64748b">Első házadnál generálkivitelező + műszaki ellenőr a legbiztosabb. A spórolás az alvállalkozós</text>
+  <text x="60" y="446" font-family="sans-serif" font-size="11" fill="#64748b">modellben reális, de csak ha van időd és energiád a szervezésre.</text>
+  <!-- Brand -->
+  <text x="450" y="490" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">hazepitesikalauz.hu</text>
+</svg>

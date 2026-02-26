@@ -5,7 +5,7 @@ export default function ContactMe() {
   const [sending, setSending] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const sendEmail = async (e: Event) => {
+  /* const sendEmail = async (e: Event) => {
     e.preventDefault();
     setSending(true);
     setStatus("idle");
@@ -25,7 +25,7 @@ export default function ContactMe() {
     } finally {
       setSending(false);
     }
-  };
+  }; */
 
   return (
     <div class="max-w-xl mx-auto">
@@ -33,7 +33,7 @@ export default function ContactMe() {
         Amennyiben bármilyen kérdésed van, vagy együttműködést szeretnél kezdeményezni, itt megteheted.
       </p>
 
-      <form ref={form} onSubmit={sendEmail} class="space-y-5">
+      <form ref={form} /* onSubmit={sendEmail} */ class="space-y-5">
         <div>
           <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
             Email cím

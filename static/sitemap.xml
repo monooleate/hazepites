@@ -13,6 +13,12 @@
     <priority>0.3</priority>
   </url>
   <url>
+    <loc>https://hazepitesikalauz.hu/haztipusok/teglaepites</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/tegla-vs-ytong</loc>
     <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -39,6 +45,12 @@
   <url>
     <loc>https://hazepitesikalauz.hu/koltsegek/alapozas-koltseg</loc>
     <lastmod>2026-02-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hazepitesikalauz.hu/koltsegek/teto-koltseg</loc>
+    <lastmod>2026-02-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>

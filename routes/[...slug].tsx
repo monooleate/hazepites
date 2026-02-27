@@ -53,13 +53,15 @@ interface Page extends TableOfContentsEntry {
   headSchemas: Record<string, string>;
 }
 
+// Built route chunks live at _fresh/server/assets/*.mjs → 3 levels up to project root.
+// Dev source lives at routes/[...slug].tsx → 1 level up to project root.
+const _CONTENT_UP = import.meta.url.includes("_fresh") ? "../../../" : "../";
+
 async function resolveContentFile(basePath: string): Promise<{ content: string; isMDX: boolean }> {
   for (const ext of [".mdx", ".md"]) {
     try {
-      // CWD-relative path – works both in Vite dev and Deno Deploy production build
-      // (import.meta.url breaks in production because the built chunk is nested
-      // inside _fresh/server/assets/ so "../" doesn't reach the project root)
-      const content = await Deno.readTextFile(`./${basePath}${ext}`);
+      const url = new URL(`${_CONTENT_UP}${basePath}${ext}`, import.meta.url);
+      const content = await Deno.readTextFile(url);
       return { content, isMDX: ext === ".mdx" };
     } catch {
       // next

@@ -76,7 +76,10 @@
       "WebFetch(domain:otk.hu)",
       "WebFetch(domain:www.pannonmuhely.hu)",
       "WebFetch(domain:www.leier.hu)",
-      "WebFetch(domain:faga.hu)"
+      "WebFetch(domain:faga.hu)",
+      "Bash(git commit:*)",
+      "Bash(python3 -m json.tool)",
+      "WebFetch(domain:api.github.com)"
     ]
   }
 }

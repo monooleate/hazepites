@@ -10,7 +10,6 @@ import {
   type TableOfContentsCategory,
   type TableOfContentsEntry,
 } from "../data/docs.ts";
-import { frontMatter, renderMarkdown } from "../utils/markdown.ts";
 import { TableOfContents } from "../islands/TableOfContents.tsx";
 import HeadUpdater from "../islands/HeadUpdater.tsx";
 import CostCalculator from "../islands/CostCalculator.tsx";
@@ -155,7 +154,10 @@ async function _handleGET(ctx: any) {
       throw new HttpError(404);
     }
 
-    const { body, attrs } = frontMatter<Record<string, unknown>>(fileContent);
+    // Dynamic import: keeps the heavy markdown pipeline (marked, prismjs, katex)
+    // out of this route chunk so it loads successfully on Deno Deploy.
+    const { frontMatter: fm, renderMarkdown } = await import("../utils/markdown.ts");
+    const { body, attrs } = fm<Record<string, unknown>>(fileContent);
     ctx.state.title = (attrs?.title as string) || `${entry.title} | Házépítési Kalauz`;
     ctx.state.description = (attrs?.description as string) || "Házépítési Kalauz — Független útmutató házépítőknek";
     ctx.state.keywords = attrs?.keywords as string | undefined;

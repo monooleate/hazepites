@@ -37,7 +37,7 @@ const toc: RawTableOfContents = {
       title: "Háztípusok",
       pages: [
         // ["page", "bevezetes", "Háztípusok bevezetés"],
-        // ["page", "teglaepites", "Téglaépítés"],
+        ["page", "teglaepites", "Téglaépítés"],
         // ["page", "ytong-porotherm", "Ytong és Porotherm"],
         // ["page", "vasszerkezetes-haz", "Vázszerkezetes ház"],
         // ["page", "konnyuszerkezetes-haz", "Könnyűszerkezetes ház"],
@@ -73,7 +73,7 @@ const toc: RawTableOfContents = {
         ["page", "hazepites-koltseg-2026", "Házépítés költség 2026"],
         ["page", "negyzetmeter-ar", "Négyzetméter ár kalkuláció"],
         ["page", "alapozas-koltseg", "Alapozás költsége"],
-        // ["page", "teto-koltseg", "Tető költsége"],
+        ["page", "teto-koltseg", "Tető költsége"],
         // ["page", "gepeszet-koltseg", "Gépészet költsége"],
         // ["page", "villanyszereles-koltseg", "Villanyszerelés költsége"],
         // ["page", "belso-bururkolatok", "Belső burkolatok költsége"],

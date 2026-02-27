@@ -66,7 +66,17 @@
       "WebFetch(domain:epitoabc.hu)",
       "WebFetch(domain:www.triasz.hu)",
       "WebFetch(domain:felujitasom.hu)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "WebFetch(domain:hazepitesikalauz.hu)",
+      "WebFetch(domain:jnosmszros-hazepites-75.deno.dev)",
+      "Bash(gh run list --limit 3)",
+      "WebFetch(domain:www.wienerberger.hu)",
+      "WebFetch(domain:epitoanyagvasarlas.hu)",
+      "WebFetch(domain:www.homlokzatihoszigeteles.hu)",
+      "WebFetch(domain:otk.hu)",
+      "WebFetch(domain:www.pannonmuhely.hu)",
+      "WebFetch(domain:www.leier.hu)",
+      "WebFetch(domain:faga.hu)"
     ]
   }
 }

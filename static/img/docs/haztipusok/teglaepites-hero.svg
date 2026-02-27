@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FDF2F0" rx="0"/>
+  <!-- Brick wall pattern -->
+  <g opacity="0.12">
+    <rect x="60" y="120" width="120" height="50" rx="3" fill="#C0392B"/>
+    <rect x="190" y="120" width="120" height="50" rx="3" fill="#C0392B"/>
+    <rect x="320" y="120" width="120" height="50" rx="3" fill="#C0392B"/>
+    <rect x="125" y="180" width="120" height="50" rx="3" fill="#C0392B"/>
+    <rect x="255" y="180" width="120" height="50" rx="3" fill="#C0392B"/>
+    <rect x="385" y="180" width="120" height="50" rx="3" fill="#C0392B"/>
+    <rect x="60" y="240" width="120" height="50" rx="3" fill="#C0392B"/>
+    <rect x="190" y="240" width="120" height="50" rx="3" fill="#C0392B"/>
+    <rect x="320" y="240" width="120" height="50" rx="3" fill="#C0392B"/>
+  </g>
+  <!-- House with brick texture -->
+  <g transform="translate(700, 80)">
+    <!-- House body -->
+    <rect x="60" y="180" width="280" height="220" fill="#E74C3C" rx="4"/>
+    <!-- Brick lines -->
+    <line x1="60" y1="220" x2="340" y2="220" stroke="#C0392B" stroke-width="2"/>
+    <line x1="60" y1="260" x2="340" y2="260" stroke="#C0392B" stroke-width="2"/>
+    <line x1="60" y1="300" x2="340" y2="300" stroke="#C0392B" stroke-width="2"/>
+    <line x1="60" y1="340" x2="340" y2="340" stroke="#C0392B" stroke-width="2"/>
+    <line x1="60" y1="380" x2="340" y2="380" stroke="#C0392B" stroke-width="2"/>
+    <line x1="140" y1="180" x2="140" y2="220" stroke="#C0392B" stroke-width="2"/>
+    <line x1="260" y1="180" x2="260" y2="220" stroke="#C0392B" stroke-width="2"/>
+    <line x1="100" y1="220" x2="100" y2="260" stroke="#C0392B" stroke-width="2"/>
+    <line x1="200" y1="220" x2="200" y2="260" stroke="#C0392B" stroke-width="2"/>
+    <line x1="300" y1="220" x2="300" y2="260" stroke="#C0392B" stroke-width="2"/>
+    <!-- Roof -->
+    <polygon points="40,180 200,60 360,180" fill="#8B4513" stroke="#6B3410" stroke-width="2"/>
+    <!-- Window -->
+    <rect x="120" y="250" width="60" height="70" fill="#AED6F1" rx="3" stroke="#fff" stroke-width="3"/>
+    <line x1="150" y1="250" x2="150" y2="320" stroke="#fff" stroke-width="2"/>
+    <line x1="120" y1="285" x2="180" y2="285" stroke="#fff" stroke-width="2"/>
+    <!-- Door -->
+    <rect x="230" y="300" width="60" height="100" fill="#6B3410" rx="3"/>
+    <circle cx="280" cy="355" r="4" fill="#D4AC0D"/>
+  </g>
+  <!-- Porotherm badge -->
+  <rect x="80" y="350" width="360" height="60" rx="12" fill="#C0392B"/>
+  <text x="260" y="388" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#fff">82% tégla – KSH 2024</text>
+  <!-- Price badge -->
+  <rect x="80" y="430" width="360" height="55" rx="12" fill="#E74C3C" opacity="0.9"/>
+  <text x="260" y="465" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="600" fill="#fff">420-750 ezer Ft/m² (kulcsrakész)</text>
+  <!-- Wall thickness badge -->
+  <rect x="80" y="500" width="220" height="45" rx="10" fill="#fff" stroke="#C0392B" stroke-width="2"/>
+  <text x="190" y="530" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600" fill="#C0392B">30-44-50 cm falvastagság</text>
+  <!-- Title -->
+  <text x="600" y="590" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#5D1A0B">Téglaépítés 2026</text>
+  <!-- Brand -->
+  <text x="600" y="620" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#C0392B">hazepitesikalauz.hu</text>
+</svg>

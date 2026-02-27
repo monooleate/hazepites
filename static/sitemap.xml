@@ -2,782 +2,104 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hazepitesikalauz.hu</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/kapcsolat</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-27</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://hazepitesikalauz.hu/alapok/miert-epitkezz</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/alapok/hazepites-lepesrol-lepesre</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/alapok/hazepites-idovonal</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/alapok/hazepites-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/alapok/hazepites-szotara</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/alapok/hazepites-buktatoi</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/bevezetes</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/teglaepites</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/ytong-porotherm</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/vasszerkezetes-haz</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/konnyuszerkezetes-haz</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/fahaz</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/passzivhaz</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/mobilhaz</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/modulhaz</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/prefab-haz</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/csaladihaztipusok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/tetofajtak</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/alapfajtak</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipusok/emeletessegek</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/tegla-vs-ytong</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/tegla-vs-konnyuszerkezet</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/passzivhaz-vs-hagyomanyos</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/fahaz-vs-tegla</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/modulhaz-vs-hagyomanyos</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/prefab-vs-helyszini</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/egyszintes-vs-emeletes</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/laposteto-vs-magasteto</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/pince-vs-alaplemez</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/kulcstarto-vs-generaleru</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/hazepites-koltseg-2025</loc>
-    <lastmod>2026-02-09</lastmod>
+    <loc>https://hazepitesikalauz.hu/koltsegek/hazepites-koltseg-2026</loc>
+    <lastmod>2026-02-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/koltsegek/negyzetmeter-ar</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/koltsegek/alapozas-koltseg</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/teto-koltseg</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/gepeszet-koltseg</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/villanyszereles-koltseg</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/belso-bururkolatok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/kulso-burkolatok</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/koltsegek/rejtett-koltsegek</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/anyagarak</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/munkadijterkep</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/arak-regiok-szerint</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/koltsegvetes-sablon</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/megtakaritas-tippek</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/koltsegek-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/koltsegek/ar-valtozasok</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/tamogatasok/csok-plusz</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/tamogatasok/falusi-csok</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/tamogatasok/babavaro-hitel</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/zold-hitel</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/epitesi-hitel</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/lakashitel-osszehasonlitas</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/allami-tamogatasok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/onkormanzati-tamogatasok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/energetikai-palyazatok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/afa-visszaigenyeles</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/hitelkalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/tamogatas-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/finanszirozas-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tamogatasok/onero-szamitas</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/energia/hoszigeteles-tipusok</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/energia/futesrendszerek</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/energia/napelem-rendszer</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/hoszivattyuk</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/energetikai-tanusitvany</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/okos-otthon</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/nyilaszarok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/szellozes</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/vizgazdalkodas</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/fenntarthato-anyagok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/rezsikoltseg-becsles</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/megujulo-energia-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/energia-megtakaritas</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/energia/klima-es-hutesek</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/epitesz-valasztas</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/tervrajz-alapok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/hazmeretezesi-utmutato</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/alaprajz-tippek</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/telekvalasztas-hatasa</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/engedely-folyamat</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/belsoepieszet</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/kert-es-kornyezet</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/tervezes-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/tervezes/3d-tervezo-eszkozok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/epitesi-engedelyek</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/egyszerusitett-bejelentes</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/epitesi-naplo</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/muhatosagi-ellenorzes</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/hasznalatbaveteli-engedly</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/szomszedok-jogai</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/biztositas-epitkezeshez</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/garancia-szavatossag</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/jogszabalyok-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/jog/szerzodes-mintak</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/kivitelezes/kivitelezo-valasztas</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/kivitelezes/muszaki-ellenor</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/kivitelezes/generalkivitelezes</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/kivitelezes/sajat-szervezesu-epites</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/kivitelezes/minosegellenorzes</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/kivitelezes/epitkezesi-hibalista</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/kivitelezes/munkavédelem</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/kivitelezes/kivitelezes-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/telek/telekvalasztas</loc>
-    <lastmod>2026-02-09</lastmod>
+    <lastmod>2026-02-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/telek/belterulet-kulterulet</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/telek/kozmu-csatlakozas</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/telek/talajvizsgalat</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/telek/telek-elokeszites</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/telek/telek-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/mikor-kezdjek-epitkezni</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/mennyi-ido-egy-hazepites</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/mennyibe-kerul-2025-ben</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/milyen-hazat-epitessek</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/epitkezem-vagy-vasarlok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/hogyan-valasszak-kivitelezot</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/kell-e-muszaki-ellenor</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/milyen-futesrendszert-valasszak</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/milyen-tamogatasokat-kaphatok</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/energetikai-besorolas</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/epitesi-engedelyek-gyik</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/gyik/garancia-kerdesek</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/eszkozok/hazepitesi-koltseg-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/eszkozok/hitel-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/eszkozok/tamogatas-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/eszkozok/energia-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/eszkozok/negyzetmeter-ar-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/eszkozok/rezsi-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/eszkozok/telekmeretezesi-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://hazepitesikalauz.hu/eszkozok/megtakaritas-kalkulator</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
   </url>
 </urlset>

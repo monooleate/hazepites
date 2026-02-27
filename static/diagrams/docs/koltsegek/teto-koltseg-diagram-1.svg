@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480">
+  <rect width="900" height="480" fill="#FDFEFE" rx="8"/>
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#2C3E50">Tetőfedő anyagok összehasonlítása (Ft/m², anyag + munkadíj)</text>
+  <!-- Grid lines -->
+  <line x1="80" y1="380" x2="860" y2="380" stroke="#ECF0F1" stroke-width="1"/>
+  <line x1="80" y1="310" x2="860" y2="310" stroke="#ECF0F1" stroke-width="1"/>
+  <line x1="80" y1="240" x2="860" y2="240" stroke="#ECF0F1" stroke-width="1"/>
+  <line x1="80" y1="170" x2="860" y2="170" stroke="#ECF0F1" stroke-width="1"/>
+  <line x1="80" y1="100" x2="860" y2="100" stroke="#ECF0F1" stroke-width="1"/>
+  <!-- Y axis labels -->
+  <text x="70" y="384" text-anchor="end" font-family="sans-serif" font-size="11" fill="#95A5A6">0</text>
+  <text x="70" y="314" text-anchor="end" font-family="sans-serif" font-size="11" fill="#95A5A6">10 000</text>
+  <text x="70" y="244" text-anchor="end" font-family="sans-serif" font-size="11" fill="#95A5A6">20 000</text>
+  <text x="70" y="174" text-anchor="end" font-family="sans-serif" font-size="11" fill="#95A5A6">30 000</text>
+  <!-- Bar 1: Fém cseréplemez -->
+  <rect x="110" y="296" width="100" height="84" fill="#3498DB" rx="4 4 0 0"/>
+  <rect x="110" y="240" width="100" height="56" fill="#5DADE2" rx="4 4 0 0" opacity="0.5"/>
+  <text x="160" y="350" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#fff">3 600</text>
+  <text x="160" y="270" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#5DADE2">12 000</text>
+  <text x="160" y="405" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#2C3E50">Fém</text>
+  <text x="160" y="418" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2C3E50">cseréplemez</text>
+  <text x="160" y="433" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#95A5A6">25-35 év</text>
+  <!-- Bar 2: Bitumenes zsindely -->
+  <rect x="250" y="303" width="100" height="77" fill="#9B59B6" rx="4 4 0 0"/>
+  <rect x="250" y="268" width="100" height="35" fill="#BB8FCE" rx="4 4 0 0" opacity="0.5"/>
+  <text x="300" y="348" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#fff">5 500</text>
+  <text x="300" y="290" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#9B59B6">11 000</text>
+  <text x="300" y="405" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#2C3E50">Bitumenes</text>
+  <text x="300" y="418" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2C3E50">zsindely</text>
+  <text x="300" y="433" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#95A5A6">20-30 év</text>
+  <!-- Bar 3: Beton cserép -->
+  <rect x="390" y="289" width="100" height="91" fill="#27AE60" rx="4 4 0 0"/>
+  <rect x="390" y="240" width="100" height="49" fill="#58D68D" rx="4 4 0 0" opacity="0.5"/>
+  <text x="440" y="344" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#fff">6 600</text>
+  <text x="440" y="266" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#27AE60">16 000</text>
+  <text x="440" y="405" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#2C3E50">Beton</text>
+  <text x="440" y="418" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2C3E50">cserép</text>
+  <text x="440" y="433" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#95A5A6">40-50 év</text>
+  <!-- Best value badge -->
+  <rect x="405" y="218" width="70" height="18" rx="9" fill="#27AE60"/>
+  <text x="440" y="231" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#fff">Legjobb</text>
+  <!-- Bar 4: Kerámia cserép -->
+  <rect x="530" y="240" width="100" height="140" fill="#E67E22" rx="4 4 0 0"/>
+  <rect x="530" y="170" width="100" height="70" fill="#F0B27A" rx="4 4 0 0" opacity="0.5"/>
+  <text x="580" y="320" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#fff">8 250</text>
+  <text x="580" y="210" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#E67E22">30 000</text>
+  <text x="580" y="405" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#2C3E50">Kerámia</text>
+  <text x="580" y="418" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2C3E50">cserép</text>
+  <text x="580" y="433" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#95A5A6">80-100+ év</text>
+  <!-- Bar 5: Álló korcolt lemez -->
+  <rect x="670" y="226" width="100" height="154" fill="#E74C3C" rx="4 4 0 0"/>
+  <rect x="670" y="156" width="100" height="70" fill="#F1948A" rx="4 4 0 0" opacity="0.5"/>
+  <text x="720" y="310" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#fff">11 000</text>
+  <text x="720" y="196" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#E74C3C">32 500</text>
+  <text x="720" y="405" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#2C3E50">Álló korcolt</text>
+  <text x="720" y="418" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2C3E50">lemez</text>
+  <text x="720" y="433" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#95A5A6">30-50 év</text>
+  <!-- Legend -->
+  <rect x="280" y="455" width="14" height="14" fill="#3498DB" rx="2"/>
+  <text x="300" y="466" font-family="sans-serif" font-size="11" fill="#2C3E50">Minimum ár</text>
+  <rect x="400" y="455" width="14" height="14" fill="#5DADE2" rx="2" opacity="0.5"/>
+  <text x="420" y="466" font-family="sans-serif" font-size="11" fill="#2C3E50">Maximum ár tartomány</text>
+</svg>

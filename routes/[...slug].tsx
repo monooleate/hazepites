@@ -56,8 +56,10 @@ interface Page extends TableOfContentsEntry {
 async function resolveContentFile(basePath: string): Promise<{ content: string; isMDX: boolean }> {
   for (const ext of [".mdx", ".md"]) {
     try {
-      const url = new URL(`../${basePath}${ext}`, import.meta.url);
-      const content = await Deno.readTextFile(url);
+      // CWD-relative path – works both in Vite dev and Deno Deploy production build
+      // (import.meta.url breaks in production because the built chunk is nested
+      // inside _fresh/server/assets/ so "../" doesn't reach the project root)
+      const content = await Deno.readTextFile(`./${basePath}${ext}`);
       return { content, isMDX: ext === ".mdx" };
     } catch {
       // next

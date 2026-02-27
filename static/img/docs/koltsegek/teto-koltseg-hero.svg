@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#F0F5FF" rx="0"/>
+  <!-- House with detailed roof -->
+  <g transform="translate(550, 40)">
+    <!-- House body -->
+    <rect x="80" y="280" width="340" height="200" fill="#D5DBDB" rx="4" stroke="#AEB6BF" stroke-width="2"/>
+    <!-- Roof - detailed with tiles -->
+    <polygon points="30,280 250,80 470,280" fill="#E67E22" stroke="#D35400" stroke-width="3"/>
+    <!-- Tile lines -->
+    <line x1="80" y1="230" x2="420" y2="230" stroke="#D35400" stroke-width="1.5" opacity="0.6"/>
+    <line x1="110" y1="190" x2="390" y2="190" stroke="#D35400" stroke-width="1.5" opacity="0.6"/>
+    <line x1="140" y1="150" x2="360" y2="150" stroke="#D35400" stroke-width="1.5" opacity="0.6"/>
+    <line x1="170" y1="120" x2="330" y2="120" stroke="#D35400" stroke-width="1.5" opacity="0.6"/>
+    <line x1="110" y1="260" x2="390" y2="260" stroke="#D35400" stroke-width="1.5" opacity="0.6"/>
+    <!-- Chimney -->
+    <rect x="330" y="100" width="40" height="90" fill="#95A5A6" stroke="#7F8C8D" stroke-width="2"/>
+    <rect x="325" y="95" width="50" height="12" fill="#7F8C8D" rx="2"/>
+    <!-- Window -->
+    <rect x="150" y="330" width="70" height="80" fill="#AED6F1" rx="3" stroke="#fff" stroke-width="3"/>
+    <line x1="185" y1="330" x2="185" y2="410" stroke="#fff" stroke-width="2"/>
+    <!-- Door -->
+    <rect x="280" y="360" width="70" height="120" fill="#8B6914" rx="3"/>
+    <circle cx="338" cy="425" r="5" fill="#D4AC0D"/>
+    <!-- Gutter -->
+    <line x1="30" y1="282" x2="30" y2="480" stroke="#7F8C8D" stroke-width="4"/>
+    <path d="M30,280 Q30,295 50,295" fill="none" stroke="#7F8C8D" stroke-width="3"/>
+  </g>
+  <!-- Cost breakdown badges -->
+  <rect x="60" y="100" width="380" height="55" rx="12" fill="#E67E22"/>
+  <text x="250" y="135" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#fff">Komplett tető: 2,8-7,5M Ft</text>
+  <rect x="60" y="175" width="380" height="50" rx="10" fill="#fff" stroke="#E67E22" stroke-width="2"/>
+  <text x="250" y="207" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#D35400">Szerkezet: 600e-1,6M Ft</text>
+  <rect x="60" y="240" width="380" height="50" rx="10" fill="#fff" stroke="#E67E22" stroke-width="2"/>
+  <text x="250" y="272" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#D35400">Fedés: 1-4,5M Ft (anyagtól függően)</text>
+  <rect x="60" y="305" width="380" height="50" rx="10" fill="#fff" stroke="#E67E22" stroke-width="2"/>
+  <text x="250" y="337" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#D35400">Szigetelés: 0,8-2,5M Ft</text>
+  <rect x="60" y="370" width="380" height="50" rx="10" fill="#fff" stroke="#E67E22" stroke-width="2"/>
+  <text x="250" y="402" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#D35400">Bádogos + kieg.: 300-600e Ft</text>
+  <!-- Warning badge -->
+  <rect x="60" y="445" width="380" height="45" rx="10" fill="#E74C3C" opacity="0.9"/>
+  <text x="250" y="475" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#fff">Kontyolt tető: +15-25% felár!</text>
+  <!-- Title -->
+  <text x="600" y="572" text-anchor="middle" font-family="sans-serif" font-size="44" font-weight="bold" fill="#2C3E50">Tető költsége 2026</text>
+  <!-- Brand -->
+  <text x="600" y="608" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#E67E22">hazepitesikalauz.hu</text>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#FDFEFE" rx="8"/>
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#2C3E50">Téglafal költség összehasonlítás (Ft/m² kész fal)</text>
+  <!-- Column headers -->
+  <text x="190" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#7F8C8D">Porotherm 30 N+F</text>
+  <text x="190" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#95A5A6">+ 10 cm EPS</text>
+  <text x="450" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#7F8C8D">Porotherm 44 X-therm</text>
+  <text x="450" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#95A5A6">szigetelés nélkül</text>
+  <text x="710" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#7F8C8D">Porotherm 44 Thermo</text>
+  <text x="710" y="96" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#95A5A6">prémium, szig. nélkül</text>
+  <!-- Stacked bars -->
+  <!-- Bar 1: Porotherm 30 + EPS = ~45,400 Ft/m² -->
+  <rect x="100" y="120" width="180" height="75" fill="#E74C3C" rx="4"/>
+  <text x="190" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Tégla: 14 900 Ft</text>
+  <rect x="100" y="200" width="180" height="55" fill="#F39C12" rx="0"/>
+  <text x="190" y="233" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Munka: 7 500 Ft</text>
+  <rect x="100" y="260" width="180" height="130" fill="#3498DB" rx="0"/>
+  <text x="190" y="320" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Szigetelés:</text>
+  <text x="190" y="340" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">23 000 Ft</text>
+  <rect x="100" y="395" width="180" height="30" fill="#2C3E50" rx="0 0 4 4"/>
+  <text x="190" y="416" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Összesen: ~45 400 Ft</text>
+  <!-- Bar 2: Porotherm 44 X-therm = ~32,900 Ft/m² -->
+  <rect x="360" y="120" width="180" height="105" fill="#E74C3C" rx="4"/>
+  <text x="450" y="175" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Tégla: 23 400 Ft</text>
+  <rect x="360" y="230" width="180" height="65" fill="#F39C12" rx="0"/>
+  <text x="450" y="268" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Munka: 9 500 Ft</text>
+  <rect x="360" y="300" width="180" height="10" fill="#3498DB" opacity="0.3" rx="0"/>
+  <rect x="360" y="315" width="180" height="30" fill="#27AE60" rx="0 0 4 4"/>
+  <text x="450" y="336" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Összesen: ~32 900 Ft</text>
+  <!-- Best value badge -->
+  <rect x="385" y="355" width="130" height="28" rx="14" fill="#27AE60"/>
+  <text x="450" y="374" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Legjobb érték</text>
+  <!-- Bar 3: Porotherm 44 Thermo = ~59,800 Ft/m² -->
+  <rect x="620" y="120" width="180" height="180" fill="#E74C3C" rx="4"/>
+  <text x="710" y="210" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Tégla: 50 300 Ft</text>
+  <rect x="620" y="305" width="180" height="65" fill="#F39C12" rx="0"/>
+  <text x="710" y="343" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#fff">Munka: 9 500 Ft</text>
+  <rect x="620" y="375" width="180" height="30" fill="#2C3E50" rx="0 0 4 4"/>
+  <text x="710" y="396" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Összesen: ~59 800 Ft</text>
+  <!-- Legend -->
+  <rect x="250" y="445" width="16" height="16" fill="#E74C3C" rx="2"/>
+  <text x="272" y="458" font-family="sans-serif" font-size="12" fill="#2C3E50">Tégla + habarcs</text>
+  <rect x="380" y="445" width="16" height="16" fill="#F39C12" rx="2"/>
+  <text x="402" y="458" font-family="sans-serif" font-size="12" fill="#2C3E50">Falazás munkadíj</text>
+  <rect x="510" y="445" width="16" height="16" fill="#3498DB" rx="2"/>
+  <text x="532" y="458" font-family="sans-serif" font-size="12" fill="#2C3E50">Külső hőszigetelés (ETICS)</text>
+  <!-- Source -->
+  <text x="450" y="500" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#95A5A6">Forrás: pthtegla.hu, SzakiWeb, homlokzatihoszigeteles.hu (2025-2026)</text>
+</svg>

@@ -1,6 +1,12 @@
 // Temporary diagnostic endpoint for Deno Deploy debugging
 // DELETE after issue is resolved
 
+import {
+  CATEGORIES,
+  TABLE_OF_CONTENTS,
+} from "../../data/docs.ts";
+import { frontMatter, renderMarkdown } from "../../utils/markdown.ts";
+
 export const handler = {
   async GET(_req: Request): Promise<Response> {
     const info: Record<string, unknown> = {};
@@ -10,52 +16,72 @@ export const handler = {
     info.importMetaUrl = import.meta.url;
     info.denoVersion = Deno.version;
 
-    // 2. Try listing content directory
+    // 2. Test data/docs.ts (CATEGORIES, TABLE_OF_CONTENTS)
+    info.categoriesCount = CATEGORIES.length;
+    info.categorySlugs = CATEGORIES.map((c) => c.slug);
+    info.tocCount = Object.keys(TABLE_OF_CONTENTS).length;
+    info.tocKeys = Object.keys(TABLE_OF_CONTENTS).slice(0, 10);
+
+    // 3. Test markdown.ts (frontMatter, renderMarkdown)
+    try {
+      const testMd = "---\ntitle: Test\n---\n## Hello\nWorld";
+      const { body, attrs } = frontMatter<Record<string, unknown>>(testMd);
+      const result = renderMarkdown(body);
+      info.markdownTest = `OK: attrs=${JSON.stringify(attrs)}, html=${result.html.length} chars`;
+    } catch (e) {
+      info.markdownTestError = String(e);
+    }
+
+    // 4. Test file reading with import.meta.url approach
+    const upPrefix = import.meta.url.includes("_fresh") ? "../../../" : "../";
+
+    // Try reading an actual MDX file that exists
+    const tocKeys = Object.keys(TABLE_OF_CONTENTS);
+    if (tocKeys.length > 0) {
+      const firstEntry = TABLE_OF_CONTENTS[tocKeys[0]];
+      info.firstEntry = firstEntry;
+
+      for (const ext of [".mdx", ".md"]) {
+        const testUrl = new URL(`${upPrefix}${firstEntry.file}${ext}`, import.meta.url);
+        info[`fileUrl_${ext}`] = testUrl.href;
+        try {
+          const text = await Deno.readTextFile(testUrl);
+          info[`fileRead_${ext}`] = `OK, ${text.length} chars`;
+          break;
+        } catch (e) {
+          info[`fileReadError_${ext}`] = String(e);
+        }
+      }
+    }
+
+    // 5. Try listing built files to verify the mdx chunk exists
     try {
       const entries: string[] = [];
-      for await (const entry of Deno.readDir("./content")) {
-        entries.push(`${entry.isDirectory ? "D" : "F"}: ${entry.name}`);
+      for await (const entry of Deno.readDir("_fresh/server/assets")) {
+        entries.push(entry.name);
       }
-      info.contentDir = entries;
+      info.builtChunks = entries.sort();
     } catch (e) {
-      info.contentDirError = String(e);
+      info.builtChunksError = String(e);
     }
 
-    // 3. Try CWD-relative file read
+    // 6. Try dynamically importing the slug route chunk
     try {
-      const text = await Deno.readTextFile("./content/alapok/hazepites-lepesrol-lepesre.mdx");
-      info.cwdRelativeRead = `OK, ${text.length} chars`;
+      const chunks = info.builtChunks as string[] | undefined;
+      const slugChunk = chunks?.find((f) => f.includes("slug"));
+      if (slugChunk) {
+        info.slugChunkName = slugChunk;
+        const chunkUrl = new URL(`${upPrefix}_fresh/server/assets/${slugChunk}`, import.meta.url);
+        info.slugChunkUrl = chunkUrl.href;
+        await import(chunkUrl.href);
+        info.slugChunkImport = "OK";
+      } else {
+        info.slugChunkImport = "SKIP: no slug chunk found";
+      }
     } catch (e) {
-      info.cwdRelativeReadError = String(e);
-    }
-
-    // 4. Try URL-based read (the current approach)
-    const upPrefix = import.meta.url.includes("_fresh") ? "../../../" : "../";
-    const testUrl = new URL(`${upPrefix}content/alapok/hazepites-lepesrol-lepesre.mdx`, import.meta.url);
-    info.resolvedUrl = testUrl.href;
-    try {
-      const text = await Deno.readTextFile(testUrl);
-      info.urlBasedRead = `OK, ${text.length} chars`;
-    } catch (e) {
-      info.urlBasedReadError = String(e);
-    }
-
-    // 5. Try reading from routes/ perspective (1 level up)
-    const testUrl2 = new URL(`../content/alapok/hazepites-lepesrol-lepesre.mdx`, import.meta.url);
-    info.resolvedUrl2 = testUrl2.href;
-    try {
-      const text = await Deno.readTextFile(testUrl2);
-      info.url1LevelRead = `OK, ${text.length} chars`;
-    } catch (e) {
-      info.url1LevelReadError = String(e);
-    }
-
-    // 6. Try /src/ prefix (Deno Deploy convention)
-    try {
-      const text = await Deno.readTextFile("/src/content/alapok/hazepites-lepesrol-lepesre.mdx");
-      info.srcPrefixRead = `OK, ${text.length} chars`;
-    } catch (e) {
-      info.srcPrefixReadError = String(e);
+      info.slugChunkImportError = e instanceof Error
+        ? `${e.name}: ${e.message}\n${e.stack}`
+        : String(e);
     }
 
     return new Response(JSON.stringify(info, null, 2), {

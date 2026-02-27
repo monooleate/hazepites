@@ -70,22 +70,6 @@ async function resolveContentFile(basePath: string): Promise<{ content: string; 
 
 export const handler = define.handlers<Data>({
   async GET(ctx) {
-    // ── DEBUG: temporary top-level catch to surface exact error on Deno Deploy ──
-    try { return await _handleGET(ctx); } catch (e: unknown) {
-      // Re-throw HttpError so Fresh shows 404/etc normally
-      if (e instanceof HttpError) throw e;
-      const msg = e instanceof Error ? `${e.name}: ${e.message}\n${e.stack}` : String(e);
-      console.error("[ROUTE ERROR]", msg);
-      // Return plain-text error so we can diagnose via curl
-      return new Response(`[ROUTE ERROR] ${msg}\n\nimport.meta.url=${import.meta.url}\n_CONTENT_UP=${_CONTENT_UP}`, {
-        status: 500, headers: { "Content-Type": "text/plain; charset=utf-8" },
-      });
-    }
-  },
-});
-
-// deno-lint-ignore no-explicit-any
-async function _handleGET(ctx: any) {
     const slug = ctx.params.slug;
 
     // ── Category overview page ──
@@ -272,7 +256,8 @@ async function _handleGET(ctx: any) {
       headings,
       islandName,
     });
-}
+  },
+});
 
 export default define.page<typeof handler>(function DocsPage(props) {
   const { page: pageData, renderedHtml, headings, islandName, categoryOverview } = props.data;

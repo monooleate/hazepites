@@ -11,7 +11,6 @@ import {
   type TableOfContentsEntry,
 } from "../data/docs.ts";
 import { frontMatter, renderMarkdown } from "../utils/markdown.ts";
-import { renderMDX, extractHeadingsFromHtml } from "../utils/mdx.ts";
 import { TableOfContents } from "../islands/TableOfContents.tsx";
 import HeadUpdater from "../islands/HeadUpdater.tsx";
 import CostCalculator from "../islands/CostCalculator.tsx";
@@ -223,6 +222,9 @@ async function _handleGET(ctx: any) {
 
     if (isMDX) {
       try {
+        // Dynamic import: keeps the heavy MDX pipeline (acorn, @mdx-js/mdx, …)
+        // out of this route chunk so the chunk loads successfully on Deno Deploy.
+        const { renderMDX, extractHeadingsFromHtml } = await import("../utils/mdx.ts");
         const mdxResult = await renderMDX(body, slug);
         renderedHtml = mdxResult.html;
         headings = extractHeadingsFromHtml(renderedHtml);

@@ -4,36 +4,61 @@ export default function ContactMe() {
   const form = useRef<HTMLFormElement>(null);
   const [sending, setSending] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
 
-  /* const sendEmail = async (e: Event) => {
+  const sendMessage = async (e: Event) => {
     e.preventDefault();
     setSending(true);
     setStatus("idle");
+    setErrorMsg("");
+
+    const fd = new FormData(form.current!);
 
     try {
-      const emailjs = await import("npm:@emailjs/browser@3.11.0");
-      await emailjs.default.sendForm(
-        "service_0gd1e5o",
-        "template_ef5lz0q",
-        form.current!,
-        "PzcQBDc6c2T1v5ss6",
-      );
-      form.current?.reset();
-      setStatus("success");
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          email: fd.get("email"),
+          subject: fd.get("subject"),
+          message: fd.get("message"),
+          website: fd.get("website"), // honeypot
+        }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.ok) {
+        form.current?.reset();
+        // Redirect to thank-you page
+        globalThis.location.href = "/koszonjuk";
+        return;
+      } else {
+        setStatus("error");
+        setErrorMsg(data.error ?? "Ismeretlen hiba történt.");
+      }
     } catch {
       setStatus("error");
+      setErrorMsg("Hálózati hiba. Ellenőrizd az internetkapcsolatod.");
     } finally {
       setSending(false);
     }
-  }; */
+  };
 
   return (
     <div class="max-w-xl mx-auto">
       <p class="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
-        Amennyiben bármilyen kérdésed van, vagy együttműködést szeretnél kezdeményezni, itt megteheted.
+        Kérdésed van, vagy együttműködést szeretnél? Írj nekünk — általában 1-2 munkanapon belül válaszolunk.
       </p>
 
-      <form ref={form} /* onSubmit={sendEmail} */ class="space-y-5">
+      <form ref={form} onSubmit={sendMessage} class="space-y-5">
+        {/* Honeypot — hidden from real users, bots fill it */}
+        <div class="absolute opacity-0 h-0 w-0 overflow-hidden" aria-hidden="true" tabIndex={-1}>
+          <label>Ne töltsd ki
+            <input type="text" name="website" tabIndex={-1} autocomplete="off" />
+          </label>
+        </div>
+
         <div>
           <label for="email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">
             Email cím
@@ -41,8 +66,8 @@ export default function ContactMe() {
           <input
             type="email"
             id="email"
-            name="user_email"
-            placeholder="email@email.hu"
+            name="email"
+            placeholder="neved@email.hu"
             required
             class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow"
           />
@@ -56,8 +81,10 @@ export default function ContactMe() {
             type="text"
             id="subject"
             name="subject"
-            placeholder="Érdeklődöm..."
+            placeholder="Miben segíthetünk?"
             required
+            minLength={2}
+            maxLength={200}
             class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow"
           />
         </div>
@@ -70,7 +97,10 @@ export default function ContactMe() {
             id="message"
             name="message"
             rows={5}
-            placeholder="Szeretném visszajelezni, hogy..."
+            placeholder="Írd le a kérdésed vagy javaslatod..."
+            required
+            minLength={10}
+            maxLength={5000}
             class="w-full px-4 py-2.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 outline-none transition-shadow resize-y"
           />
         </div>
@@ -78,33 +108,48 @@ export default function ContactMe() {
         <button
           type="submit"
           disabled={sending}
-          class="inline-flex items-center gap-2 px-6 py-2.5 bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-medium rounded-xl shadow-lg shadow-primary-500/20 transition-colors"
+          class="inline-flex items-center gap-2 px-6 py-2.5 bg-primary-600 hover:bg-primary-700 disabled:bg-primary-400 text-white font-medium rounded-xl shadow-lg shadow-primary-500/20 transition-colors cursor-pointer disabled:cursor-wait"
         >
-          {sending ? (
-            <>
-              <svg class="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24">
-                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
-                <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-              </svg>
-              Küldés...
-            </>
-          ) : "Küldés"}
+          {sending
+            ? (
+              <>
+                <svg class="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                </svg>
+                Küldés...
+              </>
+            )
+            : (
+              <>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
+                </svg>
+                Üzenet küldése
+              </>
+            )}
         </button>
       </form>
 
       {/* Status messages */}
       {status === "success" && (
-        <div class="mt-6 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800">
+        <div class="mt-6 p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/30 border border-emerald-200 dark:border-emerald-800 flex items-start gap-3">
+          <svg class="w-5 h-5 text-emerald-600 dark:text-emerald-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
           <p class="text-sm font-medium text-emerald-800 dark:text-emerald-300">
-            Üzenet sikeresen elküldve! Hamarosan felveszem veled a kapcsolatot.
+            Üzenet elküldve! 1-2 munkanapon belül válaszolunk.
           </p>
         </div>
       )}
 
       {status === "error" && (
-        <div class="mt-6 p-4 rounded-xl bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800">
+        <div class="mt-6 p-4 rounded-xl bg-red-50 dark:bg-red-950/30 border border-red-200 dark:border-red-800 flex items-start gap-3">
+          <svg class="w-5 h-5 text-red-600 dark:text-red-400 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+          </svg>
           <p class="text-sm font-medium text-red-800 dark:text-red-300">
-            Hiba történt az üzenet küldése közben. Kérlek, próbáld újra később.
+            {errorMsg || "Hiba történt. Próbáld újra később."}
           </p>
         </div>
       )}

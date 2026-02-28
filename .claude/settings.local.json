@@ -79,7 +79,10 @@
       "WebFetch(domain:faga.hu)",
       "Bash(git commit:*)",
       "Bash(python3 -m json.tool)",
-      "WebFetch(domain:api.github.com)"
+      "WebFetch(domain:api.github.com)",
+      "Bash(Select-String -Pattern 'href=\"\"[^\"\"]*\"\"' -AllMatches)",
+      "Bash(ForEach-Object { $_Matches })",
+      "Bash(Select-Object -First 25)"
     ]
   }
 }

@@ -38,7 +38,7 @@ const toc: RawTableOfContents = {
       pages: [
         // ["page", "bevezetes", "Háztípusok bevezetés"],
         ["page", "teglaepites", "Téglaépítés"],
-        // ["page", "ytong-porotherm", "Ytong és Porotherm"],
+        ["page", "ytong-porotherm", "Ytong és Porotherm"],
         // ["page", "vasszerkezetes-haz", "Vázszerkezetes ház"],
         // ["page", "konnyuszerkezetes-haz", "Könnyűszerkezetes ház"],
         // ["page", "fahaz", "Faház"],
@@ -94,7 +94,7 @@ const toc: RawTableOfContents = {
         ["page", "csok-plusz", "CSOK Plusz"],
         ["page", "falusi-csok", "Falusi CSOK"],
         ["page", "babavaro-hitel", "Babaváró hitel"],
-        // ["page", "zold-hitel", "Zöld hitel"],
+        ["page", "zold-hitel", "Zöld hitel"],
         // ["page", "epitesi-hitel", "Építési hitel"],
         // ["page", "lakashitel-osszehasonlitas", "Lakáshitel összehasonlítás"],
         // ["page", "allami-tamogatasok", "Állami támogatások összefoglaló"],

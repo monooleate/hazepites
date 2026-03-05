@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#EFF6FF" rx="0"/>
+  <!-- Background blocks pattern - Ytong style -->
+  <g opacity="0.08">
+    <rect x="50" y="100" width="150" height="60" rx="4" fill="#6B7280"/>
+    <rect x="210" y="100" width="150" height="60" rx="4" fill="#6B7280"/>
+    <rect x="370" y="100" width="150" height="60" rx="4" fill="#6B7280"/>
+    <rect x="130" y="170" width="150" height="60" rx="4" fill="#6B7280"/>
+    <rect x="290" y="170" width="150" height="60" rx="4" fill="#6B7280"/>
+    <rect x="50" y="240" width="150" height="60" rx="4" fill="#6B7280"/>
+    <rect x="210" y="240" width="150" height="60" rx="4" fill="#6B7280"/>
+    <rect x="370" y="240" width="150" height="60" rx="4" fill="#6B7280"/>
+  </g>
+  <!-- Ytong side - house -->
+  <g transform="translate(180, 100)">
+    <!-- House body - light gray (Ytong color) -->
+    <rect x="30" y="160" width="200" height="170" fill="#D1D5DB" rx="3" stroke="#9CA3AF" stroke-width="1.5"/>
+    <!-- Block lines -->
+    <line x1="30" y1="200" x2="230" y2="200" stroke="#9CA3AF" stroke-width="1" opacity="0.5"/>
+    <line x1="30" y1="240" x2="230" y2="240" stroke="#9CA3AF" stroke-width="1" opacity="0.5"/>
+    <line x1="30" y1="280" x2="230" y2="280" stroke="#9CA3AF" stroke-width="1" opacity="0.5"/>
+    <!-- Roof -->
+    <polygon points="15,160 130,70 245,160" fill="#6366F1" opacity="0.8"/>
+    <!-- Window -->
+    <rect x="60" y="210" width="50" height="55" fill="#BFDBFE" rx="2" stroke="#fff" stroke-width="2"/>
+    <line x1="85" y1="210" x2="85" y2="265" stroke="#fff" stroke-width="1.5"/>
+    <line x1="60" y1="237" x2="110" y2="237" stroke="#fff" stroke-width="1.5"/>
+    <!-- Door -->
+    <rect x="160" y="260" width="40" height="70" fill="#4F46E5" rx="2"/>
+    <circle cx="190" cy="298" r="3" fill="#FCD34D"/>
+    <!-- Label -->
+    <text x="130" y="360" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#4B5563">YTONG</text>
+  </g>
+  <!-- VS divider -->
+  <circle cx="600" cy="250" r="30" fill="#6366F1"/>
+  <text x="600" y="258" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#fff">VS</text>
+  <!-- Porotherm side - house -->
+  <g transform="translate(720, 100)">
+    <!-- House body - warm red/brown (Porotherm color) -->
+    <rect x="30" y="160" width="200" height="170" fill="#E74C3C" rx="3" stroke="#C0392B" stroke-width="1.5"/>
+    <!-- Brick lines -->
+    <line x1="30" y1="200" x2="230" y2="200" stroke="#C0392B" stroke-width="1.5"/>
+    <line x1="30" y1="240" x2="230" y2="240" stroke="#C0392B" stroke-width="1.5"/>
+    <line x1="30" y1="280" x2="230" y2="280" stroke="#C0392B" stroke-width="1.5"/>
+    <line x1="130" y1="160" x2="130" y2="200" stroke="#C0392B" stroke-width="1.5"/>
+    <line x1="80" y1="200" x2="80" y2="240" stroke="#C0392B" stroke-width="1.5"/>
+    <line x1="180" y1="200" x2="180" y2="240" stroke="#C0392B" stroke-width="1.5"/>
+    <!-- Roof -->
+    <polygon points="15,160 130,70 245,160" fill="#10B981" opacity="0.8"/>
+    <!-- Window -->
+    <rect x="60" y="210" width="50" height="55" fill="#BFDBFE" rx="2" stroke="#fff" stroke-width="2"/>
+    <line x1="85" y1="210" x2="85" y2="265" stroke="#fff" stroke-width="1.5"/>
+    <line x1="60" y1="237" x2="110" y2="237" stroke="#fff" stroke-width="1.5"/>
+    <!-- Door -->
+    <rect x="160" y="260" width="40" height="70" fill="#8B4513" rx="2"/>
+    <circle cx="190" cy="298" r="3" fill="#FCD34D"/>
+    <!-- Label -->
+    <text x="130" y="360" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#991B1B">POROTHERM</text>
+  </g>
+  <!-- Info badges -->
+  <rect x="70" y="420" width="300" height="50" rx="10" fill="#6366F1" opacity="0.9"/>
+  <text x="220" y="452" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#fff">Lambda 37,5 cm → U: 0,22</text>
+  <rect x="830" y="420" width="300" height="50" rx="10" fill="#E74C3C" opacity="0.9"/>
+  <text x="980" y="452" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#fff">44 X-therm → U: 0,21</text>
+  <!-- Price comparison -->
+  <rect x="70" y="480" width="300" height="45" rx="10" fill="#fff" stroke="#6366F1" stroke-width="2"/>
+  <text x="220" y="509" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600" fill="#4F46E5">Falrendszer: 7,5–9,5M Ft</text>
+  <rect x="830" y="480" width="300" height="45" rx="10" fill="#fff" stroke="#E74C3C" stroke-width="2"/>
+  <text x="980" y="509" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600" fill="#C0392B">Falrendszer: 9,5–12,5M Ft</text>
+  <!-- Title -->
+  <text x="600" y="575" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#1E293B">Ytong és Porotherm 2026</text>
+  <!-- Brand -->
+  <text x="600" y="610" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#6366F1">hazepitesikalauz.hu</text>
+</svg>

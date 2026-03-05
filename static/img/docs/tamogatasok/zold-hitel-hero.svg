@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#ECFDF5" rx="0"/>
+  <!-- Background leaf pattern -->
+  <g opacity="0.06">
+    <circle cx="100" cy="150" r="60" fill="#059669"/>
+    <circle cx="300" cy="120" r="45" fill="#059669"/>
+    <circle cx="500" cy="180" r="35" fill="#059669"/>
+    <circle cx="150" cy="280" r="50" fill="#059669"/>
+    <circle cx="400" cy="300" r="40" fill="#059669"/>
+  </g>
+  <!-- House with green energy elements -->
+  <g transform="translate(650, 60)">
+    <!-- House body -->
+    <rect x="50" y="180" width="300" height="230" fill="#fff" rx="6" stroke="#10B981" stroke-width="3"/>
+    <!-- Green roof -->
+    <polygon points="30,180 200,50 370,180" fill="#10B981" stroke="#059669" stroke-width="2"/>
+    <!-- Solar panels on roof -->
+    <rect x="120" y="95" width="40" height="25" fill="#1E40AF" rx="2" transform="rotate(-25, 140, 107)"/>
+    <rect x="165" y="80" width="40" height="25" fill="#1E40AF" rx="2" transform="rotate(-25, 185, 92)"/>
+    <rect x="210" y="110" width="40" height="25" fill="#1E40AF" rx="2" transform="rotate(25, 230, 122)"/>
+    <rect x="255" y="95" width="40" height="25" fill="#1E40AF" rx="2" transform="rotate(25, 275, 107)"/>
+    <!-- Window -->
+    <rect x="110" y="240" width="65" height="70" fill="#BFDBFE" rx="3" stroke="#10B981" stroke-width="2"/>
+    <line x1="142" y1="240" x2="142" y2="310" stroke="#10B981" stroke-width="1.5"/>
+    <line x1="110" y1="275" x2="175" y2="275" stroke="#10B981" stroke-width="1.5"/>
+    <!-- Window 2 -->
+    <rect x="230" y="240" width="65" height="70" fill="#BFDBFE" rx="3" stroke="#10B981" stroke-width="2"/>
+    <line x1="262" y1="240" x2="262" y2="310" stroke="#10B981" stroke-width="1.5"/>
+    <line x1="230" y1="275" x2="295" y2="275" stroke="#10B981" stroke-width="1.5"/>
+    <!-- Door -->
+    <rect x="168" y="330" width="60" height="80" fill="#059669" rx="3"/>
+    <circle cx="218" cy="375" r="4" fill="#FCD34D"/>
+    <!-- A+ badge -->
+    <circle cx="365" cy="200" r="35" fill="#10B981" stroke="#059669" stroke-width="2"/>
+    <text x="365" y="197" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#fff">A+</text>
+    <text x="365" y="215" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#fff">energia</text>
+    <!-- Heat pump icon -->
+    <rect x="360" y="350" width="50" height="50" fill="#D1FAE5" rx="6" stroke="#10B981" stroke-width="1.5"/>
+    <text x="385" y="382" text-anchor="middle" font-family="sans-serif" font-size="20">🌡</text>
+  </g>
+  <!-- Key info badges -->
+  <rect x="60" y="130" width="370" height="55" rx="12" fill="#059669"/>
+  <text x="245" y="165" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#fff">Zöld MFL: min. 0,5% kamatkedvezmény</text>
+  <rect x="60" y="205" width="370" height="55" rx="12" fill="#10B981"/>
+  <text x="245" y="240" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#fff">10% önerő (20% helyett)</text>
+  <rect x="60" y="280" width="370" height="50" rx="12" fill="#34D399" opacity="0.9"/>
+  <text x="245" y="312" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="600" fill="#064E3B">60% JTM – jövedelemtől függetlenül</text>
+  <!-- Energy requirement -->
+  <rect x="60" y="355" width="370" height="45" rx="10" fill="#fff" stroke="#10B981" stroke-width="2"/>
+  <text x="245" y="384" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="600" fill="#059669">Feltétel: A+ besorolás (≤ 68 kWh/m²/év)</text>
+  <!-- Combinable badge -->
+  <rect x="60" y="420" width="370" height="45" rx="10" fill="#fff" stroke="#059669" stroke-width="2"/>
+  <text x="245" y="449" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="600" fill="#059669">Kombinálható: CSOK Plusz + Otthon Start + Babaváró</text>
+  <!-- Title -->
+  <text x="600" y="545" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#064E3B">Zöld hitel 2026</text>
+  <!-- Subtitle -->
+  <text x="600" y="580" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#065F46">Feltételek, kamatok, valós kedvezmények</text>
+  <!-- Brand -->
+  <text x="600" y="615" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#10B981">hazepitesikalauz.hu</text>
+</svg>

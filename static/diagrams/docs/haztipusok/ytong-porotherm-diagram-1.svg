@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#FAFBFC" rx="8"/>
+  <!-- Title -->
+  <text x="450" y="40" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">Ytong vs Porotherm – döntési diagram</text>
+  <!-- Start node -->
+  <rect x="325" y="60" width="250" height="45" rx="22" fill="#6366F1"/>
+  <text x="450" y="88" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#fff">Mi a legfontosabb szempont?</text>
+  <!-- Branch lines -->
+  <line x1="370" y1="105" x2="200" y2="150" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="530" y1="105" x2="700" y2="150" stroke="#94A3B8" stroke-width="2"/>
+  <!-- Left branch: Hőszigetelés & ár -->
+  <rect x="80" y="150" width="240" height="40" rx="8" fill="#EEF2FF" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="200" y="175" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#4F46E5">Hőszigetelés és ár</text>
+  <!-- Right branch: Tartósság & hangszigtelés -->
+  <rect x="580" y="150" width="240" height="40" rx="8" fill="#FEF2F2" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="700" y="175" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#C0392B">Tartósság és hangszigetelés</text>
+  <!-- Left sub-question -->
+  <line x1="200" y1="190" x2="200" y2="220" stroke="#94A3B8" stroke-width="1.5"/>
+  <rect x="80" y="220" width="240" height="35" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="200" y="243" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#475569">Kell-e ETICS rendszer nélkül?</text>
+  <!-- Left: Yes -->
+  <line x1="140" y1="255" x2="110" y2="290" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="110" y="285" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">Igen</text>
+  <rect x="30" y="295" width="170" height="55" rx="8" fill="#DBEAFE" stroke="#6366F1" stroke-width="1.5"/>
+  <text x="115" y="317" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#4F46E5">Ytong Lambda 37,5</text>
+  <text x="115" y="337" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">U: 0,22 · nem kell EPS</text>
+  <!-- Left: No -->
+  <line x1="260" y1="255" x2="290" y2="290" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="290" y="285" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">Nem fontos</text>
+  <rect x="215" y="295" width="170" height="55" rx="8" fill="#F0FDF4" stroke="#10B981" stroke-width="1.5"/>
+  <text x="300" y="317" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669">Porotherm 30 + EPS</text>
+  <text x="300" y="337" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">olcsó tégla · szabad EPS</text>
+  <!-- Right sub-question -->
+  <line x1="700" y1="190" x2="700" y2="220" stroke="#94A3B8" stroke-width="1.5"/>
+  <rect x="580" y="220" width="240" height="35" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="700" y="243" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#475569">Fontos a másodpiaci érték?</text>
+  <!-- Right: Yes -->
+  <line x1="640" y1="255" x2="610" y2="290" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="610" y="285" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">Igen</text>
+  <rect x="525" y="295" width="170" height="55" rx="8" fill="#FEE2E2" stroke="#E74C3C" stroke-width="1.5"/>
+  <text x="610" y="317" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C0392B">Porotherm 44 X-therm</text>
+  <text x="610" y="337" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">U: 0,21 · nem kell EPS</text>
+  <!-- Right: No -->
+  <line x1="760" y1="255" x2="790" y2="290" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="790" y="285" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">Nem fontos</text>
+  <rect x="710" y="295" width="170" height="55" rx="8" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="795" y="317" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#B45309">Ytong Lambda 37,5</text>
+  <text x="795" y="337" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6B7280">olcsóbb · vékonyabb fal</text>
+  <!-- Bottom summary boxes -->
+  <line x1="115" y1="350" x2="115" y2="390" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="300" y1="350" x2="300" y2="390" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="610" y1="350" x2="610" y2="390" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4"/>
+  <line x1="795" y1="350" x2="795" y2="390" stroke="#94A3B8" stroke-width="1" stroke-dasharray="4"/>
+  <!-- Cost summary row -->
+  <rect x="20" y="390" width="860" height="45" rx="6" fill="#F1F5F9"/>
+  <text x="450" y="398" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748B">FALRENDSZER KÖLTSÉGE (120 m²-es ház, ~200 m² fal)</text>
+  <text x="115" y="425" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#4F46E5">7,5–9,5M Ft</text>
+  <text x="300" y="425" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#059669">11–15,5M Ft</text>
+  <text x="610" y="425" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#C0392B">9,5–12,5M Ft</text>
+  <text x="795" y="425" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#B45309">7,5–9,5M Ft</text>
+  <!-- Key properties -->
+  <rect x="20" y="450" width="860" height="140" rx="6" fill="#fff" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="450" y="472" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#64748B">FŐ JELLEMZŐK</text>
+  <!-- Column headers -->
+  <text x="115" y="497" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#4F46E5">Ytong Lambda</text>
+  <text x="300" y="497" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#059669">PTH 30 + EPS</text>
+  <text x="610" y="497" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#C0392B">PTH 44 X-therm</text>
+  <text x="795" y="497" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#B45309">Ytong Lambda</text>
+  <!-- Properties -->
+  <text x="115" y="520" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hőszig.: kiváló</text>
+  <text x="115" y="536" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hang: közepes</text>
+  <text x="115" y="552" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Falvastagság: 37,5 cm</text>
+  <text x="115" y="568" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Élet: 70–80 év</text>
+  <text x="300" y="520" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hőszig.: jó (EPS-sel)</text>
+  <text x="300" y="536" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hang: jó</text>
+  <text x="300" y="552" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Falvastagság: 30+12 cm</text>
+  <text x="300" y="568" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Élet: 100+ év</text>
+  <text x="610" y="520" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hőszig.: kiváló</text>
+  <text x="610" y="536" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hang: kiváló</text>
+  <text x="610" y="552" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Falvastagság: 44 cm</text>
+  <text x="610" y="568" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Élet: 100+ év</text>
+  <text x="795" y="520" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hőszig.: kiváló</text>
+  <text x="795" y="536" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hang: közepes</text>
+  <text x="795" y="552" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Falvastagság: 37,5 cm</text>
+  <text x="795" y="568" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Élet: 70–80 év</text>
+</svg>

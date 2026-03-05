@@ -82,7 +82,11 @@
       "WebFetch(domain:api.github.com)",
       "Bash(Select-String -Pattern 'href=\"\"[^\"\"]*\"\"' -AllMatches)",
       "Bash(ForEach-Object { $_Matches })",
-      "Bash(Select-Object -First 25)"
+      "Bash(Select-Object -First 25)",
+      "WebFetch(domain:www.bekasepker.hu)",
+      "WebFetch(domain:epitoiparimagazin.hu)",
+      "WebFetch(domain:www.dalostuzep.hu)",
+      "WebFetch(domain:pthtegla.hu)"
     ]
   }
 }

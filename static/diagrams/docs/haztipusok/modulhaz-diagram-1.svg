@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#FAFBFC" rx="8"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1E293B">Modulház, konténerház, mobilház – döntési fa</text>
+  <!-- Start -->
+  <rect x="300" y="55" width="300" height="40" rx="20" fill="#3B82F6"/>
+  <text x="450" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">Mire kell az épület?</text>
+  <!-- Branches -->
+  <line x1="350" y1="95" x2="150" y2="140" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="450" y1="95" x2="450" y2="140" stroke="#94A3B8" stroke-width="2"/>
+  <line x1="550" y1="95" x2="750" y2="140" stroke="#94A3B8" stroke-width="2"/>
+  <text x="240" y="118" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#16A34A">Állandó lakás</text>
+  <text x="450" y="118" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#F59E0B">Hétvégi ház / iroda</text>
+  <text x="660" y="118" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#8B5CF6">Ideiglenes / mobil</text>
+  <!-- Left: Permanent home -->
+  <rect x="20" y="140" width="260" height="75" rx="8" fill="#F0FDF4" stroke="#16A34A" stroke-width="1.5"/>
+  <text x="150" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#15803D">MODULHÁZ (prefab)</text>
+  <text x="150" y="180" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#166534">450–700k Ft/m² kulcsrakész</text>
+  <text x="150" y="196" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#059669">✓ Hitelképes ✓ CSOK ✓ Engedélyezett</text>
+  <text x="150" y="210" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#059669">✓ Ingatlan-nyilvántartás</text>
+  <!-- Center: Weekend/office -->
+  <rect x="320" y="140" width="260" height="75" rx="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5"/>
+  <text x="450" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#B45309">KONTÉNERHÁZ</text>
+  <text x="450" y="180" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#92400E">200–400k Ft/m²</text>
+  <text x="450" y="196" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#DC2626">✗ Nincs lakáshitel ✗ Nincs CSOK</text>
+  <text x="450" y="210" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#F59E0B">⚠ Jogi helyzet bizonytalan</text>
+  <!-- Right: Temporary -->
+  <rect x="620" y="140" width="260" height="75" rx="8" fill="#F5F3FF" stroke="#8B5CF6" stroke-width="1.5"/>
+  <text x="750" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#6D28D9">MOBILHÁZ</text>
+  <text x="750" y="180" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#5B21B6">100–250k Ft/m²</text>
+  <text x="750" y="196" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#DC2626">✗ Nem ingatlan ✗ Nem biztosítható</text>
+  <text x="750" y="210" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#DC2626">✗ Nem hitelképes ✗ Gyenge szigetelés</text>
+  <!-- Second question for modulház -->
+  <line x1="150" y1="215" x2="150" y2="250" stroke="#94A3B8" stroke-width="1.5"/>
+  <rect x="50" y="250" width="200" height="30" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="150" y="270" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#475569">Kell-e zöld hitel (A+)?</text>
+  <line x1="100" y1="280" x2="70" y2="310" stroke="#94A3B8" stroke-width="1.5"/>
+  <line x1="200" y1="280" x2="230" y2="310" stroke="#94A3B8" stroke-width="1.5"/>
+  <text x="70" y="300" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#16A34A">IGEN</text>
+  <text x="230" y="300" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="600" fill="#64748B">NEM</text>
+  <!-- A+ modulház -->
+  <rect x="10" y="310" width="130" height="55" rx="6" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+  <text x="75" y="330" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#059669">Prémium modul</text>
+  <text x="75" y="346" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#065F46">590–700k Ft/m²</text>
+  <text x="75" y="360" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#065F46">A+ besorolás</text>
+  <!-- Normal modulház -->
+  <rect x="160" y="310" width="130" height="55" rx="6" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="225" y="330" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#475569">Alap modul</text>
+  <text x="225" y="346" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#64748B">450–590k Ft/m²</text>
+  <text x="225" y="360" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#64748B">BB–CC besorolás</text>
+  <!-- Bottom comparison -->
+  <rect x="30" y="400" width="840" height="110" rx="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+  <text x="450" y="425" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1E293B">ÖSSZEHASONLÍTÁS</text>
+  <text x="120" y="450" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#64748B">Szempont</text>
+  <text x="300" y="450" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#16A34A">Modulház</text>
+  <text x="480" y="450" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#F59E0B">Konténerház</text>
+  <text x="660" y="450" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#8B5CF6">Mobilház</text>
+  <text x="810" y="450" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="600" fill="#DC2626">Téglaház</text>
+  <line x1="50" y1="456" x2="850" y2="456" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="120" y="474" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Hitelképes?</text>
+  <text x="300" y="474" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#16A34A">IGEN*</text>
+  <text x="480" y="474" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#DC2626">NEM</text>
+  <text x="660" y="474" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#DC2626">NEM</text>
+  <text x="810" y="474" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#16A34A">IGEN</text>
+  <text x="120" y="492" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">Építési idő</text>
+  <text x="300" y="492" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#16A34A">3–5 hó</text>
+  <text x="480" y="492" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#F59E0B">2–4 hó</text>
+  <text x="660" y="492" text-anchor="middle" font-family="sans-serif" font-size="10" font-weight="bold" fill="#059669">1–2 hó</text>
+  <text x="810" y="492" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#DC2626">12–24 hó</text>
+  <text x="300" y="510" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#94A3B8">*szilárd alap + engedély esetén</text>
+</svg>

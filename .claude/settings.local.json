@@ -86,7 +86,8 @@
       "WebFetch(domain:www.bekasepker.hu)",
       "WebFetch(domain:epitoiparimagazin.hu)",
       "WebFetch(domain:www.dalostuzep.hu)",
-      "WebFetch(domain:pthtegla.hu)"
+      "WebFetch(domain:pthtegla.hu)",
+      "WebSearch"
     ]
   }
 }

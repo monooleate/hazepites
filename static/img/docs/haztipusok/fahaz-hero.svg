@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FEF7ED" rx="0"/>
+  <!-- Background wood grain pattern -->
+  <g opacity="0.05">
+    <line x1="0" y1="80" x2="500" y2="80" stroke="#92400E" stroke-width="3"/>
+    <line x1="0" y1="120" x2="480" y2="120" stroke="#92400E" stroke-width="2"/>
+    <line x1="0" y1="160" x2="520" y2="160" stroke="#92400E" stroke-width="3"/>
+    <line x1="0" y1="200" x2="490" y2="200" stroke="#92400E" stroke-width="2"/>
+    <line x1="0" y1="240" x2="510" y2="240" stroke="#92400E" stroke-width="3"/>
+    <line x1="0" y1="280" x2="485" y2="280" stroke="#92400E" stroke-width="2"/>
+    <line x1="0" y1="320" x2="505" y2="320" stroke="#92400E" stroke-width="3"/>
+  </g>
+  <!-- Log cabin illustration -->
+  <g transform="translate(660, 50)">
+    <!-- Logs (horizontal rounded) -->
+    <rect x="40" y="180" width="320" height="30" rx="14" fill="#A0522D" stroke="#8B4513" stroke-width="1"/>
+    <rect x="40" y="210" width="320" height="30" rx="14" fill="#B8733A" stroke="#8B4513" stroke-width="1"/>
+    <rect x="40" y="240" width="320" height="30" rx="14" fill="#A0522D" stroke="#8B4513" stroke-width="1"/>
+    <rect x="40" y="270" width="320" height="30" rx="14" fill="#B8733A" stroke="#8B4513" stroke-width="1"/>
+    <rect x="40" y="300" width="320" height="30" rx="14" fill="#A0522D" stroke="#8B4513" stroke-width="1"/>
+    <rect x="40" y="330" width="320" height="30" rx="14" fill="#B8733A" stroke="#8B4513" stroke-width="1"/>
+    <rect x="40" y="360" width="320" height="30" rx="14" fill="#A0522D" stroke="#8B4513" stroke-width="1"/>
+    <rect x="40" y="390" width="320" height="30" rx="14" fill="#B8733A" stroke="#8B4513" stroke-width="1"/>
+    <!-- Roof -->
+    <polygon points="20,180 200,60 380,180" fill="#654321" stroke="#4A2C0A" stroke-width="2"/>
+    <!-- Window -->
+    <rect x="100" y="260" width="55" height="60" fill="#BFDBFE" rx="2" stroke="#FEF3C7" stroke-width="3"/>
+    <line x1="127" y1="260" x2="127" y2="320" stroke="#FEF3C7" stroke-width="2"/>
+    <line x1="100" y1="290" x2="155" y2="290" stroke="#FEF3C7" stroke-width="2"/>
+    <!-- Window 2 -->
+    <rect x="240" y="260" width="55" height="60" fill="#BFDBFE" rx="2" stroke="#FEF3C7" stroke-width="3"/>
+    <line x1="267" y1="260" x2="267" y2="320" stroke="#FEF3C7" stroke-width="2"/>
+    <line x1="240" y1="290" x2="295" y2="290" stroke="#FEF3C7" stroke-width="2"/>
+    <!-- Door -->
+    <rect x="165" y="340" width="55" height="80" fill="#654321" rx="3"/>
+    <circle cx="210" cy="385" r="4" fill="#FCD34D"/>
+    <!-- Tree icon -->
+    <circle cx="400" cy="340" r="35" fill="#22C55E" opacity="0.3"/>
+    <polygon points="400,285 375,340 425,340" fill="#16A34A"/>
+    <polygon points="400,305 370,355 430,355" fill="#15803D"/>
+    <rect x="396" y="355" width="8" height="25" fill="#92400E"/>
+    <!-- CO2 badge -->
+    <circle cx="400" cy="200" r="30" fill="#16A34A"/>
+    <text x="400" y="195" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff">CO₂</text>
+    <text x="400" y="212" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#fff">tárolás</text>
+  </g>
+  <!-- Info badges -->
+  <rect x="60" y="100" width="360" height="55" rx="12" fill="#92400E"/>
+  <text x="240" y="135" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#fff">Rönkház: 450–750 ezer Ft/m²</text>
+  <rect x="60" y="175" width="360" height="50" rx="12" fill="#A0522D"/>
+  <text x="240" y="207" text-anchor="middle" font-family="sans-serif" font-size="19" font-weight="600" fill="#fff">Gerendaház: 400–600 ezer Ft/m²</text>
+  <rect x="60" y="245" width="360" height="50" rx="12" fill="#B8733A"/>
+  <text x="240" y="277" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="600" fill="#fff">Fa vázszerkezet: 330–550 ezer Ft/m²</text>
+  <!-- Sustainability badge -->
+  <rect x="60" y="320" width="360" height="50" rx="12" fill="#16A34A"/>
+  <text x="240" y="352" text-anchor="middle" font-family="sans-serif" font-size="17" font-weight="600" fill="#fff">15–25 tonna CO₂ tárolás / ház</text>
+  <!-- Types list -->
+  <rect x="60" y="395" width="170" height="38" rx="8" fill="#fff" stroke="#92400E" stroke-width="2"/>
+  <text x="145" y="420" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#92400E">Rönkház</text>
+  <rect x="240" y="395" width="170" height="38" rx="8" fill="#fff" stroke="#92400E" stroke-width="2"/>
+  <text x="325" y="420" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#92400E">Gerendaház</text>
+  <rect x="60" y="443" width="170" height="38" rx="8" fill="#fff" stroke="#92400E" stroke-width="2"/>
+  <text x="145" y="468" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#92400E">CLT tömörfa</text>
+  <rect x="240" y="443" width="170" height="38" rx="8" fill="#fff" stroke="#16A34A" stroke-width="2"/>
+  <text x="325" y="468" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="600" fill="#16A34A">Fa vázszerkezet</text>
+  <!-- Title -->
+  <text x="600" y="540" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#4A2C0A">Faház építés 2026</text>
+  <!-- Subtitle -->
+  <text x="600" y="578" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#78350F">Rönkház, gerendaház, CLT – valós árak</text>
+  <!-- Brand -->
+  <text x="600" y="615" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#92400E">hazepitesikalauz.hu</text>
+</svg>

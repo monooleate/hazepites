@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0F172A"/>
+  <defs>
+    <linearGradient id="mbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#mbg)"/>
+  <!-- Factory icon -->
+  <rect x="120" y="200" width="200" height="140" rx="6" fill="#334155" stroke="#64748B" stroke-width="1.5"/>
+  <rect x="140" y="220" width="40" height="30" rx="2" fill="#3B82F6" opacity="0.3"/>
+  <rect x="200" y="220" width="40" height="30" rx="2" fill="#3B82F6" opacity="0.3"/>
+  <rect x="260" y="220" width="40" height="30" rx="2" fill="#3B82F6" opacity="0.3"/>
+  <text x="220" y="300" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#94A3B8">GYÁR</text>
+  <text x="220" y="320" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748B">4–8 hét</text>
+  <!-- Arrow 1 -->
+  <line x1="340" y1="270" x2="420" y2="270" stroke="#F59E0B" stroke-width="3"/>
+  <polygon points="420,260 440,270 420,280" fill="#F59E0B"/>
+  <text x="380" y="255" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#FBBF24">szállítás</text>
+  <!-- Truck -->
+  <rect x="450" y="240" width="80" height="50" rx="4" fill="#475569"/>
+  <rect x="530" y="255" width="30" height="35" rx="3" fill="#334155"/>
+  <circle cx="470" cy="300" r="8" fill="#64748B"/>
+  <circle cx="510" cy="300" r="8" fill="#64748B"/>
+  <circle cx="545" cy="300" r="8" fill="#64748B"/>
+  <!-- Arrow 2 -->
+  <line x1="580" y1="270" x2="660" y2="270" stroke="#F59E0B" stroke-width="3"/>
+  <polygon points="660,260 680,270 660,280" fill="#F59E0B"/>
+  <text x="620" y="255" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#FBBF24">daru</text>
+  <!-- House modules being assembled -->
+  <rect x="700" y="220" width="120" height="80" rx="4" fill="#16A34A" opacity="0.3" stroke="#22C55E" stroke-width="2"/>
+  <rect x="830" y="220" width="120" height="80" rx="4" fill="#3B82F6" opacity="0.3" stroke="#3B82F6" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="760" y="265" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#86EFAC">Modul 1</text>
+  <text x="890" y="265" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#7DD3FC">Modul 2</text>
+  <!-- Roof on assembled -->
+  <polygon points="700,220 820,160 950,220" fill="#334155" stroke="#64748B" stroke-width="1"/>
+  <text x="825" y="330" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#94A3B8">HELYSZÍN</text>
+  <text x="825" y="350" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748B">1–4 hét összeszerelés</text>
+  <!-- Title -->
+  <text x="600" y="70" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#F8FAFC">Modulház építés 2026</text>
+  <text x="600" y="105" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#94A3B8">Árak, típusok és a valóság</text>
+  <!-- Key metrics -->
+  <rect x="80" y="420" width="240" height="90" rx="12" fill="#F59E0B" opacity="0.12" stroke="#FBBF24" stroke-width="1"/>
+  <text x="200" y="455" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="bold" fill="#FBBF24">450–700k</text>
+  <text x="200" y="480" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#FDE68A">Ft/m² kulcsrakész</text>
+  <rect x="360" y="420" width="240" height="90" rx="12" fill="#3B82F6" opacity="0.12" stroke="#60A5FA" stroke-width="1"/>
+  <text x="480" y="455" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="bold" fill="#60A5FA">3–5 hónap</text>
+  <text x="480" y="480" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#93C5FD">tervezéstől beköltözésig</text>
+  <rect x="640" y="420" width="240" height="90" rx="12" fill="#22C55E" opacity="0.12" stroke="#4ADE80" stroke-width="1"/>
+  <text x="760" y="455" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="bold" fill="#4ADE80">–10–15%</text>
+  <text x="760" y="480" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#86EFAC">vs. téglaház ár</text>
+  <rect x="920" y="420" width="200" height="90" rx="12" fill="#EF4444" opacity="0.12" stroke="#F87171" stroke-width="1"/>
+  <text x="1020" y="455" text-anchor="middle" font-family="sans-serif" font-size="30" font-weight="bold" fill="#F87171">–15–25%</text>
+  <text x="1020" y="480" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#FCA5A5">másodpiaci érték</text>
+  <!-- Brand -->
+  <text x="600" y="610" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#475569">hazepitesikalauz.hu</text>
+</svg>

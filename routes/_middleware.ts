@@ -1,10 +1,31 @@
 import type { FreshContext } from "fresh";
 
+/**
+ * Kategória index → első aktív cikk redirect térkép.
+ * Ha egy kategória URL-re érkezik látogató (pl. /haztipusok),
+ * 301-gyel továbbítjuk az első releváns cikkre.
+ */
+const CATEGORY_REDIRECTS: Record<string, string> = {
+  "/alapok": "/",
+  "/haztipusok": "/haztipusok/teglaepites",
+  "/haztipus-osszehasonlitasok": "/haztipus-osszehasonlitasok/tegla-vs-ytong",
+  "/koltsegek": "/koltsegek/hazepites-koltseg-2026",
+  "/tamogatasok": "/tamogatasok/csok-plusz",
+  "/energia": "/energia/hoszigeteles-tipusok",
+  "/tervezes": "/",
+  "/jog": "/",
+  "/kivitelezes": "/kivitelezes/kivitelezo-valasztas",
+  "/telek": "/telek/telekvalasztas",
+  "/gyik": "/",
+  "/eszkozok": "/",
+};
+
 export async function handler(ctx: FreshContext) {
   const url = new URL(ctx.req.url);
+  const isProd = url.hostname !== "localhost" && url.hostname !== "127.0.0.1";
 
   // HTTPS + www redirect (production only)
-  if (url.hostname !== "localhost" && url.hostname !== "127.0.0.1") {
+  if (isProd) {
     if (url.protocol !== "https:" || url.hostname === "www.hazepitesikalauz.hu") {
       url.protocol = "https:";
       url.hostname = "hazepitesikalauz.hu";
@@ -24,16 +45,50 @@ export async function handler(ctx: FreshContext) {
     });
   }
 
+  // Category index redirects (e.g. /haztipusok → /haztipusok/teglaepites)
+  const redirect = CATEGORY_REDIRECTS[url.pathname];
+  if (redirect) {
+    return new Response(null, {
+      status: 301,
+      headers: { Location: redirect },
+    });
+  }
+
   const resp = await ctx.next();
 
-  // Security headers
+  // ── Security headers ──────────────────────────────────────────────
   resp.headers.set("X-Content-Type-Options", "nosniff");
   resp.headers.set("X-Frame-Options", "SAMEORIGIN");
   resp.headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   resp.headers.set("X-DNS-Prefetch-Control", "on");
   resp.headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=()");
 
-  // Cache static assets (fonts, images, CSS, JS)
+  // HSTS — 2 év, includeSubDomains, preload-ready
+  if (isProd) {
+    resp.headers.set(
+      "Strict-Transport-Security",
+      "max-age=63072000; includeSubDomains; preload",
+    );
+  }
+
+  // Content-Security-Policy
+  resp.headers.set(
+    "Content-Security-Policy",
+    [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com",
+      "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net",
+      "img-src 'self' data: https:",
+      "font-src 'self' data:",
+      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com",
+      "frame-src 'none'",
+      "object-src 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
+    ].join("; "),
+  );
+
+  // ── Cache headers ─────────────────────────────────────────────────
   const ext = url.pathname.split(".").pop()?.toLowerCase();
   if (ext && ["woff2", "woff", "ttf", "otf"].includes(ext)) {
     resp.headers.set("Cache-Control", "public, max-age=31536000, immutable");
@@ -42,6 +97,11 @@ export async function handler(ctx: FreshContext) {
   } else if (ext && ["css", "js"].includes(ext) && url.pathname.includes("__frsh_c=")) {
     // Vite hashed assets — immutable
     resp.headers.set("Cache-Control", "public, max-age=31536000, immutable");
+  } else if (!ext || ext === url.pathname.split("/").pop()) {
+    // HTML responses — rövid kliens cache, hosszabb CDN cache
+    if (!resp.headers.has("Cache-Control")) {
+      resp.headers.set("Cache-Control", "public, max-age=0, s-maxage=600, stale-while-revalidate=120");
+    }
   }
 
   return resp;

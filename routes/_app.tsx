@@ -43,6 +43,7 @@ export default define.page(function App({ Component, state, url }) {
 
         {/* Twitter Card */}
         <meta name="twitter:card" content={state.ogImage ? "summary_large_image" : "summary"} />
+        <meta name="twitter:site" content="@hazepitesikalauz" />
         {state.title && <meta name="twitter:title" content={state.title} />}
         {state.description && <meta name="twitter:description" content={state.description} />}
         {state.ogImage && <meta name="twitter:image" content={state.ogImage} />}

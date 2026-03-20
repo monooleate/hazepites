@@ -57,8 +57,8 @@ const toc: RawTableOfContents = {
       pages: [
         ["page", "tegla-vs-ytong", "Tégla vs Ytong"],
         ["page", "tegla-vs-konnyuszerkezet", "Tégla vs könnyűszerkezet"],
-        // ["page", "passzivhaz-vs-hagyomanyos", "Passzívház vs hagyományos"],
-        // ["page", "fahaz-vs-tegla", "Faház vs tégla"],
+        ["page", "passzivhaz-vs-hagyomanyos", "Passzívház vs hagyományos"],
+        ["page", "fahaz-vs-tegla", "Faház vs tégla"],
         // ["page", "modulhaz-vs-hagyomanyos", "Modulház vs hagyományos"],
         // ["page", "prefab-vs-helyszini", "Prefab vs helyszíni építés"],
         // ["page", "egyszintes-vs-emeletes", "Egyszintes vs emeletes"],

@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#0f172a" rx="12"/>
+
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white">Faház vs Téglaház – szempontonkénti összehasonlítás</text>
+
+  <!-- Radar-style comparison table -->
+  <g transform="translate(50,60)">
+    <!-- Headers -->
+    <rect x="0" y="0" width="250" height="35" fill="#1e293b" rx="6"/>
+    <text x="125" y="23" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8" font-weight="bold">Szempont</text>
+
+    <rect x="260" y="0" width="180" height="35" fill="#78350f" rx="6" opacity="0.6"/>
+    <text x="350" y="23" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24" font-weight="bold">Faház</text>
+
+    <rect x="450" y="0" width="180" height="35" fill="#7f1d1d" rx="6" opacity="0.6"/>
+    <text x="540" y="23" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">Téglaház</text>
+
+    <rect x="640" y="0" width="160" height="35" fill="#1e293b" rx="6"/>
+    <text x="720" y="23" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8" font-weight="bold">Ki nyer?</text>
+
+    <!-- Row 1: Cost -->
+    <rect x="0" y="42" width="250" height="38" fill="#1e293b" rx="4" opacity="0.5"/>
+    <text x="15" y="65" font-family="sans-serif" font-size="13" fill="#e2e8f0">Kulcsrakész ár (Ft/m²)</text>
+    <rect x="260" y="42" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="350" y="65" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">330-750k</text>
+    <rect x="450" y="42" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="540" y="65" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">600-850k</text>
+    <rect x="640" y="42" width="160" height="38" fill="#166534" rx="4" opacity="0.3"/>
+    <text x="720" y="65" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#22c55e" font-weight="bold">FA (fa váz)</text>
+
+    <!-- Row 2: Build time -->
+    <rect x="0" y="86" width="250" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="15" y="109" font-family="sans-serif" font-size="13" fill="#e2e8f0">Építési idő</text>
+    <rect x="260" y="86" width="180" height="38" fill="#1e293b" rx="4" opacity="0.2"/>
+    <text x="350" y="109" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">3-8 hónap</text>
+    <rect x="450" y="86" width="180" height="38" fill="#1e293b" rx="4" opacity="0.2"/>
+    <text x="540" y="109" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">8-14 hónap</text>
+    <rect x="640" y="86" width="160" height="38" fill="#166534" rx="4" opacity="0.3"/>
+    <text x="720" y="109" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#22c55e" font-weight="bold">FA</text>
+
+    <!-- Row 3: Lifespan -->
+    <rect x="0" y="130" width="250" height="38" fill="#1e293b" rx="4" opacity="0.5"/>
+    <text x="15" y="153" font-family="sans-serif" font-size="13" fill="#e2e8f0">Élettartam</text>
+    <rect x="260" y="130" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="350" y="153" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">50-120 év</text>
+    <rect x="450" y="130" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="540" y="153" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">100-150 év</text>
+    <rect x="640" y="130" width="160" height="38" fill="#991b1b" rx="4" opacity="0.3"/>
+    <text x="720" y="153" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">TÉGLA</text>
+
+    <!-- Row 4: Maintenance -->
+    <rect x="0" y="174" width="250" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="15" y="197" font-family="sans-serif" font-size="13" fill="#e2e8f0">Karbantartás / év</text>
+    <rect x="260" y="174" width="180" height="38" fill="#1e293b" rx="4" opacity="0.2"/>
+    <text x="350" y="197" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">30-80e Ft</text>
+    <rect x="450" y="174" width="180" height="38" fill="#1e293b" rx="4" opacity="0.2"/>
+    <text x="540" y="197" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">~0 Ft</text>
+    <rect x="640" y="174" width="160" height="38" fill="#991b1b" rx="4" opacity="0.3"/>
+    <text x="720" y="197" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">TÉGLA</text>
+
+    <!-- Row 5: Energy -->
+    <rect x="0" y="218" width="250" height="38" fill="#1e293b" rx="4" opacity="0.5"/>
+    <text x="15" y="241" font-family="sans-serif" font-size="13" fill="#e2e8f0">Energetika (U-érték)</text>
+    <rect x="260" y="218" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="350" y="241" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">0,18-0,25</text>
+    <rect x="450" y="218" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="540" y="241" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">0,18-0,25</text>
+    <rect x="640" y="218" width="160" height="38" fill="#475569" rx="4" opacity="0.3"/>
+    <text x="720" y="241" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8" font-weight="bold">DÖNTETLEN</text>
+
+    <!-- Row 6: Sound -->
+    <rect x="0" y="262" width="250" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="15" y="285" font-family="sans-serif" font-size="13" fill="#e2e8f0">Hangszigetelés</text>
+    <rect x="260" y="262" width="180" height="38" fill="#1e293b" rx="4" opacity="0.2"/>
+    <text x="350" y="285" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">35-48 dB</text>
+    <rect x="450" y="262" width="180" height="38" fill="#1e293b" rx="4" opacity="0.2"/>
+    <text x="540" y="285" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">50-55 dB</text>
+    <rect x="640" y="262" width="160" height="38" fill="#991b1b" rx="4" opacity="0.3"/>
+    <text x="720" y="285" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">TÉGLA</text>
+
+    <!-- Row 7: Fire -->
+    <rect x="0" y="306" width="250" height="38" fill="#1e293b" rx="4" opacity="0.5"/>
+    <text x="15" y="329" font-family="sans-serif" font-size="13" fill="#e2e8f0">Tűzállóság (rönk / tégla)</text>
+    <rect x="260" y="306" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="350" y="329" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">REI 60-90</text>
+    <rect x="450" y="306" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="540" y="329" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">REI 90-120</text>
+    <rect x="640" y="306" width="160" height="38" fill="#991b1b" rx="4" opacity="0.3"/>
+    <text x="720" y="329" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">TÉGLA</text>
+
+    <!-- Row 8: CO2 -->
+    <rect x="0" y="350" width="250" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="15" y="373" font-family="sans-serif" font-size="13" fill="#e2e8f0">CO₂ hatás (100 m²)</text>
+    <rect x="260" y="350" width="180" height="38" fill="#1e293b" rx="4" opacity="0.2"/>
+    <text x="350" y="373" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#22c55e">-15-25t (megkötés)</text>
+    <rect x="450" y="350" width="180" height="38" fill="#1e293b" rx="4" opacity="0.2"/>
+    <text x="540" y="373" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ef4444">+30-50t (kibocsátás)</text>
+    <rect x="640" y="350" width="160" height="38" fill="#166534" rx="4" opacity="0.3"/>
+    <text x="720" y="373" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#22c55e" font-weight="bold">FA</text>
+
+    <!-- Row 9: Resale -->
+    <rect x="0" y="394" width="250" height="38" fill="#1e293b" rx="4" opacity="0.5"/>
+    <text x="15" y="417" font-family="sans-serif" font-size="13" fill="#e2e8f0">Másodpiaci érték</text>
+    <rect x="260" y="394" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="350" y="417" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">-15-30%</text>
+    <rect x="450" y="394" width="180" height="38" fill="#1e293b" rx="4" opacity="0.3"/>
+    <text x="540" y="417" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">Referencia</text>
+    <rect x="640" y="394" width="160" height="38" fill="#991b1b" rx="4" opacity="0.3"/>
+    <text x="720" y="417" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">TÉGLA</text>
+  </g>
+
+  <!-- Summary -->
+  <text x="450" y="478" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">FA nyer: ár, sebesség, CO₂ | TÉGLA nyer: tartósság, karbantartás, hang, tűz, másodpiac</text>
+  <text x="450" y="495" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#475569">hazepitesikalauz.hu</text>
+</svg>

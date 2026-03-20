@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Left house: Hagyományos -->
+  <g transform="translate(200,200)">
+    <!-- House body -->
+    <rect x="0" y="60" width="180" height="140" fill="#475569" stroke="#64748b" stroke-width="2" rx="4"/>
+    <!-- Roof -->
+    <polygon points="90,-10 -20,60 200,60" fill="#64748b" stroke="#94a3b8" stroke-width="2"/>
+    <!-- Thin wall indicator -->
+    <rect x="-8" y="60" width="8" height="140" fill="#f97316" opacity="0.7" rx="2"/>
+    <text x="-4" y="135" text-anchor="middle" font-family="sans-serif" font-size="9" fill="white" font-weight="bold">10</text>
+    <!-- Windows (2-pane) -->
+    <rect x="25" y="90" width="50" height="40" fill="#1e3a5f" stroke="#94a3b8" stroke-width="2" rx="2"/>
+    <line x1="50" y1="90" x2="50" y2="130" stroke="#94a3b8" stroke-width="1.5"/>
+    <rect x="105" y="90" width="50" height="40" fill="#1e3a5f" stroke="#94a3b8" stroke-width="2" rx="2"/>
+    <line x1="130" y1="90" x2="130" y2="130" stroke="#94a3b8" stroke-width="1.5"/>
+    <!-- Door -->
+    <rect x="65" y="140" width="50" height="60" fill="#334155" stroke="#94a3b8" stroke-width="2" rx="2"/>
+    <!-- Heat waves escaping -->
+    <path d="M-15,80 Q-25,85 -15,90 Q-5,95 -15,100" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+    <path d="M-15,110 Q-25,115 -15,120 Q-5,125 -15,130" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+    <path d="M195,80 Q205,85 195,90 Q185,95 195,100" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+    <path d="M195,110 Q205,115 195,120 Q185,125 195,130" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+    <!-- Label -->
+    <text x="90" y="230" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#94a3b8" font-weight="bold">HAGYOMÁNYOS</text>
+    <text x="90" y="252" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748b">(nZEB szint)</text>
+  </g>
+
+  <!-- VS circle -->
+  <circle cx="600" cy="300" r="36" fill="#6366f1" opacity="0.9"/>
+  <text x="600" y="308" text-anchor="middle" font-family="sans-serif" font-size="22" fill="white" font-weight="bold">VS</text>
+
+  <!-- Right house: Passzívház -->
+  <g transform="translate(820,200)">
+    <!-- House body -->
+    <rect x="0" y="60" width="180" height="140" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" rx="4"/>
+    <!-- Roof -->
+    <polygon points="90,-10 -20,60 200,60" fill="#1e40af" stroke="#60a5fa" stroke-width="2"/>
+    <!-- Thick wall indicator -->
+    <rect x="-18" y="60" width="18" height="140" fill="#22c55e" opacity="0.7" rx="2"/>
+    <text x="-9" y="135" text-anchor="middle" font-family="sans-serif" font-size="9" fill="white" font-weight="bold">25</text>
+    <!-- Windows (3-pane) -->
+    <rect x="25" y="90" width="50" height="40" fill="#0f2942" stroke="#60a5fa" stroke-width="2" rx="2"/>
+    <line x1="42" y1="90" x2="42" y2="130" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="58" y1="90" x2="58" y2="130" stroke="#60a5fa" stroke-width="1"/>
+    <rect x="105" y="90" width="50" height="40" fill="#0f2942" stroke="#60a5fa" stroke-width="2" rx="2"/>
+    <line x1="122" y1="90" x2="122" y2="130" stroke="#60a5fa" stroke-width="1"/>
+    <line x1="138" y1="90" x2="138" y2="130" stroke="#60a5fa" stroke-width="1"/>
+    <!-- Door -->
+    <rect x="65" y="140" width="50" height="60" fill="#1e3a5f" stroke="#60a5fa" stroke-width="2" rx="2"/>
+    <!-- HRV icon on roof -->
+    <rect x="140" y="25" width="30" height="25" fill="#22c55e" rx="4" opacity="0.8"/>
+    <text x="155" y="42" text-anchor="middle" font-family="sans-serif" font-size="9" fill="white" font-weight="bold">HRV</text>
+    <!-- No heat escaping - shield icon -->
+    <circle cx="90" cy="135" r="16" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.5"/>
+    <path d="M82,135 L88,141 L98,129" fill="none" stroke="#22c55e" stroke-width="2.5" opacity="0.7"/>
+    <!-- Label -->
+    <text x="90" y="230" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#60a5fa" font-weight="bold">PASSZÍVHÁZ</text>
+    <text x="90" y="252" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#3b82f6">(PHI minősített)</text>
+  </g>
+
+  <!-- Metric badges bottom -->
+  <g transform="translate(0,480)">
+    <!-- Badge 1 -->
+    <rect x="60" y="0" width="240" height="65" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="180" y="25" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">Fűtési igény</text>
+    <text x="120" y="50" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f97316" font-weight="bold">68-100</text>
+    <text x="180" y="50" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748b">vs</text>
+    <text x="230" y="50" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#22c55e" font-weight="bold">15 kWh/m²</text>
+
+    <!-- Badge 2 -->
+    <rect x="330" y="0" width="240" height="65" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="450" y="25" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">Kulcsrakész ár</text>
+    <text x="390" y="50" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f97316" font-weight="bold">420-600</text>
+    <text x="450" y="50" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748b">vs</text>
+    <text x="510" y="50" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#60a5fa" font-weight="bold">550-800</text>
+
+    <!-- Badge 3 -->
+    <rect x="600" y="0" width="240" height="65" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="720" y="25" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">Fűtésszámla / év</text>
+    <text x="660" y="50" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f97316" font-weight="bold">250e Ft</text>
+    <text x="720" y="50" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#64748b">vs</text>
+    <text x="775" y="50" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#22c55e" font-weight="bold">48e Ft</text>
+
+    <!-- Badge 4 -->
+    <rect x="870" y="0" width="270" height="65" rx="10" fill="#1e293b" stroke="#475569" stroke-width="1"/>
+    <text x="1005" y="25" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">Megtérülés (zöld hitellel)</text>
+    <text x="1005" y="50" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#22c55e" font-weight="bold">8-12 év</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="65" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="bold" fill="white">Passzívház vs Hagyományos ház</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#94a3b8">Megéri a 15-30% felár? – 2026-os összehasonlítás</text>
+
+  <!-- Brand -->
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#475569">hazepitesikalauz.hu</text>
+</svg>

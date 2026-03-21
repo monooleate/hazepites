@@ -33,6 +33,22 @@ const ISLAND_REGISTRY: Record<string, ComponentType> = {
 // Category slugs for overview pages
 const CATEGORY_SLUGS = new Set(CATEGORIES.map((c) => c.slug));
 
+// Category descriptions for overview pages
+const CATEGORY_DESCRIPTIONS: Record<string, string> = {
+  alapok: "Házépítés előtt állsz? Itt találod az induláshoz szükséges alapismereteket.",
+  haztipusok: "Tégla, könnyűszerkezet, fa, modul – melyik technológia illik hozzád?",
+  "haztipus-osszehasonlitasok": "Háztípusok egymás mellé állítva: árak, előnyök, hátrányok objektíven.",
+  koltsegek: "Négyzetméter árak, tételek, rejtett költségek – valós számokkal, 2026-os árakon.",
+  tamogatasok: "CSOK Plusz, Babaváró, Zöld hitel, Falusi CSOK – feltételek és összegek egy helyen.",
+  energia: "Hőszigetelés, fűtés, napelem – hogy a ház ne csak szép legyen, hanem olcsón is üzemeljen.",
+  tervezes: "Építész választás, alaprajz, engedélyek – a tervezési szakasz lépésről lépésre.",
+  jog: "Építési engedélyek, bejelentés, garancia – a jogi és adminisztrációs teendők.",
+  kivitelezes: "Kivitelező választás, műszaki ellenőr, minőségellenőrzés – a megvalósítás szakasza.",
+  telek: "Telekválasztás, közmű, talajvizsgálat – mire figyelj a helyszín kiválasztásánál.",
+  gyik: "A leggyakrabban feltett kérdések házépítésről, rövid és érthető válaszokkal.",
+  eszkozok: "Kalkulátorok és interaktív eszközök a házépítés tervezéséhez.",
+};
+
 interface Data {
   page: Page;
   isMDX: boolean;
@@ -345,14 +361,25 @@ export default define.page<typeof handler>(function DocsPage(props) {
                   {categoryOverview.title}
                 </h1>
                 <p class="text-lg text-slate-600 dark:text-slate-400 mb-8">
-                  {categoryOverview.slug === "eszkozok"
-                    ? "Interaktív kalkulátorok a házépítés megtervezéséhez – költségek, hitelek, támogatások, energia és rezsi egy helyen."
-                    : "Az alábbi cikkek és útmutatók segítenek eligazodni a témában."}
+                  {CATEGORY_DESCRIPTIONS[categoryOverview.slug] ?? "Az alábbi cikkek és útmutatók segítenek eligazodni a témában."}
                 </p>
 
                 {categoryOverview.slug === "eszkozok" ? (
                   /* ── Eszközök: rich card grid ── */
                   <EszkozokGrid entries={categoryOverview.entries as TableOfContentsEntry[]} />
+                ) : categoryOverview.entries.length === 0 ? (
+                  /* ── Üres kategória ── */
+                  <div class="p-8 rounded-xl border-2 border-dashed border-slate-300 dark:border-slate-600 text-center">
+                    <div class="flex items-center justify-center w-16 h-16 rounded-2xl bg-slate-100 dark:bg-slate-800 mx-auto mb-4">
+                      <svg class="w-8 h-8 text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-slate-600 dark:text-slate-400 mb-2">Hamarosan</h3>
+                    <p class="text-sm text-slate-500 dark:text-slate-400">
+                      A tartalom előkészítés alatt áll. Nézz vissza később, vagy böngészd a többi kategóriát.
+                    </p>
+                  </div>
                 ) : (
                   <div class="grid gap-3">
                     {categoryOverview.entries.map((entry) => {

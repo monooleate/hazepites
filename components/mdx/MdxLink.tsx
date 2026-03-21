@@ -17,12 +17,21 @@ interface MdxLinkProps {
   [key: string]: unknown;
 }
 
+// Saját domain-ek ahol link juice-t akarunk átadni (nincs noreferrer/nofollow)
+const DOFOLLOW_DOMAINS = ["matekmegoldasok.hu"];
+
 export default function MdxLink({ href, children, ...rest }: MdxLinkProps) {
   const isExternal = href && /^https?:\/\//.test(href);
 
   if (isExternal) {
+    const isDofollow = DOFOLLOW_DOMAINS.some((d) => href!.includes(d));
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" {...rest}>
+      <a
+        href={href}
+        target="_blank"
+        rel={isDofollow ? "noopener" : "noopener noreferrer"}
+        {...rest}
+      >
         {children}
       </a>
     );

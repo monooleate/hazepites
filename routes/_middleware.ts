@@ -1,23 +1,12 @@
 import type { FreshContext } from "fresh";
 
 /**
- * Kategória index → első aktív cikk redirect térkép.
- * Ha egy kategória URL-re érkezik látogató (pl. /haztipusok),
- * 301-gyel továbbítjuk az első releváns cikkre.
+ * Kategória index → áttekintés oldal.
+ * Minden kategória saját áttekintés oldalt kap (auto-generated a route-ban).
+ * Nincs redirect — a sidebar "Áttekintés" linkek közvetlenül a kategória oldalra mutatnak.
  */
 const CATEGORY_REDIRECTS: Record<string, string> = {
-  "/alapok": "/",
-  "/haztipusok": "/haztipusok/teglaepites",
-  "/haztipus-osszehasonlitasok": "/haztipus-osszehasonlitasok/tegla-vs-ytong",
-  "/koltsegek": "/koltsegek/hazepites-koltseg-2026",
-  "/tamogatasok": "/tamogatasok/csok-plusz",
-  "/energia": "/energia/hoszigeteles-tipusok",
-  "/tervezes": "/",
-  "/jog": "/",
-  "/kivitelezes": "/kivitelezes/kivitelezo-valasztas",
-  "/telek": "/telek/telekvalasztas",
-  "/gyik": "/",
-  // "/eszkozok": felhasználóbarát áttekintés oldal, nincs redirect
+  // Minden kategória áttekintés oldalra megy – nincs redirect
 };
 
 export async function handler(ctx: FreshContext) {

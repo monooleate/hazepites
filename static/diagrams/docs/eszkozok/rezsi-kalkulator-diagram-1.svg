@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#0f172a" rx="12"/>
+
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="white">Fűtési rendszerek – 20 éves összköltség (120 m², jó szigetelés)</text>
+  <text x="450" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">Beruházás + 20 év üzemeltetés, 2026-os árakon</text>
+
+  <!-- Y axis labels -->
+  <text x="55" y="100" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">18M</text>
+  <text x="55" y="155" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">15M</text>
+  <text x="55" y="210" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">12M</text>
+  <text x="55" y="265" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">9M</text>
+  <text x="55" y="320" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">6M</text>
+  <text x="55" y="375" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">3M</text>
+  <text x="55" y="430" text-anchor="end" font-family="sans-serif" font-size="11" fill="#94a3b8">0</text>
+
+  <!-- Grid lines -->
+  <g stroke="#1e293b" stroke-width="1">
+    <line x1="65" y1="95" x2="860" y2="95"/>
+    <line x1="65" y1="150" x2="860" y2="150"/>
+    <line x1="65" y1="205" x2="860" y2="205"/>
+    <line x1="65" y1="260" x2="860" y2="260"/>
+    <line x1="65" y1="315" x2="860" y2="315"/>
+    <line x1="65" y1="370" x2="860" y2="370"/>
+    <line x1="65" y1="425" x2="860" y2="425"/>
+  </g>
+
+  <!-- Bar 1: Elektromos konvektor – 15.1M total -->
+  <g transform="translate(100,0)">
+    <!-- Beruházás (0.5M) -->
+    <rect x="0" y="407" width="100" height="18" fill="#475569" rx="2"/>
+    <!-- Rezsi (14.6M) -->
+    <rect x="0" y="140" width="100" height="267" fill="#ef4444" rx="2" opacity="0.8"/>
+    <text x="50" y="280" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white">14,6M Ft</text>
+    <text x="50" y="420" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white">0,5M</text>
+    <text x="50" y="128" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5" font-weight="bold">15,1M</text>
+    <text x="50" y="455" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">Elektromos</text>
+    <text x="50" y="467" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">konvektor</text>
+  </g>
+
+  <!-- Bar 2: Gáz + radiátor – 9.9M total -->
+  <g transform="translate(255,0)">
+    <!-- Beruházás (1.5M) -->
+    <rect x="0" y="398" width="100" height="27" fill="#475569" rx="2"/>
+    <!-- Rezsi (8.4M) -->
+    <rect x="0" y="244" width="100" height="154" fill="#f59e0b" rx="2" opacity="0.8"/>
+    <text x="50" y="328" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white">8,4M Ft</text>
+    <text x="50" y="416" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white">1,5M</text>
+    <text x="50" y="232" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24" font-weight="bold">9,9M</text>
+    <text x="50" y="455" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">Gáz +</text>
+    <text x="50" y="467" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">radiátor</text>
+  </g>
+
+  <!-- Bar 3: Hőszivattyú + padló – 8.7M total -->
+  <g transform="translate(410,0)">
+    <!-- Beruházás (4.5M) -->
+    <rect x="0" y="343" width="100" height="82" fill="#475569" rx="2"/>
+    <!-- Rezsi (4.2M) -->
+    <rect x="0" y="266" width="100" height="77" fill="#22c55e" rx="2" opacity="0.8"/>
+    <text x="50" y="310" text-anchor="middle" font-family="sans-serif" font-size="11" fill="white">4,2M Ft</text>
+    <text x="50" y="390" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white">4,5M</text>
+    <text x="50" y="254" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#22c55e" font-weight="bold">8,7M</text>
+    <text x="50" y="455" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">Hőszivattyú</text>
+    <text x="50" y="467" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">+ padlófűtés</text>
+  </g>
+
+  <!-- Bar 4: Hőszivattyú + padló + napelem – 7.4M total -->
+  <g transform="translate(565,0)">
+    <!-- Beruházás fűtés (4.5M) -->
+    <rect x="0" y="343" width="100" height="82" fill="#475569" rx="2"/>
+    <!-- Napelem beruházás (2.1M) -->
+    <rect x="0" y="305" width="100" height="38" fill="#3b82f6" rx="2" opacity="0.6"/>
+    <!-- Rezsi (0.8M) -->
+    <rect x="0" y="290" width="100" height="15" fill="#22c55e" rx="2" opacity="0.8"/>
+    <text x="50" y="365" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white">4,5M</text>
+    <text x="50" y="328" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white">2,1M</text>
+    <text x="50" y="278" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#3b82f6" font-weight="bold">7,4M</text>
+    <text x="50" y="455" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">Hőszivattyú</text>
+    <text x="50" y="467" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">+ napelem</text>
+  </g>
+
+  <!-- Bar 5: Passzívház + hőszivattyú + napelem – 6.5M total -->
+  <g transform="translate(720,0)">
+    <!-- Beruházás fűtés (4.5M) -->
+    <rect x="0" y="343" width="100" height="82" fill="#475569" rx="2"/>
+    <!-- Napelem (2.1M) -->
+    <rect x="0" y="305" width="100" height="38" fill="#3b82f6" rx="2" opacity="0.6"/>
+    <!-- Rezsi - nagyon alacsony (valójában magas beruházás, alacsony rezsi) -->
+    <rect x="0" y="298" width="100" height="7" fill="#22c55e" rx="2" opacity="0.8"/>
+    <text x="50" y="365" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white">4,5M</text>
+    <text x="50" y="328" text-anchor="middle" font-family="sans-serif" font-size="10" fill="white">2,1M</text>
+    <text x="50" y="286" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#818cf8" font-weight="bold">6,7M</text>
+    <text x="50" y="455" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">Passzívház</text>
+    <text x="50" y="467" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">+ hősz + nap</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(65,480)">
+    <rect x="0" y="0" width="14" height="10" fill="#475569" rx="2"/>
+    <text x="20" y="9" font-family="sans-serif" font-size="10" fill="#94a3b8">Beruházás</text>
+
+    <rect x="120" y="0" width="14" height="10" fill="#22c55e" rx="2" opacity="0.8"/>
+    <text x="140" y="9" font-family="sans-serif" font-size="10" fill="#94a3b8">20 év rezsi (fűtés+HMV)</text>
+
+    <rect x="330" y="0" width="14" height="10" fill="#3b82f6" rx="2" opacity="0.6"/>
+    <text x="350" y="9" font-family="sans-serif" font-size="10" fill="#94a3b8">Napelem beruházás</text>
+
+    <rect x="520" y="0" width="14" height="10" fill="#ef4444" rx="2" opacity="0.8"/>
+    <text x="540" y="9" font-family="sans-serif" font-size="10" fill="#94a3b8">Magas rezsi (elektromos)</text>
+
+    <text x="795" y="9" text-anchor="end" font-family="sans-serif" font-size="10" fill="#475569">hazepitesikalauz.hu</text>
+  </g>
+</svg>

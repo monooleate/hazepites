@@ -87,7 +87,9 @@
       "WebFetch(domain:epitoiparimagazin.hu)",
       "WebFetch(domain:www.dalostuzep.hu)",
       "WebFetch(domain:pthtegla.hu)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(for path:*)",
+      "Bash(do echo:*)"
     ]
   }
 }

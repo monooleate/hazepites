@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a" rx="0"/>
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+
+  <!-- Energy class scale -->
+  <g transform="translate(200, 120)">
+    <!-- Color bars -->
+    <rect x="0" y="0" width="100" height="28" rx="4" fill="#059669"/>
+    <text x="110" y="20" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">AA++</text>
+    <text x="160" y="20" font-family="sans-serif" font-size="12" fill="#94a3b8">0-40 kWh</text>
+
+    <rect x="0" y="34" width="130" height="28" rx="4" fill="#10b981"/>
+    <text x="140" y="54" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">AA+</text>
+    <text x="180" y="54" font-family="sans-serif" font-size="12" fill="#94a3b8">41-60 kWh</text>
+
+    <rect x="0" y="68" width="160" height="28" rx="4" fill="#84cc16"/>
+    <text x="170" y="88" font-family="sans-serif" font-size="14" font-weight="bold" fill="#a3e635">AA</text>
+    <text x="200" y="88" font-family="sans-serif" font-size="12" fill="#94a3b8">61-80 kWh</text>
+
+    <rect x="0" y="102" width="200" height="28" rx="4" fill="#eab308"/>
+    <text x="210" y="122" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fbbf24">BB</text>
+    <text x="240" y="122" font-family="sans-serif" font-size="12" fill="#94a3b8">81-100 kWh</text>
+
+    <rect x="0" y="136" width="240" height="28" rx="4" fill="#f97316"/>
+    <text x="250" y="156" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fb923c">CC</text>
+    <text x="280" y="156" font-family="sans-serif" font-size="12" fill="#94a3b8">101-130 kWh</text>
+
+    <rect x="0" y="170" width="290" height="28" rx="4" fill="#ef4444"/>
+    <text x="300" y="190" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f87171">DD</text>
+    <text x="330" y="190" font-family="sans-serif" font-size="12" fill="#94a3b8">131-160 kWh</text>
+
+    <rect x="0" y="204" width="350" height="28" rx="4" fill="#991b1b"/>
+    <text x="360" y="224" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fca5a5">EE+</text>
+    <text x="400" y="224" font-family="sans-serif" font-size="12" fill="#94a3b8">161+ kWh</text>
+  </g>
+
+  <!-- House with energy elements -->
+  <g transform="translate(850, 220)">
+    <!-- House outline -->
+    <polygon points="-80,0 0,-60 80,0" fill="none" stroke="#60a5fa" stroke-width="2"/>
+    <rect x="-60" y="0" width="120" height="80" fill="none" stroke="#60a5fa" stroke-width="2" rx="3"/>
+    <!-- Insulation layer -->
+    <rect x="-68" y="-4" width="136" height="88" fill="none" stroke="#10b981" stroke-width="3" stroke-dasharray="6,4" rx="6"/>
+    <!-- Solar panel on roof -->
+    <rect x="-50" y="-42" width="40" height="24" fill="#1e40af" stroke="#60a5fa" stroke-width="1.5" rx="2" transform="rotate(-37, -30, -30)"/>
+    <!-- Window -->
+    <rect x="-35" y="20" width="25" height="25" fill="#1e3a5f" stroke="#60a5fa" stroke-width="1.5" rx="2"/>
+    <!-- Heat pump icon -->
+    <rect x="20" y="25" width="30" height="35" fill="#064e3b" stroke="#10b981" stroke-width="1.5" rx="3"/>
+    <text x="35" y="47" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#34d399">HP</text>
+  </g>
+
+  <!-- BB requirement marker -->
+  <g transform="translate(200, 260)">
+    <line x1="200" y1="0" x2="200" y2="-18" stroke="#fbbf24" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="210" y="-4" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fbbf24">← 2024-es követelmény</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="500" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#f1f5f9">Energia-hatékonysági kalkulátor</text>
+  <text x="600" y="535" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#94a3b8">Épület energetikai besorolás becslése</text>
+
+  <!-- Brand -->
+  <text x="600" y="575" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3b82f6">hazepitesikalauz.hu</text>
+</svg>

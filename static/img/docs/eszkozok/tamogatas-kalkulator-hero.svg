@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="bold" fill="white">Támogatás kalkulátor</text>
+  <text x="600" y="90" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#94a3b8">CSOK Plusz + Falusi CSOK + Babaváró – 2026</text>
+
+  <!-- Calculator icon -->
+  <g transform="translate(500,120)">
+    <rect x="0" y="0" width="200" height="260" rx="16" fill="#1e293b" stroke="#475569" stroke-width="2"/>
+    <!-- Screen -->
+    <rect x="15" y="15" width="170" height="60" rx="8" fill="#0f172a"/>
+    <text x="170" y="55" text-anchor="end" font-family="sans-serif" font-size="28" font-weight="bold" fill="#22c55e">96 M Ft</text>
+    <!-- Buttons grid -->
+    <g transform="translate(15,90)">
+      <rect x="0" y="0" width="38" height="35" rx="6" fill="#334155"/><text x="19" y="23" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">7</text>
+      <rect x="44" y="0" width="38" height="35" rx="6" fill="#334155"/><text x="63" y="23" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">8</text>
+      <rect x="88" y="0" width="38" height="35" rx="6" fill="#334155"/><text x="107" y="23" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">9</text>
+      <rect x="132" y="0" width="38" height="35" rx="6" fill="#166534"/><text x="151" y="23" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#22c55e">+</text>
+
+      <rect x="0" y="42" width="38" height="35" rx="6" fill="#334155"/><text x="19" y="65" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">4</text>
+      <rect x="44" y="42" width="38" height="35" rx="6" fill="#334155"/><text x="63" y="65" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">5</text>
+      <rect x="88" y="42" width="38" height="35" rx="6" fill="#334155"/><text x="107" y="65" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">6</text>
+      <rect x="132" y="42" width="38" height="35" rx="6" fill="#166534"/><text x="151" y="65" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#22c55e">-</text>
+
+      <rect x="0" y="84" width="38" height="35" rx="6" fill="#334155"/><text x="19" y="107" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">1</text>
+      <rect x="44" y="84" width="38" height="35" rx="6" fill="#334155"/><text x="63" y="107" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">2</text>
+      <rect x="88" y="84" width="38" height="35" rx="6" fill="#334155"/><text x="107" y="107" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">3</text>
+      <rect x="132" y="84" width="38" height="35" rx="6" fill="#6366f1"/><text x="151" y="107" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white">=</text>
+
+      <rect x="0" y="126" width="82" height="35" rx="6" fill="#334155"/><text x="41" y="149" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">0</text>
+      <rect x="88" y="126" width="82" height="35" rx="6" fill="#334155"/><text x="129" y="149" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">Ft</text>
+    </g>
+  </g>
+
+  <!-- Support cards around calculator -->
+  <!-- CSOK Plusz -->
+  <g transform="translate(60,150)">
+    <rect x="0" y="0" width="360" height="80" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="40" cy="40" r="22" fill="#166534" opacity="0.8"/>
+    <text x="40" y="47" text-anchor="middle" font-family="sans-serif" font-size="20" fill="white">C+</text>
+    <text x="75" y="30" font-family="sans-serif" font-size="15" font-weight="bold" fill="#22c55e">CSOK Plusz</text>
+    <text x="75" y="50" font-family="sans-serif" font-size="22" font-weight="bold" fill="white">max 50M Ft</text>
+    <text x="75" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8">kedvezményes hitel, fix 3%</text>
+  </g>
+
+  <!-- Falusi CSOK -->
+  <g transform="translate(60,260)">
+    <rect x="0" y="0" width="360" height="80" rx="12" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="40" cy="40" r="22" fill="#1e3a5f" opacity="0.8"/>
+    <text x="40" y="47" text-anchor="middle" font-family="sans-serif" font-size="20" fill="white">FC</text>
+    <text x="75" y="30" font-family="sans-serif" font-size="15" font-weight="bold" fill="#60a5fa">Falusi CSOK</text>
+    <text x="75" y="50" font-family="sans-serif" font-size="22" font-weight="bold" fill="white">max 15M Ft</text>
+    <text x="75" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8">vissza nem térítendő</text>
+  </g>
+
+  <!-- Babaváró -->
+  <g transform="translate(780,150)">
+    <rect x="0" y="0" width="360" height="80" rx="12" fill="#1e293b" stroke="#a855f7" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="40" cy="40" r="22" fill="#581c87" opacity="0.8"/>
+    <text x="40" y="47" text-anchor="middle" font-family="sans-serif" font-size="20" fill="white">B</text>
+    <text x="75" y="30" font-family="sans-serif" font-size="15" font-weight="bold" fill="#c084fc">Babaváró hitel</text>
+    <text x="75" y="50" font-family="sans-serif" font-size="22" font-weight="bold" fill="white">11M Ft</text>
+    <text x="75" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8">kamatmentes 5 évig</text>
+  </g>
+
+  <!-- Tartozáselengedés -->
+  <g transform="translate(780,260)">
+    <rect x="0" y="0" width="360" height="80" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="40" cy="40" r="22" fill="#78350f" opacity="0.8"/>
+    <text x="40" y="47" text-anchor="middle" font-family="sans-serif" font-size="20" fill="white">E</text>
+    <text x="75" y="30" font-family="sans-serif" font-size="15" font-weight="bold" fill="#fbbf24">Tartozáselengedés</text>
+    <text x="75" y="50" font-family="sans-serif" font-size="22" font-weight="bold" fill="white">max 20M Ft</text>
+    <text x="75" y="68" font-family="sans-serif" font-size="11" fill="#94a3b8">2. gyerektől 10M Ft/gyerek</text>
+  </g>
+
+  <!-- Bottom total -->
+  <g transform="translate(0,440)">
+    <rect x="250" y="0" width="700" height="90" rx="14" fill="#1e293b" stroke="#6366f1" stroke-width="2"/>
+    <text x="600" y="30" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">Maximum elérhető kedvezményes forrás (3+ gyerek, preferált település)</text>
+    <text x="600" y="68" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="white">96 000 000 Ft</text>
+    <text x="600" y="85" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">ebből VNT: 35M Ft | hitel: 61M Ft</text>
+  </g>
+
+  <!-- Arrows -->
+  <line x1="420" y1="190" x2="498" y2="230" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+  <line x1="420" y1="300" x2="498" y2="280" stroke="#3b82f6" stroke-width="1.5" opacity="0.5"/>
+  <line x1="780" y1="190" x2="702" y2="230" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+  <line x1="780" y1="300" x2="702" y2="280" stroke="#f59e0b" stroke-width="1.5" opacity="0.5"/>
+
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#475569">hazepitesikalauz.hu</text>
+</svg>

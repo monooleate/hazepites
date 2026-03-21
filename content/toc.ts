@@ -200,12 +200,12 @@ const toc: RawTableOfContents = {
     eszkozok: {
       title: "Eszközök",
       pages: [
-        // ["page", "hazepitesi-koltseg-kalkulator", "Házépítési költség kalkulátor"],
-        // ["page", "hitel-kalkulator", "Hitelkalkulátor"],
-        // ["page", "tamogatas-kalkulator", "Támogatás kalkulátor"],
-        // ["page", "energia-kalkulator", "Energia kalkulátor"],
+        ["page", "hazepitesi-koltseg-kalkulator", "Házépítési költség kalkulátor"],
+        ["page", "hitel-kalkulator", "Hitelkalkulátor"],
+        ["page", "tamogatas-kalkulator", "Támogatás kalkulátor"],
+        ["page", "energia-kalkulator", "Energia kalkulátor"],
         // ["page", "negyzetmeter-ar-kalkulator", "Négyzetméter ár kalkulátor"],
-        // ["page", "rezsi-kalkulator", "Rezsiköltség kalkulátor"],
+        ["page", "rezsi-kalkulator", "Rezsiköltség kalkulátor"],
         // ["page", "telekmeretezesi-kalkulator", "Telekméretezési kalkulátor"],
         // ["page", "megtakaritas-kalkulator", "Megtakarítás kalkulátor"],
       ],

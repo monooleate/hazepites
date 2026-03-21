@@ -17,7 +17,7 @@ const CATEGORY_REDIRECTS: Record<string, string> = {
   "/kivitelezes": "/kivitelezes/kivitelezo-valasztas",
   "/telek": "/telek/telekvalasztas",
   "/gyik": "/",
-  "/eszkozok": "/",
+  // "/eszkozok": felhasználóbarát áttekintés oldal, nincs redirect
 };
 
 export async function handler(ctx: FreshContext) {

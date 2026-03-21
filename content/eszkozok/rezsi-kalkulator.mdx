@@ -1,0 +1,139 @@
+---
+title: "Rezsiköltség kalkulátor – fűtés, napelem és havi rezsi becslése"
+description: "Interaktív rezsi kalkulátor: válassz fűtési rendszert, állítsd be a szigetelés szintjét és a napelemet – megmutatjuk a várható havi és éves rezsit."
+canonical: "https://hazepitesikalauz.hu/eszkozok/rezsi-kalkulator"
+published_at: "2026-03-20"
+refreshed_at: "2026-03-20"
+island: "RezsiCalculator"
+softwareSchema:
+  "@context": "https://schema.org"
+  "@type": "SoftwareApplication"
+  "@id": "https://hazepitesikalauz.hu/eszkozok/rezsi-kalkulator#app"
+  "name": "Rezsiköltség kalkulátor – fűtés és napelem"
+  "applicationCategory": "UtilityApplication"
+  "operatingSystem": "Web"
+  "browserRequirements": "Requires JavaScript"
+  "description": "Interaktív kalkulátor amely kiszámítja a várható havi és éves rezsiköltséget fűtésrendszer, alapterület, szigetelési szint és napelem méret alapján."
+  "image":
+    "@type": "ImageObject"
+    "url": "https://hazepitesikalauz.hu/img/docs/eszkozok/rezsi-kalkulator-hero.svg"
+    "width": 1200
+    "height": 630
+  "softwareVersion": "1.0"
+  "publisher":
+    "@type": "Organization"
+    "name": "Házépítési Kalauz"
+    "url": "https://hazepitesikalauz.hu"
+  "offers":
+    "@type": "Offer"
+    "price": "0"
+    "priceCurrency": "HUF"
+    "availability": "https://schema.org/InStock"
+faqPageSchema:
+  "@context": "https://schema.org"
+  "@type": "FAQPage"
+  "question1": "Mennyibe kerül egy családi ház fűtése évente 2026-ban?"
+  "answer1": "Egy 120 m²-es, jól szigetelt családi ház fűtése gázkazánnal évi 340-500 ezer Ft, hőszivattyúval évi 170-250 ezer Ft. A konkrét összeg függ a szigetelés minőségétől, a fűtési rendszertől és a használati szokásoktól."
+  "question2": "Mennyivel csökkenti a napelem a rezsiköltséget?"
+  "answer2": "Egy 6 kWp-os napelem rendszer évi ~6600 kWh-t termel, ami kb. 280 ezer Ft megtakarítást jelent a háztartási áramból. Ha hőszivattyúval kombinálod, a fűtési költséget is csökkenti – összesen évi 300-450 ezer Ft megtakarítás."
+  "question3": "Gázkazán vagy hőszivattyú – melyik a jobb választás 2026-ban?"
+  "answer3": "Hosszú távon a hőszivattyú, mert éves rezsije 40-50%-kal kevesebb. De a beruházási költsége 2-4 millió Ft-tal magasabb. A megtérülési idő 8-16 év, napelemmel 5-8 év. Az EU 2029-től tiltja az új gázkazánokat."
+---
+
+## Mennyi rezsire számíts? – Állítsd be és nézd az eredményt
+
+Az új ház tervezésénél a legtöbben a beruházási költségre figyelnek. De a fűtési rendszer kiválasztása 20-30 évre meghatározza a havi kiadásaidat. Ez a kalkulátor segít látni a hosszú távú képet: nem csak a beruházást, hanem a havi rezsit is.
+
+## Hogyan értelmezd a számokat?
+
+A kalkulátor négy költségtételt összesít:
+
+**Fűtés** – ez a legnagyobb tétel, a teljes rezsi 40-60%-a. A fűtési költség három dologtól függ: a ház mérete, a szigetelés minősége (kWh/m²/év hőigény) és a fűtési rendszer hatékonysága (Ft/kWh).
+
+**Melegvíz** – egy 4 fős család átlagosan 2500 kWh/év energiát használ melegvíz-készítésre. Ez független a ház méretétől.
+
+**Háztartási áram** – világítás, hűtő, mosógép, konyhai gépek. Az átlagos magyar háztartás kb. 3000 kWh/évet fogyaszt, ami 2026-os átlagáron (~42 Ft/kWh az [MEKH](https://mekh.hu/villamosenergia-informaciok) adatai szerint) évi 126 ezer Ft.
+
+**Víz + csatorna** – viszonylag stabil tétel, évi 60-80 ezer Ft egy családi háznál.
+
+<InfoCard type="tip" title="A szigetelés a legnagyobb megtakarítás">
+
+Egy 120 m²-es ház fűtési költsége jó szigeteléssel (65 kWh/m²/év) és rossz szigeteléssel (220 kWh/m²/év) között **háromszoros** különbség van. Mielőtt a fűtési rendszeren gondolkodsz, a szigetelésen gondolkodj. Nincs olyan hőszivattyú ami kompenzálja a rossz szigetelést.
+
+</InfoCard>
+
+## Fűtési rendszerek összehasonlítása – beruházás vs rezsi
+
+A fűtésrendszer-választás lényege egyetlen kompromisszum: **mennyit fizetsz most** vs **mennyit fizetsz utána**. Az olcsóbb kiépítés drágább rezsit jelent – és fordítva.
+
+A [budaklima.hu](https://www.budaklima.hu/futesi-modok-osszehasonlitasa.html) és a [rifeng-hoszivattyu.hu](https://rifeng-hoszivattyu.hu/mennyibe-kerul-a-hoszivattyus-futes/) adatai alapján, 120 m²-es, jól szigetelt új házra:
+
+| Rendszer | Beruházás | Éves fűtés | 20 éves rezsi | 20 éves összköltség |
+|---|---|---|---|---|
+| Gázkazán + radiátor | 1-2M Ft | 340-500e Ft | 6,8-10M Ft | 7,8-12M Ft |
+| Gázkazán + padlófűtés | 1,4-2,5M Ft | 340-500e Ft | 6,8-10M Ft | 8,2-12,5M Ft |
+| Hőszivattyú + padlófűtés | 3-6M Ft | 170-250e Ft | 3,4-5M Ft | 6,4-11M Ft |
+| Hőszivattyú + radiátor | 3,5-6,5M Ft | 250-380e Ft | 5-7,6M Ft | 8,5-14,1M Ft |
+| Elektromos konvektor | 300-800e Ft | 550-900e Ft | 11-18M Ft | 11,3-18,8M Ft |
+
+A hőszivattyú + padlófűtés a 20 éves összköltségben a legolcsóbb. De a beruházás 2-4 millió Ft-tal több. Ha a költségvetés szoros, a gázkazán továbbra is működik – de tudd, hogy az [EU 2029-től betiltja](https://energy.ec.europa.eu/topics/energy-efficiency/energy-efficient-buildings/energy-performance-buildings-directive_en) az új fosszilis kazánokat épületekbe.
+
+<InfoCard type="warn" title="Az elektromos konvektor csapda">
+
+Az elektromos konvektor beruházási költsége nevetségesen alacsony (300-800e Ft). De az üzemeltetése brutálisan drága – egy 120 m²-es háznál évi 550-900 ezer Ft. 5 év alatt többet fizetsz rezsiben, mint amennyibe a hőszivattyú beruházás kerülne. Csak átmeneti vagy ritkán fűtött (nyaraló) ingatlanokba érdemes.
+
+</InfoCard>
+
+## A napelem hatása a rezsire
+
+A napelem a háztartási áramot csökkenti közvetlenül. De ha hőszivattyúval fűtesz, a napelemmel termelt áram a fűtési költséget is csökkenti – hiszen a hőszivattyú árammal működik.
+
+Egy 6 kWp-os napelem rendszer Magyarországon átlagosan [1100 kWh/kWp/évet termel](https://re.jrc.ec.europa.eu/pvg_tools/en/) – ez évi 6600 kWh. 2026-os áron (~42 Ft/kWh) ez **277 ezer Ft/év** megtakarítás a háztartási áramból.
+
+Ha hőszivattyúval kombinálod, a maradék áram a fűtés költségét is nyírja. Egy 10 kWp-os napelem + hőszivattyú kombónál a teljes éves rezsi egy 120 m²-es, jól szigetelt háznál akár 150-200 ezer Ft-ra is csökkenhet – ez havi 12-17 ezer forint.
+
+![Fűtési rendszerek 20 éves összköltség összehasonlítása](/diagrams/docs/eszkozok/rezsi-kalkulator-diagram-1.svg)
+
+<InfoCard type="case" title="Kovács család – Gyöngyös, 2025">
+
+135 m²-es, jól szigetelt (BB kategória) családi ház. Levegő-víz hőszivattyú + padlófűtés (beruházás: 4,2M Ft) és 8 kWp napelem (beruházás: 2,8M Ft). Első teljes év rezsije: fűtés 98 ezer Ft, melegvíz 32 ezer Ft, háztartási áram 14 ezer Ft (szaldó), víz+csatorna 68 ezer Ft. Összes: 212 ezer Ft/év, havi 17 700 Ft. A szomszéd hasonló házban gázzal fűt – éves rezsije 580 ezer Ft.
+
+</InfoCard>
+
+## Mire nem elég ez a kalkulátor?
+
+Pár dolog, amit a számok nem mutatnak:
+
+**Téli-nyári eltérés** – a rezsi nem egyenletes. Gázfűtésnél a januári számla 3-4-szer nagyobb a júliusinál. Hőszivattyúnál kisebb a szórás, de a téli hónapok akkor is drágábbak.
+
+**Tarifa-változások** – a gázár 2021 óta háromszor változott drasztikusan. Az áramár stabilabb volt, de nincs garancia. A kalkulátor a 2026-os tarifákat használja.
+
+**Karbantartás** – a gázkazán éves karbantartása 30-50 ezer Ft, a hőszivattyúé 20-40 ezer Ft. A napelemé gyakorlatilag nulla az első 10 évben. Ezek nincsenek benne a rezsi számokban.
+
+## Személyre szabott árajánlat kell?
+
+Minden építkezés egyedi. Ha pontos költségbecslést szeretnél a te terveidhez, kérj ingyenes, kötelezettségmentes árajánlatot helyi kivitelezőktől.
+
+[Ingyenes árajánlatot kérek →](/ajanlatkeres)
+
+## Kapcsolódó tartalmak
+
+- [Fűtésrendszerek összehasonlítása 2026](/energia/futesrendszerek)
+- [Hőszigetelés típusok](/energia/hoszigeteles-tipusok)
+- [Napelem rendszer családi házra](/energia/napelem-rendszer)
+- [Házépítés költség 2026](/koltsegek/hazepites-koltseg-2026)
+
+::: faq
+### Mennyibe kerül egy családi ház fűtése évente 2026-ban?
+Egy 120 m²-es, jól szigetelt családi ház fűtése gázkazánnal évi 340-500 ezer Ft, hőszivattyúval évi 170-250 ezer Ft. A konkrét összeg függ a szigetelés minőségétől, a fűtési rendszertől és a használati szokásoktól.
+:::
+
+::: faq
+### Mennyivel csökkenti a napelem a rezsiköltséget?
+Egy 6 kWp-os napelem rendszer évi ~6600 kWh-t termel, ami kb. 280 ezer Ft megtakarítást jelent a háztartási áramból. Ha hőszivattyúval kombinálod, a fűtési költséget is csökkenti – összesen évi 300-450 ezer Ft megtakarítás.
+:::
+
+::: faq
+### Gázkazán vagy hőszivattyú – melyik a jobb választás 2026-ban?
+Hosszú távon a hőszivattyú, mert éves rezsije 40-50%-kal kevesebb. De a beruházási költsége 2-4 millió Ft-tal magasabb. A megtérülési idő 8-16 év, napelemmel 5-8 év. Az EU 2029-től tiltja az új gázkazánokat.
+:::

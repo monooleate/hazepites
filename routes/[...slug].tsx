@@ -13,6 +13,10 @@ import {
 import { TableOfContents } from "../islands/TableOfContents.tsx";
 import HeadUpdater from "../islands/HeadUpdater.tsx";
 import CostCalculator from "../islands/CostCalculator.tsx";
+import TamogatasCalculator from "../islands/TamogatasCalculator.tsx";
+import RezsiCalculator from "../islands/RezsiCalculator.tsx";
+import HitelCalculator from "../islands/HitelCalculator.tsx";
+import EnergiaCalculator from "../islands/EnergiaCalculator.tsx";
 import { define } from "../utils/state.ts";
 import { generateBreadcrumbSchema } from "../utils/schema.ts";
 import type { ComponentType } from "preact";
@@ -20,6 +24,10 @@ import type { ComponentType } from "preact";
 // Island registry — frontmatter "island" mező alapján renderelhető
 const ISLAND_REGISTRY: Record<string, ComponentType> = {
   CostCalculator,
+  TamogatasCalculator,
+  RezsiCalculator,
+  HitelCalculator,
+  EnergiaCalculator,
 };
 
 // Category slugs for overview pages
@@ -337,34 +345,41 @@ export default define.page<typeof handler>(function DocsPage(props) {
                   {categoryOverview.title}
                 </h1>
                 <p class="text-lg text-slate-600 dark:text-slate-400 mb-8">
-                  Az alábbi cikkek és útmutatók segítenek eligazodni a témában.
+                  {categoryOverview.slug === "eszkozok"
+                    ? "Interaktív kalkulátorok a házépítés megtervezéséhez – költségek, hitelek, támogatások, energia és rezsi egy helyen."
+                    : "Az alábbi cikkek és útmutatók segítenek eligazodni a témában."}
                 </p>
 
-                <div class="grid gap-3">
-                  {categoryOverview.entries.map((entry) => {
-                    if ("entries" in entry) return null;
-                    const e = entry as TableOfContentsEntry;
-                    return (
-                      <a
-                        key={e.href}
-                        href={e.href}
-                        class="group flex items-center gap-4 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary-300 dark:hover:border-primary-600 hover:shadow-md bg-white dark:bg-slate-900/50 transition-all"
-                      >
-                        <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-50 dark:bg-primary-950/40 shrink-0">
-                          <svg class="w-5 h-5 text-primary-500 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                {categoryOverview.slug === "eszkozok" ? (
+                  /* ── Eszközök: rich card grid ── */
+                  <EszkozokGrid entries={categoryOverview.entries as TableOfContentsEntry[]} />
+                ) : (
+                  <div class="grid gap-3">
+                    {categoryOverview.entries.map((entry) => {
+                      if ("entries" in entry) return null;
+                      const e = entry as TableOfContentsEntry;
+                      return (
+                        <a
+                          key={e.href}
+                          href={e.href}
+                          class="group flex items-center gap-4 p-4 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary-300 dark:hover:border-primary-600 hover:shadow-md bg-white dark:bg-slate-900/50 transition-all"
+                        >
+                          <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary-50 dark:bg-primary-950/40 shrink-0">
+                            <svg class="w-5 h-5 text-primary-500 dark:text-primary-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                            </svg>
+                          </div>
+                          <span class="text-base font-medium text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                            {e.title}
+                          </span>
+                          <svg class="w-4 h-4 ml-auto text-slate-400 dark:text-slate-500 group-hover:text-primary-500 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                           </svg>
-                        </div>
-                        <span class="text-base font-medium text-slate-800 dark:text-slate-200 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
-                          {e.title}
-                        </span>
-                        <svg class="w-4 h-4 ml-auto text-slate-400 dark:text-slate-500 group-hover:text-primary-500 transition-colors shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                        </svg>
-                      </a>
-                    );
-                  })}
-                </div>
+                        </a>
+                      );
+                    })}
+                  </div>
+                )}
               </main>
             </div>
           ) : (
@@ -462,6 +477,116 @@ export default define.page<typeof handler>(function DocsPage(props) {
     </div>
   );
 });
+
+/**
+ * Mobile sidebar overlay — a checkbox #docs_sidebar vezérli (header toggle gombból).
+ * Az overlay-re kattintás bezárja a sidebar-t.
+ */
+// ── Eszközök gazdagabb áttekintés grid ──
+const ESZKOZ_META: Record<string, { icon: string; description: string; color: string }> = {
+  "eszkozok/hazepitesi-koltseg-kalkulator": {
+    icon: "M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 7.5h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z",
+    description: "Becsüld meg a teljes építési költséget technológia, méret, régió és minőségi szint alapján, tételes bontással.",
+    color: "from-blue-500 to-blue-600",
+  },
+  "eszkozok/hitel-kalkulator": {
+    icon: "M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z",
+    description: "Számold ki a havi törlesztőt piaci hitelre, CSOK Plusz-ra, Zöld hitelre vagy Babaváróra.",
+    color: "from-emerald-500 to-emerald-600",
+  },
+  "eszkozok/tamogatas-kalkulator": {
+    icon: "M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z",
+    description: "CSOK Plusz, Falusi CSOK és Babaváró kombináció – mennyi kedvezményes forrásra számíthatsz?",
+    color: "from-amber-500 to-amber-600",
+  },
+  "eszkozok/energia-kalkulator": {
+    icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+    description: "Becsüld meg a házad energetikai besorolását: szigetelés, nyílászárók, fűtés és napelem alapján.",
+    color: "from-green-500 to-green-600",
+  },
+  "eszkozok/rezsi-kalkulator": {
+    icon: "M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z",
+    description: "Fűtési rendszer, szigetelés és napelem hatása a havi rezsire – éves és havi bontásban.",
+    color: "from-orange-500 to-orange-600",
+  },
+};
+
+function EszkozokGrid({ entries }: { entries: TableOfContentsEntry[] }) {
+  // Planned tools that don't exist yet
+  const plannedTools = [
+    { slug: "negyzetmeter-ar-kalkulator", title: "Négyzetméter ár kalkulátor", description: "Négyzetméterár kalkuláció régiók és technológiák szerint.", icon: "M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" },
+    { slug: "telekmeretezesi-kalkulator", title: "Telekméretezési kalkulátor", description: "Mekkora telekre van szükség a tervezett házadhoz?", icon: "M9 6.75V15m6-6v8.25m.503 3.498l4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 00-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0z" },
+    { slug: "megtakaritas-kalkulator", title: "Megtakarítás kalkulátor", description: "Mennyi időbe telik összegyűjteni az önerőt a házadhoz?", icon: "M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375" },
+  ];
+
+  return (
+    <div>
+      {/* Active tools */}
+      <div class="grid gap-4 sm:grid-cols-2">
+        {entries.map((entry) => {
+          if ("entries" in entry) return null;
+          const e = entry as TableOfContentsEntry;
+          const meta = ESZKOZ_META[e.slug];
+          return (
+            <a
+              key={e.href}
+              href={e.href}
+              class="group relative flex flex-col p-5 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-primary-300 dark:hover:border-primary-600 hover:shadow-lg bg-white dark:bg-slate-900/50 transition-all"
+            >
+              <div class={`flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br ${meta?.color ?? "from-primary-500 to-primary-600"} mb-3 shadow-md`}>
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d={meta?.icon ?? "M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008H18v-.008zm0 2.25h.008v.008H18V13.5zM9.75 9h4.5m-4.5 0a2.002 2.002 0 01-2.039-1.5M9.75 9c0 .896-.393 1.7-1.016 2.25M9.75 9h4.5m0 0c0 .896.393 1.7 1.016 2.25m-5.516 0c-.907.672-1.484 1.73-1.484 2.917 0 2 1.625 3.625 3.625 3.625h.75m-2.891-6.542A2.994 2.994 0 009.75 9m5.516 2.25c.907.672 1.484 1.73 1.484 2.917 0 2-1.625 3.625-3.625 3.625h-.75"} />
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-slate-800 dark:text-slate-100 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors mb-1">
+                {e.title}
+              </h3>
+              <p class="text-sm text-slate-600 dark:text-slate-400 flex-1">
+                {meta?.description ?? "Interaktív kalkulátor a házépítés megtervezéséhez."}
+              </p>
+              <div class="mt-3 flex items-center text-sm font-medium text-primary-600 dark:text-primary-400 group-hover:gap-2 transition-all">
+                <span>Megnyitás</span>
+                <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                </svg>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+
+      {/* Planned tools – hamarosan */}
+      {plannedTools.length > 0 && (
+        <div class="mt-10">
+          <h2 class="text-xl font-bold text-slate-800 dark:text-slate-100 mb-4">Hamarosan</h2>
+          <div class="grid gap-3 sm:grid-cols-3">
+            {plannedTools.map((tool) => (
+              <div
+                key={tool.slug}
+                class="relative flex flex-col p-4 rounded-xl border border-dashed border-slate-300 dark:border-slate-600 bg-slate-50/50 dark:bg-slate-800/30"
+              >
+                <div class="flex items-center justify-center w-10 h-10 rounded-lg bg-slate-200 dark:bg-slate-700 mb-2">
+                  <svg class="w-5 h-5 text-slate-400 dark:text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d={tool.icon} />
+                  </svg>
+                </div>
+                <h3 class="text-sm font-semibold text-slate-500 dark:text-slate-400 mb-1">
+                  {tool.title}
+                </h3>
+                <p class="text-xs text-slate-400 dark:text-slate-500">
+                  {tool.description}
+                </p>
+                <span class="absolute top-3 right-3 text-xs font-medium text-slate-400 dark:text-slate-500 bg-slate-200 dark:bg-slate-700 px-2 py-0.5 rounded-full">
+                  Hamarosan
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 /**
  * Mobile sidebar overlay — a checkbox #docs_sidebar vezérli (header toggle gombból).

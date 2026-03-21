@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a" rx="0"/>
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+
+  <!-- Bank/finance icon -->
+  <g transform="translate(600, 160)">
+    <!-- Pillars -->
+    <rect x="-80" y="0" width="16" height="80" fill="#3b82f6" opacity="0.7" rx="2"/>
+    <rect x="-40" y="0" width="16" height="80" fill="#3b82f6" opacity="0.8" rx="2"/>
+    <rect x="0" y="-10" width="16" height="90" fill="#60a5fa" rx="2"/>
+    <rect x="40" y="10" width="16" height="70" fill="#3b82f6" opacity="0.7" rx="2"/>
+    <rect x="80" y="20" width="16" height="60" fill="#3b82f6" opacity="0.6" rx="2"/>
+    <!-- Base -->
+    <rect x="-95" y="80" width="210" height="8" fill="#60a5fa" rx="2"/>
+    <!-- Roof -->
+    <polygon points="-100,-10 10,-50 120,-10" fill="none" stroke="#60a5fa" stroke-width="2"/>
+  </g>
+
+  <!-- Loan type cards -->
+  <g transform="translate(120, 340)">
+    <rect x="0" y="0" width="220" height="70" rx="10" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+    <text x="16" y="28" font-family="sans-serif" font-size="14" font-weight="bold" fill="#60a5fa">Piaci hitel</text>
+    <text x="16" y="50" font-family="sans-serif" font-size="16" fill="#f1f5f9">6,99% kamat</text>
+
+    <rect x="240" y="0" width="220" height="70" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+    <text x="256" y="28" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">CSOK Plusz</text>
+    <text x="256" y="50" font-family="sans-serif" font-size="16" fill="#f1f5f9">3% fix kamat</text>
+
+    <rect x="480" y="0" width="220" height="70" rx="10" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+    <text x="496" y="28" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">Zöld hitel</text>
+    <text x="496" y="50" font-family="sans-serif" font-size="16" fill="#f1f5f9">0% kamat</text>
+
+    <rect x="720" y="0" width="220" height="70" rx="10" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+    <text x="736" y="28" font-family="sans-serif" font-size="14" font-weight="bold" fill="#60a5fa">Babaváró</text>
+    <text x="736" y="50" font-family="sans-serif" font-size="16" fill="#f1f5f9">0% (5 évig)</text>
+  </g>
+
+  <!-- Comparison arrow -->
+  <g transform="translate(600, 440)">
+    <text x="-80" y="0" font-family="sans-serif" font-size="16" fill="#ef4444">232e Ft/hó</text>
+    <line x1="0" y1="-6" x2="40" y2="-6" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="50" y="0" font-family="sans-serif" font-size="16" fill="#10b981">166e Ft/hó</text>
+    <text x="130" y="0" font-family="sans-serif" font-size="14" fill="#94a3b8">(−15M Ft)</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="505" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#f1f5f9">Lakáshitel kalkulátor</text>
+  <text x="600" y="540" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#94a3b8">Törlesztő, THM és hiteltípus összehasonlítás</text>
+
+  <!-- Brand -->
+  <text x="600" y="575" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3b82f6">hazepitesikalauz.hu</text>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" font-family="sans-serif" font-size="34" font-weight="bold" fill="white">Rezsiköltség kalkulátor</text>
+  <text x="600" y="90" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#94a3b8">Fűtés + napelem – havi és éves rezsi becslése, 2026</text>
+
+  <!-- House illustration -->
+  <g transform="translate(460,120)">
+    <!-- Walls -->
+    <rect x="0" y="80" width="280" height="180" fill="#1e293b" stroke="#475569" stroke-width="2" rx="4"/>
+    <!-- Roof -->
+    <polygon points="140,-10 -30,80 310,80" fill="#334155" stroke="#475569" stroke-width="2"/>
+    <!-- Window left -->
+    <rect x="30" y="110" width="70" height="55" fill="#0f172a" stroke="#475569" stroke-width="1.5" rx="3"/>
+    <line x1="65" y1="110" x2="65" y2="165" stroke="#475569" stroke-width="1"/>
+    <line x1="30" y1="137" x2="100" y2="137" stroke="#475569" stroke-width="1"/>
+    <!-- Window right -->
+    <rect x="180" y="110" width="70" height="55" fill="#0f172a" stroke="#475569" stroke-width="1.5" rx="3"/>
+    <line x1="215" y1="110" x2="215" y2="165" stroke="#475569" stroke-width="1"/>
+    <line x1="180" y1="137" x2="250" y2="137" stroke="#475569" stroke-width="1"/>
+    <!-- Door -->
+    <rect x="110" y="180" width="60" height="80" fill="#0f172a" stroke="#475569" stroke-width="1.5" rx="3"/>
+    <circle cx="160" cy="220" r="4" fill="#475569"/>
+    <!-- Solar panels on roof -->
+    <g transform="translate(55,0)">
+      <rect x="0" y="0" width="50" height="35" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1" rx="2" transform="rotate(-25, 25, 17.5)"/>
+      <rect x="55" y="-5" width="50" height="35" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1" rx="2" transform="rotate(-25, 80, 12.5)"/>
+      <rect x="110" y="-10" width="50" height="35" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1" rx="2" transform="rotate(-25, 135, 7.5)"/>
+    </g>
+    <!-- Sun -->
+    <circle cx="340" cy="-20" r="28" fill="#fbbf24" opacity="0.8"/>
+    <g stroke="#fbbf24" stroke-width="2" opacity="0.4">
+      <line x1="340" y1="-58" x2="340" y2="-68"/>
+      <line x1="340" y1="18" x2="340" y2="28"/>
+      <line x1="302" y1="-20" x2="292" y2="-20"/>
+      <line x1="378" y1="-20" x2="388" y2="-20"/>
+      <line x1="313" y1="-47" x2="306" y2="-54"/>
+      <line x1="367" y1="7" x2="374" y2="14"/>
+      <line x1="313" y1="7" x2="306" y2="14"/>
+      <line x1="367" y1="-47" x2="374" y2="-54"/>
+    </g>
+    <!-- Heat pump unit -->
+    <g transform="translate(-70,180)">
+      <rect x="0" y="0" width="55" height="65" fill="#334155" stroke="#475569" stroke-width="1.5" rx="4"/>
+      <circle cx="27.5" cy="25" r="15" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.7"/>
+      <!-- Fan blades -->
+      <line x1="27.5" y1="12" x2="27.5" y2="38" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+      <line x1="14.5" y1="25" x2="40.5" y2="25" stroke="#22c55e" stroke-width="1.5" opacity="0.5"/>
+      <text x="27.5" y="58" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#94a3b8">HSZ</text>
+    </g>
+  </g>
+
+  <!-- Cost comparison cards -->
+  <g transform="translate(0,430)">
+    <!-- Gáz -->
+    <rect x="60" y="0" width="250" height="90" rx="10" fill="#1e293b" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="185" y="22" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Gázkazán + radiátor</text>
+    <text x="185" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fca5a5">Éves rezsi:</text>
+    <text x="185" y="75" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#ef4444">500-700e Ft</text>
+
+    <!-- Hőszivattyú -->
+    <rect x="340" y="0" width="250" height="90" rx="10" fill="#1e293b" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="465" y="22" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Hőszivattyú + padlófűtés</text>
+    <text x="465" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#86efac">Éves rezsi:</text>
+    <text x="465" y="75" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#22c55e">300-420e Ft</text>
+
+    <!-- Hőszivattyú + napelem -->
+    <rect x="620" y="0" width="250" height="90" rx="10" fill="#1e293b" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="745" y="22" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Hőszivattyú + napelem</text>
+    <text x="745" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#93c5fd">Éves rezsi:</text>
+    <text x="745" y="75" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#3b82f6">150-250e Ft</text>
+
+    <!-- Megtakarítás -->
+    <rect x="900" y="0" width="240" height="90" rx="10" fill="#166534" stroke="#22c55e" stroke-width="1.5" opacity="0.9"/>
+    <text x="1020" y="22" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#86efac">Max megtakarítás</text>
+    <text x="1020" y="50" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#dcfce7">gáz vs hősz+napelem:</text>
+    <text x="1020" y="75" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="white">~450e Ft/év</text>
+  </g>
+
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#475569">hazepitesikalauz.hu</text>
+</svg>

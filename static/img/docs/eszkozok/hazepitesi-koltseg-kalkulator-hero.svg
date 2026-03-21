@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a" rx="0"/>
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+
+  <!-- House icon -->
+  <g transform="translate(600, 180)">
+    <!-- Roof -->
+    <polygon points="-120,0 0,-90 120,0" fill="none" stroke="#3b82f6" stroke-width="4" stroke-linejoin="round"/>
+    <!-- Walls -->
+    <rect x="-90" y="0" width="180" height="120" fill="none" stroke="#3b82f6" stroke-width="3" rx="4"/>
+    <!-- Door -->
+    <rect x="-20" y="50" width="40" height="70" fill="#1e40af" stroke="#3b82f6" stroke-width="2" rx="3"/>
+    <!-- Windows -->
+    <rect x="-70" y="25" width="35" height="35" fill="#1e40af" stroke="#60a5fa" stroke-width="2" rx="2"/>
+    <rect x="35" y="25" width="35" height="35" fill="#1e40af" stroke="#60a5fa" stroke-width="2" rx="2"/>
+    <!-- Chimney -->
+    <rect x="50" y="-65" width="20" height="40" fill="none" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+
+  <!-- Cost bars -->
+  <g transform="translate(180, 380)">
+    <rect x="0" y="0" width="120" height="24" rx="4" fill="#1e40af" opacity="0.6"/>
+    <text x="130" y="17" font-family="sans-serif" font-size="14" fill="#94a3b8">Alap 12%</text>
+    <rect x="0" y="32" width="210" height="24" rx="4" fill="#2563eb" opacity="0.7"/>
+    <text x="220" y="49" font-family="sans-serif" font-size="14" fill="#94a3b8">Falazat 25%</text>
+    <rect x="0" y="64" width="150" height="24" rx="4" fill="#3b82f6" opacity="0.7"/>
+    <text x="160" y="81" font-family="sans-serif" font-size="14" fill="#94a3b8">Gépészet 18%</text>
+  </g>
+
+  <!-- Price cards -->
+  <g transform="translate(620, 370)">
+    <rect x="0" y="0" width="200" height="60" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+    <text x="16" y="24" font-family="sans-serif" font-size="13" fill="#94a3b8">Tégla (120 m²)</text>
+    <text x="16" y="46" font-family="sans-serif" font-size="18" font-weight="bold" fill="#60a5fa">48 – 72 M Ft</text>
+
+    <rect x="220" y="0" width="200" height="60" rx="8" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+    <text x="236" y="24" font-family="sans-serif" font-size="13" fill="#94a3b8">Modulház (120 m²)</text>
+    <text x="236" y="46" font-family="sans-serif" font-size="18" font-weight="bold" fill="#60a5fa">36 – 48 M Ft</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="510" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#f1f5f9">Házépítési költség kalkulátor</text>
+  <text x="600" y="545" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#94a3b8">Technológia × méret × régió × minőség = teljes költség</text>
+
+  <!-- Brand -->
+  <text x="600" y="575" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3b82f6">hazepitesikalauz.hu</text>
+</svg>

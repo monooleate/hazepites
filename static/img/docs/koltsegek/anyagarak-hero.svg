@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgA)"/>
+  <!-- Háttér grid -->
+  <g opacity="0.04" stroke="#fff" stroke-width="1">
+    <line x1="0" y1="105" x2="1200" y2="105"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="315" x2="1200" y2="315"/>
+    <line x1="0" y1="420" x2="1200" y2="420"/>
+  </g>
+  <!-- Tégla ikon -->
+  <g transform="translate(200,180)">
+    <rect x="-50" y="-25" width="100" height="50" rx="4" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+    <line x1="-50" y1="0" x2="50" y2="0" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+    <line x1="0" y1="-25" x2="0" y2="0" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+    <line x1="-25" y1="0" x2="-25" y2="25" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+    <line x1="25" y1="0" x2="25" y2="25" stroke="#ef4444" stroke-width="1" opacity="0.4"/>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#ef4444">Tégla</text>
+    <text x="0" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">800-1100 Ft/db</text>
+  </g>
+  <!-- Beton ikon -->
+  <g transform="translate(420,180)">
+    <rect x="-45" y="-30" width="90" height="60" rx="6" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+    <circle cx="-15" cy="-8" r="4" fill="none" stroke="#94a3b8" stroke-width="1" opacity="0.5"/>
+    <circle cx="20" cy="5" r="6" fill="none" stroke="#94a3b8" stroke-width="1" opacity="0.5"/>
+    <circle cx="-5" cy="12" r="3" fill="none" stroke="#94a3b8" stroke-width="1" opacity="0.5"/>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#94a3b8">Beton</text>
+    <text x="0" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">32-55e Ft/m³</text>
+  </g>
+  <!-- Fa ikon -->
+  <g transform="translate(640,180)">
+    <rect x="-50" y="-20" width="100" height="40" rx="4" fill="none" stroke="#a16207" stroke-width="2.5"/>
+    <line x1="-40" y1="-10" x2="40" y2="-10" stroke="#a16207" stroke-width="1" opacity="0.3"/>
+    <line x1="-40" y1="0" x2="40" y2="0" stroke="#a16207" stroke-width="1" opacity="0.3"/>
+    <line x1="-40" y1="10" x2="40" y2="10" stroke="#a16207" stroke-width="1" opacity="0.3"/>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#a16207">Faanyag</text>
+    <text x="0" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">95-145e Ft/m³</text>
+  </g>
+  <!-- Szigetelés ikon -->
+  <g transform="translate(860,180)">
+    <rect x="-45" y="-30" width="90" height="60" rx="4" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+    <!-- Hő hullámok -->
+    <path d="M-30,-15 Q-25,-22 -20,-15" fill="none" stroke="#ef4444" stroke-width="1.5" opacity="0.4"/>
+    <path d="M-30,0 Q-25,-7 -20,0" fill="none" stroke="#f59e0b" stroke-width="1.5" opacity="0.3"/>
+    <path d="M-30,15 Q-25,8 -20,15" fill="none" stroke="#3b82f6" stroke-width="1.5" opacity="0.2"/>
+    <!-- Blokk hatás -->
+    <line x1="0" y1="-25" x2="0" y2="25" stroke="#22c55e" stroke-width="2" opacity="0.5"/>
+    <text x="0" y="55" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#22c55e">Szigetelés</text>
+    <text x="0" y="75" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">2 200-8 500 Ft/m²</text>
+  </g>
+  <!-- Ártrendek graf -->
+  <g transform="translate(200,310)">
+    <text x="0" y="0" font-family="sans-serif" font-size="11" fill="#64748b">2020</text>
+    <text x="800" y="0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#64748b">2026</text>
+    <line x1="0" y1="10" x2="800" y2="10" stroke="#334155" stroke-width="1"/>
+    <!-- Trend vonal -->
+    <path d="M0,10 Q200,-40 400,-20 Q600,-35 800,-30" fill="none" stroke="#ef4444" stroke-width="2" opacity="0.6"/>
+    <text x="810" y="-25" font-family="sans-serif" font-size="10" fill="#ef4444">+60-90%</text>
+  </g>
+  <!-- Cím -->
+  <text x="600" y="420" text-anchor="middle" font-family="sans-serif" font-size="44" font-weight="bold" fill="#ffffff">Építőanyag árak 2026</text>
+  <text x="600" y="465" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#94a3b8">tégla · beton · fa · szigetelés · tető</text>
+  <!-- Kiemelő -->
+  <g transform="translate(300,520)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f59e0b">15-25M Ft</text>
+    <text x="0" y="18" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">anyagköltség / 120 m² ház</text>
+  </g>
+  <g transform="translate(600,520)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#22c55e">10-20%</text>
+    <text x="0" y="18" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">spórolható jó időzítéssel</text>
+  </g>
+  <g transform="translate(900,520)">
+    <text x="0" y="0" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#3b82f6">35-40%</text>
+    <text x="0" y="18" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">az összköltség aránya</text>
+  </g>
+  <!-- Brand -->
+  <text x="600" y="590" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#57534e">hazepitesikalauz.hu</text>
+</svg>

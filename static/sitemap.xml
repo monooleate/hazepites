@@ -103,6 +103,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://hazepitesikalauz.hu/koltsegek/anyagarak</loc>
+    <lastmod>2026-03-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://hazepitesikalauz.hu/tamogatasok/csok-plusz</loc>
     <lastmod>2026-02-22</lastmod>
     <changefreq>weekly</changefreq>
@@ -141,6 +147,12 @@
   <url>
     <loc>https://hazepitesikalauz.hu/energia/napelem-rendszer</loc>
     <lastmod>2026-02-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazepitesikalauz.hu/energia/hoszivattyuk</loc>
+    <lastmod>2026-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

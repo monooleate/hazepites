@@ -68,7 +68,7 @@ export async function handler(ctx: FreshContext) {
       "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com",
       "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net",
       "img-src 'self' data: https:",
-      "font-src 'self' data:",
+      "font-src 'self' data: https://cdn.jsdelivr.net",
       "connect-src 'self' https://www.google-analytics.com https://analytics.google.com",
       "frame-src 'none'",
       "object-src 'none'",

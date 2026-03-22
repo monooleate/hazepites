@@ -66,6 +66,9 @@ export const handler = {
     // Adatvédelmi nyilatkozat
     urls.push(entry(`${DOMAIN}/adatvedelmi-nyilatkozat`, today, "yearly", "0.3"));
 
+    // ÁSZF
+    urls.push(entry(`${DOMAIN}/aszf`, today, "yearly", "0.3"));
+
     // Tartalmi oldalak
     for (const slug in TABLE_OF_CONTENTS) {
       const e = TABLE_OF_CONTENTS[slug];

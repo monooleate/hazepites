@@ -101,10 +101,13 @@ export default define.page<typeof handler>(function KapcsolatPage() {
               Kapcsolat
             </h2>
             <p class="text-slate-700 dark:text-slate-300 leading-relaxed mb-3">
-              Kapcsolódó oldalak:
-              {" "}
+              Kapcsolódó oldalak:{" "}
               <a href="/adatvedelmi-nyilatkozat" class="text-primary-600 dark:text-primary-400 hover:underline">
                 Adatvédelmi nyilatkozat
+              </a>
+              {" · "}
+              <a href="/aszf" class="text-primary-600 dark:text-primary-400 hover:underline">
+                ÁSZF
               </a>
             </p>
           </section>

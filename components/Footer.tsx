@@ -23,7 +23,7 @@ const FOOTER_LINKS = [
       { name: "Kalkulátorok", href: "/eszkozok" },
       { name: "Impresszum", href: "/kapcsolat" },
       { name: "Adatvédelem", href: "/adatvedelmi-nyilatkozat" },
-      { name: "Kapcsolat", href: "/kapcsolat" },
+      { name: "ÁSZF", href: "/aszf" },
     ],
   },
 ];

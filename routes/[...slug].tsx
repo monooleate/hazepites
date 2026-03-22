@@ -172,9 +172,24 @@ export const handler = define.handlers<Data>({
     ctx.state.cleanUrl = ctx.url.href.split("?")[0];
 
     if (attrs?.articleSchema) {
-      ctx.state.articleSchema = JSON.stringify(attrs.articleSchema, null, 2).replace(/</g, "\\u003c");
+      // Inject speakable property — headline + description for AI voice assistants
+      const articleObj = attrs.articleSchema as Record<string, unknown>;
+      if (!articleObj.speakable) {
+        articleObj.speakable = {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["[data-speakable]", ".prose-custom > h2", ".prose-custom > p:first-of-type"],
+        };
+      }
+      // Inject author @id reference to Person schema
+      if (articleObj.author && (articleObj.author as Record<string, string>)["@type"] === "Organization") {
+        articleObj.author = {
+          ...(articleObj.author as Record<string, unknown>),
+          "founder": { "@id": "https://hazepitesikalauz.hu/#founder" },
+        };
+      }
+      ctx.state.articleSchema = JSON.stringify(articleObj, null, 2).replace(/</g, "\\u003c");
       // OG image from schema
-      const img = (attrs.articleSchema as Record<string, unknown>)?.image as Record<string, string> | undefined;
+      const img = articleObj.image as Record<string, string> | undefined;
       if (img?.url) ctx.state.ogImage = img.url;
     }
 

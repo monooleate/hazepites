@@ -27,4 +27,10 @@ Allow: /
 User-agent: cohere-ai
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
 Sitemap: https://hazepitesikalauz.hu/sitemap.xml

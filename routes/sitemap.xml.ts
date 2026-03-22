@@ -60,8 +60,11 @@ export const handler = {
     // Főoldal
     urls.push(entry(DOMAIN, today, "weekly", "1.0"));
 
-    // Kapcsolat
+    // Kapcsolat / Impresszum
     urls.push(entry(`${DOMAIN}/kapcsolat`, today, "yearly", "0.3"));
+
+    // Adatvédelmi nyilatkozat
+    urls.push(entry(`${DOMAIN}/adatvedelmi-nyilatkozat`, today, "yearly", "0.3"));
 
     // Tartalmi oldalak
     for (const slug in TABLE_OF_CONTENTS) {

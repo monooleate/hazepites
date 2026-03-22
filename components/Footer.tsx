@@ -18,12 +18,12 @@ const FOOTER_LINKS = [
     ],
   },
   {
-    title: "Eszközök",
+    title: "Eszközök & Jogi",
     links: [
       { name: "Kalkulátorok", href: "/eszkozok" },
-      { name: "Telek", href: "/telek" },
-      { name: "GYIK", href: "/gyik" },
       { name: "Impresszum", href: "/kapcsolat" },
+      { name: "Adatvédelem", href: "/adatvedelmi-nyilatkozat" },
+      { name: "Kapcsolat", href: "/kapcsolat" },
     ],
   },
 ];

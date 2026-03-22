@@ -3,6 +3,26 @@
 const BASE_URL = "https://hazepitesikalauz.hu";
 
 export function generateFullSchema() {
+  const person: Record<string, unknown> = {
+    "@type": "Person",
+    "@id": `${BASE_URL}/#founder`,
+    "name": "Mészáros János",
+    "url": "https://jmeszaros.dev",
+    "jobTitle": "Alapító, webfejlesztő",
+    "sameAs": [
+      "https://www.linkedin.com/in/janosmeszaros1/",
+      "https://github.com/monooleate",
+      "https://jmeszaros.dev",
+    ],
+    "knowsAbout": [
+      "házépítés",
+      "építőipari költségbecslés",
+      "energiahatékony építés",
+      "magyar lakástámogatások",
+      "webfejlesztés",
+    ],
+  };
+
   const org: Record<string, unknown> = {
     "@type": "Organization",
     "@id": `${BASE_URL}/#organization`,
@@ -12,7 +32,11 @@ export function generateFullSchema() {
     "description":
       "A Házépítési Kalauz független döntéstámogató tudástár családok számára, akik házépítésre készülnek. Objektív összehasonlítások, költségkalkulátorok és szakértői útmutatók.",
     "foundingDate": "2025",
-    "founder": { "@type": "Person", "name": "Mészáros János" },
+    "founder": { "@id": `${BASE_URL}/#founder` },
+    "sameAs": [
+      "https://www.linkedin.com/in/janosmeszaros1/",
+      "https://github.com/monooleate",
+    ],
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "support",
@@ -57,7 +81,7 @@ export function generateFullSchema() {
 
   return {
     "@context": "https://schema.org",
-    "@graph": [org, website, webpage, bread],
+    "@graph": [person, org, website, webpage, bread],
   };
 }
 

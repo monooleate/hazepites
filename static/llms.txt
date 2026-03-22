@@ -1,0 +1,67 @@
+# Házépítési Kalauz
+
+> Független döntéstámogató tudástár magyar családok számára, akik házépítésre készülnek. Objektív összehasonlítások, költségkalkulátorok és szakértői útmutatók.
+
+## Szerző
+- Mészáros János — alapító, webfejlesztő
+- Weboldal: https://jmeszaros.dev
+- LinkedIn: https://www.linkedin.com/in/janosmeszaros1/
+- GitHub: https://github.com/monooleate
+
+## Fő tartalmi területek
+
+### Háztípusok
+- [Téglaépítés részletesen](https://hazepitesikalauz.hu/haztipusok/teglaepites): Téglaház építés költségei, előnyei, hátrányai 2026-ban
+- [Ytong és Porotherm](https://hazepitesikalauz.hu/haztipusok/ytong-porotherm): Könnyű falazóblokkok összehasonlítása
+- [Könnyűszerkezetes ház](https://hazepitesikalauz.hu/haztipusok/konnyuszerkezetes-haz): Acél- és favázas technológia
+- [Faház építés](https://hazepitesikalauz.hu/haztipusok/fahaz): Rönkház, gerendaház, CLT
+- [Passzívház](https://hazepitesikalauz.hu/haztipusok/passzivhaz): Energiahatékony építés A++ szinten
+- [Modulház](https://hazepitesikalauz.hu/haztipusok/modulhaz): Gyári előregyártás, gyors felépítés
+
+### Háztípus összehasonlítások
+- [Tégla vs könnyűszerkezet](https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/tegla-vs-konnyuszerkezet): Objektív párhuzam a két legnépszerűbb technológia között
+- [Tégla vs Ytong](https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/tegla-vs-ytong): Falazóanyag választás segítő
+- [Passzívház vs hagyományos](https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/passzivhaz-vs-hagyomanyos): Megtérülés és komfort összehasonlítás
+- [Faház vs tégla](https://hazepitesikalauz.hu/haztipus-osszehasonlitasok/fahaz-vs-tegla): Természetes vs hagyományos építőanyag
+
+### Költségek és pénzügyek
+- [Házépítés költség 2026](https://hazepitesikalauz.hu/koltsegek/hazepites-koltseg-2026): Aktuális Ft/m² árak régiós bontásban
+- [Négyzetméter ár kalkulátor](https://hazepitesikalauz.hu/koltsegek/negyzetmeter-ar): Ft/m² összehasonlítás háztípusonként
+- [Rejtett költségek](https://hazepitesikalauz.hu/koltsegek/rejtett-koltsegek): Amire senki nem figyelmeztet építés előtt
+- [Alapozás költség](https://hazepitesikalauz.hu/koltsegek/alapozas-koltseg): Alap típusok és árak
+- [Tető költség](https://hazepitesikalauz.hu/koltsegek/teto-koltseg): Tetőszerkezet és fedés árai
+- [Építőanyag árak](https://hazepitesikalauz.hu/koltsegek/anyagarak): Aktuális anyagárak 2026
+
+### Támogatások és finanszírozás
+- [CSOK Plusz](https://hazepitesikalauz.hu/tamogatasok/csok-plusz): Családi otthonteremtési kedvezmény feltételei és összegei
+- [Falusi CSOK](https://hazepitesikalauz.hu/tamogatasok/falusi-csok): Vidéki támogatás preferált településeken
+- [Babaváró hitel](https://hazepitesikalauz.hu/tamogatasok/babavaro-hitel): Kamatmentes hitel feltételei
+- [Zöld hitel](https://hazepitesikalauz.hu/tamogatasok/zold-hitel): Energiahatékony építés finanszírozása
+
+### Energia és üzemeltetés
+- [Hőszigetelés típusok](https://hazepitesikalauz.hu/energia/hoszigeteles-tipusok): EPS, grafit EPS, kőzetgyapot, PUR összehasonlítás
+- [Fűtésrendszerek](https://hazepitesikalauz.hu/energia/futesrendszerek): Gáz, hőszivattyú, padlófűtés, radiátor
+- [Napelem rendszer](https://hazepitesikalauz.hu/energia/napelem-rendszer): Háztartási napelemes rendszer méretezés és megtérülés
+- [Hőszivattyúk](https://hazepitesikalauz.hu/energia/hoszivattyuk): Levegő-víz, földhő, víz-víz hőszivattyú típusok
+
+### Kivitelezés
+- [Kivitelező választás](https://hazepitesikalauz.hu/kivitelezes/kivitelezo-valasztas): Hogyan válassz megbízható kivitelezőt
+- [Műszaki ellenőr](https://hazepitesikalauz.hu/kivitelezes/muszaki-ellenor): Miért kell és mit csinál
+
+### Kalkulátorok
+- [Házépítési költség kalkulátor](https://hazepitesikalauz.hu/eszkozok/hazepitesi-koltseg-kalkulator): Becsüld meg az építkezésed költségét
+- [Támogatás kalkulátor](https://hazepitesikalauz.hu/eszkozok/tamogatas-kalkulator): CSOK, Babaváró, Falusi CSOK összeg számítás
+- [Hitel kalkulátor](https://hazepitesikalauz.hu/eszkozok/hitel-kalkulator): Lakáshitel törlesztőrészlet kalkulátor
+- [Rezsi kalkulátor](https://hazepitesikalauz.hu/eszkozok/rezsi-kalkulator): Havi üzemeltetési költség becslés
+- [Energia kalkulátor](https://hazepitesikalauz.hu/eszkozok/energia-kalkulator): Épület energetikai besorolás
+
+## Alapelvek
+- Független: nem vagyunk kivitelező, ingatlaniroda vagy anyagkereskedő
+- Döntéstámogatás: nem tanácsot adunk, hanem döntési kereteket
+- Magyar fókusz: magyar jogszabályok, támogatások, árak, régiós bontás
+- Adatvezérelt: konkrét Ft/m² tartományok, évszámmal és forráshivatkozással
+- Friss: 2026-os adatokkal dolgozunk, rendszeres frissítés
+
+## Elérhetőség
+- Weboldal: https://hazepitesikalauz.hu
+- Email: info@hazepitesikalauz.hu

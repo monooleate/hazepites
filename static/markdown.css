@@ -1397,6 +1397,75 @@ ol.nested li:before {
 .dark .mdx-comparison-winner .mdx-comparison-value { color: #6ee7b7; }
 .dark .mdx-comparison-badge { background: #34d399; }
 
+/* ComparisonRow – Lista mód (leftItems/rightItems) */
+.mdx-comparison-list {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin: 1.25rem 0;
+}
+.mdx-comparison-list-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.mdx-comparison-list-col {
+  padding: 0;
+}
+.mdx-comparison-list-right {
+  border-left: 1px solid #e2e8f0;
+}
+.mdx-comparison-list-heading {
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+.mdx-comparison-list-left .mdx-comparison-list-heading {
+  background: #f0fdf4;
+  color: #166534;
+}
+.mdx-comparison-list-right .mdx-comparison-list-heading {
+  background: #fef2f2;
+  color: #991b1b;
+}
+.mdx-comparison-list-items {
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+}
+.mdx-comparison-list-items li {
+  padding: 0.5rem 1rem 0.5rem 2rem;
+  position: relative;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #374151;
+}
+.mdx-comparison-list-left .mdx-comparison-list-items li::before {
+  content: "✓";
+  position: absolute;
+  left: 0.75rem;
+  color: #22c55e;
+  font-weight: bold;
+}
+.mdx-comparison-list-right .mdx-comparison-list-items li::before {
+  content: "✗";
+  position: absolute;
+  left: 0.75rem;
+  color: #ef4444;
+  font-weight: bold;
+}
+@media (max-width: 640px) {
+  .mdx-comparison-list-cols { grid-template-columns: 1fr; }
+  .mdx-comparison-list-right { border-left: none; border-top: 1px solid #e2e8f0; }
+}
+/* Lista mód dark */
+.dark .mdx-comparison-list { border-color: #374155; }
+.dark .mdx-comparison-list-right { border-color: #374155; }
+.dark .mdx-comparison-list-heading { border-color: #374155; }
+.dark .mdx-comparison-list-left .mdx-comparison-list-heading { background: #052e16; color: #86efac; }
+.dark .mdx-comparison-list-right .mdx-comparison-list-heading { background: #450a0a; color: #fca5a5; }
+.dark .mdx-comparison-list-items li { color: #d1d5db; }
+
 /* --- Callout case típus (esettanulmány InfoCard-on belül) --- */
 .mdx-callout-case {
   background: linear-gradient(135deg, #eff6ff, #f0fdf4);
@@ -1707,4 +1776,59 @@ ol.nested li:before {
 .dark .mdx-timeline-date { color: #93c5fd; background: #1e293b; }
 .dark .mdx-timeline-event-title { color: #f1f5f9; }
 .dark .mdx-timeline-desc { color: #94a3b8; }
+
+/* ── FAQ items (from ::: faq blocks) ── */
+.faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+.faq-item:hover { border-color: #6366f1; }
+.faq-item[open] { border-color: #6366f1; }
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  list-style: none;
+  color: #1e293b;
+  background: #f8fafc;
+  transition: background 0.15s ease;
+}
+.faq-item summary:hover { background: #f1f5f9; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid #6366f1;
+  border-bottom: 2px solid #6366f1;
+  transform: rotate(-45deg);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+.faq-item[open] summary::before {
+  transform: rotate(45deg);
+}
+.faq-answer {
+  padding: 0.75rem 1.25rem 1rem 2.5rem;
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+.faq-answer p { margin: 0; }
+
+/* FAQ dark mode */
+.dark .faq-item { border-color: #334155; }
+.dark .faq-item:hover, .dark .faq-item[open] { border-color: #818cf8; }
+.dark .faq-item summary { color: #f1f5f9; background: #1e293b; }
+.dark .faq-item summary:hover { background: #1e3a5f; }
+.dark .faq-item summary::before { border-color: #818cf8; }
+.dark .faq-answer { color: #94a3b8; }
 

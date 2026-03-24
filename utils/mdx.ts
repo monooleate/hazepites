@@ -82,27 +82,35 @@ export function extractHeadingsFromHtml(
  * 2) ::: faq Kérdés?\nVálasz\n:::              (régi stílus, inline kérdés)
  */
 function processFaqBlocks(html: string): string {
-  // Új stílus: a ::: faq és ### heading külön <p> tagekben jelenik meg
-  // MDX output: <p>::: faq</p>\n<h3 ...>Kérdés?</h3>\n<p>Válasz</p>\n<p>:::</p>
+  // Új stílus – MDX kimenet:
+  //   <p>::: faq</p>
+  //   <h3 id="...">Kérdés?</h3>
+  //   <p>Válasz szöveg.\n:::</p>
+  // A ::: záró tag a válasz <p>-jén BELÜL van, nem külön <p>-ben.
   html = html.replace(
-    /<p>::: faq<\/p>\s*<h3[^>]*>([\s\S]*?)<\/h3>\s*([\s\S]*?)<p>:::<\/p>/g,
+    /<p>::: faq<\/p>\s*<h3[^>]*>([\s\S]*?)<\/h3>\s*<p>([\s\S]*?)\n?:::<\/p>/g,
     (_match, question, answer) => {
       const q = question.replace(/<[^>]+>/g, "").trim();
       const a = answer.trim();
-      return `<details class="faq-item"><summary>${q}</summary><div class="faq-answer">${a}</div></details>`;
+      return `<details class="faq-item"><summary>${q}</summary><div class="faq-answer"><p>${a}</p></div></details>`;
     },
   );
 
-  // Régi stílus: ::: faq Kérdés?\nVálasz\n:::
-  // MDX output: <p>::: faq Kérdés?<br/>Válasz<br/>:::</p>  (vagy variációk)
+  // Régi stílus – MDX kimenet:
+  //   <p>::: faq Kérdés?\nVálasz\n:::</p>
+  // Minden egy <p> tagben, sortörésekkel.
   html = html.replace(
-    /<p>::: faq ([\s\S]*?)<\/p>\s*([\s\S]*?)<p>:::<\/p>/g,
+    /<p>::: faq ([^\n]+)\n([\s\S]*?)\n:::<\/p>/g,
     (_match, question, answer) => {
       const q = question.replace(/<[^>]+>/g, "").trim();
       const a = answer.trim();
-      return `<details class="faq-item"><summary>${q}</summary><div class="faq-answer">${a}</div></details>`;
+      return `<details class="faq-item"><summary>${q}</summary><div class="faq-answer"><p>${a}</p></div></details>`;
     },
   );
+
+  // Fallback: bármilyen maradék ::: faq / ::: pár eltávolítása
+  html = html.replace(/<p>::: faq<\/p>/g, "");
+  html = html.replace(/\n?:::<\/p>/g, "</p>");
 
   return html;
 }

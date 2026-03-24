@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <defs>
+    <pattern id="g1" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g1)"/>
+
+  <!-- 4 gépészeti ikon -->
+  <!-- Fűtés (bal) -->
+  <g transform="translate(150, 200)">
+    <circle cx="60" cy="60" r="55" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+    <path d="M40,45 Q60,20 80,45 Q60,70 40,45" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+    <path d="M50,55 Q60,40 70,55 Q60,70 50,55" fill="#ef4444" opacity="0.3"/>
+    <text x="60" y="140" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#fca5a5">Fűtés/hűtés</text>
+    <text x="60" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">3-6,5M Ft</text>
+  </g>
+
+  <!-- Villany -->
+  <g transform="translate(390, 200)">
+    <circle cx="60" cy="60" r="55" fill="none" stroke="#fbbf24" stroke-width="2.5"/>
+    <path d="M55,25 L45,60 L58,60 L48,95 L75,50 L60,50 L70,25Z" fill="#fbbf24" opacity="0.7"/>
+    <text x="60" y="140" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#fde68a">Villany</text>
+    <text x="60" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">960e-2,2M Ft</text>
+  </g>
+
+  <!-- Víz -->
+  <g transform="translate(630, 200)">
+    <circle cx="60" cy="60" r="55" fill="none" stroke="#3b82f6" stroke-width="2.5"/>
+    <path d="M60,25 Q45,55 60,85 Q75,55 60,25Z" fill="#3b82f6" opacity="0.4"/>
+    <path d="M60,35 Q50,55 60,75 Q70,55 60,35Z" fill="#3b82f6" opacity="0.3"/>
+    <text x="60" y="140" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#93c5fd">Víz/csatorna</text>
+    <text x="60" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">1,4-2,6M Ft</text>
+  </g>
+
+  <!-- Szellőzés -->
+  <g transform="translate(870, 200)">
+    <circle cx="60" cy="60" r="55" fill="none" stroke="#22c55e" stroke-width="2.5"/>
+    <circle cx="60" cy="60" r="20" fill="none" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="60" y1="40" x2="60" y2="15" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="75" y1="47" x2="90" y2="35" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="80" y1="60" x2="105" y2="60" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="75" y1="73" x2="90" y2="85" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="45" y1="47" x2="30" y2="35" stroke="#22c55e" stroke-width="1.5"/>
+    <line x1="40" y1="60" x2="15" y2="60" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="60" y="140" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#86efac">Szellőzés</text>
+    <text x="60" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">1,5-3,5M Ft</text>
+  </g>
+
+  <!-- Összesen sáv -->
+  <rect x="150" y="420" width="900" height="50" fill="#6366f1" rx="8" opacity="0.2"/>
+  <text x="600" y="452" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#a5b4fc">Összesen: 8-16 millió Ft (120 m²-es ház)</text>
+
+  <!-- Cím -->
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="#f1f5f9">Gépészet költsége</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Fűtés · Villany · Víz · Szellőzés · 2026</text>
+
+  <text x="600" y="600" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

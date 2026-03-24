@@ -45,6 +45,8 @@ const toc: RawTableOfContents = {
         ["page", "passzivhaz", "Passzívház"],
         // ["page", "mobilhaz", "Mobilház"],
         ["page", "modulhaz", "Modulház"],
+        ["page", "kontenerház", "Konténerház"],
+        ["page", "acelvazas-haz", "Acélvázas ház"],
         // ["page", "prefab-haz", "Prefab ház"],
         // ["page", "csaladihaztipusok", "Családi ház típusok"],
         // ["page", "tetofajtak", "Tetőfajták"],

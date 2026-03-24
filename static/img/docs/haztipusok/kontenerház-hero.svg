@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <defs><pattern id="g" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#g)" opacity="0.3"/>
+
+  <!-- Container shape -->
+  <rect x="150" y="200" width="400" height="160" rx="4" fill="#2a2a4e" stroke="#e67e22" stroke-width="3"/>
+  <!-- Container ridges -->
+  <line x1="200" y1="200" x2="200" y2="360" stroke="#e67e22" stroke-width="1" opacity="0.4"/>
+  <line x1="250" y1="200" x2="250" y2="360" stroke="#e67e22" stroke-width="1" opacity="0.4"/>
+  <line x1="300" y1="200" x2="300" y2="360" stroke="#e67e22" stroke-width="1" opacity="0.4"/>
+  <line x1="350" y1="200" x2="350" y2="360" stroke="#e67e22" stroke-width="1" opacity="0.4"/>
+  <line x1="400" y1="200" x2="400" y2="360" stroke="#e67e22" stroke-width="1" opacity="0.4"/>
+  <line x1="450" y1="200" x2="450" y2="360" stroke="#e67e22" stroke-width="1" opacity="0.4"/>
+  <line x1="500" y1="200" x2="500" y2="360" stroke="#e67e22" stroke-width="1" opacity="0.4"/>
+  <!-- Windows cut out -->
+  <rect x="180" y="230" width="80" height="60" rx="2" fill="#3498db" opacity="0.3" stroke="#3498db" stroke-width="1.5"/>
+  <rect x="310" y="230" width="80" height="60" rx="2" fill="#3498db" opacity="0.3" stroke="#3498db" stroke-width="1.5"/>
+  <!-- Door -->
+  <rect x="440" y="240" width="50" height="120" rx="2" fill="#e67e22" opacity="0.3" stroke="#e67e22" stroke-width="1.5"/>
+
+  <!-- Arrow: container -> house transformation -->
+  <path d="M 580 280 L 650 280" stroke="#f39c12" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+  <defs><marker id="arr" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto"><polygon points="0 0,10 3.5,0 7" fill="#f39c12"/></marker></defs>
+
+  <!-- Transformed house -->
+  <rect x="680" y="200" width="400" height="160" rx="8" fill="#2a2a4e" stroke="#2ecc71" stroke-width="2"/>
+  <!-- Nice windows -->
+  <rect x="710" y="225" width="70" height="55" rx="4" fill="#5dade2" opacity="0.3" stroke="#5dade2" stroke-width="1.5"/>
+  <rect x="810" y="225" width="70" height="55" rx="4" fill="#5dade2" opacity="0.3" stroke="#5dade2" stroke-width="1.5"/>
+  <rect x="910" y="225" width="70" height="55" rx="4" fill="#5dade2" opacity="0.3" stroke="#5dade2" stroke-width="1.5"/>
+  <!-- Door -->
+  <rect x="1010" y="235" width="45" height="125" rx="4" fill="#2ecc71" opacity="0.3" stroke="#2ecc71" stroke-width="1.5"/>
+  <!-- Roof line -->
+  <polygon points="670,200 880,150 1090,200" fill="none" stroke="#2ecc71" stroke-width="2"/>
+  <!-- Insulation indicator -->
+  <rect x="680" y="195" width="400" height="8" rx="2" fill="#f39c12" opacity="0.5"/>
+  <text x="880" y="192" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#f39c12">15 cm szigeteles</text>
+
+  <!-- Stats -->
+  <rect x="150" y="400" width="220" height="70" rx="8" fill="#2a2a4e" stroke="#e67e22" stroke-width="1"/>
+  <text x="260" y="430" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#e67e22">Alap kontener</text>
+  <text x="260" y="455" text-anchor="middle" font-family="sans-serif" font-size="18" fill="white" font-weight="bold">800e-1,5M Ft</text>
+
+  <rect x="400" y="400" width="220" height="70" rx="8" fill="#2a2a4e" stroke="#f39c12" stroke-width="1"/>
+  <text x="510" y="430" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f39c12">Kulcsrakesz m2-ar</text>
+  <text x="510" y="455" text-anchor="middle" font-family="sans-serif" font-size="18" fill="white" font-weight="bold">250-500e Ft</text>
+
+  <rect x="650" y="400" width="220" height="70" rx="8" fill="#2a2a4e" stroke="#e74c3c" stroke-width="1"/>
+  <text x="760" y="430" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#e74c3c">Elettartam</text>
+  <text x="760" y="455" text-anchor="middle" font-family="sans-serif" font-size="18" fill="white" font-weight="bold">40-70 ev</text>
+
+  <rect x="900" y="400" width="200" height="70" rx="8" fill="#e74c3c" opacity="0.9"/>
+  <text x="1000" y="430" text-anchor="middle" font-family="sans-serif" font-size="13" fill="white">Bankhitel</text>
+  <text x="1000" y="455" text-anchor="middle" font-family="sans-serif" font-size="16" fill="white" font-weight="bold">Nehezen</text>
+
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="white">Kontenerház 2026</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ccc">Mennyibe kerul es mire szamits valojaban?</text>
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#555">hazepitesikalauz.hu</text>
+</svg>

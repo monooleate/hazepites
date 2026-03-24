@@ -80,6 +80,7 @@ const toc: RawTableOfContents = {
         // ["page", "kulso-burkolatok", "Külső burkolat és homlokzat"],
         ["page", "rejtett-koltsegek", "Rejtett költségek"],
         ["page", "anyagarak", "Építőanyag árak"],
+        ["page", "koltsegtulelpes-tipikus-okai", "Költségtúllépés okai"],
         // ["page", "munkadijterkep", "Munkadíj térkép"],
         // ["page", "arak-regiok-szerint", "Árak régiók szerint"],
         // ["page", "koltsegvetes-sablon", "Költségvetés sablon"],
@@ -129,7 +130,7 @@ const toc: RawTableOfContents = {
     tervezes: {
       title: "Tervezés",
       pages: [
-        // ["page", "epitesz-valasztas", "Építész választás"],
+        ["page", "epitesz-valasztas", "Építész választás"],
         // ["page", "tervrajz-alapok", "Tervrajz alapok"],
         // ["page", "hazmeretezesi-utmutato", "Házméretezési útmutató"],
         // ["page", "alaprajz-tippek", "Alaprajz tippek"],

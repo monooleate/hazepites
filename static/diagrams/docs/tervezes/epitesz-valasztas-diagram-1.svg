@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#fafafa" rx="12"/>
+
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#333">Tervezési fázisok és költségek – családi ház (100 m²)</text>
+  <text x="450" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#888">2026-os díjak | MÉK ajánlott díjszabás alapján</text>
+
+  <!-- Timeline/flowchart -->
+  <!-- Phase 1: Vázlatterv -->
+  <rect x="50" y="85" width="170" height="130" rx="10" fill="#fff" stroke="#3498db" stroke-width="2"/>
+  <rect x="50" y="85" width="170" height="35" rx="10" fill="#3498db"/>
+  <rect x="50" y="100" width="170" height="20" fill="#3498db"/>
+  <text x="135" y="108" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white" font-weight="bold">1. Vázlatterv</text>
+  <text x="135" y="140" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Koncepció, 2-3 változat</text>
+  <text x="135" y="160" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Igényfelmérés</text>
+  <text x="135" y="185" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3498db" font-weight="bold">150-400e Ft</text>
+  <text x="135" y="205" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#888">2-4 hét</text>
+
+  <!-- Arrow -->
+  <path d="M 225 150 L 260 150" stroke="#ccc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#ccc"/>
+    </marker>
+  </defs>
+
+  <!-- Phase 2: Engedélyezési terv -->
+  <rect x="265" y="85" width="170" height="130" rx="10" fill="#fff" stroke="#f39c12" stroke-width="2"/>
+  <rect x="265" y="85" width="170" height="35" rx="10" fill="#f39c12"/>
+  <rect x="265" y="100" width="170" height="20" fill="#f39c12"/>
+  <text x="350" y="108" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white" font-weight="bold">2. Engedélyezési</text>
+  <text x="350" y="140" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Alaprajz, metszet</text>
+  <text x="350" y="160" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Homlokzat, helyszínrajz</text>
+  <text x="350" y="185" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#f39c12" font-weight="bold">0,6-1,5M Ft</text>
+  <text x="350" y="205" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#888">4-8 hét</text>
+
+  <!-- Arrow -->
+  <path d="M 440 150 L 475 150" stroke="#ccc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 3: Kiviteli terv -->
+  <rect x="480" y="85" width="170" height="130" rx="10" fill="#fff" stroke="#e74c3c" stroke-width="2"/>
+  <rect x="480" y="85" width="170" height="35" rx="10" fill="#e74c3c"/>
+  <rect x="480" y="100" width="170" height="20" fill="#e74c3c"/>
+  <text x="565" y="108" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white" font-weight="bold">3. Kiviteli terv</text>
+  <text x="565" y="140" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Részlettervek, csomópontok</text>
+  <text x="565" y="160" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Statika + gépészet + elektr.</text>
+  <text x="565" y="185" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#e74c3c" font-weight="bold">1,5-4M Ft</text>
+  <text x="565" y="205" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#888">8-16 hét</text>
+
+  <!-- Arrow -->
+  <path d="M 655 150 L 690 150" stroke="#ccc" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Phase 4: Művezetés -->
+  <rect x="695" y="85" width="170" height="130" rx="10" fill="#fff" stroke="#2ecc71" stroke-width="2"/>
+  <rect x="695" y="85" width="170" height="35" rx="10" fill="#2ecc71"/>
+  <rect x="695" y="100" width="170" height="20" fill="#2ecc71"/>
+  <text x="780" y="108" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white" font-weight="bold">4. Művezetés</text>
+  <text x="780" y="140" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Helyszíni ellenőrzés</text>
+  <text x="780" y="160" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">Havi 2-4 alkalom</text>
+  <text x="780" y="185" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#2ecc71" font-weight="bold">0,6-1,2M Ft</text>
+  <text x="780" y="205" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#888">10-14 hónap</text>
+
+  <!-- Additional costs section -->
+  <text x="450" y="260" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#333">Kapcsolódó költségek (a tervezési díjon felül)</text>
+
+  <!-- Cost items -->
+  <rect x="50" y="280" width="200" height="70" rx="8" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="150" y="305" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#555">Geodéziai felmérés</text>
+  <text x="150" y="330" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3498db" font-weight="bold">80-150e Ft</text>
+
+  <rect x="270" y="280" width="200" height="70" rx="8" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="370" y="305" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#555">Talajmechanika</text>
+  <text x="370" y="330" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3498db" font-weight="bold">80-200e Ft</text>
+
+  <rect x="490" y="280" width="200" height="70" rx="8" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="590" y="305" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#555">Energetikai tanúsítvány</text>
+  <text x="590" y="330" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3498db" font-weight="bold">60-120e Ft</text>
+
+  <rect x="710" y="280" width="150" height="70" rx="8" fill="#fff" stroke="#ddd" stroke-width="1"/>
+  <text x="785" y="305" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#555">Hatósági díjak</text>
+  <text x="785" y="330" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3498db" font-weight="bold">50-100e Ft</text>
+
+  <!-- Total summary -->
+  <rect x="200" y="380" width="500" height="90" rx="12" fill="#2c3e50"/>
+  <text x="450" y="415" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#ccc">Teljes tervezési költség (100 m²-es családi ház)</text>
+  <text x="450" y="450" text-anchor="middle" font-family="sans-serif" font-size="28" fill="white" font-weight="bold">2,5 – 6,5 millió Ft</text>
+  <text x="450" y="465" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#aaa">az építési költség 4-10%-a</text>
+</svg>

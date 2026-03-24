@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e" rx="0"/>
+
+  <!-- Background grid pattern -->
+  <defs>
+    <pattern id="grid2" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid2)" opacity="0.3"/>
+
+  <!-- Blueprint/floor plan illustration -->
+  <!-- House outline -->
+  <rect x="150" y="180" width="350" height="280" rx="4" fill="none" stroke="#3498db" stroke-width="2"/>
+  <!-- Rooms -->
+  <line x1="150" y1="320" x2="500" y2="320" stroke="#3498db" stroke-width="1.5"/>
+  <line x1="320" y1="180" x2="320" y2="460" stroke="#3498db" stroke-width="1.5"/>
+  <line x1="150" y1="380" x2="320" y2="380" stroke="#3498db" stroke-width="1.5"/>
+
+  <!-- Room labels -->
+  <text x="235" y="260" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#5dade2">Nappali</text>
+  <text x="235" y="278" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#777">32 m²</text>
+  <text x="410" y="260" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#5dade2">Konyha</text>
+  <text x="410" y="278" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#777">18 m²</text>
+  <text x="235" y="355" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#5dade2">Háló</text>
+  <text x="235" y="373" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#777">16 m²</text>
+  <text x="235" y="430" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#5dade2">Fürdő</text>
+  <text x="235" y="448" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#777">8 m²</text>
+  <text x="410" y="400" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#5dade2">Gyerekszoba</text>
+  <text x="410" y="418" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#777">14 m²</text>
+
+  <!-- Dimension lines -->
+  <line x1="150" y1="170" x2="500" y2="170" stroke="#f39c12" stroke-width="1"/>
+  <line x1="150" y1="165" x2="150" y2="175" stroke="#f39c12" stroke-width="1"/>
+  <line x1="500" y1="165" x2="500" y2="175" stroke="#f39c12" stroke-width="1"/>
+  <text x="325" y="165" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#f39c12">12,6 m</text>
+
+  <!-- Door indicators -->
+  <path d="M 320 310 Q 340 310 340 290" fill="none" stroke="#5dade2" stroke-width="1.5"/>
+  <path d="M 150 370 Q 150 350 170 350" fill="none" stroke="#5dade2" stroke-width="1.5"/>
+
+  <!-- Right side: decision factors -->
+  <rect x="580" y="170" width="500" height="90" rx="10" fill="#2a2a4e" stroke="#3498db" stroke-width="1.5"/>
+  <text x="610" y="205" font-family="sans-serif" font-size="22" fill="#3498db">📐</text>
+  <text x="645" y="205" font-family="sans-serif" font-size="16" fill="white" font-weight="bold">Tervezési díj</text>
+  <text x="645" y="230" font-family="sans-serif" font-size="14" fill="#aaa">Az építési költség 3-8%-a</text>
+  <text x="960" y="210" text-anchor="end" font-family="sans-serif" font-size="22" fill="#2ecc71" font-weight="bold">1,5-5M Ft</text>
+
+  <rect x="580" y="280" width="500" height="90" rx="10" fill="#2a2a4e" stroke="#f39c12" stroke-width="1.5"/>
+  <text x="610" y="315" font-family="sans-serif" font-size="22" fill="#f39c12">📋</text>
+  <text x="645" y="315" font-family="sans-serif" font-size="16" fill="white" font-weight="bold">Engedélyezési terv</text>
+  <text x="645" y="340" font-family="sans-serif" font-size="14" fill="#aaa">Hatóságnak – 4-8 hét</text>
+  <text x="960" y="320" text-anchor="end" font-family="sans-serif" font-size="22" fill="#f39c12" font-weight="bold">0,6-1,5M Ft</text>
+
+  <rect x="580" y="390" width="500" height="90" rx="10" fill="#2a2a4e" stroke="#e74c3c" stroke-width="1.5"/>
+  <text x="610" y="425" font-family="sans-serif" font-size="22" fill="#e74c3c">🏗️</text>
+  <text x="645" y="425" font-family="sans-serif" font-size="16" fill="white" font-weight="bold">Kiviteli terv</text>
+  <text x="645" y="450" font-family="sans-serif" font-size="14" fill="#aaa">Kivitelezőnek – 8-16 hét</text>
+  <text x="960" y="430" text-anchor="end" font-family="sans-serif" font-size="22" fill="#e74c3c" font-weight="bold">1,5-4M Ft</text>
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="white">Építész választás</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ccc">Hogyan találd meg a megfelelő tervezőt?</text>
+
+  <!-- MÉK badge -->
+  <rect x="580" y="500" width="220" height="50" rx="8" fill="#16a085" opacity="0.9"/>
+  <text x="690" y="530" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white" font-weight="bold">MÉK jogosultság kötelező</text>
+
+  <!-- Brand -->
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#555">hazepitesikalauz.hu</text>
+</svg>

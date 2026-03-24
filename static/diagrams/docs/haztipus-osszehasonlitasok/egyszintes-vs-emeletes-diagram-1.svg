@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <rect width="900" height="450" fill="#fafafa" rx="12"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#333">Egyszintes vs emeletes – költség és terület összehasonlítás</text>
+  <text x="450" y="55" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#888">120 m²-es családi ház, 2026-os árak</text>
+
+  <!-- Left column: Egyszintes -->
+  <rect x="50" y="75" width="380" height="35" rx="6" fill="#2ecc71"/>
+  <text x="240" y="98" text-anchor="middle" font-family="sans-serif" font-size="15" fill="white" font-weight="bold">Egyszintes (120 m², 12×10 m)</text>
+
+  <rect x="50" y="115" width="380" height="40" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="60" y="140" font-family="sans-serif" font-size="13" fill="#555">Alap területe</text>
+  <text x="420" y="140" text-anchor="end" font-family="sans-serif" font-size="14" fill="#e74c3c" font-weight="bold">120 m²</text>
+
+  <rect x="50" y="160" width="380" height="40" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="60" y="185" font-family="sans-serif" font-size="13" fill="#555">Alap költsége</text>
+  <text x="420" y="185" text-anchor="end" font-family="sans-serif" font-size="14" fill="#e74c3c" font-weight="bold">3,6-5,4M Ft</text>
+
+  <rect x="50" y="205" width="380" height="40" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="60" y="230" font-family="sans-serif" font-size="13" fill="#555">Tető területe</text>
+  <text x="420" y="230" text-anchor="end" font-family="sans-serif" font-size="14" fill="#e74c3c" font-weight="bold">~130 m²</text>
+
+  <rect x="50" y="250" width="380" height="40" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="60" y="275" font-family="sans-serif" font-size="13" fill="#555">Tető költsége</text>
+  <text x="420" y="275" text-anchor="end" font-family="sans-serif" font-size="14" fill="#e74c3c" font-weight="bold">4,6-7,2M Ft</text>
+
+  <rect x="50" y="295" width="380" height="40" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="60" y="320" font-family="sans-serif" font-size="13" fill="#555">Lépcső költsége</text>
+  <text x="420" y="320" text-anchor="end" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">0 Ft ✓</text>
+
+  <rect x="50" y="340" width="380" height="40" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="60" y="365" font-family="sans-serif" font-size="13" fill="#555">Min. telekméret</text>
+  <text x="420" y="365" text-anchor="end" font-family="sans-serif" font-size="14" fill="#e74c3c" font-weight="bold">600-700 m²</text>
+
+  <rect x="50" y="385" width="380" height="40" fill="#2ecc71" opacity="0.1" stroke="#2ecc71" stroke-width="1"/>
+  <text x="60" y="410" font-family="sans-serif" font-size="13" fill="#333" font-weight="bold">Becsült összköltség</text>
+  <text x="420" y="410" text-anchor="end" font-family="sans-serif" font-size="16" fill="#e74c3c" font-weight="bold">60-85M Ft</text>
+
+  <!-- Right column: Emeletes -->
+  <rect x="470" y="75" width="380" height="35" rx="6" fill="#9b59b6"/>
+  <text x="660" y="98" text-anchor="middle" font-family="sans-serif" font-size="15" fill="white" font-weight="bold">Emeletes (2×60 m², 8×8 m)</text>
+
+  <rect x="470" y="115" width="380" height="40" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="480" y="140" font-family="sans-serif" font-size="13" fill="#555">Alap területe</text>
+  <text x="840" y="140" text-anchor="end" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">65 m² ✓</text>
+
+  <rect x="470" y="160" width="380" height="40" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="480" y="185" font-family="sans-serif" font-size="13" fill="#555">Alap költsége</text>
+  <text x="840" y="185" text-anchor="end" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">2-2,9M Ft ✓</text>
+
+  <rect x="470" y="205" width="380" height="40" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="480" y="230" font-family="sans-serif" font-size="13" fill="#555">Tető területe</text>
+  <text x="840" y="230" text-anchor="end" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">~70 m² ✓</text>
+
+  <rect x="470" y="250" width="380" height="40" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="480" y="275" font-family="sans-serif" font-size="13" fill="#555">Tető költsége</text>
+  <text x="840" y="275" text-anchor="end" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">2,5-3,9M Ft ✓</text>
+
+  <rect x="470" y="295" width="380" height="40" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="480" y="320" font-family="sans-serif" font-size="13" fill="#555">Lépcső költsége</text>
+  <text x="840" y="320" text-anchor="end" font-family="sans-serif" font-size="14" fill="#e74c3c" font-weight="bold">0,8-2M Ft</text>
+
+  <rect x="470" y="340" width="380" height="40" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="480" y="365" font-family="sans-serif" font-size="13" fill="#555">Min. telekméret</text>
+  <text x="840" y="365" text-anchor="end" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">400-500 m² ✓</text>
+
+  <rect x="470" y="385" width="380" height="40" fill="#9b59b6" opacity="0.1" stroke="#9b59b6" stroke-width="1"/>
+  <text x="480" y="410" font-family="sans-serif" font-size="13" fill="#333" font-weight="bold">Becsült összköltség</text>
+  <text x="840" y="410" text-anchor="end" font-family="sans-serif" font-size="16" fill="#27ae60" font-weight="bold">52-72M Ft ✓</text>
+</svg>

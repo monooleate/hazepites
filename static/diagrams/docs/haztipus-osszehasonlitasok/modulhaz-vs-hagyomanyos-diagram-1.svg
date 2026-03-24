@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <rect width="900" height="450" fill="#fafafa" rx="12"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#333">Modulház vs hagyományos – szempontonkénti összehasonlítás</text>
+
+  <!-- Table header -->
+  <rect x="30" y="60" width="840" height="40" rx="6" fill="#2c3e50"/>
+  <text x="200" y="85" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white" font-weight="bold">Szempont</text>
+  <text x="480" y="85" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white" font-weight="bold">Modulház</text>
+  <text x="730" y="85" text-anchor="middle" font-family="sans-serif" font-size="14" fill="white" font-weight="bold">Hagyományos tégla</text>
+
+  <!-- Rows -->
+  <rect x="30" y="105" width="840" height="45" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="200" y="132" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">Kulcsrakész ár/m²</text>
+  <text x="480" y="132" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">380-650e Ft ✓</text>
+  <text x="730" y="132" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#333">500-850e Ft</text>
+
+  <rect x="30" y="155" width="840" height="45" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="200" y="182" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">Építési idő</text>
+  <text x="480" y="182" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">3-5 hónap ✓</text>
+  <text x="730" y="182" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#333">10-16 hónap</text>
+
+  <rect x="30" y="205" width="840" height="45" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="200" y="232" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">Élettartam</text>
+  <text x="480" y="232" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#333">50-80 év</text>
+  <text x="730" y="232" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">80-120 év ✓</text>
+
+  <rect x="30" y="255" width="840" height="45" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="200" y="282" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">Értéktartás</text>
+  <text x="480" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#333">85-95% a tégláé</text>
+  <text x="730" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">100% (referencia) ✓</text>
+
+  <rect x="30" y="305" width="840" height="45" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="200" y="332" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">Hangszigetelés</text>
+  <text x="480" y="332" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#333">Gyengébb (könnyű szerkezet)</text>
+  <text x="730" y="332" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">Jobb (tömeg) ✓</text>
+
+  <rect x="30" y="355" width="840" height="45" fill="#f8f8f8" stroke="#eee" stroke-width="1"/>
+  <text x="200" y="382" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">Egyedi alaprajz</text>
+  <text x="480" y="382" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#333">Korlátozott (3,5 m modul)</text>
+  <text x="730" y="382" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">Teljesen szabad ✓</text>
+
+  <rect x="30" y="405" width="840" height="45" fill="#fff" stroke="#eee" stroke-width="1"/>
+  <text x="200" y="432" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#333">Energiahatékonyság</text>
+  <text x="480" y="432" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#27ae60" font-weight="bold">Jobb légzárás ✓</text>
+  <text x="730" y="432" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#333">Jó, de függ a kivitelezőtől</text>
+</svg>

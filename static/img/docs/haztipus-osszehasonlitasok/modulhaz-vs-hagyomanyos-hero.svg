@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e" rx="0"/>
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.3"/>
+
+  <!-- Left: Modular house icon -->
+  <rect x="100" y="200" width="180" height="120" rx="4" fill="#2a2a4e" stroke="#3498db" stroke-width="2"/>
+  <rect x="290" y="200" width="180" height="120" rx="4" fill="#2a2a4e" stroke="#3498db" stroke-width="2" stroke-dasharray="8,4"/>
+  <line x1="280" y1="220" x2="300" y2="220" stroke="#3498db" stroke-width="2"/>
+  <line x1="280" y1="260" x2="300" y2="260" stroke="#3498db" stroke-width="2"/>
+  <line x1="280" y1="300" x2="300" y2="300" stroke="#3498db" stroke-width="2"/>
+  <!-- Windows -->
+  <rect x="130" y="230" width="40" height="40" rx="2" fill="#5dade2" opacity="0.3" stroke="#5dade2" stroke-width="1"/>
+  <rect x="210" y="230" width="40" height="40" rx="2" fill="#5dade2" opacity="0.3" stroke="#5dade2" stroke-width="1"/>
+  <rect x="320" y="230" width="40" height="40" rx="2" fill="#5dade2" opacity="0.3" stroke="#5dade2" stroke-width="1"/>
+  <rect x="400" y="230" width="40" height="40" rx="2" fill="#5dade2" opacity="0.3" stroke="#5dade2" stroke-width="1"/>
+  <!-- Roof -->
+  <polygon points="90,200 285,140 480,200" fill="none" stroke="#3498db" stroke-width="2"/>
+  <!-- Label -->
+  <text x="285" y="360" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#3498db" font-weight="bold">Modulház</text>
+  <text x="285" y="385" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#5dade2">380-650e Ft/m²</text>
+  <text x="285" y="405" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#5dade2">3-5 hónap</text>
+
+  <!-- VS badge -->
+  <circle cx="600" cy="280" r="35" fill="#f39c12"/>
+  <text x="600" y="288" text-anchor="middle" font-family="sans-serif" font-size="22" fill="white" font-weight="bold">VS</text>
+
+  <!-- Right: Traditional house icon -->
+  <rect x="720" y="200" width="360" height="120" rx="4" fill="#2a2a4e" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Bricks pattern -->
+  <line x1="720" y1="230" x2="1080" y2="230" stroke="#e74c3c" stroke-width="0.5" opacity="0.5"/>
+  <line x1="720" y1="260" x2="1080" y2="260" stroke="#e74c3c" stroke-width="0.5" opacity="0.5"/>
+  <line x1="720" y1="290" x2="1080" y2="290" stroke="#e74c3c" stroke-width="0.5" opacity="0.5"/>
+  <!-- Windows -->
+  <rect x="750" y="235" width="45" height="45" rx="2" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="1"/>
+  <rect x="870" y="235" width="45" height="45" rx="2" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="1"/>
+  <rect x="990" y="235" width="45" height="45" rx="2" fill="#e74c3c" opacity="0.2" stroke="#e74c3c" stroke-width="1"/>
+  <!-- Door -->
+  <rect x="820" y="250" width="35" height="70" rx="2" fill="#e74c3c" opacity="0.3" stroke="#e74c3c" stroke-width="1"/>
+  <!-- Roof -->
+  <polygon points="710,200 900,130 1090,200" fill="none" stroke="#e74c3c" stroke-width="2"/>
+  <!-- Label -->
+  <text x="900" y="360" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#e74c3c" font-weight="bold">Hagyományos tégla</text>
+  <text x="900" y="385" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#e8a0a0">500-850e Ft/m²</text>
+  <text x="900" y="405" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#e8a0a0">10-16 hónap</text>
+
+  <!-- Key stats at bottom -->
+  <rect x="100" y="440" width="250" height="65" rx="8" fill="#2a2a4e" stroke="#3498db" stroke-width="1"/>
+  <text x="225" y="468" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#3498db">⏱️ Gyorsabb: 2-3×</text>
+  <text x="225" y="490" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#888">Gyári + helyszíni párhuzam</text>
+
+  <rect x="380" y="440" width="250" height="65" rx="8" fill="#2a2a4e" stroke="#f39c12" stroke-width="1"/>
+  <text x="505" y="468" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f39c12">💰 Olcsóbb: 10-25%</text>
+  <text x="505" y="490" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#888">Kulcsrakész m²-árban</text>
+
+  <rect x="660" y="440" width="250" height="65" rx="8" fill="#2a2a4e" stroke="#e74c3c" stroke-width="1"/>
+  <text x="785" y="468" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#e74c3c">🏠 Értéktartóbb: tégla</text>
+  <text x="785" y="490" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#888">5-15% piaci árelőny</text>
+
+  <!-- Title -->
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="white">Modulház vs hagyományos építés</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ccc">Melyik éri meg 2026-ban?</text>
+
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#555">hazepitesikalauz.hu</text>
+</svg>

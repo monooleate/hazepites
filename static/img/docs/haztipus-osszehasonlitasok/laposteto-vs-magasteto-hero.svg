@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e" rx="0"/>
+  <defs>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Lapostető ház (bal) -->
+  <g transform="translate(180, 180)">
+    <!-- Falak -->
+    <rect x="0" y="80" width="280" height="200" fill="#2d3748" stroke="#6366f1" stroke-width="2"/>
+    <!-- Lapostető -->
+    <rect x="-15" y="65" width="310" height="20" fill="#6366f1" rx="2"/>
+    <!-- Ablak 1 -->
+    <rect x="30" y="130" width="60" height="70" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" rx="2"/>
+    <line x1="60" y1="130" x2="60" y2="200" stroke="#818cf8" stroke-width="1"/>
+    <line x1="30" y1="165" x2="90" y2="165" stroke="#818cf8" stroke-width="1"/>
+    <!-- Ablak 2 -->
+    <rect x="190" y="130" width="60" height="70" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" rx="2"/>
+    <line x1="220" y1="130" x2="220" y2="200" stroke="#818cf8" stroke-width="1"/>
+    <line x1="190" y1="165" x2="250" y2="165" stroke="#818cf8" stroke-width="1"/>
+    <!-- Ajtó -->
+    <rect x="115" y="170" width="50" height="110" fill="#0f172a" stroke="#818cf8" stroke-width="1.5" rx="2"/>
+    <!-- Zöldtető jelzés -->
+    <rect x="-10" y="55" width="300" height="12" fill="#22c55e" rx="3" opacity="0.6"/>
+    <!-- Napelem panel -->
+    <g transform="translate(50, 20) rotate(-25)">
+      <rect width="50" height="30" fill="#3b82f6" stroke="#60a5fa" stroke-width="1" rx="1"/>
+      <line x1="25" y1="0" x2="25" y2="30" stroke="#60a5fa" stroke-width="0.5"/>
+      <line x1="0" y1="15" x2="50" y2="15" stroke="#60a5fa" stroke-width="0.5"/>
+    </g>
+    <g transform="translate(120, 20) rotate(-25)">
+      <rect width="50" height="30" fill="#3b82f6" stroke="#60a5fa" stroke-width="1" rx="1"/>
+      <line x1="25" y1="0" x2="25" y2="30" stroke="#60a5fa" stroke-width="0.5"/>
+      <line x1="0" y1="15" x2="50" y2="15" stroke="#60a5fa" stroke-width="0.5"/>
+    </g>
+    <!-- Talaj -->
+    <line x1="-30" y1="280" x2="310" y2="280" stroke="#4a5568" stroke-width="2"/>
+    <!-- Címke -->
+    <text x="140" y="330" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#a5b4fc">LAPOSTETŐ</text>
+    <text x="140" y="360" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#94a3b8">20-35e Ft/m²</text>
+  </g>
+
+  <!-- VS felirat -->
+  <text x="600" y="340" text-anchor="middle" font-family="sans-serif" font-size="48" font-weight="bold" fill="#6366f1" opacity="0.4">VS</text>
+
+  <!-- Magastető ház (jobb) -->
+  <g transform="translate(720, 180)">
+    <!-- Falak -->
+    <rect x="0" y="140" width="280" height="140" fill="#2d3748" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Magastető -->
+    <polygon points="-20,145 140,20 300,145" fill="#44403c" stroke="#f59e0b" stroke-width="2"/>
+    <!-- Cserép vonalak -->
+    <line x1="20" y1="130" x2="260" y2="130" stroke="#f59e0b" stroke-width="0.5" opacity="0.5"/>
+    <line x1="40" y1="115" x2="240" y2="115" stroke="#f59e0b" stroke-width="0.5" opacity="0.5"/>
+    <line x1="60" y1="100" x2="220" y2="100" stroke="#f59e0b" stroke-width="0.5" opacity="0.5"/>
+    <line x1="80" y1="85" x2="200" y2="85" stroke="#f59e0b" stroke-width="0.5" opacity="0.5"/>
+    <line x1="100" y1="70" x2="180" y2="70" stroke="#f59e0b" stroke-width="0.5" opacity="0.5"/>
+    <!-- Tetőtéri ablak -->
+    <rect x="110" y="65" width="60" height="50" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5" rx="2" transform="rotate(-2, 140, 90)"/>
+    <!-- Ablak 1 -->
+    <rect x="30" y="180" width="60" height="60" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5" rx="2"/>
+    <line x1="60" y1="180" x2="60" y2="240" stroke="#fbbf24" stroke-width="1"/>
+    <line x1="30" y1="210" x2="90" y2="210" stroke="#fbbf24" stroke-width="1"/>
+    <!-- Ablak 2 -->
+    <rect x="190" y="180" width="60" height="60" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5" rx="2"/>
+    <line x1="220" y1="180" x2="220" y2="240" stroke="#fbbf24" stroke-width="1"/>
+    <line x1="190" y1="210" x2="250" y2="210" stroke="#fbbf24" stroke-width="1"/>
+    <!-- Ajtó -->
+    <rect x="115" y="200" width="50" height="80" fill="#0f172a" stroke="#fbbf24" stroke-width="1.5" rx="2"/>
+    <!-- Talaj -->
+    <line x1="-30" y1="280" x2="310" y2="280" stroke="#4a5568" stroke-width="2"/>
+    <!-- Címke -->
+    <text x="140" y="330" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#fbbf24">MAGASTETŐ</text>
+    <text x="140" y="360" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#94a3b8">35-55e Ft/m²</text>
+  </g>
+
+  <!-- Cím -->
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="bold" fill="#f1f5f9">Lapostető vs Magastető</text>
+  <text x="600" y="95" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Költség · Élettartam · Karbantartás · 2026</text>
+
+  <!-- Brand -->
+  <text x="600" y="600" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

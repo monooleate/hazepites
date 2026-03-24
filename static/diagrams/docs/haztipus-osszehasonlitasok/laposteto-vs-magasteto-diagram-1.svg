@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#ffffff" rx="8"/>
+
+  <text x="450" y="40" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1e293b">Lapostető vs magastető – életciklus költség (50 év, 100 m²)</text>
+
+  <!-- Tengely -->
+  <line x1="80" y1="80" x2="80" y2="400" stroke="#cbd5e1" stroke-width="1"/>
+  <line x1="80" y1="400" x2="850" y2="400" stroke="#cbd5e1" stroke-width="1"/>
+
+  <!-- Y tengely jelölések (millió Ft) -->
+  <text x="70" y="405" text-anchor="end" font-family="sans-serif" font-size="12" fill="#64748b">0</text>
+  <text x="70" y="325" text-anchor="end" font-family="sans-serif" font-size="12" fill="#64748b">2M</text>
+  <line x1="80" y1="320" x2="850" y2="320" stroke="#e2e8f0" stroke-width="0.5"/>
+  <text x="70" y="245" text-anchor="end" font-family="sans-serif" font-size="12" fill="#64748b">4M</text>
+  <line x1="80" y1="240" x2="850" y2="240" stroke="#e2e8f0" stroke-width="0.5"/>
+  <text x="70" y="165" text-anchor="end" font-family="sans-serif" font-size="12" fill="#64748b">6M</text>
+  <line x1="80" y1="160" x2="850" y2="160" stroke="#e2e8f0" stroke-width="0.5"/>
+  <text x="70" y="85" text-anchor="end" font-family="sans-serif" font-size="12" fill="#64748b">8M</text>
+  <line x1="80" y1="80" x2="850" y2="80" stroke="#e2e8f0" stroke-width="0.5"/>
+
+  <!-- Y tengely felirat -->
+  <text x="25" y="240" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#475569" transform="rotate(-90, 25, 240)">Költség (Ft)</text>
+
+  <!-- Kategóriák -->
+  <!-- Építési költség -->
+  <text x="220" y="435" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#334155">Építés</text>
+  <!-- Lapos -->
+  <rect x="150" y="290" width="60" height="110" fill="#6366f1" rx="3"/>
+  <text x="180" y="280" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6366f1" font-weight="bold">2,8M</text>
+  <!-- Magas -->
+  <rect x="220" y="220" width="60" height="180" fill="#f59e0b" rx="3"/>
+  <text x="250" y="210" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#f59e0b" font-weight="bold">4,5M</text>
+
+  <!-- 1. felújítás (15-20 év) -->
+  <text x="410" y="435" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#334155">1. felújítás</text>
+  <text x="410" y="452" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">(15-20 év)</text>
+  <!-- Lapos -->
+  <rect x="340" y="340" width="60" height="60" fill="#6366f1" rx="3" opacity="0.8"/>
+  <text x="370" y="330" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6366f1" font-weight="bold">1,5M</text>
+  <!-- Magas -->
+  <rect x="410" y="390" width="60" height="10" fill="#f59e0b" rx="3" opacity="0.8"/>
+  <text x="440" y="380" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#f59e0b" font-weight="bold">0,2M</text>
+
+  <!-- 2. felújítás (30-40 év) -->
+  <text x="600" y="435" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#334155">2. felújítás</text>
+  <text x="600" y="452" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">(30-40 év)</text>
+  <!-- Lapos -->
+  <rect x="530" y="340" width="60" height="60" fill="#6366f1" rx="3" opacity="0.6"/>
+  <text x="560" y="330" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6366f1" font-weight="bold">1,5M</text>
+  <!-- Magas -->
+  <rect x="600" y="388" width="60" height="12" fill="#f59e0b" rx="3" opacity="0.6"/>
+  <text x="630" y="378" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#f59e0b" font-weight="bold">0,3M</text>
+
+  <!-- Összesen (50 év) -->
+  <text x="790" y="435" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#334155" font-weight="bold">ÖSSZESEN</text>
+  <text x="790" y="452" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">(50 év)</text>
+  <!-- Lapos -->
+  <rect x="720" y="168" width="60" height="232" fill="#6366f1" rx="3"/>
+  <text x="750" y="158" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#6366f1" font-weight="bold">5,8M Ft</text>
+  <!-- Magas -->
+  <rect x="790" y="200" width="60" height="200" fill="#f59e0b" rx="3"/>
+  <text x="820" y="190" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#f59e0b" font-weight="bold">5,0M Ft</text>
+
+  <!-- Jelmagyarázat -->
+  <rect x="300" y="475" width="16" height="12" fill="#6366f1" rx="2"/>
+  <text x="322" y="486" font-family="sans-serif" font-size="13" fill="#334155">Lapostető</text>
+  <rect x="470" y="475" width="16" height="12" fill="#f59e0b" rx="2"/>
+  <text x="492" y="486" font-family="sans-serif" font-size="13" fill="#334155">Magastető</text>
+</svg>

@@ -73,6 +73,41 @@ export function extractHeadingsFromHtml(
 }
 
 /**
+ * ::: faq blokkok átalakítása <details>/<summary> HTML-re.
+ * Az MDX compiler nem kezeli a custom container szintaxist,
+ * ezért a renderelt HTML-ben utólag cseréljük.
+ *
+ * Két formátumot támogat:
+ * 1) ::: faq\n### Kérdés?\nVálasz\n:::        (új stílus, ### heading-gel)
+ * 2) ::: faq Kérdés?\nVálasz\n:::              (régi stílus, inline kérdés)
+ */
+function processFaqBlocks(html: string): string {
+  // Új stílus: a ::: faq és ### heading külön <p> tagekben jelenik meg
+  // MDX output: <p>::: faq</p>\n<h3 ...>Kérdés?</h3>\n<p>Válasz</p>\n<p>:::</p>
+  html = html.replace(
+    /<p>::: faq<\/p>\s*<h3[^>]*>([\s\S]*?)<\/h3>\s*([\s\S]*?)<p>:::<\/p>/g,
+    (_match, question, answer) => {
+      const q = question.replace(/<[^>]+>/g, "").trim();
+      const a = answer.trim();
+      return `<details class="faq-item"><summary>${q}</summary><div class="faq-answer">${a}</div></details>`;
+    },
+  );
+
+  // Régi stílus: ::: faq Kérdés?\nVálasz\n:::
+  // MDX output: <p>::: faq Kérdés?<br/>Válasz<br/>:::</p>  (vagy variációk)
+  html = html.replace(
+    /<p>::: faq ([\s\S]*?)<\/p>\s*([\s\S]*?)<p>:::<\/p>/g,
+    (_match, question, answer) => {
+      const q = question.replace(/<[^>]+>/g, "").trim();
+      const a = answer.trim();
+      return `<details class="faq-item"><summary>${q}</summary><div class="faq-answer">${a}</div></details>`;
+    },
+  );
+
+  return html;
+}
+
+/**
  * Heading ID-k hozzáadása ha hiányoznak az MDX kimenetből.
  * Az MDX compiler nem generál automatikusan id-kat a heading-ekhez.
  */
@@ -122,7 +157,10 @@ export async function renderMDX(
   const { render: renderToString } = await import("preact-render-to-string");
   let html = renderToString(h(MDXContent, { components: MDX_COMPONENTS }));
 
-  // Step 4: Add heading IDs if missing
+  // Step 4: Process ::: faq blocks → <details>/<summary>
+  html = processFaqBlocks(html);
+
+  // Step 5: Add heading IDs if missing
   html = addHeadingIds(html);
 
   const entry = { component: MDXContent, html };

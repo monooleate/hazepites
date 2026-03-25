@@ -33,11 +33,11 @@ faqPageSchema:
   "@context": "https://schema.org"
   "@type": "FAQPage"
   "question1": "Maximum mennyi támogatást kaphatok házépítéshez 2026-ban?"
-  "answer1": "Három gyerekkel, preferált településen akár 121 millió Ft kedvezményes forrás: CSOK Plusz (50M, 3%), Otthon Start (50M, 3%), Babaváró (11M, kamatmentes), Falusi CSOK (10M, vissza nem térítendő). De maximum 2 támogatott hitel vehető fel egyidejűleg."
+  "answer1": "Három gyerekkel, preferált településen akár 76 millió Ft kedvezményes forrás: Falusi CSOK (15M, vissza nem térítendő), Otthon Start (50M, 3%), Babaváró (11M, kamatmentes). A CSOK Plusz és Falusi CSOK nem kombinálható – az egyiket kell választani."
   "question2": "Melyik támogatásokat lehet kombinálni?"
   "answer2": "Maximum 2 kedvezményes hitelt vehetsz fel egyszerre (pl. CSOK Plusz + Otthon Start VAGY CSOK Plusz + Falusi CSOK hitel). A Babaváró emellett külön felvehető, mert szabadfelhasználású. Az ÁFA visszaigénylés mindennel kombinálható."
   "question3": "Kell-e gyerek a támogatásokhoz?"
-  "answer3": "A CSOK Plusz-hoz gyerekvállalás kell (meglévő vagy tervezett). A Babaváróhoz házasság és 40 év alatti feleség. Az Otthon Start-hoz nem kell gyerek, csak 40 év alatti kor és első lakás. A Zöld Hitel-hez sem kell gyerek."
+  "answer3": "A CSOK Plusz-hoz gyerekvállalás kell (meglévő vagy tervezett). A Babaváróhoz házasság és 34 év alatti feleség. Az Otthon Start-hoz nem kell gyerek, csak 40 év alatti kor és első lakás. A Zöld Hitel-hez sem kell gyerek."
   "question4": "Visszakaphatom az ÁFÁ-t ha házat építek?"
   "answer4": "Igen, új építésnél az 5%-os kedvezményes ÁFA érvényes. Emellett a 27%-os ÁFA-t tartalmazó anyagszámlákból is visszaigényelhetsz évi maximum 5 millió Ft-ot, ha a számlák megfelelnek a NAV követelményeinek."
   "question5": "Mi történik ha nem teljesítem a vállalásokat?"
@@ -77,14 +77,14 @@ import ExpertQuote from '../../components/mdx/ExpertQuote.tsx'
 <ComparisonRow
   label="Babaváró hitel"
   left="Max 11M Ft, kamatmentes"
-  right="Házasság + 40 év alatti feleség"
+  right="Házasság + 34 év alatti feleség"
   leftHeader="Összeg"
   rightHeader="Fő feltétel"
 />
 
 <ComparisonRow
   label="Falusi CSOK"
-  left="Max 10M Ft vissza nem térítendő"
+  left="Max 15M Ft vissza nem térítendő"
   right="Preferált település + gyerek"
   leftHeader="Összeg"
   rightHeader="Fő feltétel"
@@ -111,7 +111,7 @@ import ExpertQuote from '../../components/mdx/ExpertQuote.tsx'
 A [CSOK Plusz](/tamogatasok/csok-plusz) 2024 januárjától elérhető kamattámogatott hitel. Nem ajándékpénz – hitelt veszel fel, amit törölesztened kell. De 3%-os fix kamattal, ami a piaci 7% felénél kevesebb.
 
 **Összegek gyerekszám szerint:**
-- 1 vállalt gyermek: maximum **10 millió Ft**
+- 1 vállalt gyermek: maximum **15 millió Ft**
 - 2 gyermek (meglévő + vállalt, vagy 2 vállalt): maximum **30 millió Ft**
 - 3+ gyermek: maximum **50 millió Ft**
 
@@ -149,20 +149,22 @@ A [Babaváró hitel](/tamogatasok/babavaro-hitel) szabadfelhasználású – teh
 - Ha legalább 3 hónappal az építési hitel előtt veszed fel → **100%-a** önerőnek számít
 - Ha egyidejűleg igényled → a **75%-a** számít (8,25 millió Ft)
 
-**Feltételek:** Házasság, a feleség 18-40 éves, TB jogviszony (min. 3 év együttesen).
+**Feltételek:** Házasság, a feleség 18-34 éves (a korhatár 2025-ben 40-ről 35-re csökkent), TB jogviszony (min. 3 év együttesen).
 
 ## Falusi CSOK – a vidéki építkezők aduásza
 
 A [Falusi CSOK](/tamogatasok/falusi-csok) **vissza nem térítendő támogatás** – nem hitel! Preferált településen (jellemzően 5000 fő alatti községek):
 
-- Új építés: maximum **10 millió Ft** támogatás
-- Felújítás: maximum **5 millió Ft** támogatás
-- Hozzá igényelhető kedvezményes hitel is
+- 1 gyermek: **1 millió Ft** | Felújítás: 600 ezer Ft
+- 2 gyermek: **4 millió Ft** | Felújítás: 2 millió Ft
+- 3+ gyermek: **15 millió Ft** | Felújítás: 7,5 millió Ft
 
-**Feltételek:** Gyermek (meglévő vagy vállalt), preferált település, TB jogviszony, 10 éves helyben lakási kötelezettség.
+A Falusi CSOK **meglévő gyerekekre is jár** – nem kell gyereket vállalni (ellentétben a CSOK Plusz-szal).
 
-<InfoCard type="tip" title="A Falusi CSOK + CSOK Plusz kombó">
-  Preferált településen, 3 gyerekkel: Falusi CSOK 10M Ft (ingyen!) + CSOK Plusz 50M Ft (3% kamat) = 60M Ft kedvezményes forrás. Ez egy 65-70 milliós vidéki ház szinte teljes finanszírozása – 5-10M Ft önerő mellett.
+**Feltételek:** Preferált település (~2630 község, jellemzően 5000 fő alatt), TB jogviszony, 10 éves helyben lakási kötelezettség.
+
+<InfoCard type="warn" title="Falusi CSOK és CSOK Plusz NEM kombinálható!">
+  A két program kölcsönösen kizáró – vagy az egyiket, vagy a másikat veszed igénybe. Preferált településen a legjobb kombó: Falusi CSOK 15M Ft (ingyen!) + Otthon Start 50M Ft (3% kamat) + Babaváró 11M Ft = 76M Ft kedvezményes forrás.
 </InfoCard>
 
 ## Zöld Hitel – az energiahatékony házaknak
@@ -192,29 +194,28 @@ A Zöld Hitel a piaci kamatnál 0,5-1,5%-kal kedvezőbb. Kombinálható más tá
 Ez a legbonyolultabb rész. A fő szabály: **maximum 2 kedvezményes (támogatott) hitel** egyidejűleg.
 
 **Működő kombinációk:**
-- ✅ CSOK Plusz + Otthon Start = akár **100M Ft** kedvezményes hitel (3% fix)
-- ✅ CSOK Plusz + Falusi CSOK hitel
-- ✅ Otthon Start + Falusi CSOK hitel
-- ✅ Bármelyik fenti + Babaváró (a Babaváró szabadfelhasználású, nem számít bele a 2-es limitbe)
+- ✅ CSOK Plusz + Otthon Start = akár **80M Ft** kedvezményes hitel (mindkettő 3% fix)
+- ✅ Otthon Start + Falusi CSOK = kedvezményes hitel + vissza nem térítendő támogatás
+- ✅ Bármelyik fenti + Babaváró (szabadfelhasználású, nem számít bele a 2-es limitbe)
 - ✅ Bármelyik + ÁFA visszaigénylés
 - ✅ Bármelyik + piaci építési hitel
 
 **Nem működik:**
-- ❌ CSOK Plusz + Otthon Start + Falusi CSOK hitel egyszerre (max 2 támogatott)
-- ❌ Két Otthon Start (csak egy vehető fel)
-- ❌ Két CSOK Plusz (csak egy igényelhető)
+- ❌ **CSOK Plusz + Falusi CSOK** – kölcsönösen kizárják egymást!
+- ❌ CSOK Plusz + Otthon Start + Falusi CSOK egyszerre
+- ❌ Két Otthon Start vagy két CSOK Plusz
 
 ## A maximális kombináció – valós példa
 
 <CaseStudy name="Nagy család" location="Preferált település, Heves megye" year={2026}>
   Három gyermekkel, preferált településen építkeznek. A finanszírozás:
   - **Telek:** 4M Ft (saját erő)
-  - **Falusi CSOK:** 10M Ft (vissza nem térítendő!)
-  - **CSOK Plusz (3 gyerek):** 50M Ft (3% fix kamat, 25 év)
+  - **Falusi CSOK:** 15M Ft (vissza nem térítendő!)
+  - **Otthon Start:** 50M Ft (3% fix kamat, 25 év)
   - **Babaváró:** 11M Ft (kamatmentes, 3 hónappal korábban felvéve → 100% önerő)
   - **ÁFA visszaigénylés:** ~2,5M Ft
-  - **Összesen:** 77,5M Ft kedvezményes forrás + 4M Ft telek
-  - Egy 75 milliós ház teljes mértékben finanszírozott – piaci hitel nélkül.
+  - **Összesen:** 78,5M Ft kedvezményes forrás + 4M Ft telek
+  - Egy 80 milliós ház szinte teljes mértékben finanszírozott – piaci hitel nélkül.
 </CaseStudy>
 
 ## Amit nem mondanak el a támogatásokról
@@ -238,7 +239,7 @@ Ez a legbonyolultabb rész. A fő szabály: **maximum 2 kedvezményes (támogato
 → CSOK Plusz + Babaváró + Otthon Start (ha első lakás)
 
 **Ha vidéken építkeztek, preferált településen:**
-→ Falusi CSOK (10M ingyen!) + CSOK Plusz + Babaváró
+→ Falusi CSOK (15M ingyen!) + Otthon Start (50M, 3%) + Babaváró
 
 **Ha 40 év feletti vagy, nem első lakás:**
 → Piaci építési hitel + Zöld Hitel (ha BB ingatlan) + ÁFA visszaigénylés
@@ -251,7 +252,7 @@ Minden építkezés egyedi. Ha pontos költségbecslést szeretnél a te terveid
 
 ::: faq
 ### Maximum mennyi támogatást kaphatok házépítéshez 2026-ban?
-Három gyerekkel, preferált településen akár 121 millió Ft kedvezményes forrás: CSOK Plusz (50M, 3%), Otthon Start (50M, 3%), Babaváró (11M, kamatmentes), Falusi CSOK (10M, vissza nem térítendő). De maximum 2 támogatott hitel vehető fel egyidejűleg.
+Három gyerekkel, preferált településen akár 76 millió Ft kedvezményes forrás: Falusi CSOK (15M, vissza nem térítendő), Otthon Start (50M, 3%), Babaváró (11M, kamatmentes). A CSOK Plusz és Falusi CSOK nem kombinálható.
 :::
 
 ::: faq
@@ -261,7 +262,7 @@ Maximum 2 kedvezményes hitelt vehetsz fel egyszerre (pl. CSOK Plusz + Otthon St
 
 ::: faq
 ### Kell-e gyerek a támogatásokhoz?
-A CSOK Plusz-hoz gyerekvállalás kell. A Babaváróhoz házasság és 40 év alatti feleség. Az Otthon Start-hoz nem kell gyerek, csak 40 év alatti kor és első lakás. A Zöld Hitel-hez sem kell gyerek.
+A CSOK Plusz-hoz gyerekvállalás kell. A Babaváróhoz házasság és 34 év alatti feleség. Az Otthon Start-hoz nem kell gyerek, csak 40 év alatti kor és első lakás. A Zöld Hitel-hez sem kell gyerek.
 :::
 
 ::: faq

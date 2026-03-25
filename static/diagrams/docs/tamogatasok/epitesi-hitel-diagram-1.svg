@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <rect width="900" height="450" fill="#f8fafc" rx="12"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Építési hitel kombinációk – finanszírozási összehasonlítás</text>
+  <!-- Table header -->
+  <rect x="30" y="55" width="840" height="40" rx="6" fill="#312e81"/>
+  <text x="100" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Kombináció</text>
+  <text x="280" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Hitelösszeg</text>
+  <text x="420" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Kamat</text>
+  <text x="560" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Havi törlesztő</text>
+  <text x="720" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Összes visszafizetés</text>
+  <!-- Row 1 -->
+  <rect x="30" y="100" width="840" height="55" fill="#f0fdf4" rx="4"/>
+  <text x="100" y="125" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#166534">Otthon Start</text>
+  <text x="100" y="142" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#4ade80">(40 év alatti, első lakás)</text>
+  <text x="280" y="132" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">50M Ft</text>
+  <text x="420" y="132" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">3,0%</text>
+  <text x="560" y="132" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">237e Ft</text>
+  <text x="720" y="132" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">71,1M Ft</text>
+  <!-- Row 2 -->
+  <rect x="30" y="160" width="840" height="55" fill="#fff" rx="4"/>
+  <text x="100" y="185" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#1e40af">CSOK Plusz</text>
+  <text x="100" y="202" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#60a5fa">(3 gyerek vállalva)</text>
+  <text x="280" y="192" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">50M Ft</text>
+  <text x="420" y="192" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">3,0%</text>
+  <text x="560" y="192" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">237e Ft</text>
+  <text x="720" y="192" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">71,1M Ft</text>
+  <!-- Row 3 -->
+  <rect x="30" y="220" width="840" height="55" fill="#fffbeb" rx="4"/>
+  <text x="100" y="245" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#92400e">Piaci hitel</text>
+  <text x="100" y="262" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#d97706">(5 éves kamatperiódus)</text>
+  <text x="280" y="252" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">50M Ft</text>
+  <text x="420" y="252" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">7,0%</text>
+  <text x="560" y="252" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">387e Ft</text>
+  <text x="720" y="252" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">96,8M Ft</text>
+  <!-- Row 4 -->
+  <rect x="30" y="280" width="840" height="55" fill="#fef2f2" rx="4"/>
+  <text x="100" y="305" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="600" fill="#991b1b">Piaci hitel</text>
+  <text x="100" y="322" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#ef4444">(10 éves kamatperiódus)</text>
+  <text x="280" y="312" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">50M Ft</text>
+  <text x="420" y="312" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">7,5%</text>
+  <text x="560" y="312" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">413e Ft</text>
+  <text x="720" y="312" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">103,3M Ft</text>
+  <!-- Footer note -->
+  <text x="450" y="370" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">Kalkuláció: 50M Ft hitel, 25 éves futamidő, annuitásos törlesztés</text>
+  <text x="450" y="390" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">A piaci kamatok 2026. márciusi állapot szerint – a bankok THM-je ettől eltérhet</text>
+  <!-- Highlight -->
+  <rect x="30" y="405" width="840" height="35" rx="6" fill="#dcfce7"/>
+  <text x="450" y="427" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#166534">A kedvezményes kamat (3%) vs piaci kamat (7%) különbsége 25 év alatt: 25+ millió Ft</text>
+</svg>

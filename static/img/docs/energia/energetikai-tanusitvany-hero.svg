@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1e1b4b" rx="0"/>
+  <!-- Energy rating bars -->
+  <g transform="translate(100, 80)">
+    <!-- AA++ -->
+    <rect x="0" y="0" width="200" height="32" rx="4" fill="#166534"/>
+    <text x="10" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">AA++</text>
+    <text x="160" y="22" font-family="sans-serif" font-size="12" fill="#86efac">≤40</text>
+    <!-- AA -->
+    <rect x="0" y="40" width="280" height="32" rx="4" fill="#15803d"/>
+    <text x="10" y="62" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">AA</text>
+    <text x="240" y="62" font-family="sans-serif" font-size="12" fill="#86efac">41-60</text>
+    <!-- BB -->
+    <rect x="0" y="80" width="380" height="36" rx="4" fill="#22c55e" stroke="#fff" stroke-width="2"/>
+    <text x="10" y="104" font-family="sans-serif" font-size="16" font-weight="bold" fill="#fff">BB</text>
+    <text x="200" y="104" font-family="sans-serif" font-size="13" fill="#fff">MINIMUM új építés</text>
+    <text x="340" y="104" font-family="sans-serif" font-size="12" fill="#fff">61-100</text>
+    <!-- CC -->
+    <rect x="0" y="124" width="460" height="32" rx="4" fill="#eab308"/>
+    <text x="10" y="146" font-family="sans-serif" font-size="14" font-weight="bold" fill="#422006">CC</text>
+    <text x="420" y="146" font-family="sans-serif" font-size="12" fill="#422006">101-130</text>
+    <!-- DD -->
+    <rect x="0" y="164" width="540" height="32" rx="4" fill="#f59e0b"/>
+    <text x="10" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#422006">DD</text>
+    <text x="500" y="186" font-family="sans-serif" font-size="12" fill="#422006">131-180</text>
+    <!-- EE -->
+    <rect x="0" y="204" width="640" height="32" rx="4" fill="#f97316"/>
+    <text x="10" y="226" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">EE</text>
+    <text x="600" y="226" font-family="sans-serif" font-size="12" fill="#fff">181-220</text>
+    <!-- FF -->
+    <rect x="0" y="244" width="740" height="32" rx="4" fill="#ef4444"/>
+    <text x="10" y="266" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">FF</text>
+    <text x="700" y="266" font-family="sans-serif" font-size="12" fill="#fff">221-300</text>
+    <!-- GG-JJ -->
+    <rect x="0" y="284" width="900" height="32" rx="4" fill="#991b1b"/>
+    <text x="10" y="306" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">GG-JJ</text>
+    <text x="860" y="306" font-family="sans-serif" font-size="12" fill="#fca5a5">300+</text>
+  </g>
+  <!-- kWh label -->
+  <text x="1050" y="110" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">kWh/m²/év</text>
+  <!-- Cost info -->
+  <g transform="translate(700, 150)">
+    <rect x="0" y="0" width="380" height="120" rx="12" fill="#312e81" opacity="0.8"/>
+    <text x="190" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#c4b5fd">Tanúsítvány ára</text>
+    <text x="190" y="70" text-anchor="middle" font-family="sans-serif" font-size="32" font-weight="bold" fill="#f1f5f9">40-80e Ft</text>
+    <text x="190" y="100" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#94a3b8">10 évig érvényes</text>
+  </g>
+  <!-- Title -->
+  <text x="600" y="480" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#f1f5f9">Energetikai tanúsítvány 2026</text>
+  <text x="600" y="520" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Besorolás, költség és amit félreértenek</text>
+  <!-- Brand -->
+  <text x="600" y="610" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

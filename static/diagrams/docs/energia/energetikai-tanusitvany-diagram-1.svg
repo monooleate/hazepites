@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <rect width="900" height="400" fill="#f8fafc" rx="12"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Energetikai besorolás javítás – költség és hatás</text>
+  <!-- Table header -->
+  <rect x="30" y="55" width="840" height="40" rx="6" fill="#312e81"/>
+  <text x="130" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Beavatkozás</text>
+  <text x="330" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Költség (120 m² ház)</text>
+  <text x="520" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Javulás (fokozat)</text>
+  <text x="700" y="80" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fff">Éves megtakarítás</text>
+  <!-- Row 1 -->
+  <rect x="30" y="100" width="840" height="50" fill="#f0fdf4" rx="4"/>
+  <text x="130" y="130" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#1e293b">Homlokzati hőszigetelés (15 cm)</text>
+  <text x="330" y="130" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">1,5-2,2M Ft</text>
+  <text x="520" y="130" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">+2 fokozat</text>
+  <text x="700" y="130" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">150-250e Ft/év</text>
+  <!-- Row 2 -->
+  <rect x="30" y="155" width="840" height="50" fill="#fff" rx="4"/>
+  <text x="130" y="185" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#1e293b">Nyílászáró csere (3 rétegű)</text>
+  <text x="330" y="185" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">1,0-2,4M Ft</text>
+  <text x="520" y="185" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">+1 fokozat</text>
+  <text x="700" y="185" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">80-150e Ft/év</text>
+  <!-- Row 3 -->
+  <rect x="30" y="210" width="840" height="50" fill="#f0fdf4" rx="4"/>
+  <text x="130" y="240" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#1e293b">Hőszivattyú beépítés</text>
+  <text x="330" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">3,2-5,0M Ft</text>
+  <text x="520" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">+1-2 fokozat</text>
+  <text x="700" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">200-400e Ft/év</text>
+  <!-- Row 4 -->
+  <rect x="30" y="265" width="840" height="50" fill="#fff" rx="4"/>
+  <text x="130" y="295" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#1e293b">Napelem (5-8 kWp)</text>
+  <text x="330" y="295" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">2,0-3,5M Ft</text>
+  <text x="520" y="295" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">+1 fokozat</text>
+  <text x="700" y="295" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a34a">120-200e Ft/év</text>
+  <!-- Summary row -->
+  <rect x="30" y="325" width="840" height="55" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="130" y="357" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#166534">Teljes kombó</text>
+  <text x="330" y="357" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#166534">6-10M Ft</text>
+  <text x="520" y="357" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#166534">FF→BB ugrás</text>
+  <text x="700" y="357" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#166534">380-550e Ft/év</text>
+</svg>

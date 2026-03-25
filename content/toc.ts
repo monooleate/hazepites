@@ -77,7 +77,7 @@ const toc: RawTableOfContents = {
         ["page", "alapozas-koltseg", "Alapozás költsége"],
         ["page", "teto-koltseg", "Tető költsége"],
         ["page", "gepeszet-koltseg", "Gépészet költsége"],
-        // ["page", "villanyszereles-koltseg", "Villanyszerelés költsége"],
+        ["page", "villanyszereles-koltseg", "Villanyszerelés költsége"],
         // ["page", "belso-bururkolatok", "Belső burkolatok költsége"],
         // ["page", "kulso-burkolatok", "Külső burkolat és homlokzat"],
         ["page", "rejtett-koltsegek", "Rejtett költségek"],
@@ -164,7 +164,7 @@ const toc: RawTableOfContents = {
       pages: [
         ["page", "kivitelezo-valasztas", "Kivitelező választás"],
         ["page", "muszaki-ellenor", "Műszaki ellenőr"],
-        // ["page", "generalkivitelezes", "Generálkivitelezés"],
+        ["page", "generalkivitelezes", "Generálkivitelezés"],
         // ["page", "sajat-szervezesu-epites", "Saját szervezésű építés"],
         // ["page", "minosegellenorzes", "Minőségellenőrzés"],
         // ["page", "epitkezesi-hibalista", "Építkezési hibalista"],

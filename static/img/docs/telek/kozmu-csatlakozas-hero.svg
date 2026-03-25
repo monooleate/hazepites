@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1e1b4b"/>
+  <!-- Utility icons -->
+  <g transform="translate(150, 80)">
+    <!-- Water -->
+    <circle cx="60" cy="60" r="50" fill="#312e81" stroke="#3b82f6" stroke-width="2.5"/>
+    <text x="60" y="55" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#3b82f6">💧</text>
+    <text x="60" y="80" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#93c5fd">Víz</text>
+    <text x="60" y="130" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f1f5f9">230-480e</text>
+    <text x="60" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#34d399">Díj: INGYENES</text>
+  </g>
+  <g transform="translate(400, 80)">
+    <!-- Sewer -->
+    <circle cx="60" cy="60" r="50" fill="#312e81" stroke="#8b5cf6" stroke-width="2.5"/>
+    <text x="60" y="55" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#8b5cf6">🔧</text>
+    <text x="60" y="80" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#c4b5fd">Csatorna</text>
+    <text x="60" y="130" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f1f5f9">170-440e</text>
+    <text x="60" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#34d399">Díj: INGYENES</text>
+  </g>
+  <g transform="translate(650, 80)">
+    <!-- Electricity -->
+    <circle cx="60" cy="60" r="50" fill="#312e81" stroke="#f59e0b" stroke-width="2.5"/>
+    <text x="60" y="55" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#f59e0b">⚡</text>
+    <text x="60" y="80" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fbbf24">Áram</text>
+    <text x="60" y="130" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f1f5f9">200-550e</text>
+    <text x="60" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#34d399">Mérő: INGYENES</text>
+  </g>
+  <g transform="translate(900, 80)">
+    <!-- Gas -->
+    <circle cx="60" cy="60" r="50" fill="#312e81" stroke="#ef4444" stroke-width="2.5" stroke-dasharray="8 4"/>
+    <text x="60" y="55" text-anchor="middle" font-family="sans-serif" font-size="28" fill="#ef4444">🔥</text>
+    <text x="60" y="80" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fca5a5">Gáz</text>
+    <text x="60" y="130" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f1f5f9">300-520e</text>
+    <text x="60" y="148" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#f59e0b">Kell egyáltalán?</text>
+  </g>
+  <!-- Total bar -->
+  <rect x="200" y="290" width="800" height="60" rx="12" fill="#312e81" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="600" y="325" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#f1f5f9">Összesen: 500e – 2,5M Ft (amit a költségvetésből szinte mindig kihagynak)</text>
+  <!-- Free since 2024 badge -->
+  <rect x="350" y="380" width="500" height="40" rx="20" fill="#052e16" stroke="#34d399" stroke-width="1.5"/>
+  <text x="600" y="405" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#34d399">2024 júliusától: víz + csatorna + mérő = INGYENES</text>
+  <!-- Title -->
+  <text x="600" y="490" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#f1f5f9">Közmű csatlakozás 2026</text>
+  <text x="600" y="530" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Víz, csatorna, áram, gáz – árak és folyamat</text>
+  <text x="600" y="610" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

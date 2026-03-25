@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380">
+  <rect width="900" height="380" fill="#f8fafc" rx="12"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Állami támogatások összehasonlítása – 2026</text>
+  <rect x="30" y="55" width="840" height="35" rx="6" fill="#312e81"/>
+  <text x="130" y="78" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Program</text>
+  <text x="290" y="78" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Max összeg</text>
+  <text x="430" y="78" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Típus</text>
+  <text x="570" y="78" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Kamat</text>
+  <text x="730" y="78" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Fő feltétel</text>
+  <!-- Rows -->
+  <rect x="30" y="95" width="840" height="38" fill="#f0fdf4"/>
+  <text x="130" y="119" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#166534">CSOK Plusz</text>
+  <text x="290" y="119" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">50M Ft</text>
+  <text x="430" y="119" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e293b">Kedvezményes hitel</text>
+  <text x="570" y="119" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#16a34a">3% fix</text>
+  <text x="730" y="119" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">Gyerek + házasság</text>
+
+  <rect x="30" y="138" width="840" height="38" fill="#fff"/>
+  <text x="130" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#1e40af">Otthon Start</text>
+  <text x="290" y="162" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">50M Ft</text>
+  <text x="430" y="162" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e293b">Kedvezményes hitel</text>
+  <text x="570" y="162" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#16a34a">3% fix</text>
+  <text x="730" y="162" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">40 év alatt + első lakás</text>
+
+  <rect x="30" y="181" width="840" height="38" fill="#f0fdf4"/>
+  <text x="130" y="205" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#92400e">Babaváró</text>
+  <text x="290" y="205" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">11M Ft</text>
+  <text x="430" y="205" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e293b">Szabadfelhasználású</text>
+  <text x="570" y="205" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#16a34a">0% (kamatmentes)</text>
+  <text x="730" y="205" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">Házasság + 40 év alatti</text>
+
+  <rect x="30" y="224" width="840" height="38" fill="#fff"/>
+  <text x="130" y="248" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#991b1b">Falusi CSOK</text>
+  <text x="290" y="248" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">10M Ft</text>
+  <text x="430" y="248" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#16a34a" font-weight="bold">Vissza nem térítendő!</text>
+  <text x="570" y="248" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#64748b">—</text>
+  <text x="730" y="248" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">Preferált település</text>
+
+  <rect x="30" y="267" width="840" height="38" fill="#f0fdf4"/>
+  <text x="130" y="291" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#065f46">Zöld Hitel</text>
+  <text x="290" y="291" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">Változó</text>
+  <text x="430" y="291" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e293b">Kedvezményes hitel</text>
+  <text x="570" y="291" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#16a34a">Piaci -0,5-1,5%</text>
+  <text x="730" y="291" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">BB besorolás</text>
+
+  <rect x="30" y="310" width="840" height="38" fill="#fff"/>
+  <text x="130" y="334" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="600" fill="#6366f1">ÁFA visszaigénylés</text>
+  <text x="290" y="334" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1e293b">5M Ft/év</text>
+  <text x="430" y="334" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#16a34a" font-weight="bold">Visszatérítés</text>
+  <text x="570" y="334" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#64748b">—</text>
+  <text x="730" y="334" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#64748b">Új építés + NAV számlák</text>
+
+  <rect x="30" y="355" width="840" height="20" rx="4" fill="#dcfce7"/>
+  <text x="450" y="370" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#166534">Maximum 2 támogatott hitel egyidejűleg + Babaváró + ÁFA = akár 121M Ft</text>
+</svg>

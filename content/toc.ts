@@ -100,7 +100,7 @@ const toc: RawTableOfContents = {
         ["page", "zold-hitel", "Zöld hitel"],
         ["page", "epitesi-hitel", "Építési hitel"],
         // ["page", "lakashitel-osszehasonlitas", "Lakáshitel összehasonlítás"],
-        // ["page", "allami-tamogatasok", "Állami támogatások összefoglaló"],
+        ["page", "allami-tamogatasok", "Állami támogatások összefoglaló"],
         // ["page", "onkormanzati-tamogatasok", "Önkormányzati támogatások"],
         // ["page", "energetikai-palyazatok", "Energetikai pályázatok"],
         // ["page", "afa-visszaigenyeles", "ÁFA visszaigénylés"],
@@ -177,7 +177,7 @@ const toc: RawTableOfContents = {
       pages: [
         ["page", "telekvalasztas", "Telekválasztás útmutató"],
         // ["page", "belterulet-kulterulet", "Belterület vs külterület"],
-        // ["page", "kozmu-csatlakozas", "Közmű csatlakozás"],
+        ["page", "kozmu-csatlakozas", "Közmű csatlakozás"],
         // ["page", "talajvizsgalat", "Talajvizsgálat"],
         // ["page", "telek-elokeszites", "Telek előkészítés"],
         // ["page", "telek-gyik", "Telek GYIK"],

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1e1b4b"/>
+  <!-- Support program cards -->
+  <g transform="translate(80, 70)">
+    <rect x="0" y="0" width="220" height="120" rx="12" fill="#312e81" stroke="#34d399" stroke-width="2"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#6ee7b7">CSOK Plusz</text>
+    <text x="110" y="70" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#f1f5f9">50M Ft</text>
+    <text x="110" y="95" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">3% fix kamat</text>
+  </g>
+  <g transform="translate(330, 70)">
+    <rect x="0" y="0" width="220" height="120" rx="12" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#c4b5fd">Otthon Start</text>
+    <text x="110" y="70" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#f1f5f9">50M Ft</text>
+    <text x="110" y="95" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">3% fix, első lakás</text>
+  </g>
+  <g transform="translate(580, 70)">
+    <rect x="0" y="0" width="220" height="120" rx="12" fill="#312e81" stroke="#f59e0b" stroke-width="2"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#fbbf24">Babaváró</text>
+    <text x="110" y="70" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#f1f5f9">11M Ft</text>
+    <text x="110" y="95" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Kamatmentes</text>
+  </g>
+  <g transform="translate(830, 70)">
+    <rect x="0" y="0" width="220" height="120" rx="12" fill="#312e81" stroke="#ef4444" stroke-width="2"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#fca5a5">Falusi CSOK</text>
+    <text x="110" y="70" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#f1f5f9">10M Ft</text>
+    <text x="110" y="95" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Vissza nem térítendő!</text>
+  </g>
+  <!-- Bottom row -->
+  <g transform="translate(200, 230)">
+    <rect x="0" y="0" width="220" height="90" rx="12" fill="#312e81" stroke="#22c55e" stroke-width="1.5"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#86efac">Zöld Hitel</text>
+    <text x="110" y="60" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Kedvezményes kamat</text>
+    <text x="110" y="78" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6b7280">BB besorolás felett</text>
+  </g>
+  <g transform="translate(490, 230)">
+    <rect x="0" y="0" width="220" height="90" rx="12" fill="#312e81" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#c4b5fd">ÁFA visszaigénylés</text>
+    <text x="110" y="60" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Max 5M Ft/év</text>
+    <text x="110" y="78" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6b7280">5%-os kedvezményes ÁFA</text>
+  </g>
+  <g transform="translate(780, 230)">
+    <rect x="0" y="0" width="220" height="90" rx="12" fill="#312e81" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="110" y="35" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fbbf24">Felújítási program</text>
+    <text x="110" y="60" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#94a3b8">Max 6-10M Ft</text>
+    <text x="110" y="78" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6b7280">KEHOP Plusz / Vidéki</text>
+  </g>
+  <!-- Max amount callout -->
+  <rect x="250" y="370" width="700" height="60" rx="16" fill="#052e16" stroke="#34d399" stroke-width="2"/>
+  <text x="600" y="405" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#34d399">Maximum kombinálva: akár 121M Ft kedvezményes forrás</text>
+  <!-- Title -->
+  <text x="600" y="500" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#f1f5f9">Állami támogatások 2026</text>
+  <text x="600" y="540" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Minden program egy helyen – összegek, feltételek, kombinációk</text>
+  <text x="600" y="610" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350">
+  <rect width="900" height="350" fill="#f8fafc" rx="12"/>
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Egyszerű bejelentés tervezési költségei (120 m² családi ház)</text>
+  <!-- Horizontal bar chart -->
+  <g transform="translate(30, 60)">
+    <!-- Építészeti terv -->
+    <text x="200" y="18" text-anchor="end" font-family="sans-serif" font-size="13" fill="#1e293b">Építészeti terv</text>
+    <rect x="210" y="2" width="420" height="24" rx="4" fill="#6366f1"/>
+    <text x="640" y="19" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b">1,5-3,0M Ft</text>
+    <!-- Tartószerkezeti -->
+    <text x="200" y="58" text-anchor="end" font-family="sans-serif" font-size="13" fill="#1e293b">Tartószerkezeti terv</text>
+    <rect x="210" y="42" width="170" height="24" rx="4" fill="#818cf8"/>
+    <text x="390" y="59" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b">300-600e Ft</text>
+    <!-- Gépészeti -->
+    <text x="200" y="98" text-anchor="end" font-family="sans-serif" font-size="13" fill="#1e293b">Gépészeti terv</text>
+    <rect x="210" y="82" width="140" height="24" rx="4" fill="#818cf8"/>
+    <text x="360" y="99" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b">300-500e Ft</text>
+    <!-- Elektromos -->
+    <text x="200" y="138" text-anchor="end" font-family="sans-serif" font-size="13" fill="#1e293b">Elektromos terv</text>
+    <rect x="210" y="122" width="110" height="24" rx="4" fill="#a5b4fc"/>
+    <text x="330" y="139" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b">200-400e Ft</text>
+    <!-- Energetikai -->
+    <text x="200" y="178" text-anchor="end" font-family="sans-serif" font-size="13" fill="#1e293b">Energetikai számítás</text>
+    <rect x="210" y="162" width="50" height="24" rx="4" fill="#c7d2fe"/>
+    <text x="270" y="179" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b">80-150e Ft</text>
+    <!-- Geodézia + talaj -->
+    <text x="200" y="218" text-anchor="end" font-family="sans-serif" font-size="13" fill="#1e293b">Geodézia + talajmech.</text>
+    <rect x="210" y="202" width="70" height="24" rx="4" fill="#c7d2fe"/>
+    <text x="290" y="219" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1e293b">180-350e Ft</text>
+  </g>
+  <!-- Total bar -->
+  <rect x="30" y="300" width="840" height="40" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="200" y="325" text-anchor="end" font-family="sans-serif" font-size="14" font-weight="bold" fill="#166534">Összesen</text>
+  <rect x="210" y="308" width="540" height="24" rx="4" fill="#22c55e" opacity="0.3"/>
+  <text x="760" y="325" font-family="sans-serif" font-size="16" font-weight="bold" fill="#166534">2,5-5,0M Ft</text>
+</svg>

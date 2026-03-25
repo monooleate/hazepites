@@ -25,7 +25,7 @@ const toc: RawTableOfContents = {
       title: "Alapok",
       pages: [
         // ["page", "miert-epitkezz", "Miért építkezz saját házat?"],
-        // ["page", "hazepites-lepesrol-lepesre", "Házépítés lépésről lépésre"],
+        ["page", "hazepites-lepesrol-lepesre", "Házépítés lépésről lépésre"],
         // ["page", "hazepites-idovonal", "Házépítés időterv"],
         // ["page", "hazepites-gyik", "Házépítés GYIK"],
         // ["page", "hazepites-szotara", "Házépítés szótára"],
@@ -147,7 +147,7 @@ const toc: RawTableOfContents = {
     jog: {
       title: "Jog és adminisztráció",
       pages: [
-        // ["page", "epitesi-engedelyek", "Építési engedélyek"],
+        ["page", "epitesi-engedelyek", "Építési engedélyek"],
         // ["page", "egyszerusitett-bejelentes", "Egyszerűsített bejelentés"],
         // ["page", "epitesi-naplo", "Építési napló"],
         // ["page", "muhatosagi-ellenorzes", "Műhatósági ellenőrzés"],

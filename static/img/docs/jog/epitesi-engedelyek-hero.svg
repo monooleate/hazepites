@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1e1b4b" rx="0"/>
+  <!-- Document/stamp icon -->
+  <g transform="translate(480, 60)">
+    <rect x="0" y="0" width="240" height="300" rx="12" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+    <!-- Lines on document -->
+    <rect x="30" y="40" width="180" height="8" rx="3" fill="#818cf8" opacity="0.3"/>
+    <rect x="30" y="65" width="140" height="8" rx="3" fill="#818cf8" opacity="0.3"/>
+    <rect x="30" y="90" width="160" height="8" rx="3" fill="#818cf8" opacity="0.3"/>
+    <rect x="30" y="115" width="120" height="8" rx="3" fill="#818cf8" opacity="0.3"/>
+    <!-- Stamp/seal -->
+    <circle cx="170" cy="220" r="45" fill="none" stroke="#34d399" stroke-width="3"/>
+    <text x="170" y="215" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">ENGEDÉLY</text>
+    <text x="170" y="235" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6ee7b7">2026</text>
+    <!-- Check mark -->
+    <circle cx="70" cy="220" r="30" fill="#16a34a" opacity="0.2"/>
+    <path d="M55 220 L65 230 L85 210" stroke="#34d399" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Left: Simple notification -->
+  <g transform="translate(80, 130)">
+    <rect x="0" y="0" width="280" height="160" rx="12" fill="#312e81" opacity="0.6"/>
+    <text x="140" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#6ee7b7">Egyszerű bejelentés</text>
+    <text x="140" y="65" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">≤300 m² lakóépület</text>
+    <text x="140" y="95" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#34d399">20 nap</text>
+    <text x="140" y="125" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">Hatósági díj: 0 Ft</text>
+    <text x="140" y="145" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6ee7b7">Az esetek 80-90%-a</text>
+  </g>
+  <!-- Right: Full permit -->
+  <g transform="translate(840, 130)">
+    <rect x="0" y="0" width="280" height="160" rx="12" fill="#312e81" opacity="0.6"/>
+    <text x="140" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f59e0b">Teljes engedély</text>
+    <text x="140" y="65" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">>300 m², nem lakás</text>
+    <text x="140" y="95" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#f59e0b">60-180 nap</text>
+    <text x="140" y="125" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#94a3b8">Hatósági díj: 20-50e Ft</text>
+    <text x="140" y="145" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#fbbf24">+ szakhatósági díjak</text>
+  </g>
+  <!-- Title -->
+  <text x="600" y="460" text-anchor="middle" font-family="sans-serif" font-size="42" font-weight="bold" fill="#f1f5f9">Építési engedélyek 2026</text>
+  <text x="600" y="500" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Egyszerű bejelentéstől a teljes engedélyig</text>
+  <!-- New regulation badge -->
+  <rect x="430" y="520" width="340" height="32" rx="16" fill="#312e81" stroke="#818cf8" stroke-width="1"/>
+  <text x="600" y="541" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">281/2024 rendelet • TEKA • e-Napló</text>
+  <!-- Brand -->
+  <text x="600" y="610" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

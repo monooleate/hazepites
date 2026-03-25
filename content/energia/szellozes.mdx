@@ -1,0 +1,265 @@
+---
+title: "Szellőzés és légtechnika – miért fullad meg a jól szigetelt ház?"
+description: "Hővisszanyerős szellőztetés: ár, márka, hatásfok, telepítés. Központi vs decentralizált rendszer, BB követelmény és gyakorlati tapasztalatok 2026-os árakkal."
+canonical: "https://hazepitesikalauz.hu/energia/szellozes"
+published_at: "2026-03-25"
+refreshed_at: "2026-03-25"
+articleSchema:
+  "@context": "https://schema.org"
+  "@type": "Article"
+  "@id": "https://hazepitesikalauz.hu/energia/szellozes"
+  "headline": "Szellőzés és légtechnika – miért fullad meg a jól szigetelt ház?"
+  "description": "Hővisszanyerős szellőztetés: ár, márka, hatásfok, telepítés. Központi vs decentralizált rendszer, BB és gyakorlati tapasztalatok."
+  "image":
+    "@type": "ImageObject"
+    "url": "https://hazepitesikalauz.hu/img/docs/energia/szellozes-hero.svg"
+    "width": 1200
+    "height": 630
+  "datePublished": "2026-03-25"
+  "dateModified": "2026-03-25"
+  "inLanguage": "hu"
+  "author":
+    "@type": "Organization"
+    "name": "Házépítési Kalauz"
+    "url": "https://hazepitesikalauz.hu"
+  "publisher":
+    "@type": "Organization"
+    "name": "Házépítési Kalauz"
+    "url": "https://hazepitesikalauz.hu"
+  "mainEntityOfPage":
+    "@type": "WebPage"
+    "@id": "https://hazepitesikalauz.hu/energia/szellozes"
+faqPageSchema:
+  "@context": "https://schema.org"
+  "@type": "FAQPage"
+  "question1": "Mennyibe kerül egy hővisszanyerős szellőztető rendszer?"
+  "answer1": "Teljes rendszer telepítéssel 100-150 m² házra: 1,6-2,5 millió Ft. Prémium rendszer nagyobb házra: 3-3,5 millió Ft. Az anyagköltség és munkadíj aránya kb. 70-30%."
+  "question2": "Kötelező a gépi szellőzés új építésű háznál?"
+  "answer2": "Jogilag nem szigorúan kötelező, de a 7/2006 TNM rendelet megköveteli az automatikus, CO2 és páratartalom alapú légcserét. A BB energetikai besorolás eléréséhez a gyakorlatban szükséges, mert nélküle sokkal drágább kompenzálni más rendszerekkel."
+  "question3": "Melyik a jobb: központi vagy decentralizált szellőztetés?"
+  "answer3": "Új építésnél egyértelműen a központi rendszer: magasabb hatásfok (80-93%), alacsonyabb zaj, egyetlen karbantartási pont. Decentralizált rendszer felújításnál jó, ahol csőhálózat nem építhető ki."
+  "question4": "Milyen gyakran kell szűrőt cserélni?"
+  "answer4": "3-6 havonta ellenőrizd, évente minimum egyszer cseréld. A hőcserélőt évente egyszer (normál) vagy negyedévente (entalpia típus) tisztítsd. Professzionális légcsatorna-tisztítás néhány évente ajánlott."
+  "question5": "Mennyit spórol a hővisszanyerős szellőztetés?"
+  "answer5": "A HRV 40-50%-kal csökkenti az épület hőveszteségét a szellőzésen keresztül. Egy jól működő rendszer effektív COP-ja 7-8 körüli: 535 kWh villannyal 4000 kWh hőt nyer vissza évente. Ez hőszivattyúval kombinálva évi 80-150 ezer Ft megtakarítást jelent."
+---
+
+import InfoCard from '../../components/mdx/InfoCard.tsx'
+import CostRange from '../../components/mdx/CostRange.tsx'
+import CaseStudy from '../../components/mdx/CaseStudy.tsx'
+import ExpertQuote from '../../components/mdx/ExpertQuote.tsx'
+import ComparisonRow from '../../components/mdx/ComparisonRow.tsx'
+
+## A paradoxon: minél jobban szigetelsz, annál rosszabb a levegő
+
+Háromrétegű üveg, 20 cm grafit EPS, tökéletes légzárás. A ház nem enged ki hőt – de levegőt sem. Egy 4 fős család éjszaka annyi CO₂-t termel a hálóban, hogy reggel 6-ra a szint 3000 ppm fölé emelkedik. Az egészségügyi határ 1000 ppm.
+
+Ablakot nyitsz? 20-30 perc múlva visszaáll a CO₂. Közben a 20 fokos meleg levegőt kicserélted -5 fokos hideg levegőre. A [hőszivattyúd](/energia/hoszivattyuk) pedig extra energiát éget el, hogy újra felfűtse.
+
+A megoldás: hővisszanyerős szellőztetés (HRV). Kicseréli a levegőt, de a hő 80-93%-át visszanyeri.
+
+## Mennyibe kerül?
+
+<CostRange min={1600000} max={2500000} unit="Ft" label="HRV rendszer telepítéssel, 100-150 m², 2026" />
+
+**Részletes költségbontás (120 m²-es ház):**
+
+<ComparisonRow
+  label="Szellőztető gép (HRV egység)"
+  left="150 000–530 000 Ft"
+  right="Belépő szinttől a prémiumig"
+  leftHeader="Ár"
+  rightHeader="Kategória"
+/>
+
+<ComparisonRow
+  label="Csőhálózat + szelepek + zajcsillapítók"
+  left="400 000–700 000 Ft"
+  right="Anyagköltség"
+  leftHeader="Ár"
+  rightHeader="Típus"
+/>
+
+<ComparisonRow
+  label="Munkadíj (telepítés + üzembe helyezés)"
+  left="400 000–600 000 Ft"
+  right="Az anyagköltség 20-30%-a"
+  leftHeader="Ár"
+  rightHeader="Arány"
+/>
+
+A [szelloztetesbolt.hu](https://www.szelloztetesbolt.hu/csaladi-haz-szellozteto-rendszerenek-ara-41) 120 m²-es házhoz komplett csomagot kínál ~988 000 Ft anyagárral. Telepítéssel együtt ez ~1,6 millió Ft. Prémium rendszer (Zehnder ComfoAir Q, nagyobb ház): 3-3,5 millió Ft.
+
+<InfoCard type="tip" title="Otthonfelújítási program: akár 50% támogatás">
+  A 2025-2026-os Otthonfelújítási program keretében a HRV rendszer anyag- és munkadíjára is igényelhető támogatás: max 550 000 Ft anyagra + 550 000 Ft munkadíjra = **1,1 millió Ft** egy 2,2 milliós beruházásnál. Részletek: [kormany.hu](https://kormany.hu).
+</InfoCard>
+
+## Központi vs. decentralizált – melyiket válaszd?
+
+<ComparisonRow
+  label="Hatásfok"
+  left="80–93%"
+  right="50–75%"
+  leftHeader="Központi HRV"
+  rightHeader="Decentralizált"
+  winner="left"
+/>
+
+<ComparisonRow
+  label="Zajszint"
+  left="Alacsony (gép a kazánházban)"
+  right="Érezhető (gép a szobában)"
+  leftHeader="Központi"
+  rightHeader="Decentralizált"
+  winner="left"
+/>
+
+<ComparisonRow
+  label="Karbantartás"
+  left="1 gép, 1 szűrőkészlet"
+  right="Szobánként külön egység és szűrő"
+  leftHeader="Központi"
+  rightHeader="Decentralizált"
+  winner="left"
+/>
+
+<ComparisonRow
+  label="Beépíthetőség felújításnál"
+  left="Nehéz (csőhálózat kell)"
+  right="Egyszerű (falkivágás elég)"
+  leftHeader="Központi"
+  rightHeader="Decentralizált"
+  winner="right"
+/>
+
+**Döntési keret:**
+- **Új építés →** központi rendszer, mindig. A csövezést az építkezés során kell kiépíteni, utólag szinte lehetetlen.
+- **Felújítás →** decentralizált, ha a csőhálózat nem oldható meg. Blauberg Vento Expert, Zehnder ComfoAir 70, vagy Lunos egységekkel.
+- **35-45 m² lakás →** decentralizált elegendő.
+
+## A hatásfok-csapda – ne dőlj be a „98%"-nak
+
+A gyártók szeretik a hővisszanyerés hatásfokát 90-98%-ra hirdetni. A valóság:
+
+A [Passivhaus Institut (PHI)](https://passivehouse.com/) **független mérései** alapján:
+- **Paul Novus 300:** 93% – a legmagasabb PHI-tanúsított hatásfok
+- **Zehnder ComfoAir Q:** 85-90% – kiváló, megbízható
+- **Átlagos mid-range gépek:** 80-85%
+
+A „98%" általában a hőcserélő elem labor-hatásfoka, nem a teljes rendszeré. A valós hatásfok 10-15 százalékponttal alacsonyabb, mert a ventilátorok, csőhálózat és szelepek is fogyasztanak energiát.
+
+<InfoCard type="warn" title="Csak a PHI-mérést fogadd el">
+  Ha a gyártó nem tud PHI (Passivhaus Institut) vagy más független tanúsítványt felmutatni, a hirdetett hatásfok megbízhatatlan. A [szellozes.info](https://szellozes.info/hovisszanyeros-szellozteto-tudastar/gyakori-szellozteto-rendszer-hibak-a-tervezeskor-kivitelezeskor/170-feljavitott-hatasfok-adatok) részletesen dokumentálja a „feljavított hatásfok" jelenséget.
+</InfoCard>
+
+## A BB energetikai besorolás és a szellőzés kapcsolata
+
+A [BB besorolás](/energia/energetikai-tanusitvany) (közel nulla energiaigényű épület) eléréséhez a szellőzési hőveszteséget minimalizálni kell. A HRV nélküli háznál a szellőzés a teljes hőveszteség **30-40%-áért** felel.
+
+A [7/2006 TNM rendelet](https://net.jogtar.hu/jogszabaly?docid=A0600007.TNM&txtreferer=00000001.TXT) (2021-es módosítás) megköveteli, hogy az új épületek szellőzése „automatikusan és folyamatosan, a belső páratartalom és CO₂-szint alapján" működjön. Ablaknyitás nem számít bele a légcsere-számításba, ha gépi szellőzés is van.
+
+**A gyakorlatban:** HRV nélkül is elérhető a BB besorolás – de sokkal vastagabb szigeteléssel és drágább fűtési megoldással. A HRV a legköltséghatékonyabb módja a BB elérésének a [hőszivattyú](/energia/hoszivattyuk) mellett.
+
+## Amit a kivitelezők nem mondanak el
+
+**„Majd nyitogassa az ablakot"** – ez a leggyakoribb „tanács" azoknak az építtetőknek, akiket lebeszélnek a szellőzésről. A probléma:
+- Ablaknyitás után 20-30 percen belül visszaáll a CO₂
+- Télen a fűtési energia 30-40%-a kimegy az ablakon
+- Nyáron a klíma többletterhelést kap
+- Éjszaka senki nem kel fel ablakot nyitni 90 percenként
+
+**„Ez csak luxus"** – az 1,6-2,5 millió Ft-os HRV rendszer egy 60-80 milliós házban **2-4%** a teljes költségnek. Cserébe:
+- 40-50%-kal kevesebb szellőzési hőveszteség
+- Szűrt, pormentes levegő allergiásoknak
+- Nincs penész a fürdőszobában
+- Nincs páralecsapódás a hőhídaknál
+
+<CaseStudy name="Balogh család" location="Győr" year={2025}>
+  110 m²-es könnyűszerkezetes házat építettek hőszivattyúval. Az első télen HRV nélkül a fürdőszoba mennyezetén és a hálóban az ablakoknál penész jelent meg – a 3 rétegű üveg és a tökéletes légzárás mellett a pára nem tudott hova menni. Utólag decentralizált egységeket építettek be 4 szobába: 680 000 Ft. Ha a központi rendszert az építkezés alatt telepítik, 1,2-1,5 millió Ft lett volna – és hatékonyabb.
+</CaseStudy>
+
+## Entalpia vs. normál hőcserélő – melyik kell neked?
+
+<ComparisonRow
+  label="Működés"
+  left="Csak hőt nyeri vissza"
+  right="Hőt ÉS párát is visszanyeri"
+  leftHeader="Normál (ellenáramú)"
+  rightHeader="Entalpia (polimer membrán)"
+/>
+
+<ComparisonRow
+  label="Téli páraszint"
+  left="Száraz levegő (20-30% RH)"
+  right="Komfortos (35-50% RH)"
+  leftHeader="Normál"
+  rightHeader="Entalpia"
+  winner="right"
+/>
+
+<ComparisonRow
+  label="Nyári hűtés"
+  left="Nem segít"
+  right="Páramentesít (csökkenti a klímaterhelést)"
+  leftHeader="Normál"
+  rightHeader="Entalpia"
+  winner="right"
+/>
+
+<ComparisonRow
+  label="Karbantartás"
+  left="Évente 1x tisztítás"
+  right="Negyedévente tisztítás"
+  leftHeader="Normál"
+  rightHeader="Entalpia"
+  winner="left"
+/>
+
+**Döntési keret:**
+- **Hőszivattyús fűtés + aktív hűtés →** entalpia hőcserélő (a páramentesítés csökkenti a hűtési energiát)
+- **Gázkazán + nincs hűtés →** normál hőcserélő elegendő
+- **Fakettő/parketta padló →** entalpia (a téli száraz levegő károsítja a fát)
+
+## A 10 leggyakoribb telepítési hiba
+
+1. **Nem tervezik be az építkezés elején** – a csőhálózatot a nyers falazás/szerkezetépítés fázisában kell kiépíteni
+2. **Túl kicsi gépet választanak** – a szobánkénti légcsere-igény alapján kell méretezni, nem a ház m²-e alapján
+3. **Hiányzó zajcsillapítók** – nélkülük a csőhálózaton keresztül szobák között hallani mindent
+4. **Csövek a hőburkon kívül** – kondenzvíz és hőveszteség; a csöveknek a szigetelt téren belül kell futniuk
+5. **Túl szűk csőátmérő** – minimum 74 mm belső átmérő ajánlott
+6. **Túl éles csőkanyarok** – károsítják az antibakteriális belső réteget, növelik az ellenállást
+7. **Nincs kondenzvíz-elvezetés** – a hőcserélőből csepegő víz a gép alatt gyűlik
+8. **A gép elérhetetlen helyen** – a szűrőcsere 3-6 havonta kell, a gép legyen könnyen hozzáférhető
+9. **Nem mérik be a légmennyiségeket** – az üzembe helyezéskor minden szobában be kell állítani a szelepeket
+10. **Nem kötik össze a hőszivattyúval** – az intelligens vezérlés koordinálja a két rendszert
+
+## Személyre szabott árajánlat kell?
+
+A szellőztető rendszer az épületgépészet leginkább „tervezésfüggő" eleme. Kérj ajánlatot szakemberektől – lehetőleg az építkezés tervezési fázisában.
+
+[Ingyenes árajánlatot kérek →](/ajanlatkeres)
+
+::: faq
+### Mennyibe kerül egy hővisszanyerős szellőztető rendszer?
+Teljes rendszer telepítéssel 100-150 m² házra: 1,6-2,5 millió Ft. Prémium rendszer nagyobb házra: 3-3,5 millió Ft. Az anyagköltség és munkadíj aránya kb. 70-30%. Az Otthonfelújítási programban akár 1,1 millió Ft támogatás igényelhető.
+:::
+
+::: faq
+### Kötelező a gépi szellőzés új építésű háznál?
+Jogilag nem szigorúan kötelező, de a 7/2006 TNM rendelet megköveteli az automatikus, CO₂ és páratartalom alapú légcserét. A BB energetikai besorolás eléréséhez a gyakorlatban szükséges, mert nélküle sokkal drágább kompenzálni más rendszerekkel.
+:::
+
+::: faq
+### Melyik a jobb: központi vagy decentralizált szellőztetés?
+Új építésnél a központi rendszer: magasabb hatásfok (80-93%), alacsonyabb zaj, egyetlen karbantartási pont. Decentralizált rendszer felújításnál jó, ahol csőhálózat nem építhető ki. A központi rendszer csőhálózatát az építkezés során kell kiépíteni.
+:::
+
+::: faq
+### Milyen gyakran kell szűrőt cserélni?
+3-6 havonta ellenőrizd, évente minimum egyszer cseréld. A hőcserélőt évente egyszer (normál) vagy negyedévente (entalpia típus) tisztítsd. A légcsatornák professzionális tisztítása néhány évente ajánlott speciális géppel.
+:::
+
+::: faq
+### Mennyit spórol a hővisszanyerős szellőztetés?
+A HRV 40-50%-kal csökkenti a szellőzési hőveszteséget. Egy jól működő rendszer effektív COP-ja elérheti a 7-8-at: 535 kWh villannyal 4000 kWh hőt nyer vissza évente. Hőszivattyúval kombinálva évi 80-150 ezer Ft rezsiköltség-megtakarítást jelent.
+:::

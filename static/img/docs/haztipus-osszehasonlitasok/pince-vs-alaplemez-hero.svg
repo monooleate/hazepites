@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+
+  <!-- Ground line -->
+  <line x1="100" y1="320" x2="1100" y2="320" stroke="#4b5563" stroke-width="2" stroke-dasharray="8,4"/>
+  <text x="1110" y="325" font-family="sans-serif" font-size="12" fill="#6b7280">talajszint</text>
+
+  <!-- Left: Basement -->
+  <g transform="translate(200,160)">
+    <rect x="0" y="0" width="300" height="100" rx="4" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+    <text x="150" y="55" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#c4b5fd">Lakótér</text>
+    <rect x="0" y="100" width="300" height="120" rx="0" fill="#1e1b4b" stroke="#6366f1" stroke-width="2" stroke-dasharray="6,3"/>
+    <text x="150" y="165" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#818cf8">Pince</text>
+    <rect x="-10" y="95" width="320" height="10" fill="#f59e0b" opacity="0.6" rx="2"/>
+    <text x="150" y="250" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#f97316">8-15M Ft</text>
+  </g>
+
+  <!-- Right: Slab -->
+  <g transform="translate(700,220)">
+    <rect x="0" y="0" width="300" height="100" rx="4" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+    <text x="150" y="55" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#c4b5fd">Lakótér</text>
+    <rect x="-10" y="95" width="320" height="15" fill="#34d399" opacity="0.6" rx="2"/>
+    <text x="150" y="145" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#34d399">2-4M Ft</text>
+  </g>
+
+  <!-- Labels -->
+  <text x="350" y="420" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#c4b5fd">PINCE</text>
+  <text x="850" y="420" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#34d399">LEMEZALAP</text>
+
+  <text x="600" y="500" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#f1f5f9">Pince vs alaplemez</text>
+  <text x="600" y="540" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Mikor éri meg az alagsor?</text>
+  <text x="600" y="600" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

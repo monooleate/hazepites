@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <rect width="800" height="400" fill="#ffffff" rx="12"/>
+  <text x="400" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1e293b">Költségmegoszlás – 120 m² téglaház (2026)</text>
+
+  <!-- Stacked horizontal bars -->
+  <g transform="translate(50,60)">
+    <!-- Bar 1: Szerkezet -->
+    <rect x="0" y="0" width="294" height="40" rx="4" fill="#6366f1"/>
+    <text x="147" y="25" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#fff" font-weight="bold">Szerkezet 42% (30,1M)</text>
+
+    <!-- Bar 2: Nyílászárók -->
+    <rect x="298" y="0" width="63" height="40" rx="4" fill="#818cf8"/>
+    <text x="329" y="25" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fff">Nyíl. 9%</text>
+
+    <!-- Bar 3: Gépészet -->
+    <rect x="365" y="0" width="84" height="40" rx="4" fill="#a78bfa"/>
+    <text x="407" y="25" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fff">Gépészet 12%</text>
+
+    <!-- Bar 4: Belső -->
+    <rect x="453" y="0" width="98" height="40" rx="4" fill="#c4b5fd"/>
+    <text x="502" y="25" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1e1b4b">Belső 14%</text>
+
+    <!-- Bar 5: Külső -->
+    <rect x="555" y="0" width="56" height="40" rx="4" fill="#e9d5ff"/>
+    <text x="583" y="25" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#5b21b6">Külső 8%</text>
+
+    <!-- Bar 6: Egyéb -->
+    <rect x="615" y="0" width="85" height="40" rx="4" fill="#34d399"/>
+    <text x="657" y="25" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fff">Tartalék 15%</text>
+  </g>
+
+  <!-- Detail table -->
+  <g transform="translate(50,130)" font-family="sans-serif" font-size="12">
+    <text y="0" fill="#374151" font-weight="bold">Tétel</text>
+    <text x="400" y="0" fill="#374151" font-weight="bold">Összeg (Ft)</text>
+    <text x="550" y="0" fill="#374151" font-weight="bold">Arány</text>
+
+    <line x1="0" y1="8" x2="700" y2="8" stroke="#e2e8f0"/>
+
+    <text y="28" fill="#475569">Alapozás + földmunka</text>
+    <text x="400" y="28" fill="#475569">4 300 000</text>
+    <text x="550" y="28" fill="#475569">6%</text>
+
+    <text y="48" fill="#475569">Falazat + koszorú</text>
+    <text x="400" y="48" fill="#475569">9 800 000</text>
+    <text x="550" y="48" fill="#475569">14%</text>
+
+    <text y="68" fill="#475569">Födém</text>
+    <text x="400" y="68" fill="#475569">7 500 000</text>
+    <text x="550" y="68" fill="#475569">11%</text>
+
+    <text y="88" fill="#475569">Tetőszerkezet + fedés</text>
+    <text x="400" y="88" fill="#475569">8 500 000</text>
+    <text x="550" y="88" fill="#475569">12%</text>
+
+    <text y="108" fill="#475569">Nyílászárók (3 rétegű)</text>
+    <text x="400" y="108" fill="#475569">6 300 000</text>
+    <text x="550" y="108" fill="#475569">9%</text>
+
+    <text y="128" fill="#475569">Gépészet (hősz. + padlófűtés)</text>
+    <text x="400" y="128" fill="#475569">5 200 000</text>
+    <text x="550" y="128" fill="#475569">7%</text>
+
+    <text y="148" fill="#475569">Villany + víz-csatorna</text>
+    <text x="400" y="148" fill="#475569">4 000 000</text>
+    <text x="550" y="148" fill="#475569">5%</text>
+
+    <text y="168" fill="#475569">Belső munkák (vakolás+burkol.+festés)</text>
+    <text x="400" y="168" fill="#475569">10 000 000</text>
+    <text x="550" y="168" fill="#475569">14%</text>
+
+    <text y="188" fill="#475569">Homlokzat + hőszigetelés</text>
+    <text x="400" y="188" fill="#475569">5 500 000</text>
+    <text x="550" y="188" fill="#475569">8%</text>
+
+    <text y="208" fill="#475569">Egyéb (ajtók, kert, stb.)</text>
+    <text x="400" y="208" fill="#475569">3 700 000</text>
+    <text x="550" y="208" fill="#475569">6%</text>
+
+    <line x1="0" y1="218" x2="700" y2="218" stroke="#1e293b" stroke-width="1.5"/>
+    <text y="238" fill="#1e293b" font-weight="bold">Összesen + 15% tartalék</text>
+    <text x="400" y="238" fill="#1e293b" font-weight="bold">~74 500 000</text>
+    <text x="550" y="238" fill="#1e293b" font-weight="bold">~621k/m²</text>
+  </g>
+
+  <text x="400" y="390" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">hazepitesikalauz.hu</text>
+</svg>

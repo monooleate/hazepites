@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 450">
+  <rect width="900" height="450" fill="#1a1a2e" rx="8"/>
+
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f1f5f9">Belső burkolatok költségmegoszlása – 100 m²-es ház, közepes szint</text>
+
+  <!-- Horizontal stacked bar chart -->
+  <!-- Total: 6.5M Ft = 100% -->
+
+  <!-- Bar background -->
+  <rect x="80" y="60" width="740" height="60" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+
+  <!-- Padlóburkolat: 35% = 259px -->
+  <rect x="80" y="60" width="259" height="60" rx="6" fill="#6366f1" opacity="0.8"/>
+  <text x="209" y="85" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Padlóburkolat</text>
+  <text x="209" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#c4b5fd">2,3M Ft (35%)</text>
+
+  <!-- Fürdőszoba csempe: 20% = 148px -->
+  <rect x="339" y="60" width="148" height="60" fill="#a855f7" opacity="0.7"/>
+  <text x="413" y="85" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Fürdő csempe</text>
+  <text x="413" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#d8b4fe">1,3M Ft (20%)</text>
+
+  <!-- Festés: 18% = 133px -->
+  <rect x="487" y="60" width="133" height="60" fill="#34d399" opacity="0.7"/>
+  <text x="553" y="85" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Festés</text>
+  <text x="553" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6ee7b7">1,2M Ft (18%)</text>
+
+  <!-- Belső ajtók: 15% = 111px -->
+  <rect x="620" y="60" width="111" height="60" fill="#f59e0b" opacity="0.7"/>
+  <text x="675" y="85" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Ajtók</text>
+  <text x="675" y="105" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fcd34d">1,0M Ft (15%)</text>
+
+  <!-- Konyha hátfal + egyéb: 12% = 89px -->
+  <rect x="731" y="60" width="89" height="60" rx="0 6 6 0" fill="#f87171" opacity="0.6"/>
+  <text x="775" y="85" text-anchor="middle" font-family="sans-serif" font-size="11" font-weight="bold" fill="#fff">Egyéb</text>
+  <text x="775" y="105" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fca5a5">0,7M (12%)</text>
+
+  <!-- Total label -->
+  <text x="450" y="150" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#94a3b8">Összesen: ~6,5 millió Ft (közepes minőség)</text>
+
+  <!-- Breakdown table -->
+  <text x="100" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#c4b5fd">Részletes bontás</text>
+
+  <!-- Headers -->
+  <text x="100" y="220" font-family="sans-serif" font-size="12" fill="#64748b">Tétel</text>
+  <text x="380" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">Gazdaságos</text>
+  <text x="560" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">Közepes</text>
+  <text x="740" y="220" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">Prémium</text>
+
+  <line x1="80" y1="228" x2="820" y2="228" stroke="#334155" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <text x="100" y="250" font-family="sans-serif" font-size="13" fill="#e2e8f0">Padlóburkolat (anyag + munka)</text>
+  <text x="380" y="250" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#818cf8">5-9e Ft/m²</text>
+  <text x="560" y="250" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a78bfa">7-13e Ft/m²</text>
+  <text x="740" y="250" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">20-45e Ft/m²</text>
+
+  <!-- Row 2 -->
+  <text x="100" y="278" font-family="sans-serif" font-size="13" fill="#e2e8f0">Falcsempe fürdő (anyag + munka)</text>
+  <text x="380" y="278" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#818cf8">8-13e Ft/m²</text>
+  <text x="560" y="278" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a78bfa">13-20e Ft/m²</text>
+  <text x="740" y="278" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">20-30e Ft/m²</text>
+
+  <!-- Row 3 -->
+  <text x="100" y="306" font-family="sans-serif" font-size="13" fill="#e2e8f0">Festés (glett + 2 réteg)</text>
+  <text x="380" y="306" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#818cf8">2 800 Ft/m²</text>
+  <text x="560" y="306" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a78bfa">3 500 Ft/m²</text>
+  <text x="740" y="306" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">4 500 Ft/m²</text>
+
+  <!-- Row 4 -->
+  <text x="100" y="334" font-family="sans-serif" font-size="13" fill="#e2e8f0">Belső ajtók (10 db)</text>
+  <text x="380" y="334" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#818cf8">430e Ft</text>
+  <text x="560" y="334" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#a78bfa">950e Ft</text>
+  <text x="740" y="334" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">1 750e Ft</text>
+
+  <line x1="80" y1="348" x2="820" y2="348" stroke="#334155" stroke-width="1"/>
+
+  <!-- Total row -->
+  <text x="100" y="375" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f1f5f9">ÖSSZESEN (100 m²)</text>
+  <text x="380" y="375" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">4-5,5M Ft</text>
+  <text x="560" y="375" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">5,5-7,5M Ft</text>
+  <text x="740" y="375" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f87171">7,5-10+M Ft</text>
+
+  <text x="450" y="430" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6366f1">hazepitesikalauz.hu – 2026-os árak</text>
+</svg>

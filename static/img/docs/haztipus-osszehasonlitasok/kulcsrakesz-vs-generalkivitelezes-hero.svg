@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+
+  <!-- Left: Kulcsrakész - key icon -->
+  <g transform="translate(200,120)">
+    <rect x="0" y="0" width="300" height="220" rx="8" fill="#312e81" stroke="#818cf8" stroke-width="2"/>
+    <!-- House with key -->
+    <polygon points="150,30 50,90 250,90" fill="none" stroke="#c4b5fd" stroke-width="2.5"/>
+    <rect x="80" y="90" width="140" height="90" fill="none" stroke="#c4b5fd" stroke-width="2"/>
+    <rect x="130" y="130" width="40" height="50" fill="#6366f1" rx="2"/>
+    <!-- Key icon -->
+    <circle cx="150" cy="185" r="12" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="162" y1="185" x2="195" y2="185" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="180" y1="185" x2="180" y2="195" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="190" y1="185" x2="190" y2="195" stroke="#f59e0b" stroke-width="2"/>
+    <text x="150" y="250" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f59e0b">480-700e Ft/m²</text>
+  </g>
+
+  <!-- VS -->
+  <g transform="translate(540,200)">
+    <circle cx="60" cy="30" r="35" fill="#6366f1" opacity="0.3"/>
+    <text x="60" y="42" text-anchor="middle" font-family="sans-serif" font-size="28" font-weight="bold" fill="#f1f5f9">VS</text>
+  </g>
+
+  <!-- Right: Generálkivitelezés - gears icon -->
+  <g transform="translate(700,120)">
+    <rect x="0" y="0" width="300" height="220" rx="8" fill="#1e3a3a" stroke="#34d399" stroke-width="2"/>
+    <!-- House with gears -->
+    <polygon points="150,30 50,90 250,90" fill="none" stroke="#86efac" stroke-width="2.5"/>
+    <rect x="80" y="90" width="140" height="90" fill="none" stroke="#86efac" stroke-width="2"/>
+    <rect x="130" y="130" width="40" height="50" fill="#065f46" rx="2"/>
+    <!-- Gear icon -->
+    <circle cx="130" cy="185" r="15" fill="none" stroke="#34d399" stroke-width="2"/>
+    <circle cx="130" cy="185" r="6" fill="none" stroke="#34d399" stroke-width="1.5"/>
+    <circle cx="170" cy="180" r="10" fill="none" stroke="#34d399" stroke-width="2"/>
+    <circle cx="170" cy="180" r="4" fill="none" stroke="#34d399" stroke-width="1.5"/>
+    <text x="150" y="250" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#34d399">380-580e Ft/m²</text>
+  </g>
+
+  <!-- Labels -->
+  <text x="350" y="390" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#c4b5fd">KULCSRAKÉSZ</text>
+  <text x="350" y="415" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#818cf8">Egy cég, fix ár</text>
+  <text x="850" y="390" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#34d399">GENERÁLKIVITELEZÉS</text>
+  <text x="850" y="415" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#6ee7b7">Te irányítasz</text>
+
+  <!-- Title -->
+  <text x="600" y="500" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="#f1f5f9">Kulcsrakész vs generálkivitelezés</text>
+  <text x="600" y="540" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Melyik modell illik hozzád?</text>
+  <text x="600" y="600" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

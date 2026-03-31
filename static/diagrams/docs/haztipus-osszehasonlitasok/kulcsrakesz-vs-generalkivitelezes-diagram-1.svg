@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <rect width="900" height="500" fill="#1a1a2e" rx="8"/>
+
+  <text x="450" y="35" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f1f5f9">Döntési fa: melyik modellt válaszd?</text>
+
+  <!-- Start node -->
+  <rect x="325" y="55" width="250" height="40" rx="20" fill="#6366f1"/>
+  <text x="450" y="80" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#fff">Van építési tapasztalatod?</text>
+
+  <!-- Branches from start -->
+  <line x1="375" y1="95" x2="225" y2="130" stroke="#818cf8" stroke-width="1.5"/>
+  <line x1="525" y1="95" x2="675" y2="130" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="280" y="115" font-family="sans-serif" font-size="12" fill="#34d399">Igen</text>
+  <text x="580" y="115" font-family="sans-serif" font-size="12" fill="#f87171">Nem</text>
+
+  <!-- Left: experienced -->
+  <rect x="100" y="130" width="250" height="40" rx="20" fill="#312e81" stroke="#818cf8" stroke-width="1"/>
+  <text x="225" y="155" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">Van heti 1-2 napod koordinálni?</text>
+
+  <!-- Right: no experience -->
+  <rect x="550" y="130" width="250" height="40" rx="20" fill="#312e81" stroke="#818cf8" stroke-width="1"/>
+  <text x="675" y="155" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">Fontos a kiszámíthatóság?</text>
+
+  <!-- Left-left: yes time -->
+  <line x1="175" y1="170" x2="120" y2="205" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="130" y="192" font-family="sans-serif" font-size="11" fill="#34d399">Igen</text>
+  <rect x="20" y="205" width="200" height="40" rx="20" fill="#312e81" stroke="#818cf8" stroke-width="1"/>
+  <text x="120" y="230" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">Egyedi ház a cél?</text>
+
+  <!-- Left-right: no time -->
+  <line x1="275" y1="170" x2="330" y2="205" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="285" y="192" font-family="sans-serif" font-size="11" fill="#f87171">Nem</text>
+  <rect x="250" y="205" width="180" height="45" rx="8" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="340" y="225" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fbbf24">KULCSRAKÉSZ</text>
+  <text x="340" y="242" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#f59e0b">Nincs időd → bízd rá a cégre</text>
+
+  <!-- Left-left-left: yes custom -->
+  <line x1="80" y1="245" x2="60" y2="280" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="52" y="268" font-family="sans-serif" font-size="11" fill="#34d399">Igen</text>
+  <rect x="0" y="280" width="180" height="45" rx="8" fill="#34d399" opacity="0.15" stroke="#34d399" stroke-width="1.5"/>
+  <text x="90" y="300" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399">GENERÁLKIVITELEZÉS</text>
+  <text x="90" y="317" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6ee7b7">Max kontroll + megtakarítás</text>
+
+  <!-- Left-left-right: no custom -->
+  <line x1="160" y1="245" x2="210" y2="280" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="175" y="268" font-family="sans-serif" font-size="11" fill="#f87171">Nem</text>
+  <rect x="185" y="280" width="180" height="45" rx="8" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="275" y="300" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fbbf24">KULCSRAKÉSZ</text>
+  <text x="275" y="317" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#f59e0b">Tapasztalat van, de katalógus is jó</text>
+
+  <!-- Right-left: yes predictable -->
+  <line x1="625" y1="170" x2="575" y2="205" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="585" y="192" font-family="sans-serif" font-size="11" fill="#34d399">Igen</text>
+  <rect x="480" y="205" width="180" height="45" rx="8" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="570" y="225" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fbbf24">KULCSRAKÉSZ</text>
+  <text x="570" y="242" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#f59e0b">Fix ár + kiszámíthatóság</text>
+
+  <!-- Right-right: no, flexible -->
+  <line x1="725" y1="170" x2="775" y2="205" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="740" y="192" font-family="sans-serif" font-size="11" fill="#f87171">Nem</text>
+  <rect x="690" y="205" width="200" height="40" rx="20" fill="#312e81" stroke="#818cf8" stroke-width="1"/>
+  <text x="790" y="230" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c4b5fd">Szoros a büdzsé?</text>
+
+  <!-- Right-right-left: yes budget -->
+  <line x1="740" y1="245" x2="690" y2="280" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="700" y="268" font-family="sans-serif" font-size="11" fill="#34d399">Igen</text>
+  <rect x="590" y="280" width="200" height="45" rx="8" fill="#34d399" opacity="0.15" stroke="#34d399" stroke-width="1.5"/>
+  <text x="690" y="300" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399">GENERÁLKIVITELEZÉS</text>
+  <text x="690" y="317" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#6ee7b7">De kell műszaki ellenőr!</text>
+
+  <!-- Right-right-right: no budget -->
+  <line x1="840" y1="245" x2="860" y2="280" stroke="#818cf8" stroke-width="1.5"/>
+  <text x="845" y="268" font-family="sans-serif" font-size="11" fill="#f87171">Nem</text>
+  <rect x="790" y="280" width="110" height="45" rx="8" fill="#f59e0b" opacity="0.2" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="845" y="300" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#fbbf24">KULCSRAKÉSZ</text>
+  <text x="845" y="317" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#f59e0b">Kényelmes megoldás</text>
+
+  <!-- Legend -->
+  <rect x="250" y="380" width="16" height="16" rx="3" fill="#34d399" opacity="0.3" stroke="#34d399" stroke-width="1"/>
+  <text x="275" y="393" font-family="sans-serif" font-size="13" fill="#6ee7b7">Generálkivitelezés – olcsóbb, több munka</text>
+  <rect x="250" y="410" width="16" height="16" rx="3" fill="#f59e0b" opacity="0.3" stroke="#f59e0b" stroke-width="1"/>
+  <text x="275" y="423" font-family="sans-serif" font-size="13" fill="#fbbf24">Kulcsrakész – drágább, kevesebb gond</text>
+
+  <text x="450" y="475" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <rect width="900" height="400" fill="#1a1a2e" rx="8"/>
+
+  <text x="450" y="30" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f1f5f9">Finanszírozási modell: 60M Ft-os ház, 2 gyerekkel</text>
+
+  <!-- Stacked bar showing funding sources -->
+  <rect x="100" y="60" width="700" height="70" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+
+  <!-- Telek: 10M = 16.7% = 117px -->
+  <rect x="100" y="60" width="117" height="70" rx="6" fill="#6366f1" opacity="0.7"/>
+  <text x="158" y="90" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Telek</text>
+  <text x="158" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#c4b5fd">10M Ft</text>
+
+  <!-- CSOK Plusz: 10M = 16.7% = 117px -->
+  <rect x="217" y="60" width="117" height="70" fill="#34d399" opacity="0.7"/>
+  <text x="275" y="90" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">CSOK Plusz</text>
+  <text x="275" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#6ee7b7">10M Ft</text>
+
+  <!-- Babaváró: 11M = 18.3% = 128px -->
+  <rect x="334" y="60" width="128" height="70" fill="#a855f7" opacity="0.7"/>
+  <text x="398" y="90" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Babaváró</text>
+  <text x="398" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#d8b4fe">11M Ft</text>
+
+  <!-- Piaci hitel: 29M = 48.3% = 338px -->
+  <rect x="462" y="60" width="338" height="70" rx="0 6 6 0" fill="#f59e0b" opacity="0.6"/>
+  <text x="631" y="90" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#fff">Piaci építési hitel</text>
+  <text x="631" y="110" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fcd34d">29M Ft (48%)</text>
+
+  <!-- Comparison table below -->
+  <text x="100" y="170" font-family="sans-serif" font-size="14" font-weight="bold" fill="#c4b5fd">Havi törlesztés összehasonlítás (20 év, 60M Ft ház)</text>
+
+  <!-- Headers -->
+  <text x="100" y="200" font-family="sans-serif" font-size="12" fill="#64748b">Forgatókönyv</text>
+  <text x="450" y="200" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">Havi törlesztés</text>
+  <text x="650" y="200" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#64748b">Összes kamat (20 év)</text>
+  <line x1="80" y1="210" x2="820" y2="210" stroke="#334155" stroke-width="1"/>
+
+  <!-- Row 1: Full market loan -->
+  <rect x="80" y="215" width="740" height="40" rx="4" fill="#f87171" opacity="0.1"/>
+  <text x="100" y="240" font-family="sans-serif" font-size="13" fill="#fca5a5">Csak piaci hitel (48M, THM 7,5%)</text>
+  <text x="450" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f87171">387 000 Ft</text>
+  <text x="650" y="240" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#fca5a5">~44,9M Ft</text>
+
+  <!-- Row 2: CSOK + market -->
+  <rect x="80" y="260" width="740" height="40" rx="4" fill="#f59e0b" opacity="0.1"/>
+  <text x="100" y="285" font-family="sans-serif" font-size="13" fill="#fcd34d">CSOK Plusz + piaci hitel (38M, THM 7,5%)</text>
+  <text x="450" y="285" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#f59e0b">306 000 Ft</text>
+  <text x="650" y="285" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#fcd34d">~35,4M Ft</text>
+
+  <!-- Row 3: Full combo - highlighted -->
+  <rect x="80" y="305" width="740" height="40" rx="4" fill="#34d399" opacity="0.15" stroke="#34d399" stroke-width="1"/>
+  <text x="100" y="330" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399">CSOK + Babaváró + piaci hitel (29M)</text>
+  <text x="450" y="330" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">290 000 Ft</text>
+  <text x="650" y="330" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">~18M Ft</text>
+
+  <!-- Savings highlight -->
+  <text x="780" y="330" font-family="sans-serif" font-size="12" font-weight="bold" fill="#34d399">-60%!</text>
+
+  <text x="450" y="380" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6366f1">hazepitesikalauz.hu – 2026-os tájékoztató számítás</text>
+</svg>

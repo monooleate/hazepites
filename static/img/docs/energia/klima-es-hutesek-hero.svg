@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+
+  <!-- Three AC types -->
+  <!-- Split klíma -->
+  <g transform="translate(100,100)">
+    <rect x="0" y="0" width="300" height="260" rx="12" fill="#312e81" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="150" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#c4b5fd">Split klíma</text>
+    <!-- Indoor unit -->
+    <rect x="60" y="55" width="180" height="45" rx="8" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5"/>
+    <rect x="75" y="90" width="150" height="6" rx="3" fill="#6366f1" opacity="0.4"/>
+    <!-- Snowflake -->
+    <text x="150" y="80" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#60a5fa">❄</text>
+    <!-- Outdoor unit -->
+    <rect x="100" y="115" width="100" height="60" rx="6" fill="#1e1b4b" stroke="#4b5563" stroke-width="1"/>
+    <circle cx="150" cy="145" r="18" fill="none" stroke="#4b5563" stroke-width="1.5"/>
+    <text x="150" y="150" text-anchor="middle" font-family="sans-serif" font-size="8" fill="#6b7280">kültéri</text>
+    <text x="150" y="205" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#60a5fa">280-450e Ft</text>
+    <text x="150" y="225" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#818cf8">1 szoba, gyors telepítés</text>
+    <text x="150" y="250" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">Havi: 8-15e Ft</text>
+  </g>
+
+  <!-- Multi split -->
+  <g transform="translate(450,100)">
+    <rect x="0" y="0" width="300" height="260" rx="12" fill="#1e3a3a" stroke="#34d399" stroke-width="2"/>
+    <text x="150" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#34d399">Multi split</text>
+    <!-- Multiple indoor units -->
+    <rect x="30" y="55" width="100" height="30" rx="6" fill="#065f46" stroke="#34d399" stroke-width="1"/>
+    <rect x="170" y="55" width="100" height="30" rx="6" fill="#065f46" stroke="#34d399" stroke-width="1"/>
+    <rect x="100" y="95" width="100" height="30" rx="6" fill="#065f46" stroke="#34d399" stroke-width="1"/>
+    <!-- Lines to outdoor -->
+    <line x1="80" y1="85" x2="150" y2="140" stroke="#34d399" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="220" y1="85" x2="150" y2="140" stroke="#34d399" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="150" y1="125" x2="150" y2="140" stroke="#34d399" stroke-width="1" stroke-dasharray="3,2"/>
+    <rect x="110" y="140" width="80" height="40" rx="6" fill="#065f46" stroke="#4b5563" stroke-width="1"/>
+    <text x="150" y="165" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#6b7280">1 kültéri</text>
+    <text x="150" y="205" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#34d399">0,8-1,5M Ft</text>
+    <text x="150" y="225" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6ee7b7">3-4 szoba, 1 kültéri</text>
+    <text x="150" y="250" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">Havi: 18-35e Ft</text>
+  </g>
+
+  <!-- Hőszivattyú -->
+  <g transform="translate(800,100)">
+    <rect x="0" y="0" width="300" height="260" rx="12" fill="#3b0764" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="150" y="35" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#c084fc">Hőszivattyú + fan-coil</text>
+    <!-- Heat pump -->
+    <rect x="90" y="55" width="120" height="70" rx="8" fill="#581c87" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="150" y="85" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#d8b4fe">Fűt + Hűt</text>
+    <text x="150" y="100" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#a855f7">egész évben</text>
+    <!-- Arrows showing heating/cooling -->
+    <text x="60" y="95" font-family="sans-serif" font-size="18" fill="#f87171">♨</text>
+    <text x="240" y="95" font-family="sans-serif" font-size="18" fill="#60a5fa">❄</text>
+    <!-- Fan coils -->
+    <rect x="40" y="140" width="70" height="25" rx="4" fill="#581c87" stroke="#a855f7" stroke-width="1" opacity="0.7"/>
+    <rect x="120" y="140" width="70" height="25" rx="4" fill="#581c87" stroke="#a855f7" stroke-width="1" opacity="0.7"/>
+    <rect x="200" y="140" width="70" height="25" rx="4" fill="#581c87" stroke="#a855f7" stroke-width="1" opacity="0.7"/>
+    <text x="150" y="185" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#a855f7">fan-coil egységek</text>
+    <text x="150" y="215" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#c084fc">2-4M Ft</text>
+    <text x="150" y="235" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#d8b4fe">teljes ház, fűtés + hűtés</text>
+    <text x="150" y="255" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">Havi: 10-22e Ft</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="440" text-anchor="middle" font-family="sans-serif" font-size="40" font-weight="bold" fill="#f1f5f9">Klíma és hűtés</text>
+  <text x="600" y="480" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#94a3b8">Split, multi split, hőszivattyús hűtés – árakkal 2026</text>
+  <text x="600" y="600" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

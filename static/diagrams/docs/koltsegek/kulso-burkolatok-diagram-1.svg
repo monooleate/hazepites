@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <rect width="900" height="400" fill="#1a1a2e" rx="8"/>
+
+  <text x="450" y="30" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f1f5f9">Hőszigetelő anyagok összehasonlítása (15 cm, 2026)</text>
+
+  <!-- Headers -->
+  <text x="100" y="70" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">Anyag</text>
+  <text x="300" y="70" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">Ár (Ft/m²)</text>
+  <text x="460" y="70" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">Lambda (W/mK)</text>
+  <text x="610" y="70" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">Tűzvédelem</text>
+  <text x="770" y="70" text-anchor="middle" font-family="sans-serif" font-size="12" font-weight="bold" fill="#94a3b8">Páraáteresztés</text>
+
+  <line x1="50" y1="80" x2="850" y2="80" stroke="#334155" stroke-width="1"/>
+
+  <!-- EPS row -->
+  <rect x="50" y="90" width="800" height="55" rx="4" fill="#312e81" opacity="0.3"/>
+  <text x="100" y="115" font-family="sans-serif" font-size="14" fill="#c4b5fd">Fehér EPS</text>
+  <text x="100" y="133" font-family="sans-serif" font-size="11" fill="#818cf8">(polisztirol)</text>
+  <!-- Price bar -->
+  <rect x="230" y="105" width="100" height="20" rx="4" fill="#6366f1" opacity="0.6"/>
+  <text x="340" y="120" font-family="sans-serif" font-size="12" fill="#c4b5fd">1 800-3 000</text>
+  <text x="460" y="120" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#e2e8f0">0,038-0,040</text>
+  <text x="610" y="120" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#f87171">B1 (gyenge)</text>
+  <text x="770" y="120" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">Korlátozott</text>
+
+  <!-- Grafitos EPS row - highlighted -->
+  <rect x="50" y="150" width="800" height="55" rx="4" fill="#065f46" opacity="0.3" stroke="#34d399" stroke-width="1"/>
+  <text x="100" y="175" font-family="sans-serif" font-size="14" font-weight="bold" fill="#34d399">Grafitos EPS</text>
+  <text x="100" y="193" font-family="sans-serif" font-size="11" fill="#6ee7b7">(szürke, LEGJOBB)</text>
+  <rect x="230" y="165" width="130" height="20" rx="4" fill="#34d399" opacity="0.5"/>
+  <text x="370" y="180" font-family="sans-serif" font-size="12" fill="#6ee7b7">2 200-3 800</text>
+  <text x="460" y="180" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399">0,031-0,033</text>
+  <text x="610" y="180" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#f87171">B1 (gyenge)</text>
+  <text x="770" y="180" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#fbbf24">Korlátozott</text>
+
+  <!-- Kőzetgyapot row -->
+  <rect x="50" y="210" width="800" height="55" rx="4" fill="#312e81" opacity="0.3"/>
+  <text x="100" y="235" font-family="sans-serif" font-size="14" fill="#c4b5fd">Kőzetgyapot</text>
+  <text x="100" y="253" font-family="sans-serif" font-size="11" fill="#818cf8">(ásványi)</text>
+  <rect x="230" y="225" width="180" height="20" rx="4" fill="#a855f7" opacity="0.5"/>
+  <text x="420" y="240" font-family="sans-serif" font-size="12" fill="#d8b4fe">3 500-5 500</text>
+  <text x="460" y="240" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#e2e8f0">0,035-0,040</text>
+  <text x="610" y="240" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399">A1 (kiváló)</text>
+  <text x="770" y="240" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399">Kiváló</text>
+
+  <!-- XPS row -->
+  <rect x="50" y="270" width="800" height="55" rx="4" fill="#312e81" opacity="0.3"/>
+  <text x="100" y="295" font-family="sans-serif" font-size="14" fill="#c4b5fd">XPS</text>
+  <text x="100" y="313" font-family="sans-serif" font-size="11" fill="#818cf8">(lábazatra!)</text>
+  <rect x="230" y="285" width="140" height="20" rx="4" fill="#f59e0b" opacity="0.5"/>
+  <text x="380" y="300" font-family="sans-serif" font-size="12" fill="#fbbf24">2 500-4 000</text>
+  <text x="460" y="300" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#e2e8f0">0,033-0,038</text>
+  <text x="610" y="300" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#f87171">B1 (gyenge)</text>
+  <text x="770" y="300" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#34d399">Vízálló</text>
+
+  <!-- Legend -->
+  <text x="450" y="365" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6b7280">Lambda: alacsonyabb = jobb szigetelés | Árak: anyag + felragasztás + dübelezés</text>
+  <text x="450" y="385" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#6366f1">hazepitesikalauz.hu</text>
+</svg>

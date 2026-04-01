@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Dark background -->
+  <rect width="1200" height="630" fill="#0f1123"/>
+
+  <!-- Subtle grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e2040" stroke-width="0.8"/>
+    </pattern>
+    <!-- Green glow filter -->
+    <filter id="greenGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.1  0 0 0 0 0.9  0 0 0 0 0.3  0 0 0 0.5 0" result="greenBlur"/>
+      <feMerge><feMergeNode in="greenBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- Red glow filter -->
+    <filter id="redGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.9  0 0 0 0 0.1  0 0 0 0 0.1  0 0 0 0.4 0" result="redBlur"/>
+      <feMerge><feMergeNode in="redBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Accent line top -->
+  <rect x="0" y="0" width="1200" height="4" fill="#22c55e"/>
+
+  <!-- === LEFT SIDE: House with savings (GREEN) === -->
+  <!-- House silhouette -->
+  <polygon points="160,320 280,200 400,320" fill="#16a34a" opacity="0.85" filter="url(#greenGlow)"/>
+  <rect x="190" y="320" width="180" height="120" fill="#15803d" opacity="0.85"/>
+  <!-- Door -->
+  <rect x="260" y="385" width="44" height="55" rx="3" fill="#0f1123"/>
+  <!-- Window left -->
+  <rect x="205" y="345" width="38" height="38" rx="2" fill="#86efac" opacity="0.5"/>
+  <!-- Window right -->
+  <rect x="327" y="345" width="38" height="38" rx="2" fill="#86efac" opacity="0.5"/>
+  <!-- Coin stack (savings) below house -->
+  <ellipse cx="282" cy="470" rx="36" ry="9" fill="#fbbf24"/>
+  <rect x="246" y="455" width="72" height="15" rx="2" fill="#f59e0b"/>
+  <ellipse cx="282" cy="455" rx="36" ry="9" fill="#fcd34d"/>
+  <rect x="246" y="440" width="72" height="15" rx="2" fill="#f59e0b"/>
+  <ellipse cx="282" cy="440" rx="36" ry="9" fill="#fbbf24"/>
+  <rect x="246" y="425" width="72" height="15" rx="2" fill="#f59e0b"/>
+  <ellipse cx="282" cy="425" rx="36" ry="9" fill="#fcd34d"/>
+  <!-- Up arrow (savings) -->
+  <polygon points="282,400 268,420 296,420" fill="#22c55e" filter="url(#greenGlow)"/>
+  <!-- Green checkmark badge -->
+  <circle cx="370" cy="220" r="22" fill="#15803d" stroke="#22c55e" stroke-width="2"/>
+  <polyline points="360,221 367,230 382,212" stroke="#22c55e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+  <!-- === RIGHT SIDE: Broken/expensive house (RED) === -->
+  <!-- House silhouette right -->
+  <polygon points="800,320 920,200 1040,320" fill="#b91c1c" opacity="0.75" filter="url(#redGlow)"/>
+  <rect x="830" y="320" width="180" height="120" fill="#991b1b" opacity="0.75"/>
+  <!-- Crack in wall -->
+  <polyline points="900,330 910,355 895,370 908,395 920,430" stroke="#ef4444" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.9"/>
+  <!-- Door right house -->
+  <rect x="900" y="385" width="44" height="55" rx="3" fill="#0f1123"/>
+  <!-- Warning badge -->
+  <circle cx="1010" cy="220" r="22" fill="#991b1b" stroke="#ef4444" stroke-width="2"/>
+  <text x="1010" y="228" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#ef4444">!</text>
+  <!-- Money flying away (loss) -->
+  <text x="1060" y="380" font-family="sans-serif" font-size="22" fill="#ef4444" opacity="0.8">−3M Ft</text>
+  <text x="1060" y="408" font-family="sans-serif" font-size="18" fill="#ef4444" opacity="0.6">−8M Ft</text>
+  <text x="1060" y="432" font-family="sans-serif" font-size="14" fill="#ef4444" opacity="0.5">javítás...</text>
+
+  <!-- === CENTER DIVIDER === -->
+  <line x1="600" y1="150" x2="600" y2="520" stroke="#334155" stroke-width="2" stroke-dasharray="8,6"/>
+  <!-- VS label -->
+  <circle cx="600" cy="320" r="30" fill="#1e2040" stroke="#334155" stroke-width="2"/>
+  <text x="600" y="327" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#94a3b8">VS</text>
+
+  <!-- Labels under houses -->
+  <text x="282" y="500" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#22c55e">Ahol spórolhatsz</text>
+  <text x="920" y="500" text-anchor="middle" font-family="sans-serif" font-size="18" font-weight="bold" fill="#ef4444">Ahol ne spórolj</text>
+
+  <!-- Bullet hints left (green) -->
+  <circle cx="148" cy="535" r="4" fill="#22c55e"/>
+  <text x="160" y="540" font-family="sans-serif" font-size="13" fill="#86efac">Alaprajz • Tető • Anyag • Ajánlatok</text>
+
+  <!-- Bullet hints right (red) -->
+  <circle cx="748" cy="535" r="4" fill="#ef4444"/>
+  <text x="760" y="540" font-family="sans-serif" font-size="13" fill="#fca5a5">Alap • Szigetelés • Nyílászáró • Gépészet</text>
+
+  <!-- === MAIN TITLE === -->
+  <text x="600" y="90" text-anchor="middle" font-family="sans-serif" font-size="46" font-weight="bold" fill="#f8fafc" letter-spacing="-1">Megtakarítási tippek házépítéshez</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="135" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#94a3b8">Hol spórolhatsz – és hol ne? 2026</text>
+
+  <!-- Brand bar -->
+  <rect x="0" y="600" width="1200" height="30" fill="#0a0c1a"/>
+  <text x="600" y="620" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#475569" letter-spacing="1">hazepitesikalauz.hu</text>
+</svg>

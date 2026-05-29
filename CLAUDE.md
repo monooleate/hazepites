@@ -7,6 +7,61 @@ Magyar nyelvű házépítési tudáshub. Domain: **hazepitesikalauz.hu**. Framew
 
 ---
 
+## ⚠️ Operatív tudás és helyesbítések (KÖTELEZŐ – ezek felülírják a lentebbi elavult részeket)
+
+> Ezeket a 2026-os tartalomgenerálás során ellenőriztük a kódban. **Ezek az igazság**, ahol a lenti szöveg mást mond, ezek érvényesek.
+
+### URL-séma – NINCS `/docs` prefix
+- Az oldalak élő URL-je: `https://hazepitesikalauz.hu/{kategória}/{slug}` (pl. `/koltsegek/keszultsegi-fokok`).
+- A route a **`routes/[...slug].tsx`** catch-all (NEM `routes/docs/[kategória]/[slug].tsx`).
+- A frontmatter `canonical` és minden `articleSchema."@id"` / `mainEntityOfPage."@id"` **`/docs` nélkül** legyen.
+- Belső linkek a body-ban: `[szöveg](/{kategória}/{slug})` – **`/docs` nélkül**.
+- **Kivétel (a `/docs` HELYES marad):** statikus képek `image.url` → `https://hazepitesikalauz.hu/img/docs/{kat}/{slug}-hero.svg`, és diagram → `/diagrams/docs/{kat}/{slug}-diagram-1.svg` (mert a `static/` mappa így strukturált).
+
+### Regisztráció KÖTELEZŐ – különben 404
+Minden új cikket fel kell venni a **`content/toc.ts`** megfelelő kategória `pages` tömbjébe:
+```ts
+["page", "slug-neve", "Megjelenő cím"],
+```
+A `routes/[...slug].tsx` a `TABLE_OF_CONTENTS`-ben keresi a slugot; ha nincs benne → `HttpError(404)`, hiába létezik az `.mdx`.
+
+### Elérhető MDX komponensek (import NÉLKÜL, auto-injektált)
+`InfoCard`, `Accordion`, `CaseStudy`, `CostRange`, `ExpertQuote`, `ComparisonRow`, `ProConList`, `StepByStep`, `Checklist`, `Timeline`.
+- **NINCS `ComparisonTable`** → táblázathoz markdown táblát használj, „X vs Y" döntéshez `ComparisonRow`-t (`left`, `right`, `leftHeader`, `rightHeader`, `leftItems`, `rightItems`).
+- `StepByStep` **objektumtömböt** vár: `steps={[{ title: "...", desc: "..." }]}` (NEM stringtömböt).
+- `InfoCard type`: `tip` | `info` | `warn` | `case`.
+
+### Kalkulátor / island hozzáadása (3 lépés)
+1. `islands/{Név}.tsx` – Preact island (`useState`, Tailwind, dark mode osztályok – minta: `CostCalculator.tsx`).
+2. Regisztráció: `routes/[...slug].tsx` → import + `ISLAND_REGISTRY` bővítés.
+3. A cikk frontmatterébe: `island: "{Név}"` (egy island / oldal, a tartalom alatt renderel).
+
+### Idézőjel-csapda JSX propban (acorn) – csendes fallback forrása
+JSX prop értékében (pl. `title="…"`, `label="…"`) **SOHA** ne legyen magyar `„` + egyenes `"` pár → az MDX compile elbukik, csendes markdown fallback lesz (a `::: faq` és a `<Komponens>` nyersen kiszivárog). Megoldás: a propban kerüld az idézőjelet, vagy `„…"` (U+201E + U+201D) párt használj. (Részletek a 18.5 szekcióban.)
+
+### Ellenőrzés publikálás előtt (KÖTELEZŐ)
+1. **MDX compile-check** minden új fájlra (acorn parse).
+2. **Élő render:** `curl http://localhost:5173/{kat}/{slug}` → HTTP 200, és NINCS `::: faq` vagy `&lt;StepByStep`/`&lt;InfoCard` a kimenetben (az fallback-et jelez).
+3. Minden hivatkozott hero + diagram SVG **létezik**.
+
+### Márkasemlegesség (KÖTELEZŐ)
+**TILOS** cégnév vagy márkanév a publikus tartalomban (pl. KP Sales House, STEICO, Naturheld, Terrán, Hisense, Kensol, Thermory, Eternit, HERCULIT, SIKA stb.). A technológiát mint **kategóriát** írd le (pl. „farost szigetelés", „betoncserép", „korcolt fémlemez prémium bevonattal"). A referenciaanyag (`docs-internal/referencia/`) belső forrás – soha ne kerüljön be cégnév a cikkbe.
+
+---
+
+## 📋 Tartalom státusz – kész és tervezett cikkek
+
+### Elkészült (referencia 1. kör, 2026-05) – 12 cikk
+`koltsegek/keszultsegi-fokok` (+ `KeszultsegiKalkulator` island), `koltsegek/afa-hazepites`, `energia/farost-szigeteles`, `energia/diffuzio-nyitott-falszerkezet`, `energia/futes-hutes-osszehasonlitas`, `energia/rekuperator-kozponti-vs-egyhelyiseges`, `telek/talajcsavaros-alapozas`, `jog/keszhaz-szerzodes-buktatok`, `kivitelezes/homlokzatburkolat-konnyuszerkezet`, `kivitelezes/tetofedes-valasztas`, `tervezes/tetoter-beepites`, `haztipusok/cnc-favazas-keszhaz`.
+
+### Tervezett (referencia 2. kör) – részletes terv külön fájlban
+A hátralévő és tervezett cikkek (12 téma + 4 új kalkulátor ötlet, prioritással, slug/kategória/forrás-tartalom bontásban):
+**→ `internal-docs/CIKK-TERVEZET-referencia-temak.md`**
+
+Röviden a 2. kör témái: esztrich vs szárazesztrich, glettelési minőség (Q1–Q4), villamos hálózat (MBCU csillagpont), belső falak könnyűszerkezetnél, használati melegvíz (HMV), víz- és szennyvízrendszer, nyílászáró-összehasonlítás (műanyag vs fa-alu), bejárati ajtó (biztonság/Rw dB), természetes építőanyagok + EPBD 2030, lapostető szigetelés, időjárás és építkezés, munkaterület-átadás és kitűzés.
+
+---
+
 ## Kötelező referenciák
 
 Minden tartalomgenerálás előtt **OLVASD EL** ezeket a fájlokat:

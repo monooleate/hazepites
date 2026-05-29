@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1a1a2e">Ki mit visel? – A felelősség és költség megoszlása</text>
+
+  <!-- Two columns -->
+  <rect x="40" y="70" width="390" height="410" rx="10" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+  <text x="235" y="100" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#27ae60">A VÁLLALKOZÓ vállalja</text>
+
+  <text x="60" y="140" font-family="sans-serif" font-size="13" fill="#1a5b36">✓ Az épület gyártása és felépítése</text>
+  <text x="60" y="170" font-family="sans-serif" font-size="13" fill="#1a5b36">✓ A választott készültségi fok munkái</text>
+  <text x="60" y="200" font-family="sans-serif" font-size="13" fill="#1a5b36">✓ Szállítás és daruzás</text>
+  <text x="60" y="230" font-family="sans-serif" font-size="13" fill="#1a5b36">✓ Közműkiállás a faltól 1 méterig</text>
+  <text x="60" y="260" font-family="sans-serif" font-size="13" fill="#1a5b36">✓ Garancia a saját munkájára</text>
+  <text x="60" y="290" font-family="sans-serif" font-size="13" fill="#1a5b36">✓ Fogadószint – CSAK ha ő készíti</text>
+
+  <text x="60" y="340" font-family="sans-serif" font-size="12" fill="#777" font-style="italic">Időjárási csúszás (vis maior):</text>
+  <text x="60" y="362" font-family="sans-serif" font-size="12" fill="#777" font-style="italic">nem kötbérezhető, nem munkanap.</text>
+  <text x="60" y="400" font-family="sans-serif" font-size="12" fill="#777" font-style="italic">Pótmunka: csak előzetes írásos,</text>
+  <text x="60" y="422" font-family="sans-serif" font-size="12" fill="#777" font-style="italic">beárazott megállapodás alapján.</text>
+
+  <rect x="470" y="70" width="390" height="410" rx="10" fill="#fdedec" stroke="#e74c3c" stroke-width="2"/>
+  <text x="665" y="100" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#c0392b">A MEGRENDELŐ viseli</text>
+
+  <text x="490" y="140" font-family="sans-serif" font-size="13" fill="#922b21">• Közmű 1 méteren túl, bekötés, engedélyek</text>
+  <text x="490" y="170" font-family="sans-serif" font-size="13" fill="#922b21">• Járda, vízelvezetés, drénezés, támfal</text>
+  <text x="490" y="200" font-family="sans-serif" font-size="13" fill="#922b21">• Kerítés, kocsibeálló, terasz, füvesítés</text>
+  <text x="490" y="230" font-family="sans-serif" font-size="13" fill="#922b21">• Mobil WC, sittes konténer</text>
+  <text x="490" y="260" font-family="sans-serif" font-size="13" fill="#922b21">• Földmérő kitűzés, talajvizsgálat</text>
+  <text x="490" y="290" font-family="sans-serif" font-size="13" fill="#922b21">• Idegen alapozás igazolása (fotó, tanúsítvány)</text>
+  <text x="490" y="320" font-family="sans-serif" font-size="13" fill="#922b21">• Esztrich utáni szellőztetés (különben kár!)</text>
+  <text x="490" y="350" font-family="sans-serif" font-size="13" fill="#922b21">• Módosítás engedélyeztetési költsége</text>
+
+  <rect x="490" y="380" width="350" height="80" rx="6" fill="#fff" stroke="#e74c3c" stroke-dasharray="4,3"/>
+  <text x="665" y="408" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c0392b" font-weight="bold">A kizárások együtt +5–15 millió Ft,</text>
+  <text x="665" y="432" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#c0392b" font-weight="bold">ami SEHOL nincs a m²-árban!</text>
+
+  <text x="450" y="505" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#777">Aláírás előtt tételesen kérdezz rá: mi van benne és mi nincs.</text>
+  <text x="880" y="515" text-anchor="end" font-family="sans-serif" font-size="11" fill="#bbb">hazepitesikalauz.hu</text>
+</svg>

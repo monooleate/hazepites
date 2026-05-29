@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <defs><pattern id="gt" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#gt)" opacity="0.3"/>
+
+  <!-- Ground line -->
+  <rect x="100" y="360" width="500" height="120" fill="#3a2e1e" opacity="0.6"/>
+  <line x1="100" y1="360" x2="600" y2="360" stroke="#6a5a3a" stroke-width="2"/>
+
+  <!-- Screw piles in ground -->
+  <g stroke="#95a5a6" stroke-width="6" fill="none">
+    <line x1="170" y1="360" x2="170" y2="460"/>
+    <line x1="290" y1="360" x2="290" y2="460"/>
+    <line x1="410" y1="360" x2="410" y2="460"/>
+    <line x1="530" y1="360" x2="530" y2="460"/>
+  </g>
+  <!-- helical threads -->
+  <g stroke="#7f8c8d" stroke-width="2">
+    <path d="M 160 400 L 180 410 M 160 420 L 180 430 M 160 440 L 180 450"/>
+    <path d="M 280 400 L 300 410 M 280 420 L 300 430 M 280 440 L 300 450"/>
+    <path d="M 400 400 L 420 410 M 400 420 L 420 430 M 400 440 L 420 450"/>
+    <path d="M 520 400 L 540 410 M 520 420 L 540 430 M 520 440 L 540 450"/>
+  </g>
+  <!-- Plates on top -->
+  <g fill="#bdc3c7">
+    <rect x="155" y="352" width="30" height="10" rx="2"/>
+    <rect x="275" y="352" width="30" height="10" rx="2"/>
+    <rect x="395" y="352" width="30" height="10" rx="2"/>
+    <rect x="515" y="352" width="30" height="10" rx="2"/>
+  </g>
+  <!-- Floor panel (hoszigetelt) -->
+  <rect x="120" y="320" width="460" height="32" rx="3" fill="#c9a86a"/>
+  <text x="350" y="341" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#3a2a14" font-weight="bold">hoszigetelt fodempanel (272 mm)</text>
+  <!-- house outline -->
+  <polygon points="180,320 350,230 520,320" fill="none" stroke="#2ecc71" stroke-width="2"/>
+  <rect x="220" y="280" width="260" height="40" fill="#2a2a4e" stroke="#2ecc71" stroke-width="1.5"/>
+
+  <!-- Stat boxes -->
+  <rect x="640" y="200" width="450" height="70" rx="10" fill="#2a2a4e" stroke="#2ecc71" stroke-width="2"/>
+  <text x="865" y="232" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#2ecc71">Orak alatt terhelheto</text>
+  <text x="865" y="256" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#ccc">nincs koto ido, betonmentes</text>
+
+  <rect x="640" y="290" width="215" height="60" rx="8" fill="#2a2a4e" stroke="#3498db" stroke-width="1"/>
+  <text x="747" y="316" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#5dade2" font-weight="bold">Fagyban is</text>
+  <text x="747" y="337" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">epitheto</text>
+
+  <rect x="875" y="290" width="215" height="60" rx="8" fill="#2a2a4e" stroke="#f39c12" stroke-width="1"/>
+  <text x="982" y="316" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#f39c12" font-weight="bold">80-95e Ft/m2</text>
+  <text x="982" y="337" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">fogadoszint</text>
+
+  <rect x="640" y="370" width="450" height="60" rx="8" fill="#2a2a4e" stroke="#9b59b6" stroke-width="1"/>
+  <text x="865" y="396" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#bb8fce" font-weight="bold">Lejtos, nehez telken gyakran olcsobb</text>
+  <text x="865" y="417" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">mint a beton savalap</text>
+
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="white">Talajcsavaros alapozas 2026</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ccc">Mikor jobb, mint a betonalap?</text>
+  <text x="600" y="135" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#888">tuzihorganyzott acel, DIN EN ISO 1461</text>
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#555">hazepitesikalauz.hu</text>
+</svg>

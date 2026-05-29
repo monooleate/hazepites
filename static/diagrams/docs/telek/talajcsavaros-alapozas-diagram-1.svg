@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+  <rect width="900" height="520" fill="#ffffff"/>
+  <text x="450" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1a1a2e">Talajcsavaros födémpanel vs beton sávalapozás</text>
+
+  <!-- LEFT: talajcsavar -->
+  <text x="230" y="75" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#27ae60">Talajcsavaros födémpanel</text>
+  <!-- ground -->
+  <rect x="60" y="300" width="340" height="120" fill="#efe6d5"/>
+  <line x1="60" y1="300" x2="400" y2="300" stroke="#c9b896" stroke-width="2"/>
+  <!-- piles -->
+  <g stroke="#7f8c8d" stroke-width="7">
+    <line x1="120" y1="300" x2="120" y2="400"/>
+    <line x1="230" y1="300" x2="230" y2="400"/>
+    <line x1="340" y1="300" x2="340" y2="400"/>
+  </g>
+  <!-- panel layers -->
+  <rect x="70" y="250" width="320" height="14" fill="#8a6a3a"/>
+  <text x="405" y="261" font-family="sans-serif" font-size="10" fill="#666">22 OSB</text>
+  <rect x="70" y="264" width="320" height="32" fill="#c9a86a"/>
+  <text x="230" y="285" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3a2a14">240 váz + befújt farost</text>
+  <rect x="70" y="296" width="320" height="8" fill="#5a4530"/>
+  <text x="405" y="303" font-family="sans-serif" font-size="9" fill="#666">vízzáró lemez</text>
+  <text x="230" y="445" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#27ae60" font-weight="bold">272 mm · U≈0,138 · betonmentes</text>
+  <text x="230" y="465" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#777">órák alatt terhelhető, fagyban is</text>
+
+  <!-- divider -->
+  <line x1="450" y1="70" x2="450" y2="480" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- RIGHT: beton savalap -->
+  <text x="675" y="75" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#7f8c8d">Beton sávalapozás</text>
+  <rect x="500" y="300" width="350" height="120" fill="#efe6d5"/>
+  <line x1="500" y1="300" x2="850" y2="300" stroke="#c9b896" stroke-width="2"/>
+  <!-- strip foundation -->
+  <rect x="520" y="340" width="60" height="80" fill="#aab0b3"/>
+  <rect x="770" y="340" width="60" height="80" fill="#aab0b3"/>
+  <!-- zsaluko labazat -->
+  <rect x="520" y="300" width="60" height="40" fill="#9aa0a3"/>
+  <rect x="770" y="300" width="60" height="40" fill="#9aa0a3"/>
+  <!-- XPS + kavics + szerelobeton -->
+  <rect x="580" y="290" width="190" height="10" fill="#f1c40f" opacity="0.6"/>
+  <text x="855" y="298" font-family="sans-serif" font-size="9" fill="#666">XPS</text>
+  <rect x="580" y="300" width="190" height="22" fill="#d8d2c4"/>
+  <text x="675" y="316" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#666">kavicságyazat</text>
+  <rect x="580" y="270" width="190" height="20" fill="#bbbbbb"/>
+  <text x="675" y="284" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#444">szerelőbeton + vasháló</text>
+  <text x="675" y="445" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#7f8c8d" font-weight="bold">C25 beton · zsalukő lábazat</text>
+  <text x="675" y="465" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#777">20-30 nap szilárdulás, fagyban tilos</text>
+
+  <text x="450" y="500" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#999">Mindkettő talajmechanikai szakvéleményre és statikus méretezésre épül.</text>
+  <text x="880" y="515" text-anchor="end" font-family="sans-serif" font-size="11" fill="#bbb">hazepitesikalauz.hu</text>
+</svg>

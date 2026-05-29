@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480">
+  <rect width="900" height="480" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="bold" fill="#1a1a2e">Hol van a hőszigetelés? – ferde tetősík vs vízszintes födém</text>
+
+  <!-- LEFT beepitett -->
+  <text x="225" y="70" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#27ae60">Beépített (szaruzat)</text>
+  <polygon points="80,250 225,130 370,250" fill="none" stroke="#27ae60" stroke-width="2.5"/>
+  <!-- insulation along the slope -->
+  <polygon points="95,250 225,142 355,250 345,250 225,156 105,250" fill="#d6bd7e"/>
+  <polygon points="105,250 225,156 345,250 332,250 225,168 118,250" fill="#c9a86a"/>
+  <line x1="100" y1="250" x2="350" y2="250" stroke="#8a6a3a" stroke-width="3"/>
+  <text x="225" y="220" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3a2a14">~372 mm</text>
+  <text x="225" y="290" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#27ae60" font-weight="bold">hőszigetelés a TETŐSÍKBAN</text>
+  <text x="225" y="312" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#777">a tetőtér lakótér / fűtött</text>
+  <rect x="150" y="250" width="150" height="55" fill="#eafaf1" opacity="0.5"/>
+  <text x="225" y="282" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#27ae60">fűtött lakótér</text>
+
+  <line x1="450" y1="60" x2="450" y2="340" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- RIGHT nem beepitett -->
+  <text x="675" y="70" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#7f8c8d">Nem beépített (rácsostartó)</text>
+  <polygon points="530,250 675,130 820,250" fill="none" stroke="#7f8c8d" stroke-width="2.5"/>
+  <g stroke="#aab0b3" stroke-width="1.5"><line x1="530" y1="250" x2="605" y2="190"/><line x1="605" y1="250" x2="605" y2="190"/><line x1="605" y1="190" x2="675" y2="250"/><line x1="675" y1="130" x2="675" y2="250"/><line x1="675" y1="250" x2="745" y2="190"/><line x1="745" y1="190" x2="820" y2="250"/></g>
+  <!-- insulation on flat ceiling -->
+  <rect x="545" y="250" width="260" height="30" fill="#d6bd7e"/>
+  <text x="675" y="270" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3a2a14">~382 mm</text>
+  <line x1="540" y1="280" x2="810" y2="280" stroke="#8a6a3a" stroke-width="3"/>
+  <text x="675" y="305" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#7f8c8d" font-weight="bold">hőszigetelés a FÖDÉMEN</text>
+  <text x="675" y="327" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#e74c3c">a padlás hideg, nem járható</text>
+
+  <!-- bottom note -->
+  <rect x="80" y="360" width="740" height="80" rx="8" fill="#f8f9fa" stroke="#ddd"/>
+  <text x="450" y="388" text-anchor="middle" font-family="sans-serif" font-size="13" font-weight="bold" fill="#1a1a2e">A beépített tetőnél a hő a tetősíkban, a nem beépítettnél a vízszintes födémben van.</text>
+  <text x="450" y="412" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">A rácsostartós padlás csak szellőztetett légrés – nem fűtött, nem járható, később nem beépíthető.</text>
+
+  <text x="880" y="470" text-anchor="end" font-family="sans-serif" font-size="11" fill="#bbb">hazepitesikalauz.hu</text>
+</svg>

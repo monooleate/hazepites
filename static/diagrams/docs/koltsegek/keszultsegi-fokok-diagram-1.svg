@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560">
+  <rect width="900" height="560" fill="#ffffff"/>
+  <text x="450" y="38" text-anchor="middle" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1a1a2e">Mit ad hozzá minden szint az előzőhöz?</text>
+  <text x="450" y="62" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#777">Favázas ház, Ft/m², bruttó alapterület, 2026 (5% áfa)</text>
+
+  <!-- Each row: cumulative bar -->
+  <!-- Vazszerkezetkesz -->
+  <text x="20" y="110" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Vázszerkezetkész</text>
+  <rect x="200" y="92" width="120" height="28" rx="3" fill="#7f8c8d"/>
+  <text x="690" y="110" font-family="sans-serif" font-size="14" font-weight="bold" fill="#7f8c8d">145–170e</text>
+  <text x="205" y="135" font-family="sans-serif" font-size="11" fill="#999">falváz + tetőszerkezet felállítva</text>
+
+  <!-- Szerkezetkesz -->
+  <text x="20" y="180" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Szerkezetkész</text>
+  <rect x="200" y="162" width="120" height="28" rx="3" fill="#7f8c8d"/>
+  <rect x="320" y="162" width="55" height="28" rx="3" fill="#95a5a6"/>
+  <text x="690" y="180" font-family="sans-serif" font-size="14" font-weight="bold" fill="#7f8c8d">210–230e</text>
+  <text x="205" y="205" font-family="sans-serif" font-size="11" fill="#999">+ tetőfedés alatti farost, bádogozás</text>
+
+  <!-- Kulso kulcsrakesz -->
+  <text x="20" y="250" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Külső kulcsrakész</text>
+  <rect x="200" y="232" width="175" height="28" rx="3" fill="#95a5a6"/>
+  <rect x="375" y="232" width="155" height="28" rx="3" fill="#3498db"/>
+  <text x="690" y="250" font-family="sans-serif" font-size="14" font-weight="bold" fill="#3498db">390–425e</text>
+  <text x="205" y="275" font-family="sans-serif" font-size="11" fill="#999">+ cserép, külső nyílászárók, vakolat</text>
+
+  <!-- Felkesz -->
+  <text x="20" y="320" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Félkész</text>
+  <rect x="200" y="302" width="175" height="28" rx="3" fill="#95a5a6"/>
+  <rect x="375" y="302" width="150" height="28" rx="3" fill="#16a085"/>
+  <text x="690" y="320" font-family="sans-serif" font-size="14" font-weight="bold" fill="#16a085">370–425e</text>
+  <text x="205" y="345" font-family="sans-serif" font-size="11" fill="#999">+ teljes hőszigetelés, belső lemezelés (vakolat nélkül)</text>
+
+  <!-- Emelt felkesz -->
+  <text x="20" y="390" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Emelt szintű félkész</text>
+  <rect x="200" y="372" width="325" height="28" rx="3" fill="#16a085"/>
+  <rect x="525" y="372" width="75" height="28" rx="3" fill="#9b59b6"/>
+  <text x="690" y="390" font-family="sans-serif" font-size="14" font-weight="bold" fill="#9b59b6">495–525e</text>
+  <text x="205" y="415" font-family="sans-serif" font-size="11" fill="#999">+ külső vakolat, gipszkartonozás, install szigetelés</text>
+
+  <!-- Kulcsrakesz -->
+  <text x="20" y="460" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Kulcsrakész</text>
+  <rect x="200" y="442" width="400" height="28" rx="3" fill="#9b59b6"/>
+  <rect x="600" y="442" width="170" height="28" rx="3" fill="#2ecc71"/>
+  <text x="785" y="460" font-family="sans-serif" font-size="14" font-weight="bold" fill="#27ae60">630–715e</text>
+  <text x="205" y="485" font-family="sans-serif" font-size="11" fill="#999">+ gépészet, villany, esztrich, burkolat, festés, szellőztetés</text>
+
+  <line x1="20" y1="510" x2="880" y2="510" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="20" y="535" font-family="sans-serif" font-size="12" fill="#e74c3c" font-weight="bold">A fogadószint (80–95e), közmű, kerítés, terasz egyik szintben sincs benne!</text>
+  <text x="880" y="552" text-anchor="end" font-family="sans-serif" font-size="11" fill="#aaa">hazepitesikalauz.hu</text>
+</svg>

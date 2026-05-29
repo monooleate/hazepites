@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480">
+  <rect width="900" height="480" fill="#ffffff"/>
+  <text x="450" y="36" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1a1a2e">Szerelt homlokzatburkolat – a szellőző légrés szerepe</text>
+
+  <!-- cross-section, inside left, outside right -->
+  <text x="90" y="80" font-family="sans-serif" font-size="13" font-weight="bold" fill="#2980b9">BELSŐ</text>
+  <text x="810" y="80" text-anchor="end" font-family="sans-serif" font-size="13" font-weight="bold" fill="#27ae60">KÜLSŐ</text>
+
+  <!-- layers -->
+  <rect x="90" y="110" width="40" height="260" fill="#cdb48a"/>
+  <text x="110" y="395" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#666">gk.</text>
+  <rect x="130" y="110" width="180" height="260" fill="#d6bd7e"/>
+  <text x="220" y="245" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#3a2a14">favázas + befújt farost</text>
+  <rect x="310" y="110" width="70" height="260" fill="#c9a86a"/>
+  <text x="345" y="245" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#3a2a14" transform="rotate(90 345 245)">farost tábla</text>
+  <!-- legres -->
+  <rect x="380" y="110" width="60" height="260" fill="#eaf2f8"/>
+  <text x="410" y="245" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2980b9" font-weight="bold" transform="rotate(90 410 245)">légrés</text>
+  <!-- parnafa -->
+  <rect x="395" y="130" width="20" height="40" fill="#8a6a3a"/>
+  <rect x="395" y="300" width="20" height="40" fill="#8a6a3a"/>
+  <!-- burkolat -->
+  <rect x="440" y="110" width="50" height="260" fill="#7f8c8d"/>
+  <text x="465" y="245" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fff" transform="rotate(90 465 245)">burkolat</text>
+
+  <!-- vapor arrow out + up through legres -->
+  <path d="M 150 200 L 400 200" stroke="#5dade2" stroke-width="2.5" marker-end="url(#vc)"/>
+  <path d="M 410 360 L 410 130" stroke="#5dade2" stroke-width="2.5" marker-end="url(#vc)"/>
+  <defs><marker id="vc" markerWidth="11" markerHeight="8" refX="10" refY="4" orient="auto"><polygon points="0 0,11 4,0 8" fill="#5dade2"/></marker></defs>
+  <text x="270" y="190" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#2980b9">pára kifelé</text>
+  <text x="445" y="120" font-family="sans-serif" font-size="11" fill="#2980b9">felfelé távozik</text>
+
+  <!-- legres requirements -->
+  <rect x="540" y="110" width="320" height="260" rx="8" fill="#f8f9fa" stroke="#ddd"/>
+  <text x="700" y="140" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1a1a2e">Minimum légrés burkolatonként</text>
+  <text x="560" y="180" font-family="sans-serif" font-size="13" fill="#333">Hőkezelt faburkolat</text>
+  <text x="840" y="180" text-anchor="end" font-family="sans-serif" font-size="13" font-weight="bold" fill="#b5895a">20 mm</text>
+  <text x="560" y="215" font-family="sans-serif" font-size="13" fill="#333">Korcolt fémlemez</text>
+  <text x="840" y="215" text-anchor="end" font-family="sans-serif" font-size="13" font-weight="bold" fill="#7f8c8d">30 mm</text>
+  <text x="560" y="250" font-family="sans-serif" font-size="13" fill="#333">Szálcement lap</text>
+  <text x="840" y="250" text-anchor="end" font-family="sans-serif" font-size="13" font-weight="bold" fill="#27ae60">légrés kell</text>
+  <text x="560" y="285" font-family="sans-serif" font-size="13" fill="#333">HPL lap (nem páraáteresztő)</text>
+  <text x="840" y="285" text-anchor="end" font-family="sans-serif" font-size="13" font-weight="bold" fill="#9b59b6">10 mm</text>
+  <text x="700" y="330" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#e74c3c" font-weight="bold">Légrés nélkül a nedvesség megreked → penész</text>
+
+  <text x="450" y="430" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#777">A vakolatrendszer ezzel szemben közvetlenül a farost táblára kerül, páraáteresztő rendszerként.</text>
+  <text x="880" y="465" text-anchor="end" font-family="sans-serif" font-size="11" fill="#bbb">hazepitesikalauz.hu</text>
+</svg>

@@ -17,6 +17,7 @@ import TamogatasCalculator from "../islands/TamogatasCalculator.tsx";
 import RezsiCalculator from "../islands/RezsiCalculator.tsx";
 import HitelCalculator from "../islands/HitelCalculator.tsx";
 import EnergiaCalculator from "../islands/EnergiaCalculator.tsx";
+import KeszultsegiKalkulator from "../islands/KeszultsegiKalkulator.tsx";
 import { define } from "../utils/state.ts";
 import { generateBreadcrumbSchema } from "../utils/schema.ts";
 import type { ComponentType } from "preact";
@@ -28,6 +29,7 @@ const ISLAND_REGISTRY: Record<string, ComponentType> = {
   RezsiCalculator,
   HitelCalculator,
   EnergiaCalculator,
+  KeszultsegiKalkulator,
 };
 
 // Category slugs for overview pages

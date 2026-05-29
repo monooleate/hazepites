@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470">
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text x="450" y="38" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1a1a2e">A házépítés három áfakulcsa 2026-ban</text>
+
+  <!-- 5% -->
+  <rect x="50" y="80" width="250" height="300" rx="12" fill="#eafaf1" stroke="#27ae60" stroke-width="2"/>
+  <text x="175" y="150" text-anchor="middle" font-family="sans-serif" font-size="56" font-weight="bold" fill="#27ae60">5%</text>
+  <text x="175" y="185" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1a5b36">Magánszemély, új lakóház</text>
+  <text x="175" y="225" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">kedvezményes lakásáfa</text>
+  <text x="175" y="255" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">egylakásos ház ≤ 300 m²</text>
+  <text x="175" y="277" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">(lakás ≤ 150 m²)</text>
+  <rect x="75" y="305" width="200" height="55" rx="6" fill="#fff" stroke="#27ae60" stroke-dasharray="3,2"/>
+  <text x="175" y="328" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1a5b36">2026.12.31-ig,</text>
+  <text x="175" y="347" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1a5b36">átmenettel 2030-ig</text>
+
+  <!-- 0% -->
+  <rect x="325" y="80" width="250" height="300" rx="12" fill="#eaf2fb" stroke="#3498db" stroke-width="2"/>
+  <text x="450" y="150" text-anchor="middle" font-family="sans-serif" font-size="56" font-weight="bold" fill="#2980b9">0%</text>
+  <text x="450" y="185" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1a5276">Cég megrendelő</text>
+  <text x="450" y="225" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">fordított adózás (FAD)</text>
+  <text x="450" y="255" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">a vállalkozó áfa nélkül</text>
+  <text x="450" y="277" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">számláz</text>
+  <rect x="350" y="305" width="200" height="55" rx="6" fill="#fff" stroke="#3498db" stroke-dasharray="3,2"/>
+  <text x="450" y="328" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1a5276">nem áfamentesség –</text>
+  <text x="450" y="347" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1a5276">a cég számolja el</text>
+
+  <!-- 27% -->
+  <rect x="600" y="80" width="250" height="300" rx="12" fill="#fdedec" stroke="#e74c3c" stroke-width="2"/>
+  <text x="725" y="150" text-anchor="middle" font-family="sans-serif" font-size="56" font-weight="bold" fill="#c0392b">27%</text>
+  <text x="725" y="185" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#922b21">Garázs, nyaraló</text>
+  <text x="725" y="225" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">normál áfakulcs</text>
+  <text x="725" y="255" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">nem minősül</text>
+  <text x="725" y="277" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#555">lakóingatlannak</text>
+  <rect x="625" y="305" width="200" height="55" rx="6" fill="#fff" stroke="#e74c3c" stroke-dasharray="3,2"/>
+  <text x="725" y="328" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#922b21">a 5%-os ház mellett is</text>
+  <text x="725" y="347" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#922b21">27% a garázsra!</text>
+
+  <text x="450" y="420" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#777">Vegyes funkciójú építkezésnél a számlán a lakórész és a garázs külön áfakulccsal szerepel.</text>
+  <text x="450" y="442" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#999">Forrás: NAV tájékoztatás. A konkrét esetet egyeztesd könyvelővel.</text>
+  <text x="880" y="462" text-anchor="end" font-family="sans-serif" font-size="11" fill="#bbb">hazepitesikalauz.hu</text>
+</svg>

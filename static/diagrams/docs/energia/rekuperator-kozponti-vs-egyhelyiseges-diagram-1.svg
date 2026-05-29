@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 470">
+  <rect width="900" height="470" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-family="sans-serif" font-size="21" font-weight="bold" fill="#14202b">Központi vs egyhelyiséges – hogyan szellőzik a ház?</text>
+
+  <!-- LEFT: kozponti -->
+  <text x="225" y="72" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#2980b9">Központi (légcsatornás)</text>
+  <rect x="70" y="90" width="310" height="220" rx="6" fill="#f4f9fd" stroke="#3498db" stroke-width="1.5"/>
+  <!-- central box -->
+  <rect x="200" y="180" width="50" height="40" rx="4" fill="#3498db"/>
+  <text x="225" y="205" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#fff">hőcs.</text>
+  <!-- rooms -->
+  <rect x="90" y="110" width="90" height="55" fill="#fff" stroke="#aab"/><text x="135" y="142" text-anchor="middle" font-size="11" fill="#666">szoba</text>
+  <rect x="270" y="110" width="90" height="55" fill="#fff" stroke="#aab"/><text x="315" y="142" text-anchor="middle" font-size="11" fill="#666">szoba</text>
+  <rect x="90" y="235" width="90" height="55" fill="#fff" stroke="#aab"/><text x="135" y="267" text-anchor="middle" font-size="11" fill="#666">fürdő</text>
+  <rect x="270" y="235" width="90" height="55" fill="#fff" stroke="#aab"/><text x="315" y="267" text-anchor="middle" font-size="11" fill="#666">konyha</text>
+  <!-- ducts -->
+  <g stroke="#5dade2" stroke-width="3" fill="none">
+    <path d="M 200 190 L 135 190 L 135 165"/><path d="M 250 190 L 315 190 L 315 165"/>
+    <path d="M 200 210 L 135 210 L 135 235"/><path d="M 250 210 L 315 210 L 315 235"/>
+  </g>
+  <text x="225" y="335" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#2980b9" font-weight="bold">1 gép + légcsatorna → egész ház</text>
+  <text x="225" y="355" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#e74c3c">egy hiba = egész ház leáll</text>
+
+  <line x1="450" y1="80" x2="450" y2="370" stroke="#e0e0e0" stroke-width="1.5"/>
+
+  <!-- RIGHT: egyhelyiseges -->
+  <text x="675" y="72" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#27ae60">Egyhelyiséges (decentralizált)</text>
+  <rect x="520" y="90" width="310" height="220" rx="6" fill="#f3fbf6" stroke="#27ae60" stroke-width="1.5"/>
+  <rect x="540" y="110" width="90" height="55" fill="#fff" stroke="#aab"/><circle cx="585" cy="137" r="13" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <rect x="720" y="110" width="90" height="55" fill="#fff" stroke="#aab"/><circle cx="765" cy="137" r="13" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <rect x="540" y="235" width="90" height="55" fill="#fff" stroke="#aab"/><circle cx="585" cy="262" r="13" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <rect x="720" y="235" width="90" height="55" fill="#fff" stroke="#aab"/><circle cx="765" cy="262" r="13" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <rect x="630" y="172" width="90" height="46" fill="#fff" stroke="#aab"/><circle cx="675" cy="195" r="13" fill="none" stroke="#27ae60" stroke-width="2"/>
+  <text x="675" y="335" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#27ae60" font-weight="bold">Önálló egység szobánként, légcsatorna nélkül</text>
+  <text x="675" y="355" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#27ae60">egy hiba = csak az a szoba</text>
+
+  <text x="450" y="400" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#777">Központi: magasabb hatásfok, de légcsatorna kell. Egyhelyiséges: redundáns, rugalmas, utólag is bővíthető.</text>
+  <text x="450" y="425" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#999">A szűrt befúvás akár 90%-kal pormentesebb levegőt ad, mint az ablaknyitás.</text>
+  <text x="880" y="460" text-anchor="end" font-family="sans-serif" font-size="11" fill="#bbb">hazepitesikalauz.hu</text>
+</svg>

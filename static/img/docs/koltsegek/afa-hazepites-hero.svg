@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <defs><pattern id="ga" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#ga)" opacity="0.3"/>
+
+  <!-- Three rate cards -->
+  <rect x="120" y="210" width="290" height="240" rx="12" fill="#2a2a4e" stroke="#2ecc71" stroke-width="2"/>
+  <text x="265" y="310" text-anchor="middle" font-family="sans-serif" font-size="64" font-weight="bold" fill="#2ecc71">5%</text>
+  <text x="265" y="350" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#fff">Maganszemely</text>
+  <text x="265" y="378" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#ccc">uj lakohaz (≤300 m2)</text>
+  <text x="265" y="412" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#888">2026.12.31-ig</text>
+
+  <rect x="455" y="210" width="290" height="240" rx="12" fill="#2a2a4e" stroke="#3498db" stroke-width="2"/>
+  <text x="600" y="310" text-anchor="middle" font-family="sans-serif" font-size="64" font-weight="bold" fill="#5dade2">0%</text>
+  <text x="600" y="350" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#fff">Ceg megrendelo</text>
+  <text x="600" y="378" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#ccc">forditott adozas (FAD)</text>
+  <text x="600" y="412" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#888">a ceg szamolja el</text>
+
+  <rect x="790" y="210" width="290" height="240" rx="12" fill="#2a2a4e" stroke="#e74c3c" stroke-width="2"/>
+  <text x="935" y="310" text-anchor="middle" font-family="sans-serif" font-size="60" font-weight="bold" fill="#e74c3c">27%</text>
+  <text x="935" y="350" text-anchor="middle" font-family="sans-serif" font-size="17" fill="#fff">Garazs, nyaralo</text>
+  <text x="935" y="378" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#ccc">normal kulcs</text>
+  <text x="935" y="412" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#888">a lakohaz mellett is</text>
+
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="white">Afa a hazepitesnel 2026</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ccc">5%, 0% vagy 27% – mikor melyik?</text>
+  <text x="600" y="135" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#888">ugyanaz a haz, 22 szazalekpont kulonbseg</text>
+  <text x="600" y="510" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#f39c12">A vegyes funkcioju epitkezesnel a lakoresz es a garazs kulon kulccsal szerepel</text>
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#555">hazepitesikalauz.hu</text>
+</svg>

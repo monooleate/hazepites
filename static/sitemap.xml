@@ -325,6 +325,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://hazepitesikalauz.hu/energia/hasznalati-melegviz</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hazepitesikalauz.hu/energia/napelem-rendszer</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -446,6 +452,12 @@
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/kivitelezes/villamos-halozat</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazepitesikalauz.hu/kivitelezes/viz-szennyviz-rendszer</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

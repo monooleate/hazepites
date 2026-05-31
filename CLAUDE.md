@@ -54,8 +54,17 @@ JSX prop értékében (pl. `title="…"`, `label="…"`) **SOHA** ne legyen magy
 ### Elkészült (referencia 1. kör, 2026-05) – 12 cikk
 `koltsegek/keszultsegi-fokok` (+ `KeszultsegiKalkulator` island), `koltsegek/afa-hazepites`, `energia/farost-szigeteles`, `energia/diffuzio-nyitott-falszerkezet`, `energia/futes-hutes-osszehasonlitas`, `energia/rekuperator-kozponti-vs-egyhelyiseges`, `telek/talajcsavaros-alapozas`, `jog/keszhaz-szerzodes-buktatok`, `kivitelezes/homlokzatburkolat-konnyuszerkezet`, `kivitelezes/tetofedes-valasztas`, `tervezes/tetoter-beepites`, `haztipusok/cnc-favazas-keszhaz`.
 
-### Elkészült (referencia 2. kör, 2026-05) – 4 cikk
-`kivitelezes/esztrich-szarazesztrich`, `kivitelezes/glettelesi-minoseg-q1-q4`, `kivitelezes/villamos-halozat`, `haztipusok/belso-falak-konnyuszerkezet`.
+### Elkészült (referencia 2. kör, 2026-05) – 6 cikk
+`kivitelezes/esztrich-szarazesztrich`, `kivitelezes/glettelesi-minoseg-q1-q4`, `kivitelezes/villamos-halozat`, `haztipusok/belso-falak-konnyuszerkezet`, `energia/hasznalati-melegviz`, `kivitelezes/viz-szennyviz-rendszer`.
+
+> ✅ **Nagy takarítás (2026-05): 18 régi cikk javítva**, mind hibátlanul renderel. Két pre-existing hibaosztály okozott csendes MDX-fallbacket (komponens-szivárgás, FAQ nem renderelt) vagy 500-at:
+> 1. **Explicit import (15 cikk):** régi cikkek `import InfoCard from '../../components/mdx/InfoCard.tsx'` sorokkal készültek. A route `baseUrl`-je miatt ezek a relatív importok NEM oldódnak fel → fallback. **Megoldás: töröld az összes `../../components/mdx/...` import sort** – a komponensek import nélkül auto-injektáltak.
+> 2. **Idézőjel-csapda (`„…"` curly nyitó + egyenes `"` záró):** JSX propban (`title="A „x" csapda"`), `{[...]}` tömbben (`leftItems={[„a", „b"]}`), ÉS YAML frontmatterben (`"answer2": "...„fejből" old..."` → ez 500-at okoz, mert a YAML parse bukik!).
+>
+> ⚠️ **KÉT szkennt kell futtatni publikálás előtt** (a body-compile NEM fogja meg a frontmatter-hibát!):
+> - **Body MDX compile:** `@mdx-js/mdx compile` a frontmatter levágott törzsön (acorn parse).
+> - **YAML frontmatter:** `@std/front-matter/yaml extract()` a teljes fájlon – a `„…"` curly+egyenes pár egy faq-válaszban megtöri a YAML-t → 500.
+> - **Élő curl:** HTTP 200 + nincs `::: faq` / `&lt;InfoCard` a kimenetben.
 
 ### Tervezett (referencia 2. kör) – részletes terv külön fájlban
 A hátralévő és tervezett cikkek (12 téma + 4 új kalkulátor ötlet, prioritással, slug/kategória/forrás-tartalom bontásban):

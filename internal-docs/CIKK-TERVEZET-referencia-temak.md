@@ -67,13 +67,13 @@
 
 ### 🥈 Erős másodlagos kör
 
-#### 5. Használati melegvíz (HMV) – bojler, hőszivattyús vízmelegítő vagy puffer?
+#### 5. ✅ KÉSZ – Használati melegvíz (HMV) – bojler, hőszivattyús vízmelegítő vagy puffer?
 - **Slug:** `energia/hasznalati-melegviz`
 - **Intent:** „melyik a legjobb vízmelegítő", „hőszivattyús bojler megéri"
 - **Referencia tartalom:** elektromos bojler (≤100 m²) → 2 bojler → levegő-víz hőszivattyús vízmelegítő (akár -65-70% energia) → központi hőszivattyú + puffertartály. A+ besorolás, COP, mikor melyik.
 - **Belső link:** hoszivattyuk, futes-hutes-osszehasonlitas, futesrendszerek
 
-#### 6. Víz- és szennyvízrendszer – amit a falban nem látsz
+#### 6. ✅ KÉSZ – Víz- és szennyvízrendszer – amit a falban nem látsz
 - **Slug:** `kivitelezes/viz-szennyviz-rendszer`
 - **Intent:** „osztó-gyűjtős vízvezeték", „szennyvíz lejtés", „nyomáspróba"
 - **Referencia tartalom:** 5 rétegű kompozit cső, osztó-gyűjtős kivitel (nincs kötés a padlóban), nyomáspróba + jegyzőkönyv; szennyvíz 110/50/32 mm KGPVC, tokos kötés, 90 fok nélkül a dugulás ellen; födémpaneles vs betonos elvezetés.

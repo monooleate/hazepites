@@ -176,6 +176,8 @@ const toc: RawTableOfContents = {
         ["page", "generalkivitelezes", "Generálkivitelezés"],
         ["page", "tetofedes-valasztas", "Tetőfedés választás"],
         ["page", "homlokzatburkolat-konnyuszerkezet", "Homlokzatburkolat könnyűszerkezetnél"],
+        ["page", "esztrich-szarazesztrich", "Esztrich vs szárazesztrich"],
+        ["page", "glettelesi-minoseg-q1-q4", "Glettelési minőség Q1–Q4"],
         // ["page", "sajat-szervezesu-epites", "Saját szervezésű építés"],
         // ["page", "minosegellenorzes", "Minőségellenőrzés"],
         // ["page", "epitkezesi-hibalista", "Építkezési hibalista"],

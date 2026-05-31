@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <defs><pattern id="gg" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#gg)" opacity="0.3"/>
+
+  <!-- 4 wall panels, decreasing roughness -->
+  <!-- Q1 -->
+  <rect x="110" y="210" width="230" height="200" rx="8" fill="#3a3a52"/>
+  <path d="M 130 320 Q 160 295 190 318 Q 220 340 250 312 Q 280 290 320 322" stroke="#7f8c8d" stroke-width="3" fill="none"/>
+  <text x="225" y="250" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#e74c3c">Q1</text>
+  <text x="225" y="385" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">burkolat alá</text>
+  <!-- Q2 -->
+  <rect x="360" y="210" width="230" height="200" rx="8" fill="#3a3a52"/>
+  <path d="M 380 318 Q 420 305 460 316 Q 500 327 540 312 Q 560 306 570 314" stroke="#95a5a6" stroke-width="3" fill="none"/>
+  <text x="475" y="250" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#e67e22">Q2</text>
+  <text x="475" y="385" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">normál festés</text>
+  <!-- Q3 -->
+  <rect x="610" y="210" width="230" height="200" rx="8" fill="#3a3a52"/>
+  <path d="M 630 315 Q 700 310 770 314 Q 800 316 820 313" stroke="#bdc3c7" stroke-width="3" fill="none"/>
+  <text x="725" y="250" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#3498db">Q3</text>
+  <text x="725" y="385" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">max 0,5 mm</text>
+  <!-- Q4 -->
+  <rect x="860" y="210" width="230" height="200" rx="8" fill="#3a3a52"/>
+  <line x1="880" y1="314" x2="1070" y2="314" stroke="#ecf0f1" stroke-width="3"/>
+  <text x="975" y="250" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#2ecc71">Q4</text>
+  <text x="975" y="385" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">max 0,2-0,3 mm</text>
+
+  <!-- grazing light arrow -->
+  <path d="M 140 180 L 1080 180" stroke="#f1c40f" stroke-width="2" stroke-dasharray="10,5"/>
+  <polygon points="1080,180 1068,174 1068,186" fill="#f1c40f"/>
+  <text x="600" y="170" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#f1c40f">surlófény – kiemeli a legkisebb egyenetlenséget is</text>
+
+  <text x="600" y="475" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#888">minden szint az előzőre épül – egyre finomabb glett, egyre simább felület</text>
+
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="38" font-weight="bold" fill="white">Glettelési minőség Q1–Q4</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ccc">Mikor melyik kell? – a festésre kész fal titka</text>
+  <text x="600" y="135" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#888">a fal a nappali fényben árulja el magát</text>
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#555">hazepitesikalauz.hu</text>
+</svg>

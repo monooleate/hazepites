@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <defs><pattern id="gv" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#gv)" opacity="0.3"/>
+
+  <!-- central distribution board -->
+  <rect x="540" y="280" width="120" height="150" rx="8" fill="#2a2a4e" stroke="#f1c40f" stroke-width="2"/>
+  <g stroke="#f1c40f" stroke-width="2"><line x1="560" y1="305" x2="640" y2="305"/><line x1="560" y1="325" x2="640" y2="325"/><line x1="560" y1="345" x2="640" y2="345"/><line x1="560" y1="365" x2="640" y2="365"/><line x1="560" y1="385" x2="640" y2="385"/></g>
+  <text x="600" y="455" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1c40f">elosztótábla</text>
+
+  <!-- star topology lines to rooms -->
+  <g stroke="#5dade2" stroke-width="2.5" fill="none">
+    <line x1="540" y1="320" x2="280" y2="230"/>
+    <line x1="540" y1="360" x2="280" y2="400"/>
+    <line x1="660" y1="320" x2="920" y2="230"/>
+    <line x1="660" y1="360" x2="920" y2="400"/>
+    <line x1="600" y1="280" x2="600" y2="200"/>
+  </g>
+  <!-- room endpoints (outlets) -->
+  <g fill="#3498db">
+    <circle cx="280" cy="230" r="10"/><circle cx="280" cy="400" r="10"/>
+    <circle cx="920" cy="230" r="10"/><circle cx="920" cy="400" r="10"/>
+    <circle cx="600" cy="200" r="10"/>
+  </g>
+  <text x="600" y="510" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#5dade2">Csillagpontos MBCU – minden kör a táblából indul és oda tér vissza</text>
+
+  <!-- stat boxes -->
+  <rect x="120" y="200" width="140" height="60" rx="8" fill="#2a2a4e" stroke="#2ecc71" stroke-width="1"/>
+  <text x="190" y="226" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#2ecc71" font-weight="bold">2-6 × 4-6 db</text>
+  <text x="190" y="247" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ccc">dugalj / szoba</text>
+
+  <rect x="120" y="380" width="140" height="60" rx="8" fill="#2a2a4e" stroke="#9b59b6" stroke-width="1"/>
+  <text x="190" y="406" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#bb8fce" font-weight="bold">16-72 modul</text>
+  <text x="190" y="427" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ccc">tábla m² szerint</text>
+
+  <rect x="940" y="200" width="140" height="60" rx="8" fill="#2a2a4e" stroke="#e67e22" stroke-width="1"/>
+  <text x="1010" y="226" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#e67e22" font-weight="bold">1,5/2,5/4 mm²</text>
+  <text x="1010" y="247" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ccc">kábel körönként</text>
+
+  <rect x="940" y="380" width="140" height="60" rx="8" fill="#2a2a4e" stroke="#3498db" stroke-width="1"/>
+  <text x="1010" y="406" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#5dade2" font-weight="bold">FI-relé</text>
+  <text x="1010" y="427" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#ccc">+ földelés</text>
+
+  <text x="600" y="60" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="bold" fill="white">Villamos hálózat házépítésnél</text>
+  <text x="600" y="100" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ccc">Konnektorszám, csillagpont, elosztótábla</text>
+  <text x="600" y="135" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#888">a fal, amit utólag nem akarsz megbontani</text>
+  <text x="600" y="618" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#555">hazepitesikalauz.hu</text>
+</svg>

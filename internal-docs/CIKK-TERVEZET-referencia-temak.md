@@ -49,7 +49,7 @@
 - **Belső link:** belso-burkolatok, kivitelezo-valasztas
 - **Miért erős:** senki nem magyarázza el érthetően, pedig vita-forrás az átadásnál.
 
-#### 3. Belső falak könnyűszerkezetnél – teherhordó vs válaszfal
+#### 3. ✅ KÉSZ – Belső falak könnyűszerkezetnél – teherhordó vs válaszfal
 - **Slug:** `haztipusok/belso-falak-konnyuszerkezet` (vagy `tervezes/`)
 - **Típus:** cluster
 - **Intent:** „könnyűszerkezetes válaszfal hangszigetelés", „lehet-e falat bontani"
@@ -57,7 +57,7 @@
 - **Belső link:** cnc-favazas-keszhaz, konnyuszerkezetes-haz, alaprajz-tippek
 - **Miért erős:** a "lehet-e később falat bontani" kérdés gyakori, itt valódi válasz van.
 
-#### 4. Villamos hálózat házépítésnél – mennyi konnektor, milyen rendszer?
+#### 4. ✅ KÉSZ – Villamos hálózat házépítésnél – mennyi konnektor, milyen rendszer?
 - **Slug:** `kivitelezes/villamos-halozat` (a meglévő `koltsegek/villanyszereles-koltseg` műszaki párja)
 - **Típus:** cluster
 - **Intent:** „hány konnektor szobánként", „csillagpontos villany", „mekkora elosztótábla"

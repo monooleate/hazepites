@@ -54,6 +54,9 @@ JSX prop értékében (pl. `title="…"`, `label="…"`) **SOHA** ne legyen magy
 ### Elkészült (referencia 1. kör, 2026-05) – 12 cikk
 `koltsegek/keszultsegi-fokok` (+ `KeszultsegiKalkulator` island), `koltsegek/afa-hazepites`, `energia/farost-szigeteles`, `energia/diffuzio-nyitott-falszerkezet`, `energia/futes-hutes-osszehasonlitas`, `energia/rekuperator-kozponti-vs-egyhelyiseges`, `telek/talajcsavaros-alapozas`, `jog/keszhaz-szerzodes-buktatok`, `kivitelezes/homlokzatburkolat-konnyuszerkezet`, `kivitelezes/tetofedes-valasztas`, `tervezes/tetoter-beepites`, `haztipusok/cnc-favazas-keszhaz`.
 
+### Elkészült (referencia 2. kör, 2026-05) – 2 cikk
+`kivitelezes/esztrich-szarazesztrich`, `kivitelezes/glettelesi-minoseg-q1-q4`.
+
 ### Tervezett (referencia 2. kör) – részletes terv külön fájlban
 A hátralévő és tervezett cikkek (12 téma + 4 új kalkulátor ötlet, prioritással, slug/kategória/forrás-tartalom bontásban):
 **→ `internal-docs/CIKK-TERVEZET-referencia-temak.md`**

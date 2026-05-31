@@ -29,9 +29,11 @@
 
 ## Kiaknázandó témák (2. kör) – prioritás szerint
 
+> ✅ **Elkészült (2026-05):** `kivitelezes/esztrich-szarazesztrich` és `kivitelezes/glettelesi-minoseg-q1-q4` (az alábbi 1. és 2. téma) – teljes csomaggal, kétirányú keresztlinkeléssel, sitemapbe regisztrálva.
+
 ### 🥇 Kiemelt – egyedi, mély, nagy keresési igény
 
-#### 1. Esztrich vs szárazesztrich – nedves vagy száraz padlóaljzat?
+#### 1. ✅ KÉSZ – Esztrich vs szárazesztrich – nedves vagy száraz padlóaljzat?
 - **Slug:** `kivitelezes/esztrich-szarazesztrich` (vagy `koltsegek/`)
 - **Típus:** cluster
 - **Intent:** „milyen aljzat", „mennyi idő száradni az esztrich", „szárazesztrich vs beton"
@@ -39,7 +41,7 @@
 - **Belső link:** keszhaz-szerzodes-buktatok, keszultsegi-fokok, belso-burkolatok
 - **Miért erős:** valós technológiai tudás + a pára-kár "amit nem mondanak el" szál.
 
-#### 2. Glettelési minőségi osztályok (Q1–Q4) – meddig fizess a sima falért?
+#### 2. ✅ KÉSZ – Glettelési minőségi osztályok (Q1–Q4) – meddig fizess a sima falért?
 - **Slug:** `kivitelezes/glettelesi-minoseg-q1-q4`
 - **Típus:** cluster
 - **Intent:** „Q3 glettelés mit jelent", „milyen falfelület kell festéshez"

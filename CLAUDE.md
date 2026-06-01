@@ -54,8 +54,8 @@ JSX prop értékében (pl. `title="…"`, `label="…"`) **SOHA** ne legyen magy
 ### Elkészült (referencia 1. kör, 2026-05) – 12 cikk
 `koltsegek/keszultsegi-fokok` (+ `KeszultsegiKalkulator` island), `koltsegek/afa-hazepites`, `energia/farost-szigeteles`, `energia/diffuzio-nyitott-falszerkezet`, `energia/futes-hutes-osszehasonlitas`, `energia/rekuperator-kozponti-vs-egyhelyiseges`, `telek/talajcsavaros-alapozas`, `jog/keszhaz-szerzodes-buktatok`, `kivitelezes/homlokzatburkolat-konnyuszerkezet`, `kivitelezes/tetofedes-valasztas`, `tervezes/tetoter-beepites`, `haztipusok/cnc-favazas-keszhaz`.
 
-### Elkészült (referencia 2. kör, 2026-05) – 6 cikk
-`kivitelezes/esztrich-szarazesztrich`, `kivitelezes/glettelesi-minoseg-q1-q4`, `kivitelezes/villamos-halozat`, `haztipusok/belso-falak-konnyuszerkezet`, `energia/hasznalati-melegviz`, `kivitelezes/viz-szennyviz-rendszer`.
+### Elkészült (referencia 2. kör, 2026-05) – 8 cikk
+`kivitelezes/esztrich-szarazesztrich`, `kivitelezes/glettelesi-minoseg-q1-q4`, `kivitelezes/villamos-halozat`, `haztipusok/belso-falak-konnyuszerkezet`, `energia/hasznalati-melegviz`, `kivitelezes/viz-szennyviz-rendszer`, `energia/nyilaszaro-osszehasonlitas`, `energia/bejarati-ajto`.
 
 > ✅ **Nagy takarítás (2026-05): 18 régi cikk javítva**, mind hibátlanul renderel. Két pre-existing hibaosztály okozott csendes MDX-fallbacket (komponens-szivárgás, FAQ nem renderelt) vagy 500-at:
 > 1. **Explicit import (15 cikk):** régi cikkek `import InfoCard from '../../components/mdx/InfoCard.tsx'` sorokkal készültek. A route `baseUrl`-je miatt ezek a relatív importok NEM oldódnak fel → fallback. **Megoldás: töröld az összes `../../components/mdx/...` import sort** – a komponensek import nélkül auto-injektáltak.

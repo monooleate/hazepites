@@ -124,6 +124,8 @@ const toc: RawTableOfContents = {
         ["page", "futes-hutes-osszehasonlitas", "Fűtés-hűtés összehasonlítás"],
         ["page", "rekuperator-kozponti-vs-egyhelyiseges", "Rekuperátor: központi vs egyhelyiséges"],
         ["page", "hasznalati-melegviz", "Használati melegvíz (HMV)"],
+        ["page", "nyilaszaro-osszehasonlitas", "Nyílászáró: műanyag vs fa-alu"],
+        ["page", "bejarati-ajto", "Bejárati ajtó – biztonság"],
         ["page", "napelem-rendszer", "Napelem rendszer"],
         ["page", "hoszivattyuk", "Hőszivattyúk"],
         ["page", "energetikai-tanusitvany", "Energetikai tanúsítvány"],

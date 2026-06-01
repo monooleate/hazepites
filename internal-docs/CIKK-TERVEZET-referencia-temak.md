@@ -79,13 +79,13 @@
 - **Referencia tartalom:** 5 rétegű kompozit cső, osztó-gyűjtős kivitel (nincs kötés a padlóban), nyomáspróba + jegyzőkönyv; szennyvíz 110/50/32 mm KGPVC, tokos kötés, 90 fok nélkül a dugulás ellen; födémpaneles vs betonos elvezetés.
 - **Belső link:** gepeszet-koltseg, keszultsegi-fokok
 
-#### 7. Nyílászáró-választás: műanyag (82 mm) vs fa-alu – Uw, üvegezés, sorolás
+#### 7. ✅ KÉSZ – Nyílászáró-választás: műanyag (82 mm) vs fa-alu – Uw, üvegezés, sorolás
 - **Slug:** `energia/nyilaszaro-osszehasonlitas` (a meglévő `energia/nyilaszarok` összehasonlító párja)
 - **Intent:** „műanyag vagy fa ablak", „háromrétegű üveg Uw", „mekkora ablak éri meg"
 - **Referencia tartalom:** 82 mm többkamrás műanyag (Uw ~0,8) vs ragasztott fa (100 mm, alu borítás opció); 3 rétegű argon, melegperem; méretválaszték; **nagy erkélyajtók sorolása** → akár 50% megtakarítás tolóajtóhoz képest.
 - **Belső link:** nyilaszarok, hoszigeteles-tipusok
 
-#### 8. Bejárati ajtó – biztonság és hangszigetelés (Rw dB)
+#### 8. ✅ KÉSZ – Bejárati ajtó – biztonság és hangszigetelés (Rw dB)
 - **Slug:** `jog/bejarati-ajto-biztonsag` (vagy `haztipusok/`)
 - **Intent:** „biztonsági bejárati ajtó", „hangszigetelt ajtó dB"
 - **Referencia tartalom:** acél/alu szerkezet, többpontos zár, betörésvédelem; hangszigetelés Rw 27-30 dB alap, 40-47 dB prémium; okosotthon integráció (ujjlenyomat, kód).

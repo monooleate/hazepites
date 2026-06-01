@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hazepitesikalauz.hu</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/kapcsolat</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -331,6 +331,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://hazepitesikalauz.hu/energia/nyilaszaro-osszehasonlitas</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://hazepitesikalauz.hu/energia/bejarati-ajto</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://hazepitesikalauz.hu/energia/napelem-rendszer</loc>
     <lastmod>2026-02-24</lastmod>
     <changefreq>monthly</changefreq>
@@ -374,7 +386,7 @@
   </url>
   <url>
     <loc>https://hazepitesikalauz.hu/tervezes/epitesz-valasztas</loc>
-    <lastmod>2026-05-31</lastmod>
+    <lastmod>2026-03-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

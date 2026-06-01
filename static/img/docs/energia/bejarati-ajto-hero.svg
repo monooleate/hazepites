@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#1a1a2e"/>
+  <defs><pattern id="gba" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M 60 0 L 0 0 0 60" fill="none" stroke="#2a2a4e" stroke-width="0.5"/></pattern></defs>
+  <rect width="1200" height="630" fill="url(#gba)" opacity="0.3"/>
+
+  <!-- door -->
+  <rect x="180" y="190" width="200" height="320" rx="6" fill="#2a2a4e" stroke="#7f8c8d" stroke-width="5"/>
+  <rect x="200" y="210" width="160" height="280" rx="3" fill="#34495e"/>
+  <!-- glass strip -->
+  <rect x="330" y="230" width="20" height="240" rx="3" fill="#5dade2" opacity="0.3"/>
+  <!-- multi-point lock dots -->
+  <g fill="#f1c40f"><circle cx="350" cy="280" r="5"/><circle cx="350" cy="350" r="5"/><circle cx="350" cy="420" r="5"/></g>
+  <!-- handle -->
+  <rect x="340" y="340" width="8" height="40" rx="3" fill="#bdc3c7"/>
+  <text x="280" y="540" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#aaa">többpontos zár</text>
+
+  <!-- Rw scale -->
+  <rect x="460" y="210" width="280" height="70" rx="10" fill="#2a2a4e" stroke="#3498db" stroke-width="2"/>
+  <text x="600" y="240" text-anchor="middle" font-family="sans-serif" font-size="18" fill="#5dade2" font-weight="bold">Hangszigetelés Rw</text>
+  <text x="600" y="266" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#ccc">alap 27-30 dB → csúcs 47 dB</text>
+
+  <rect x="460" y="300" width="280" height="60" rx="8" fill="#2a2a4e" stroke="#e74c3c" stroke-width="1"/>
+  <text x="600" y="326" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#e74c3c" font-weight="bold">Betörésvédelem</text>
+  <text x="600" y="347" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">acél / alu, megerősített</text>
+
+  <rect x="460" y="380" width="280" height="60" rx="8" fill="#2a2a4e" stroke="#2ecc71" stroke-width="1"/>
+  <text x="600" y="406" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#2ecc71" font-weight="bold">Okoszár opció</text>
+  <text x="600" y="427" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#ccc">ujjlenyomat, kód, okosotthon</text>
+
+  <!-- security shield -->
+  <path d="M 940 220 L 1010 245 L 1010 330 Q 1010 390 940 420 Q 870 390 870 330 L 870 245 Z" fill="#2a2a4e" stroke="#f1c40f" stroke-width="3"/>
+  <path d="M 915 320 L 935 345 L 975 295" stroke="#2ecc71" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="940" y="455" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#f1c40f">értéktartó befektetés</text>
+
+  <text x="600" y="70" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="bold" fill="white">Bejárati ajtó</text>
+  <text x="600" y="110" text-anchor="middle" font-family="sans-serif" font-size="22" fill="#ccc">Biztonság és hangszigetelés (Rw dB)</text>
+  <text x="600" y="145" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#888">a ház első védelmi vonala – itt ne spórolj</text>
+  <text x="600" y="600" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#555">hazepitesikalauz.hu</text>
+</svg>

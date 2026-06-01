@@ -110,7 +110,7 @@ A leggyakoribb hibák, amelyek késedelmet és többletköltséget okoznak:
 
 ## Kapcsolódó cikkek
 
-- [Házépítés költség 2025](/koltsegek/hazepites-koltseg-2025) — részletes költségelemzés
+- [Házépítés költség 2026](/koltsegek/hazepites-koltseg-2026) — részletes költségelemzés
 - [Háztípusok összehasonlítása](/haztipus-osszehasonlitasok/tegla-vs-ytong) — tégla vs Ytong
 - [CSOK Plusz feltételek](/tamogatasok/csok-plusz) — állami támogatás
 

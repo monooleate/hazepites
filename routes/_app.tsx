@@ -1,8 +1,10 @@
 import { asset } from "fresh/runtime";
 import { define } from "../utils/state.ts";
+import { getAdsenseConfig } from "../utils/features.ts";
 
 export default define.page(function App({ Component, state, url }) {
   const isContentPage = url.pathname.split("/").filter(Boolean).length > 0 && url.pathname !== "/kapcsolat";
+  const adsense = getAdsenseConfig();
 
   return (
     <html lang="hu" class="scroll-smooth">
@@ -23,6 +25,19 @@ export default define.page(function App({ Component, state, url }) {
             __html: `(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='dark')document.documentElement.classList.add('dark')}catch(e){}})();`,
           }}
         />
+
+        {/* Google AdSense (Auto Ads) — csak ha az ADSENSE_ENABLED kapcsoló BE
+            (default: BE) és a client ID érvényes (lásd utils/features.ts).
+            A placement-et (hova kerüljön / ne kerüljön hirdetés) az AdSense
+            fiókban (Auto Ads) állítod. A _middleware.ts a CSP-t is csak ekkor
+            whitelisteli az ad-domainekkel. */}
+        {adsense.enabled && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsense.clientId}`}
+            crossorigin="anonymous"
+          />
+        )}
 
         {state.title
           ? <title>{state.title}</title>

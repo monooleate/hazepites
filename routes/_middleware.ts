@@ -1,4 +1,5 @@
 import type { FreshContext } from "fresh";
+import { isAdsenseEnabled } from "../utils/features.ts";
 
 /**
  * Kategória index → áttekintés oldal.
@@ -60,22 +61,46 @@ export async function handler(ctx: FreshContext) {
     );
   }
 
-  // Content-Security-Policy
-  resp.headers.set(
-    "Content-Security-Policy",
-    [
-      "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com",
-      "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net",
-      "img-src 'self' data: https:",
-      "font-src 'self' data: https://cdn.jsdelivr.net",
-      "connect-src 'self' https://www.google-analytics.com https://analytics.google.com",
-      "frame-src 'none'",
-      "object-src 'none'",
-      "base-uri 'self'",
-      "form-action 'self'",
-    ].join("; "),
-  );
+  // ── Content-Security-Policy ───────────────────────────────────────
+  // AdSense: a hirdetés-domaineket CSAK akkor whitelisteljük, ha az
+  // ADSENSE_ENABLED kapcsoló BE (utils/features.ts; default: BE). OFF esetén
+  // a CSP szűk marad — nem hirdetjük az ad-infrát, amíg nincs bekapcsolva.
+  const adsenseOn = isAdsenseEnabled();
+  // 'unsafe-eval' kell az AdSense egyes kreatívjaihoz / a Funding Choices
+  // consent-falhoz — csak akkor lazítunk, ha a hirdetés-réteg aktív.
+  const adScript = adsenseOn
+    ? " 'unsafe-eval' https://pagead2.googlesyndication.com https://partner.googleadservices.com https://tpc.googlesyndication.com https://fundingchoicesmessages.google.com https://www.googletagservices.com https://*.adtrafficquality.google"
+    : "";
+  const adConnect = adsenseOn
+    ? " https://googleads.g.doubleclick.net https://pagead2.googlesyndication.com https://fundingchoicesmessages.google.com https://*.adtrafficquality.google"
+    : "";
+  // A GDPR consent-fal (Funding Choices) Google Fonts stíluslapot + fontot tölt.
+  const adStyle = adsenseOn ? " https://fonts.googleapis.com" : "";
+  const adFont = adsenseOn ? " https://fonts.gstatic.com" : "";
+  // Az AdSense reklám-iframe-ek + a consent-fal frame-jei. OFF esetén marad 'none'.
+  const frameSrc = adsenseOn
+    ? "frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://*.adtrafficquality.google https://www.google.com"
+    : "frame-src 'none'";
+
+  const csp = [
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com" +
+    adScript,
+    "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net" + adStyle,
+    "img-src 'self' data: https:",
+    "font-src 'self' data: https://cdn.jsdelivr.net" + adFont,
+    "connect-src 'self' https://www.google-analytics.com https://analytics.google.com" +
+    adConnect,
+    frameSrc,
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+  ];
+  // Az AdSense blob-alapú web workert használ — csak ekkor engedjük.
+  if (adsenseOn) {
+    csp.push("worker-src 'self' blob:");
+  }
+  resp.headers.set("Content-Security-Policy", csp.join("; "));
 
   // ── Cache headers ─────────────────────────────────────────────────
   const ext = url.pathname.split(".").pop()?.toLowerCase();

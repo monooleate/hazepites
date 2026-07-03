@@ -1,0 +1,21 @@
+{
+  "_readme": "erdeireka.hu house-ad MEGJELENÉS-beállítások (SSOT). A fő be/ki kapcsoló az ERDEIREKA_ADS_ENABLED env; ez a fájl azt finomhangolja: mely felület jelenjen meg, popup be/ki + időzítés. A kreatívok külön: data/erdeireka-ads.ts. Szerkeszd nyugodtan; hibás/hiányzó mezőre a kód a defaultot használja. FIGYELEM: a Vite az SSR-modul JSON-importját cache-eli → a JSON módosítása után dev-restart kell (deno task dev), élesben (Deno Deploy) a build bundle-eli.",
+  "placements": {
+    "sidebar": { "enabled": true },
+    "inArticleEnd": { "enabled": true },
+    "inArticleMid": { "enabled": true }
+  },
+  "anchor": {
+    "top": false,
+    "bottom": true,
+    "showDelayMs": 1200
+  },
+  "interstitial": {
+    "enabled": true,
+    "minPageviews": 2,
+    "delayMs": 4000
+  },
+  "homepage": {
+    "enabled": true
+  }
+}

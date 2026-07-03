@@ -4,6 +4,12 @@ import Footer from "../components/Footer.tsx";
 import { define } from "../utils/state.ts";
 import { generateFullSchema } from "../utils/schema.ts";
 import { CATEGORIES } from "../data/docs.ts";
+import {
+  getErdeirekaConfig,
+  getErdeirekaSettings,
+  pickErdeirekaCreative,
+} from "../utils/erdeireka.ts";
+import ErdeirekaBanner from "../components/erdeireka/ErdeirekaBanner.tsx";
 
 // --- Dinamikus számok a tartalomjegyzékből (nem kézzel karbantartott) ---
 const COUNT: Record<string, number> = {};
@@ -347,6 +353,17 @@ const STATS = [
 ];
 
 export default define.page<typeof handler>(function HomePage() {
+  // erdeireka.hu house-ad — homepage szekció (billboard / mobil rectangle),
+  // csak ha az ERDEIREKA_ADS_ENABLED env "true" és a config engedi.
+  const erd = getErdeirekaConfig();
+  const erdSettings = getErdeirekaSettings();
+  const erdHomeDesktop = erd.enabled && erdSettings.homepage
+    ? pickErdeirekaCreative("billboard")
+    : null;
+  const erdHomeMobile = erd.enabled && erdSettings.homepage
+    ? pickErdeirekaCreative("rectangle")
+    : null;
+
   return (
     <div class="min-h-screen flex flex-col">
       <Header active="/" />
@@ -556,6 +573,21 @@ export default define.page<typeof handler>(function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* erdeireka.hu house-ad — homepage billboard (csak ha ON) */}
+      {erd.enabled && erdHomeDesktop && (
+        <section class="py-12 bg-white dark:bg-slate-950">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center">
+            <ErdeirekaBanner
+              creative={erdHomeDesktop}
+              creativeMobile={erdHomeMobile ?? undefined}
+              targetUrl={erd.targetUrl}
+              source="homepage"
+              label
+            />
+          </div>
+        </section>
+      )}
 
       {/* How it works */}
       <section class="py-20 bg-slate-50 dark:bg-slate-900/50 border-y border-slate-100 dark:border-slate-800/50">

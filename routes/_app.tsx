@@ -1,10 +1,27 @@
 import { asset } from "fresh/runtime";
 import { define } from "../utils/state.ts";
 import { getAdsenseConfig } from "../utils/features.ts";
+import {
+  getErdeirekaConfig,
+  getErdeirekaSettings,
+  pickErdeirekaCreative,
+} from "../utils/erdeireka.ts";
+import ErdeirekaAnchor from "../islands/erdeireka/ErdeirekaAnchor.tsx";
+import ErdeirekaInterstitial from "../islands/erdeireka/ErdeirekaInterstitial.tsx";
 
 export default define.page(function App({ Component, state, url }) {
   const isContentPage = url.pathname.split("/").filter(Boolean).length > 0 && url.pathname !== "/kapcsolat";
   const adsense = getAdsenseConfig();
+
+  // erdeireka.hu house-ad réteg — ha az ERDEIREKA_ADS_ENABLED env "true", a
+  // site-wide felső/alsó anchor + a felugró popup minden oldalon megjelenik.
+  // A kreatívokat itt (szerveroldalon) választjuk ki, és propként adjuk az
+  // island-eknek → nincs kliens-oldali random, nincs hydration-mismatch.
+  const erdeireka = getErdeirekaConfig();
+  const erdSettings = getErdeirekaSettings();
+  const erdAnchorDesktop = erdeireka.enabled ? pickErdeirekaCreative("leaderboard") : null;
+  const erdAnchorMobile = erdeireka.enabled ? pickErdeirekaCreative("mobile-banner") : null;
+  const erdInterstitial = erdeireka.enabled ? pickErdeirekaCreative("large-rectangle") : null;
 
   return (
     <html lang="hu" class="scroll-smooth">
@@ -89,6 +106,44 @@ export default define.page(function App({ Component, state, url }) {
       </head>
       <body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased">
         <Component />
+
+        {/* erdeireka.hu site-wide anchor bannerek (felül + alul) + popup —
+            csak ha ERDEIREKA_ADS_ENABLED "true". Az anchor/popup island
+            self-gated (dismiss-emlékezet, gyakoriság-korlát sessionStorage-ban). */}
+        {erdeireka.enabled && erdAnchorDesktop && erdAnchorMobile && (
+          <>
+            {erdSettings.anchorTop && (
+              <ErdeirekaAnchor
+                position="top"
+                creative={erdAnchorDesktop}
+                creativeMobile={erdAnchorMobile}
+                targetUrl={erdeireka.targetUrl}
+                source="anchor-top"
+                showDelayMs={erdSettings.anchorShowDelayMs}
+              />
+            )}
+            {erdSettings.anchorBottom && (
+              <ErdeirekaAnchor
+                position="bottom"
+                creative={erdAnchorDesktop}
+                creativeMobile={erdAnchorMobile}
+                targetUrl={erdeireka.targetUrl}
+                source="anchor-bottom"
+                showDelayMs={erdSettings.anchorShowDelayMs}
+              />
+            )}
+          </>
+        )}
+        {erdeireka.enabled && erdInterstitial && erdSettings.interstitialEnabled && (
+          <ErdeirekaInterstitial
+            creative={erdInterstitial}
+            targetUrl={erdeireka.targetUrl}
+            source="interstitial"
+            minPageviews={erdSettings.interstitialMinPageviews}
+            delayMs={erdSettings.interstitialDelayMs}
+          />
+        )}
+
         {/* Click-outside bezárás + link-kattintás bezárás: TOC dropdown + mobil sidebar */}
         <script
           dangerouslySetInnerHTML={{

@@ -20,7 +20,35 @@ import EnergiaCalculator from "../islands/EnergiaCalculator.tsx";
 import KeszultsegiKalkulator from "../islands/KeszultsegiKalkulator.tsx";
 import { define } from "../utils/state.ts";
 import { generateBreadcrumbSchema } from "../utils/schema.ts";
+import {
+  getErdeirekaConfig,
+  getErdeirekaSettings,
+  pickErdeirekaCreative,
+} from "../utils/erdeireka.ts";
+import ErdeirekaBanner from "../components/erdeireka/ErdeirekaBanner.tsx";
+import ErdeirekaInArticle from "../components/erdeireka/ErdeirekaInArticle.tsx";
 import type { ComponentType } from "preact";
+
+/**
+ * A renderelt cikk-HTML kettévágása a `n`-edik `<h2>` szekció UTÁN (azaz a
+ * `n+1`-edik `<h2>` elé), hogy közé lehessen szúrni a cikk-közép house-ad
+ * bannert. Ha nincs elég `<h2>` (rövid cikk), `null` → nem szúrunk be semmit.
+ */
+function splitHtmlAfterNthH2(
+  html: string,
+  n: number,
+): { before: string; after: string } | null {
+  const positions: number[] = [];
+  const re = /<h2[\s>]/gi;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(html)) !== null) {
+    positions.push(m.index);
+    if (positions.length > n) break;
+  }
+  if (positions.length <= n) return null; // nincs (n+1)-edik H2 → kihagyjuk
+  const idx = positions[n];
+  return { before: html.slice(0, idx), after: html.slice(idx) };
+}
 
 // Island registry — frontmatter "island" mező alapján renderelhető
 const ISLAND_REGISTRY: Record<string, ComponentType> = {
@@ -308,6 +336,28 @@ export default define.page<typeof handler>(function DocsPage(props) {
     ? new Date(String(pageData.data.refreshed_at))
     : undefined;
 
+  // ── erdeireka.hu house-ad: cikk-oldali in-content slotok ──
+  // Csak rendes cikkoldalon (nem kategória-áttekintőn) és csak ha az
+  // ERDEIREKA_ADS_ENABLED env "true". A mely-slot finomhangolás a
+  // data/erdeireka-config.json-ból jön (getErdeirekaSettings).
+  const erd = getErdeirekaConfig();
+  const erdSettings = getErdeirekaSettings();
+  const erdEnabled = erd.enabled && !categoryOverview;
+  const erdSidebarCreative = erdEnabled && erdSettings.sidebar
+    ? pickErdeirekaCreative("half-page")
+    : null;
+  const erdArticleCreative = erdEnabled && erdSettings.inArticleEnd
+    ? pickErdeirekaCreative("large-rectangle")
+    : null;
+  const erdArticleCreativeMobile = erdEnabled && erdSettings.inArticleEnd
+    ? pickErdeirekaCreative("rectangle")
+    : null;
+  const erdMidSplit = erdEnabled && erdSettings.inArticleMid
+    ? splitHtmlAfterNthH2(renderedHtml, 2)
+    : null;
+  const erdMidCreative = erdMidSplit ? pickErdeirekaCreative("leaderboard") : null;
+  const erdMidCreativeMobile = erdMidSplit ? pickErdeirekaCreative("rectangle") : null;
+
   return (
     <div class="min-h-screen flex flex-col bg-white dark:bg-slate-950" f-client-nav={true}>
       <Header active={pageData.slug} showNav={true} showSidebarToggle={true} headings={categoryOverview ? undefined : headings} />
@@ -444,11 +494,38 @@ export default define.page<typeof handler>(function DocsPage(props) {
                 {/* Island component (kalkulátor, eszköz stb.) — a cím után, tartalom előtt */}
                 {IslandComponent && <IslandComponent />}
 
-                {/* Content */}
-                <article
-                  class="markdown-body"
-                  dangerouslySetInnerHTML={{ __html: renderedHtml }}
-                />
+                {/* Content — ha a cikk-közép house-ad ON és van elég H2,
+                    kettévágva a 2. szekció után beszúrjuk a leaderboard bannert. */}
+                {erdMidSplit && erdMidCreative ? (
+                  <article class="markdown-body">
+                    <div dangerouslySetInnerHTML={{ __html: erdMidSplit.before }} />
+                    <div class="my-8 flex justify-center not-prose">
+                      <ErdeirekaBanner
+                        creative={erdMidCreative}
+                        creativeMobile={erdMidCreativeMobile ?? undefined}
+                        targetUrl={erd.targetUrl}
+                        source="in-article-mid"
+                        label
+                      />
+                    </div>
+                    <div dangerouslySetInnerHTML={{ __html: erdMidSplit.after }} />
+                  </article>
+                ) : (
+                  <article
+                    class="markdown-body"
+                    dangerouslySetInnerHTML={{ __html: renderedHtml }}
+                  />
+                )}
+
+                {/* erdeireka.hu house-ad — cikk vége (large-rectangle / mobil rectangle) */}
+                {erdArticleCreative && (
+                  <ErdeirekaInArticle
+                    creative={erdArticleCreative}
+                    creativeMobile={erdArticleCreativeMobile ?? undefined}
+                    targetUrl={erd.targetUrl}
+                    source="in-article-end"
+                  />
+                )}
 
                 {/* Refresh date */}
                 {refreshDate && (
@@ -510,6 +587,24 @@ export default define.page<typeof handler>(function DocsPage(props) {
               <aside class="hidden xl:block w-64 shrink-0">
                 <div class="sticky top-20 py-8 pr-4">
                   <TableOfContents headings={headings} />
+                  {/* erdeireka.hu house-ad — sidebar (TOC alatt, desktop).
+                      Keskeny, középre igazított kreatív, felette-alatta térközzel.
+                      A half-page 300px széles → `zoom:.6`-tal ~180px-re keskenyítjük
+                      (a zoom a helyfoglalást is arányosítja, szemben a transform-mal).
+                      A `py-8` a KÜLSŐ (nem zoomolt) wrapperen van, hogy a térköz ne
+                      skálázódjon a bannerrel együtt. */}
+                  {erdSidebarCreative && (
+                    <div class="py-8 flex justify-center">
+                      <div style="zoom:0.6">
+                        <ErdeirekaBanner
+                          creative={erdSidebarCreative}
+                          targetUrl={erd.targetUrl}
+                          source="sidebar"
+                          label
+                        />
+                      </div>
+                    </div>
+                  )}
                 </div>
               </aside>
             </div>

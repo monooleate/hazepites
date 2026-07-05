@@ -1,6 +1,6 @@
 import { asset } from "fresh/runtime";
 import { define } from "../utils/state.ts";
-import { getAdsenseConfig } from "../utils/features.ts";
+import { getAdsenseConfig, getPlausibleConfig } from "../utils/features.ts";
 import {
   getErdeirekaConfig,
   getErdeirekaSettings,
@@ -12,6 +12,7 @@ import ErdeirekaInterstitial from "../islands/erdeireka/ErdeirekaInterstitial.ts
 export default define.page(function App({ Component, state, url }) {
   const isContentPage = url.pathname.split("/").filter(Boolean).length > 0 && url.pathname !== "/kapcsolat";
   const adsense = getAdsenseConfig();
+  const plausible = getPlausibleConfig();
 
   // erdeireka.hu house-ad réteg — ha az ERDEIREKA_ADS_ENABLED env "true", a
   // site-wide felső/alsó anchor + a felugró popup minden oldalon megjelenik.
@@ -42,6 +43,22 @@ export default define.page(function App({ Component, state, url }) {
             __html: `(function(){try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(t==='dark')document.documentElement.classList.add('dark')}catch(e){}})();`,
           }}
         />
+
+        {/* Plausible Analytics — privacy-first, cookie-mentes látogatásmérés.
+            Csak ha a PLAUSIBLE_ENABLED kapcsoló BE (default: BE) és a loader-URL
+            érvényes pa-<token> script (lásd utils/features.ts). A _middleware.ts
+            a CSP-t is csak ekkor whitelisteli a loader origin-jével (script-src
+            + connect-src). Az inline init a globális queue-t állítja fel. */}
+        {plausible.enabled && (
+          <>
+            <script async src={plausible.src} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`,
+              }}
+            />
+          </>
+        )}
 
         {/* Google AdSense (Auto Ads) — csak ha az ADSENSE_ENABLED kapcsoló BE
             (default: BE) és a client ID érvényes (lásd utils/features.ts).

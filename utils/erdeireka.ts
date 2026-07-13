@@ -18,6 +18,7 @@
 
 import {
   ERDEIREKA_CREATIVES,
+  type ErdeirekaCampaignId,
   type ErdeirekaCreative,
   type ErdeirekaFormat,
 } from "../data/erdeireka-ads.ts";
@@ -27,35 +28,113 @@ import erdeirekaConfigRaw from "../data/erdeireka-config.json" with {
 
 const DEFAULT_TARGET_URL = "https://erdeireka.hu";
 
+/**
+ * Kampány-alapértelmezések. A data/erdeireka-config.json `campaigns` blokkja
+ * felülírja (súly + cél-URL + enabled); hiányzó/rossz mezőre ezek lépnek be.
+ * `weight: 1 / 1` = 50-50 rotáció. Egy kampány kikapcsolása: `enabled: false`
+ * vagy `weight: 0`.
+ */
+const DEFAULT_CAMPAIGNS: Record<
+  ErdeirekaCampaignId,
+  { weight: number; targetUrl: string }
+> = {
+  utazas: { weight: 1, targetUrl: "https://erdeireka.hu" },
+  ingatlan: { weight: 1, targetUrl: "https://erdeireka.hu/dubai-okos-befektetes" },
+};
+
 export interface ErdeirekaConfig {
   /** Megjelenhetnek-e Réka hirdetései? (ERDEIREKA_ADS_ENABLED === "true") */
   enabled: boolean;
+  /** A requestre kisorsolt aktív kampány (oldalletöltésenként egyszer). */
+  campaign: ErdeirekaCampaignId;
   /** Kattintási cél-URL (UTM nélkül; a `erdeirekaHref` teszi rá az UTM-et). */
   targetUrl: string;
 }
 
+/** Csak http(s) URL-t fogadunk el (injection-guard, mert href-be kerül). */
+function safeHttpUrl(raw: unknown, fallback: string): string {
+  if (typeof raw !== "string" || !raw.trim()) return fallback;
+  try {
+    const u = new URL(raw.trim());
+    return (u.protocol === "https:" || u.protocol === "http:") ? raw.trim() : fallback;
+  } catch {
+    return fallback;
+  }
+}
+
+interface CampaignDef {
+  id: ErdeirekaCampaignId;
+  weight: number;
+  targetUrl: string;
+}
+
 /**
- * Az erdeireka.hu hirdetés-config kiolvasása az env-ből.
+ * Az engedélyezett kampányok listája (súly + cél-URL), a config JSON
+ * `campaigns` blokkjából, defaultokkal. Csak `enabled !== false` és `weight > 0`
+ * kampányok kerülnek be. A `utazas` cél-URL-jét az `ERDEIREKA_TARGET_URL` env
+ * felülírja (back-compat az egy-kampányos időkkel).
+ */
+function resolveCampaigns(): CampaignDef[] {
+  const raw = (erdeirekaConfigRaw as {
+    campaigns?: Record<string, {
+      enabled?: unknown;
+      weight?: unknown;
+      targetUrl?: unknown;
+    }>;
+  }).campaigns ?? {};
+  const envUtazasUrl = Deno.env.get("ERDEIREKA_TARGET_URL");
+
+  const out: CampaignDef[] = [];
+  for (const id of Object.keys(DEFAULT_CAMPAIGNS) as ErdeirekaCampaignId[]) {
+    const def = DEFAULT_CAMPAIGNS[id];
+    const cfg = raw[id] ?? {};
+    if (cfg.enabled === false) continue;
+    const weight = typeof cfg.weight === "number" && isFinite(cfg.weight) && cfg.weight > 0
+      ? cfg.weight
+      : (cfg.weight === undefined ? def.weight : 0);
+    if (weight <= 0) continue;
+    let targetUrl = safeHttpUrl(cfg.targetUrl, def.targetUrl);
+    if (id === "utazas" && envUtazasUrl) targetUrl = safeHttpUrl(envUtazasUrl, targetUrl);
+    out.push({ id, weight, targetUrl });
+  }
+  return out;
+}
+
+/**
+ * Aktív kampány kisorsolása (súlyozott). OLDALLETÖLTÉSENKÉNT EGYSZER fut a
+ * `getErdeirekaConfig()`-ból → az egész oldal ugyanazt a hirdetőt mutatja.
+ * Ha nincs engedélyezett kampány → default `utazas`.
+ */
+function pickErdeirekaCampaign(): CampaignDef {
+  const pool = resolveCampaigns();
+  if (pool.length === 0) {
+    return { id: "utazas", weight: 1, targetUrl: DEFAULT_TARGET_URL };
+  }
+  if (pool.length === 1) return pool[0];
+  const total = pool.reduce((s, c) => s + c.weight, 0);
+  let r = Math.random() * total;
+  for (const c of pool) {
+    r -= c.weight;
+    if (r <= 0) return c;
+  }
+  return pool[pool.length - 1];
+}
+
+/**
+ * Az erdeireka.hu hirdetés-config kiolvasása az env-ből + kampány-sorsolás.
  *
  *   - ERDEIREKA_ADS_ENABLED === "true"  → bekapcsolva
- *   - ERDEIREKA_TARGET_URL              → cél-URL (default https://erdeireka.hu);
- *     csak http(s) URL-t fogadunk el (injection-guard, mert href-be kerül)
+ *   - ERDEIREKA_TARGET_URL              → a `utazas` kampány cél-URL-jét írja
+ *     felül (default https://erdeireka.hu); csak http(s) URL-t fogadunk el
+ *
+ * A kampányt akkor is kisorsoljuk, ha a réteg ki van kapcsolva — így a
+ * `targetUrl`/`campaign` mindig érvényes érték (a komponensek `enabled`-re
+ * gate-elnek, a sorsolás mellékhatás-mentes).
  */
 export function getErdeirekaConfig(): ErdeirekaConfig {
   const enabled = Deno.env.get("ERDEIREKA_ADS_ENABLED") === "true";
-  const raw = Deno.env.get("ERDEIREKA_TARGET_URL")?.trim();
-  let targetUrl = DEFAULT_TARGET_URL;
-  if (raw) {
-    try {
-      const u = new URL(raw);
-      if (u.protocol === "https:" || u.protocol === "http:") {
-        targetUrl = raw;
-      }
-    } catch {
-      // érvénytelen URL → marad a default
-    }
-  }
-  return { enabled, targetUrl };
+  const picked = pickErdeirekaCampaign();
+  return { enabled, campaign: picked.id, targetUrl: picked.targetUrl };
 }
 
 /** Gyors boolean — kell-e a Réka-réteg? */
@@ -64,18 +143,26 @@ export function isErdeirekaAdsEnabled(): boolean {
 }
 
 /**
- * Egy adott formátumú kreatív kiválasztása (súlyozott rotációval).
+ * Egy adott formátumú + kampányú kreatív kiválasztása (súlyozott rotációval).
  *
- * Több azonos formátumú tétel esetén a `weight` szerint választ; ha csak egy
- * van, azt adja. Ha nincs ilyen formátumú kreatív → null.
+ * A kampányt a `getErdeirekaConfig()` sorsolja oldalletöltésenként egyszer, és
+ * a route-ok átadják ide → egy oldalon minden slot ugyanahhoz a hirdetőhöz
+ * tartozik. Egy kampányon+formátumon belül több tétel esetén a `weight` dönt.
+ * Ha nincs ilyen kreatív → null (a slot üresen marad).
  *
  * SSR-ben fut: a kiválasztott kreatívot a szerver propként adja át az
  * island-eknek, így nincs kliens-oldali random → nincs hydration-mismatch.
+ *
+ * @param campaign ha megadva, csak ehhez a kampányhoz tartozó kreatívok közül
+ *                 választ; ha nincs → minden kampányból (back-compat).
  */
 export function pickErdeirekaCreative(
   format: ErdeirekaFormat,
+  campaign?: ErdeirekaCampaignId,
 ): ErdeirekaCreative | null {
-  const pool = ERDEIREKA_CREATIVES.filter((c) => c.format === format);
+  const pool = ERDEIREKA_CREATIVES.filter((c) =>
+    c.format === format && (campaign === undefined || c.campaign === campaign)
+  );
   if (pool.length === 0) return null;
   if (pool.length === 1) return pool[0];
 

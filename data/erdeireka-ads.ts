@@ -13,6 +13,18 @@
  * pedig bármikor be lehet dobni a static/erdeireka/ alá.
  */
 
+/**
+ * Kampány-azonosító. Egy kampány = egy hirdető/landing + saját banner-készlet.
+ *   - "utazas"   → Erdei Réka utazás/életmód (erdeireka.hu)
+ *   - "ingatlan" → Dubai okos ingatlan-befektetés (erdeireka.hu/dubai-okos-befektetes)
+ *
+ * A kampányok 50-50 (súlyozottan) váltakoznak: a `_middleware.ts` / `getErdeirekaConfig()`
+ * OLDALLETÖLTÉSENKÉNT EGYSZER sorsol kampányt, így egy oldalon minden slot
+ * ugyanazt a hirdetőt mutatja (koherens), és a split pontosan tartható.
+ * A súlyt/be-ki a data/erdeireka-config.json `campaigns` blokkja adja.
+ */
+export type ErdeirekaCampaignId = "utazas" | "ingatlan";
+
 /** IAB-szabvány banner-formátumok, amiket a site használ. */
 export type ErdeirekaFormat =
   | "leaderboard" // 728×90  — felső/alsó sticky (desktop), cikk-közép
@@ -35,6 +47,8 @@ export const ERDEIREKA_DIM: Record<ErdeirekaFormat, { w: number; h: number }> = 
 export interface ErdeirekaCreative {
   /** Egyedi azonosító (analytics + key). */
   id: string;
+  /** Melyik kampányhoz tartozik (rotáció + cél-URL + UTM). */
+  campaign: ErdeirekaCampaignId;
   /** Banner méret/formátum. */
   format: ErdeirekaFormat;
   /**
@@ -64,15 +78,21 @@ export interface ErdeirekaCreative {
 }
 
 /**
- * Az erdeireka.hu kreatív-katalógus.
+ * Az erdeireka.hu kreatív-katalógus — KAMPÁNYONKÉNT csoportosítva.
  *
- * Jelenleg minden formátumhoz 1 kreatív tartozik (kép + szöveges fallback).
- * Rotációhoz adj hozzá több azonos `format`-ú tételt különböző `weight`-tel —
- * a `pickErdeirekaCreative()` súlyozottan választ.
+ * Két kampány fut 50-50-ben (lásd `ErdeirekaCampaignId`):
+ *   - "utazas"   → Erdei Réka (a 6 eredeti kreatív, kép: static/erdeireka/*.webp)
+ *   - "ingatlan" → Dubai okos befektetés (6 kreatív, kép: static/erdeireka/ingatlan/*.webp)
+ *
+ * A `pickErdeirekaCreative(format, campaign)` formátum ÉS kampány szerint szűr;
+ * a kampányt a `getErdeirekaConfig()` sorsolja oldalletöltésenként egyszer.
+ * Egy kampányon belül több azonos `format`-ú tétel = súlyozott (`weight`) A/B váltás.
  */
 export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
+  // ── Kampány: utazas (Erdei Réka) ──────────────────────────────────────────
   {
     id: "erd-leaderboard-1",
+    campaign: "utazas",
     format: "leaderboard",
     img: "/erdeireka/leaderboard-728x90.webp",
     img2x: "/erdeireka/leaderboard-728x90@2x.webp",
@@ -86,6 +106,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
   },
   {
     id: "erd-mobile-1",
+    campaign: "utazas",
     format: "mobile-banner",
     img: "/erdeireka/mobile-320x100.webp",
     img2x: "/erdeireka/mobile-320x100@2x.webp",
@@ -99,6 +120,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
   },
   {
     id: "erd-rectangle-1",
+    campaign: "utazas",
     format: "rectangle",
     img: "/erdeireka/rectangle-300x250.webp",
     img2x: "/erdeireka/rectangle-300x250@2x.webp",
@@ -112,6 +134,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
   },
   {
     id: "erd-large-rectangle-1",
+    campaign: "utazas",
     format: "large-rectangle",
     img: "/erdeireka/large-rectangle-336x280.webp",
     img2x: "/erdeireka/large-rectangle-336x280@2x.webp",
@@ -125,6 +148,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
   },
   {
     id: "erd-half-page-1",
+    campaign: "utazas",
     format: "half-page",
     img: "/erdeireka/half-page-300x600.webp",
     img2x: "/erdeireka/half-page-300x600@2x.webp",
@@ -138,6 +162,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
   },
   {
     id: "erd-billboard-1",
+    campaign: "utazas",
     format: "billboard",
     img: "/erdeireka/billboard-970x250.webp",
     img2x: "/erdeireka/billboard-970x250@2x.webp",
@@ -149,16 +174,114 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
     bgTo: "#db2777",
     accent: "#f59e0b",
   },
+
+  // ── Kampány: ingatlan (Dubai okos befektetés) ───────────────────────────────
+  //
+  // KÉPEK: másold a bannereket ide → static/erdeireka/ingatlan/ AZONOS
+  // fájlnevekkel (leaderboard-728x90.webp, mobile-320x100.webp, ...), majd
+  // vedd ki a kommentet az `img`/`img2x` sorokból az adott tételnél. Amíg
+  // nincs kép, a szöveges fallback (headline/subline/cta + színek) renderel,
+  // így a kampány KÉP NÉLKÜL IS azonnal éles (nincs törött <img>).
+  {
+    id: "erd-ingatlan-leaderboard-1",
+    campaign: "ingatlan",
+    format: "leaderboard",
+    // img: "/erdeireka/ingatlan/leaderboard-728x90.webp",
+    // img2x: "/erdeireka/ingatlan/leaderboard-728x90@2x.webp",
+    alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
+    headline: "Dubai okos befektetés",
+    subline: "Ingatlan, ami dolgozik helyetted",
+    cta: "Tudj meg többet →",
+    bgFrom: "#0b3d5c",
+    bgTo: "#c99a3f",
+    accent: "#f0c674",
+  },
+  {
+    id: "erd-ingatlan-mobile-1",
+    campaign: "ingatlan",
+    format: "mobile-banner",
+    // img: "/erdeireka/ingatlan/mobile-320x100.webp",
+    // img2x: "/erdeireka/ingatlan/mobile-320x100@2x.webp",
+    alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
+    headline: "Dubai befektetés",
+    subline: "Okos ingatlan",
+    cta: "Tudj meg többet →",
+    bgFrom: "#0b3d5c",
+    bgTo: "#c99a3f",
+    accent: "#f0c674",
+  },
+  {
+    id: "erd-ingatlan-rectangle-1",
+    campaign: "ingatlan",
+    format: "rectangle",
+    // img: "/erdeireka/ingatlan/rectangle-300x250.webp",
+    // img2x: "/erdeireka/ingatlan/rectangle-300x250@2x.webp",
+    alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
+    headline: "Dubai okos befektetés",
+    subline: "Ingatlan, ami dolgozik helyetted",
+    cta: "Tudj meg többet →",
+    bgFrom: "#0b3d5c",
+    bgTo: "#c99a3f",
+    accent: "#f0c674",
+  },
+  {
+    id: "erd-ingatlan-large-rectangle-1",
+    campaign: "ingatlan",
+    format: "large-rectangle",
+    // img: "/erdeireka/ingatlan/large-rectangle-336x280.webp",
+    // img2x: "/erdeireka/ingatlan/large-rectangle-336x280@2x.webp",
+    alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
+    headline: "Dubai okos befektetés",
+    subline: "Ingatlan, ami dolgozik helyetted",
+    cta: "Tudj meg többet →",
+    bgFrom: "#0b3d5c",
+    bgTo: "#c99a3f",
+    accent: "#f0c674",
+  },
+  {
+    id: "erd-ingatlan-half-page-1",
+    campaign: "ingatlan",
+    format: "half-page",
+    // img: "/erdeireka/ingatlan/half-page-300x600.webp",
+    // img2x: "/erdeireka/ingatlan/half-page-300x600@2x.webp",
+    alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
+    headline: "Dubai okos befektetés",
+    subline: "Ingatlan, ami dolgozik helyetted",
+    cta: "Tudj meg többet →",
+    bgFrom: "#0b3d5c",
+    bgTo: "#c99a3f",
+    accent: "#f0c674",
+  },
+  {
+    id: "erd-ingatlan-billboard-1",
+    campaign: "ingatlan",
+    format: "billboard",
+    // img: "/erdeireka/ingatlan/billboard-970x250.webp",
+    // img2x: "/erdeireka/ingatlan/billboard-970x250@2x.webp",
+    alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
+    headline: "Dubai okos befektetés",
+    subline: "Ingatlan, ami dolgozik helyetted az Emírségekben",
+    cta: "Tudj meg többet →",
+    bgFrom: "#0b3d5c",
+    bgTo: "#c99a3f",
+    accent: "#f0c674",
+  },
 ];
 
 /**
  * UTM-paraméterekkel kiegészített cél-URL.
  * Pure függvény (nincs Deno) — island-ből is hívható.
  *
- * @param base   alap cél-URL (pl. https://erdeireka.hu)
- * @param source placement-azonosító (utm_content), pl. "anchor-top"
+ * @param base     alap cél-URL (pl. https://erdeireka.hu)
+ * @param source   placement-azonosító (utm_content), pl. "anchor-top"
+ * @param campaign kampány-azonosító (utm_campaign = "erdeireka-<campaign>");
+ *                 ha nincs megadva → "erdeireka" (back-compat)
  */
-export function erdeirekaHref(base: string, source: string): string {
+export function erdeirekaHref(
+  base: string,
+  source: string,
+  campaign?: ErdeirekaCampaignId,
+): string {
   let url: URL;
   try {
     url = new URL(base);
@@ -168,7 +291,7 @@ export function erdeirekaHref(base: string, source: string): string {
   }
   url.searchParams.set("utm_source", "hazepitesikalauz.hu");
   url.searchParams.set("utm_medium", "banner");
-  url.searchParams.set("utm_campaign", "erdeireka");
+  url.searchParams.set("utm_campaign", campaign ? `erdeireka-${campaign}` : "erdeireka");
   url.searchParams.set("utm_content", source);
   return url.toString();
 }

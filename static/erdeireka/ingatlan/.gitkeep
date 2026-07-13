@@ -1,0 +1,18 @@
+# erdeireka.hu — "ingatlan" kampány bannerei (Dubai okos befektetés)
+#
+# Ide kerülnek a Dubai ingatlan-befektetés kampány banner-képei, PONTOSAN
+# UGYANAZOKKAL A FÁJLNEVEKKEL, mint az "utazas" kampánynál (static/erdeireka/).
+# Amíg üres, a kampány a szöveges fallbackkel renderel (data/erdeireka-ads.ts) —
+# nincs törött <img>, a kampány kép nélkül is azonnal éles.
+#
+# Várt fájlok (6 méret × 1× + 2× retina, WebP, <150 KB):
+#   leaderboard-728x90.webp        + leaderboard-728x90@2x.webp
+#   mobile-320x100.webp            + mobile-320x100@2x.webp
+#   rectangle-300x250.webp         + rectangle-300x250@2x.webp
+#   large-rectangle-336x280.webp   + large-rectangle-336x280@2x.webp
+#   half-page-300x600.webp         + half-page-300x600@2x.webp
+#   billboard-970x250.webp         + billboard-970x250@2x.webp
+#
+# A képek bemásolása UTÁN vedd ki a kommentet a megfelelő `// img:` / `// img2x:`
+# sorokból a data/erdeireka-ads.ts "ingatlan" kreatívjainál — ekkor kép renderel
+# a szöveges fallback helyett.

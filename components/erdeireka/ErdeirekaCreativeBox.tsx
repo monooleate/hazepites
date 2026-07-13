@@ -42,10 +42,16 @@ export default function ErdeirekaCreativeBox(
   const wide = isWideFormat(creative.format);
 
   return (
+    // KÜLSŐ doboz = PONTOSAN az <img>-branch méretezése: display:block + explicit
+    // width + max-w-full + aspect-ratio. NEM `flex` és NEM `w-full` — különben a
+    // shrink-to-fit / center-igazított szülőben (anchor-sáv, TOC alatti sidebar
+    // wrapper) a méret elcsúszik a kép-bannerhez képest. Így a placeholder minden
+    // sloton a definiált banner-méretet foglalja (728×90, 300×600, ...), keskeny
+    // konténerben pedig — akárcsak a kép — arányosan skálázódik.
     <div
-      class="w-full rounded-xl overflow-hidden text-white flex shadow-sm"
+      class="block max-w-full rounded-xl overflow-hidden text-white shadow-sm"
       style={{
-        maxWidth: `${w}px`,
+        width: `${w}px`,
         aspectRatio: `${w} / ${h}`,
         background: `linear-gradient(135deg, ${from}, ${to})`,
       }}

@@ -1,5 +1,7 @@
 import type { FreshContext } from "fresh";
 import { getPlausibleOrigin, isAdsenseEnabled } from "../utils/features.ts";
+import { getErdeirekaConfig } from "../utils/erdeireka.ts";
+import type { State } from "../utils/state.ts";
 
 /**
  * Kategória index → áttekintés oldal.
@@ -10,9 +12,14 @@ const CATEGORY_REDIRECTS: Record<string, string> = {
   // Minden kategória áttekintés oldalra megy – nincs redirect
 };
 
-export async function handler(ctx: FreshContext) {
+export async function handler(ctx: FreshContext<State>) {
   const url = new URL(ctx.req.url);
   const isProd = url.hostname !== "localhost" && url.hostname !== "127.0.0.1";
+
+  // erdeireka.hu house-ad config — requestenként EGYSZER sorsol kampányt (50-50),
+  // és a state-be teszi. A route-komponensek (_app, index, [...slug]) innen
+  // olvassák → az egész oldal ugyanazt a hirdetőt mutatja (koherens rotáció).
+  ctx.state.erdeireka = getErdeirekaConfig();
 
   // HTTPS + www redirect (production only)
   if (isProd) {

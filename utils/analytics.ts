@@ -38,16 +38,34 @@ export function trackEvent(event: AnalyticsEvent): void {
 export function trackErdeirekaImpression(
   placement: string,
   format: string,
+  campaign?: string,
 ): void {
-  trackEvent({ name: "erdeireka_impression", params: { placement, format } });
+  trackEvent({
+    name: "erdeireka_impression",
+    params: { placement, format, ...(campaign ? { campaign } : {}) },
+  });
 }
 
 /** Banner kattintás. */
-export function trackErdeirekaClick(placement: string, format: string): void {
-  trackEvent({ name: "erdeireka_click", params: { placement, format } });
+export function trackErdeirekaClick(
+  placement: string,
+  format: string,
+  campaign?: string,
+): void {
+  trackEvent({
+    name: "erdeireka_click",
+    params: { placement, format, ...(campaign ? { campaign } : {}) },
+  });
 }
 
 /** Banner bezárás / összecsukás. */
-export function trackErdeirekaDismiss(placement: string, format: string): void {
-  trackEvent({ name: "erdeireka_dismiss", params: { placement, format } });
+export function trackErdeirekaDismiss(
+  placement: string,
+  format: string,
+  campaign?: string,
+): void {
+  trackEvent({
+    name: "erdeireka_dismiss",
+    params: { placement, format, ...(campaign ? { campaign } : {}) },
+  });
 }

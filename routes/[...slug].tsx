@@ -21,7 +21,6 @@ import KeszultsegiKalkulator from "../islands/KeszultsegiKalkulator.tsx";
 import { define } from "../utils/state.ts";
 import { generateBreadcrumbSchema } from "../utils/schema.ts";
 import {
-  getErdeirekaConfig,
   getErdeirekaSettings,
   pickErdeirekaCreative,
 } from "../utils/erdeireka.ts";
@@ -340,23 +339,26 @@ export default define.page<typeof handler>(function DocsPage(props) {
   // Csak rendes cikkoldalon (nem kategória-áttekintőn) és csak ha az
   // ERDEIREKA_ADS_ENABLED env "true". A mely-slot finomhangolás a
   // data/erdeireka-config.json-ból jön (getErdeirekaSettings).
-  const erd = getErdeirekaConfig();
+  // A kampányt a _middleware.ts sorsolja requestenként egyszer (state.erdeireka)
+  // → minden in-content slot ugyanahhoz a hirdetőhöz tartozik.
+  const erd = props.state.erdeireka ??
+    { enabled: false, campaign: "utazas" as const, targetUrl: "https://erdeireka.hu" };
   const erdSettings = getErdeirekaSettings();
   const erdEnabled = erd.enabled && !categoryOverview;
   const erdSidebarCreative = erdEnabled && erdSettings.sidebar
-    ? pickErdeirekaCreative("half-page")
+    ? pickErdeirekaCreative("half-page", erd.campaign)
     : null;
   const erdArticleCreative = erdEnabled && erdSettings.inArticleEnd
-    ? pickErdeirekaCreative("large-rectangle")
+    ? pickErdeirekaCreative("large-rectangle", erd.campaign)
     : null;
   const erdArticleCreativeMobile = erdEnabled && erdSettings.inArticleEnd
-    ? pickErdeirekaCreative("rectangle")
+    ? pickErdeirekaCreative("rectangle", erd.campaign)
     : null;
   const erdMidSplit = erdEnabled && erdSettings.inArticleMid
     ? splitHtmlAfterNthH2(renderedHtml, 2)
     : null;
-  const erdMidCreative = erdMidSplit ? pickErdeirekaCreative("leaderboard") : null;
-  const erdMidCreativeMobile = erdMidSplit ? pickErdeirekaCreative("rectangle") : null;
+  const erdMidCreative = erdMidSplit ? pickErdeirekaCreative("leaderboard", erd.campaign) : null;
+  const erdMidCreativeMobile = erdMidSplit ? pickErdeirekaCreative("rectangle", erd.campaign) : null;
 
   return (
     <div class="min-h-screen flex flex-col bg-white dark:bg-slate-950" f-client-nav={true}>

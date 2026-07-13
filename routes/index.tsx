@@ -5,7 +5,6 @@ import { define } from "../utils/state.ts";
 import { generateFullSchema } from "../utils/schema.ts";
 import { CATEGORIES } from "../data/docs.ts";
 import {
-  getErdeirekaConfig,
   getErdeirekaSettings,
   pickErdeirekaCreative,
 } from "../utils/erdeireka.ts";
@@ -352,16 +351,18 @@ const STATS = [
   { value: "2026", label: "friss adatok" },
 ];
 
-export default define.page<typeof handler>(function HomePage() {
+export default define.page<typeof handler>(function HomePage(props) {
   // erdeireka.hu house-ad — homepage szekció (billboard / mobil rectangle),
-  // csak ha az ERDEIREKA_ADS_ENABLED env "true" és a config engedi.
-  const erd = getErdeirekaConfig();
+  // csak ha az ERDEIREKA_ADS_ENABLED env "true" és a config engedi. A kampányt
+  // a _middleware.ts sorsolja requestenként egyszer (state.erdeireka).
+  const erd = props.state.erdeireka ??
+    { enabled: false, campaign: "utazas" as const, targetUrl: "https://erdeireka.hu" };
   const erdSettings = getErdeirekaSettings();
   const erdHomeDesktop = erd.enabled && erdSettings.homepage
-    ? pickErdeirekaCreative("billboard")
+    ? pickErdeirekaCreative("billboard", erd.campaign)
     : null;
   const erdHomeMobile = erd.enabled && erdSettings.homepage
-    ? pickErdeirekaCreative("rectangle")
+    ? pickErdeirekaCreative("rectangle", erd.campaign)
     : null;
 
   return (

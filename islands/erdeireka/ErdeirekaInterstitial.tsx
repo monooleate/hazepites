@@ -64,7 +64,7 @@ export default function ErdeirekaInterstitial({
       try {
         sessionStorage.setItem(SHOWN_KEY, "1");
       } catch { /* ignore */ }
-      trackErdeirekaImpression("interstitial", creative.format);
+      trackErdeirekaImpression("interstitial", creative.format, creative.campaign);
     }, delayMs);
     return () => {
       clearTimeout(t);
@@ -76,12 +76,12 @@ export default function ErdeirekaInterstitial({
     setShown(false);
     // a kilépő animáció után rejtjük el ténylegesen
     setTimeout(() => setVisible(false), 200);
-    trackErdeirekaDismiss("interstitial", creative.format);
+    trackErdeirekaDismiss("interstitial", creative.format, creative.campaign);
   }
 
   if (!visible) return null;
 
-  const href = erdeirekaHref(targetUrl, source);
+  const href = erdeirekaHref(targetUrl, source, creative.campaign);
 
   return (
     <div
@@ -124,7 +124,7 @@ export default function ErdeirekaInterstitial({
           target="_blank"
           rel="sponsored noopener"
           aria-label={creative.alt}
-          onClick={() => trackErdeirekaClick("interstitial", creative.format)}
+          onClick={() => trackErdeirekaClick("interstitial", creative.format, creative.campaign)}
           class="block transition hover:opacity-95"
         >
           <ErdeirekaCreativeBox creative={creative} />

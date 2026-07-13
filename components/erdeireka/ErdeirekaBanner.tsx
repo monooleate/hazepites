@@ -42,7 +42,7 @@ export default function ErdeirekaBanner({
   label = false,
   className = "",
 }: ErdeirekaBannerProps) {
-  const href = erdeirekaHref(targetUrl, source);
+  const href = erdeirekaHref(targetUrl, source, creative.campaign);
 
   return (
     <div class={`flex flex-col items-center ${className}`}>

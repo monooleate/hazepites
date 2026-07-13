@@ -2,7 +2,6 @@ import { asset } from "fresh/runtime";
 import { define } from "../utils/state.ts";
 import { getAdsenseConfig, getPlausibleConfig } from "../utils/features.ts";
 import {
-  getErdeirekaConfig,
   getErdeirekaSettings,
   pickErdeirekaCreative,
 } from "../utils/erdeireka.ts";
@@ -18,11 +17,15 @@ export default define.page(function App({ Component, state, url }) {
   // site-wide felső/alsó anchor + a felugró popup minden oldalon megjelenik.
   // A kreatívokat itt (szerveroldalon) választjuk ki, és propként adjuk az
   // island-eknek → nincs kliens-oldali random, nincs hydration-mismatch.
-  const erdeireka = getErdeirekaConfig();
+  // A kampányt a _middleware.ts sorsolja requestenként EGYSZER és a state-be
+  // teszi → itt csak olvassuk, hogy minden slot ugyanahhoz a hirdetőhöz tartozzon.
+  const erdeireka = state.erdeireka ??
+    { enabled: false, campaign: "utazas" as const, targetUrl: "https://erdeireka.hu" };
+  const erdCamp = erdeireka.campaign;
   const erdSettings = getErdeirekaSettings();
-  const erdAnchorDesktop = erdeireka.enabled ? pickErdeirekaCreative("leaderboard") : null;
-  const erdAnchorMobile = erdeireka.enabled ? pickErdeirekaCreative("mobile-banner") : null;
-  const erdInterstitial = erdeireka.enabled ? pickErdeirekaCreative("large-rectangle") : null;
+  const erdAnchorDesktop = erdeireka.enabled ? pickErdeirekaCreative("leaderboard", erdCamp) : null;
+  const erdAnchorMobile = erdeireka.enabled ? pickErdeirekaCreative("mobile-banner", erdCamp) : null;
+  const erdInterstitial = erdeireka.enabled ? pickErdeirekaCreative("large-rectangle", erdCamp) : null;
 
   return (
     <html lang="hu" class="scroll-smooth">

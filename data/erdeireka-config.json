@@ -1,5 +1,9 @@
 {
-  "_readme": "erdeireka.hu house-ad MEGJELENÉS-beállítások (SSOT). A fő be/ki kapcsoló az ERDEIREKA_ADS_ENABLED env; ez a fájl azt finomhangolja: mely felület jelenjen meg, popup be/ki + időzítés. A kreatívok külön: data/erdeireka-ads.ts. Szerkeszd nyugodtan; hibás/hiányzó mezőre a kód a defaultot használja. FIGYELEM: a Vite az SSR-modul JSON-importját cache-eli → a JSON módosítása után dev-restart kell (deno task dev), élesben (Deno Deploy) a build bundle-eli.",
+  "_readme": "erdeireka.hu house-ad MEGJELENÉS-beállítások (SSOT). A fő be/ki kapcsoló az ERDEIREKA_ADS_ENABLED env; ez a fájl azt finomhangolja: mely felület jelenjen meg, popup be/ki + időzítés. A `campaigns` blokk a KÉT hirdető közti rotációt vezérli (weight 1/1 = 50-50; enabled:false vagy weight:0 kikapcsol egy kampányt) — oldalletöltésenként egyszer sorsol, az egész oldal egy hirdetőt mutat. A kreatívok külön: data/erdeireka-ads.ts. Szerkeszd nyugodtan; hibás/hiányzó mezőre a kód a defaultot használja. FIGYELEM: a Vite az SSR-modul JSON-importját cache-eli → a JSON módosítása után dev-restart kell (deno task dev), élesben (Deno Deploy) a build bundle-eli.",
+  "campaigns": {
+    "utazas": { "enabled": true, "weight": 1, "targetUrl": "https://erdeireka.hu" },
+    "ingatlan": { "enabled": true, "weight": 1, "targetUrl": "https://erdeireka.hu/dubai-okos-befektetes" }
+  },
   "placements": {
     "sidebar": { "enabled": true },
     "inArticleEnd": { "enabled": true },

@@ -115,7 +115,7 @@ export default function ErdeirekaAnchor({
     const t3 = !slideIn ? setTimeout(() => setSlideIn(true), 40) : undefined;
     if (!impressionSent.current) {
       impressionSent.current = true;
-      trackErdeirekaImpression(`anchor-${position}`, creative.format);
+      trackErdeirekaImpression(`anchor-${position}`, creative.format, creative.campaign);
     }
     return () => {
       clearTimeout(t1);
@@ -160,7 +160,7 @@ export default function ErdeirekaAnchor({
     try {
       sessionStorage.setItem(collapsedKey, "1");
     } catch { /* */ }
-    trackErdeirekaDismiss(`anchor-${position}`, creative.format);
+    trackErdeirekaDismiss(`anchor-${position}`, creative.format, creative.campaign);
     setTimeout(() => {
       clearReserve();
       setBannerIn(false);
@@ -209,7 +209,7 @@ export default function ErdeirekaAnchor({
   if (!bannerIn) return null;
 
   // ── Nyitott banner ──
-  const href = erdeirekaHref(targetUrl, source);
+  const href = erdeirekaHref(targetUrl, source, creative.campaign);
   const posStyle = isTop ? { top: 0 } : { bottom: 0 };
   const translateClass = slideIn
     ? "translate-y-0"
@@ -237,7 +237,7 @@ export default function ErdeirekaAnchor({
             target="_blank"
             rel="sponsored noopener"
             aria-label={creative.alt}
-            onClick={() => trackErdeirekaClick(`anchor-${position}`, creative.format)}
+            onClick={() => trackErdeirekaClick(`anchor-${position}`, creative.format, creative.campaign)}
             class="block transition hover:opacity-95"
           >
             <div class="hidden md:block">

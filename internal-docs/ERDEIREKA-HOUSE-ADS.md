@@ -16,6 +16,46 @@ alatt, cikk közepe/vége, homepage szekció) saját bannerekkel.
 A Google AdSense **kódja megmarad** — a két réteg egymástól függetlenül
 kapcsolható. Réka bannerei akkor jelennek meg, ha `ERDEIREKA_ADS_ENABLED=true`.
 
+## Kampányok (50-50 rotáció)
+
+A réteg **két hirdető-kampányt** futtat, amelyek **oldalletöltésenként egyszer**,
+súlyozottan (alapból 50-50) váltakoznak. A kampányt a `_middleware.ts` sorsolja
+és a `ctx.state.erdeireka`-ba teszi → **az egész oldal EGY hirdetőt mutat**
+(koherens: nem keveredik anchor + sidebar + popup más-más hirdetővel).
+
+| Kampány | Cél-URL | UTM (`utm_campaign`) | Bannerek |
+|---|---|---|---|
+| `utazas` | `https://erdeireka.hu` | `erdeireka-utazas` | `static/erdeireka/*.webp` (Erdei Réka, kép + szöveges fallback) |
+| `ingatlan` | `https://erdeireka.hu/dubai-okos-befektetes` | `erdeireka-ingatlan` | `static/erdeireka/ingatlan/*.webp` (Dubai okos befektetés — jelenleg **szöveges fallback**, kép még nincs) |
+
+**Vezérlés — `data/erdeireka-config.json` → `campaigns` blokk:**
+
+```jsonc
+{
+  "campaigns": {
+    "utazas":   { "enabled": true, "weight": 1, "targetUrl": "https://erdeireka.hu" },
+    "ingatlan": { "enabled": true, "weight": 1, "targetUrl": "https://erdeireka.hu/dubai-okos-befektetes" }
+  }
+}
+```
+
+- `weight: 1 / 1` → 50-50. Az arány módosítható (pl. `2 / 1` = 66-34).
+- Egy kampány kikapcsolása: `"enabled": false` **vagy** `"weight": 0` → a másik
+  kampány kap 100%-ot (ekkor a réteg gyakorlatilag egy-kampányos).
+- `targetUrl` a kattintási cél (a `erdeirekaHref` teszi rá az UTM-et). Csak
+  http(s) URL-t fogad el (guard).
+- `ERDEIREKA_TARGET_URL` env → **csak a `utazas`** kampány cél-URL-jét írja
+  felül (back-compat az egy-kampányos időkből).
+
+**Ingatlan bannerek:** a `static/erdeireka/ingatlan/` mappába kerülnek, az
+`utazas` kampányéval **azonos fájlnevekkel**. Amíg üres, az `ingatlan` kampány a
+`data/erdeireka-ads.ts`-beli szöveges fallbackkel renderel (Dubai copy + kék/arany
+színek), így kép nélkül is éles. Kép bemásolása után vedd ki a kommentet a
+megfelelő `// img:` / `// img2x:` sorokból az `ingatlan` kreatívoknál.
+
+**Kreatív-választás:** a `pickErdeirekaCreative(format, campaign)` formátum ÉS
+kampány szerint szűr; a route-ok a state-ből kapott `erd.campaign`-t adják át.
+
 ## Kapcsolók (env)
 
 | env | érték | hatás |

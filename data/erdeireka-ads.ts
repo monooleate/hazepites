@@ -177,17 +177,14 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
 
   // ── Kampány: ingatlan (Dubai okos befektetés) ───────────────────────────────
   //
-  // KÉPEK: másold a bannereket ide → static/erdeireka/ingatlan/ AZONOS
-  // fájlnevekkel (leaderboard-728x90.webp, mobile-320x100.webp, ...), majd
-  // vedd ki a kommentet az `img`/`img2x` sorokból az adott tételnél. Amíg
-  // nincs kép, a szöveges fallback (headline/subline/cta + színek) renderel,
-  // így a kampány KÉP NÉLKÜL IS azonnal éles (nincs törött <img>).
+  // KÉPEK: a Dubai "A"-bannerek (SVG, vektoros) a static/erdeireka/ingatlan/-ban,
+  // az `img` mezőkben bekötve. SVG → nincs @2x (végtelenül skálázódik). Ha az
+  // `img`-et törlöd, a szöveges fallback (headline/subline/cta) lép vissza.
   {
     id: "erd-ingatlan-leaderboard-1",
     campaign: "ingatlan",
     format: "leaderboard",
-    // img: "/erdeireka/ingatlan/leaderboard-728x90.webp",
-    // img2x: "/erdeireka/ingatlan/leaderboard-728x90@2x.webp",
+    img: "/erdeireka/ingatlan/a-leaderboard-728x90.svg",
     alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
     headline: "Dubai okos befektetés",
     subline: "Ingatlan, ami dolgozik helyetted",
@@ -200,8 +197,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
     id: "erd-ingatlan-mobile-1",
     campaign: "ingatlan",
     format: "mobile-banner",
-    // img: "/erdeireka/ingatlan/mobile-320x100.webp",
-    // img2x: "/erdeireka/ingatlan/mobile-320x100@2x.webp",
+    img: "/erdeireka/ingatlan/a-mobile-320x100.svg",
     alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
     headline: "Dubai befektetés",
     subline: "Okos ingatlan",
@@ -214,8 +210,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
     id: "erd-ingatlan-rectangle-1",
     campaign: "ingatlan",
     format: "rectangle",
-    // img: "/erdeireka/ingatlan/rectangle-300x250.webp",
-    // img2x: "/erdeireka/ingatlan/rectangle-300x250@2x.webp",
+    img: "/erdeireka/ingatlan/a-rectangle-300x250.svg",
     alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
     headline: "Dubai okos befektetés",
     subline: "Ingatlan, ami dolgozik helyetted",
@@ -228,8 +223,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
     id: "erd-ingatlan-large-rectangle-1",
     campaign: "ingatlan",
     format: "large-rectangle",
-    // img: "/erdeireka/ingatlan/large-rectangle-336x280.webp",
-    // img2x: "/erdeireka/ingatlan/large-rectangle-336x280@2x.webp",
+    img: "/erdeireka/ingatlan/a-largerect-336x280.svg",
     alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
     headline: "Dubai okos befektetés",
     subline: "Ingatlan, ami dolgozik helyetted",
@@ -242,8 +236,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
     id: "erd-ingatlan-half-page-1",
     campaign: "ingatlan",
     format: "half-page",
-    // img: "/erdeireka/ingatlan/half-page-300x600.webp",
-    // img2x: "/erdeireka/ingatlan/half-page-300x600@2x.webp",
+    img: "/erdeireka/ingatlan/a-halfpage-300x600.svg",
     alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
     headline: "Dubai okos befektetés",
     subline: "Ingatlan, ami dolgozik helyetted",
@@ -256,8 +249,7 @@ export const ERDEIREKA_CREATIVES: ErdeirekaCreative[] = [
     id: "erd-ingatlan-billboard-1",
     campaign: "ingatlan",
     format: "billboard",
-    // img: "/erdeireka/ingatlan/billboard-970x250.webp",
-    // img2x: "/erdeireka/ingatlan/billboard-970x250@2x.webp",
+    img: "/erdeireka/ingatlan/a-billboard-970x250.svg",
     alt: "Dubai okos ingatlan-befektetés – erdeireka.hu",
     headline: "Dubai okos befektetés",
     subline: "Ingatlan, ami dolgozik helyetted az Emírségekben",

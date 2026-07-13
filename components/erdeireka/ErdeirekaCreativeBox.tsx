@@ -40,46 +40,88 @@ export default function ErdeirekaCreativeBox(
   const to = creative.bgTo ?? "#db2777";
   const accent = creative.accent ?? "#f59e0b";
   const wide = isWideFormat(creative.format);
+  const headline = creative.headline ?? "Erdei Réka";
+  const cta = creative.cta ?? "Tovább →";
 
+  // Betűméretek a formátum-dimenzióból (a viewBox koordináta-rendszerben fixek,
+  // a <svg> az egészet a kép-bannerrel AZONOSAN skálázza).
+  const hFS = wide ? Math.round(h * 0.24) : Math.round(w * 0.11);
+  const sFS = wide ? Math.round(h * 0.15) : Math.round(w * 0.072);
+  const cFS = sFS;
+  const pad = Math.round(Math.min(w, h) * 0.1);
+  const gap = Math.round(Math.min(w, h) * 0.06);
+
+  // FONTOS: a fallback ROOTja egy <svg> (REPLACED elem) — pontosan úgy méreteződik,
+  // mint a kép-branch <img>-e: `max-w-full` a shrink-to-fit / center-igazított
+  // szülőben is a valódi oszlopszélességre zsugorodik (nem lóg ki a TOC-alatti
+  // sidebarból, sem az anchor-sávból). Egy sima block <div> explicit `width`-tel
+  // ott merev maradna és túlnyúlna. A tényleges kártyát `<foreignObject>` HTML-je
+  // rendereli — a <svg> a w×h koordináta-rendszert a megjelenített méretre skálázza
+  // (a szöveg is arányosan), a HTML-szöveg pedig természetesen tördel.
   return (
-    // KÜLSŐ doboz = PONTOSAN az <img>-branch méretezése: display:block + explicit
-    // width + max-w-full + aspect-ratio. NEM `flex` és NEM `w-full` — különben a
-    // shrink-to-fit / center-igazított szülőben (anchor-sáv, TOC alatti sidebar
-    // wrapper) a méret elcsúszik a kép-bannerhez képest. Így a placeholder minden
-    // sloton a definiált banner-méretet foglalja (728×90, 300×600, ...), keskeny
-    // konténerben pedig — akárcsak a kép — arányosan skálázódik.
-    <div
-      class="block max-w-full rounded-xl overflow-hidden text-white shadow-sm"
-      style={{
-        width: `${w}px`,
-        aspectRatio: `${w} / ${h}`,
-        background: `linear-gradient(135deg, ${from}, ${to})`,
-      }}
+    <svg
+      viewBox={`0 0 ${w} ${h}`}
+      width={w}
+      height={h}
+      role="img"
+      aria-label={creative.alt}
+      class="block h-auto max-w-full rounded-xl shadow-sm"
+      style={{ width: `${w}px`, aspectRatio: `${w} / ${h}` }}
     >
-      <div
-        class={`flex w-full h-full p-4 gap-3 ${
-          wide
-            ? "flex-row items-center justify-between text-left"
-            : "flex-col items-center justify-center text-center"
-        }`}
-      >
-        <div class={wide ? "min-w-0" : ""}>
-          <div class="font-extrabold leading-tight text-lg sm:text-xl drop-shadow-sm">
-            {creative.headline ?? "Erdei Réka"}
-          </div>
-          {creative.subline && (
-            <div class="text-xs sm:text-sm text-white/85 mt-1 leading-snug">
-              {creative.subline}
-            </div>
-          )}
-        </div>
-        <span
-          class="inline-block flex-shrink-0 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold whitespace-nowrap shadow"
-          style={{ background: accent, color: "#1a1a2e" }}
+      <foreignObject x="0" y="0" width={w} height={h}>
+        <div
+          style={{
+            width: "100%",
+            height: "100%",
+            boxSizing: "border-box",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: wide ? "space-between" : "center",
+            flexDirection: wide ? "row" : "column",
+            textAlign: wide ? "left" : "center",
+            gap: `${gap}px`,
+            padding: `${pad}px`,
+            borderRadius: "12px",
+            overflow: "hidden",
+            color: "#fff",
+            background: `linear-gradient(135deg, ${from}, ${to})`,
+            fontFamily:
+              "system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif",
+          }}
         >
-          {creative.cta ?? "Tovább →"}
-        </span>
-      </div>
-    </div>
+          <div style={{ minWidth: 0 }}>
+            <div style={{ fontWeight: 800, fontSize: `${hFS}px`, lineHeight: 1.1 }}>
+              {headline}
+            </div>
+            {creative.subline && (
+              <div
+                style={{
+                  fontSize: `${sFS}px`,
+                  opacity: 0.85,
+                  marginTop: `${Math.round(gap / 2)}px`,
+                  lineHeight: 1.2,
+                }}
+              >
+                {creative.subline}
+              </div>
+            )}
+          </div>
+          <div
+            style={{
+              flexShrink: 0,
+              background: accent,
+              color: "#1a1a2e",
+              fontWeight: 700,
+              fontSize: `${cFS}px`,
+              padding: `${Math.round(cFS * 0.5)}px ${Math.round(cFS * 0.85)}px`,
+              borderRadius: `${Math.round(cFS * 0.5)}px`,
+              whiteSpace: "nowrap",
+            }}
+          >
+            {cta}
+          </div>
+        </div>
+      </foreignObject>
+    </svg>
   );
 }

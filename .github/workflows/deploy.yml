@@ -1,4 +1,15 @@
-name: Deploy
+name: Build check
+
+# ⚠️ Ez a workflow KORÁBBAN deployolt is (denoland/deployctl@v1), de a Deno Deploy
+#    Classic 2026-07-20-án megszűnt → a lépés azóta MINDEN pushnál elhasalt
+#    (utolsó sikeres futás: 2026-07-14). Az oldal deployja azóta a Deno Deploy saját
+#    GitHub-integrációján megy: a 2026-08-10-i pushnál az új tracker percen belül
+#    élesbe került, MIKÖZBEN ez a workflow bukott → a deploy bizonyíthatóan NEM ezen
+#    a workflow-n keresztül történik.
+#    A build-lépés viszont értékes (elkapja a fordítási hibát), ezért a halott
+#    deploy-lépés törölve, a build CI-kapuként marad — és a workflow neve is
+#    ezt mondja, nem többet.
+
 on:
   push:
     branches: main
@@ -6,13 +17,12 @@ on:
     branches: main
 
 jobs:
-  deploy:
-    name: Deploy
+  build:
+    name: Build
     runs-on: ubuntu-latest
 
     permissions:
-      id-token: write # Needed for auth with Deno Deploy
-      contents: read # Needed to clone the repository
+      contents: read
 
     steps:
       - name: Clone repository
@@ -25,12 +35,3 @@ jobs:
 
       - name: Build step
         run: "deno task build"
-
-      - name: Upload to Deno Deploy
-        uses: denoland/deployctl@v1
-        with:
-          project: "jnosmszros-hazepites-75"
-          entrypoint: "./_fresh/server.js"
-          root: ""
-          
-          

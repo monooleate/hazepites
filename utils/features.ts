@@ -61,55 +61,64 @@ export function isAdsenseEnabled(): boolean {
   return getAdsenseConfig().enabled;
 }
 
-// ── Plausible Analytics ──────────────────────────────────────────────────────
+// ── Umami Analytics (ÖNHOSZTOLT) ─────────────────────────────────────────────
 //
 // Privacy-first, cookie-mentes látogatásmérés. Ugyanaz a minta mint az
 // AdSense-nél: egy env kapcsoló + egy loader-URL. Ha BE, a <head>-be bekerül a
-// Plausible loader + init (routes/_app.tsx), és a _middleware.ts a CSP-t a
+// tracker (routes/_app.tsx) — inline bootstrap NINCS —, és a _middleware.ts a CSP-t a
 // loader origin-jével whitelisteli (script-src + connect-src). Ha OFF: nem
 // töltődik be tracker, a CSP szűk marad.
 
 /**
- * Elfogadott Plausible loader-URL: https://<host>/js/pa-<token>.js
- * (az új, site-token-alapú script formátum). Injection-guard, mert az érték a
- * `<script src>`-be kerül — nincs benne idézőjel/szóköz/`>`. A host változhat
- * (plausible.io vagy self-hosted / proxy domain).
+ * Elfogadott tracker loader-URL: https://<host>/<nev>.js
+ * Injection-guard, mert az érték a `<script src>`-be kerül — nincs benne
+ * idézőjel/szóköz/`>`. A host és a fájlnév változhat (a nevet szándékosan nem
+ * `script.js`-nek hívjuk, mert azt az adblock-listák szűrik).
  */
-const PLAUSIBLE_SRC_RE = /^https:\/\/[a-z0-9.-]+\/js\/pa-[A-Za-z0-9_-]+\.js$/i;
+const UMAMI_SRC_RE = /^https:\/\/[a-z0-9.-]+\/[A-Za-z0-9_.-]+\.js$/i;
 
-/** Default loader — a hazepitesikalauz.hu-hoz tartozó Plausible script. */
-const PLAUSIBLE_DEFAULT_SRC =
-  "https://plausible.io/js/pa-XXm1zRAIJOZ1Ywf8Z4GkW.js";
+/** Default loader — az ÖNHOSZTOLT Umami tracker (stats.jmeszaros.dev). A név nem a default
+ *  `script.js`, mert azt az adblock-listák szűrik. */
+const UMAMI_DEFAULT_SRC = "https://stats.jmeszaros.dev/sc.js";
+/** A hazepitesikalauz.hu website-ja az Umamiban. */
+const UMAMI_DEFAULT_WEBSITE_ID = "d05f5f5c-9fcb-44de-8882-24698affabbf";
+/** Amely hostname-eken egyáltalán mérhet. A tracker PONTOS egyezést néz, ezért az apex
+ *  MELLÉ a www is kell — különben a www-n némán nem mérnénk. */
+const UMAMI_DEFAULT_DOMAINS = "hazepitesikalauz.hu,www.hazepitesikalauz.hu";
 
-export interface PlausibleConfig {
-  /** Betöltsük-e a Plausible scriptet és nyissuk-e a CSP-t a domainre? */
+export interface UmamiConfig {
+  /** Betöltsük-e a tracker scriptet és nyissuk-e a CSP-t a mérő-originre? */
   enabled: boolean;
   /** A `<script src>`-be kerülő loader URL. */
   src: string;
-  /** A loader origin-je (CSP whitelisthez) — pl. https://plausible.io */
+  /** A loader origin-je (CSP whitelisthez) — pl. https://stats.jmeszaros.dev */
   origin: string;
+  /** Melyik Umami-website alá könyvelje a mérést. */
+  websiteId: string;
+  /** Vesszős hostname-lista (data-domains). */
+  domains: string;
 }
 
 /**
- * Plausible Analytics konfiguráció.
+ * Umami (ÖNHOSZTOLT, cookieless) analitika konfiguráció.
  *
  * **Alapértelmezés: BE.** Az oldal élesben mér — a site-oldali teendő ezzel
  * kész. Kézi kill switch (pl. lokál dev tiszta konzolhoz):
- * `PLAUSIBLE_ENABLED=false` (vagy `0` / `off`). Bármi más / üres / nincs → BE.
+ * `UMAMI_ENABLED=false` (vagy `0` / `off`). Bármi más / üres / nincs → BE.
  *
  * A script CSAK akkor töltődik be, ha a loader-URL érvényes
- * `https://<host>/js/pa-<token>.js` formátumú (injection-guard). A CSP-be
+ * `https://<host>/<nev>.js` formátumú (injection-guard). A CSP-be
  * kerülő origin ebből a URL-ből származik, így self-hosted / proxy domain
  * esetén is konzisztens marad.
  */
-export function getPlausibleConfig(): PlausibleConfig {
-  const flag = Deno.env.get("PLAUSIBLE_ENABLED")?.trim().toLowerCase();
+export function getUmamiConfig(): UmamiConfig {
+  const flag = Deno.env.get("UMAMI_ENABLED")?.trim().toLowerCase();
   // Default ON: csak explicit, egyértelműen kikapcsoló érték állítja le.
   const switchedOn = flag !== "false" && flag !== "0" && flag !== "off";
 
-  const rawSrc = Deno.env.get("PLAUSIBLE_SRC")?.trim();
-  const src = rawSrc && rawSrc.length > 0 ? rawSrc : PLAUSIBLE_DEFAULT_SRC;
-  const valid = PLAUSIBLE_SRC_RE.test(src);
+  const rawSrc = Deno.env.get("UMAMI_SRC")?.trim();
+  const src = rawSrc && rawSrc.length > 0 ? rawSrc : UMAMI_DEFAULT_SRC;
+  const valid = UMAMI_SRC_RE.test(src);
 
   // origin a validált src-ből — érvénytelen src-nél nincs whitelist (enabled=false).
   let origin = "";
@@ -121,16 +130,23 @@ export function getPlausibleConfig(): PlausibleConfig {
     }
   }
 
-  return { enabled: switchedOn && valid && origin !== "", src, origin };
+  const websiteId = Deno.env.get("UMAMI_WEBSITE_ID")?.trim() || UMAMI_DEFAULT_WEBSITE_ID;
+  return {
+    enabled: switchedOn && valid && origin !== "" && websiteId !== "",
+    src,
+    origin,
+    websiteId,
+    domains: UMAMI_DEFAULT_DOMAINS,
+  };
 }
 
-/** Gyors boolean — kell-e a Plausible-réteg (script + CSP whitelist)? */
-export function isPlausibleEnabled(): boolean {
-  return getPlausibleConfig().enabled;
+/** Gyors boolean — kell-e a mérő-réteg (script + CSP whitelist)? */
+export function isUmamiEnabled(): boolean {
+  return getUmamiConfig().enabled;
 }
 
-/** A Plausible loader origin-je, ha a réteg aktív — különben üres string. */
-export function getPlausibleOrigin(): string {
-  const cfg = getPlausibleConfig();
+/** A mérő loader origin-je, ha a réteg aktív — különben üres string. */
+export function getUmamiOrigin(): string {
+  const cfg = getUmamiConfig();
   return cfg.enabled ? cfg.origin : "";
 }

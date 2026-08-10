@@ -1,6 +1,6 @@
 import { asset } from "fresh/runtime";
 import { define } from "../utils/state.ts";
-import { getAdsenseConfig, getPlausibleConfig } from "../utils/features.ts";
+import { getAdsenseConfig, getUmamiConfig } from "../utils/features.ts";
 import {
   getErdeirekaSettings,
   pickErdeirekaCreative,
@@ -11,7 +11,7 @@ import ErdeirekaInterstitial from "../islands/erdeireka/ErdeirekaInterstitial.ts
 export default define.page(function App({ Component, state, url }) {
   const isContentPage = url.pathname.split("/").filter(Boolean).length > 0 && url.pathname !== "/kapcsolat";
   const adsense = getAdsenseConfig();
-  const plausible = getPlausibleConfig();
+  const umami = getUmamiConfig();
 
   // erdeireka.hu house-ad réteg — ha az ERDEIREKA_ADS_ENABLED env "true", a
   // site-wide felső/alsó anchor + a felugró popup minden oldalon megjelenik.
@@ -47,20 +47,19 @@ export default define.page(function App({ Component, state, url }) {
           }}
         />
 
-        {/* Plausible Analytics — privacy-first, cookie-mentes látogatásmérés.
-            Csak ha a PLAUSIBLE_ENABLED kapcsoló BE (default: BE) és a loader-URL
-            érvényes pa-<token> script (lásd utils/features.ts). A _middleware.ts
-            a CSP-t is csak ekkor whitelisteli a loader origin-jével (script-src
-            + connect-src). Az inline init a globális queue-t állítja fel. */}
-        {plausible.enabled && (
-          <>
-            <script async src={plausible.src} />
-            <script
-              dangerouslySetInnerHTML={{
-                __html: `window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};plausible.init()`,
-              }}
-            />
-          </>
+        {/* Umami (ÖNHOSZTOLT) — privacy-first, cookie-mentes látogatásmérés.
+            Csak ha az UMAMI_ENABLED kapcsoló BE (default: BE) és a loader-URL
+            érvényes (lásd utils/features.ts). A _middleware.ts a CSP-t is csak
+            ekkor whitelisteli a loader origin-jével (script-src + connect-src).
+            Inline bootstrap NINCS — az Umaminak nem kell.
+            A data-domains PONTOS hostname-egyezést kér, ezért apex + www. */}
+        {umami.enabled && (
+          <script
+            defer
+            src={umami.src}
+            data-website-id={umami.websiteId}
+            data-domains={umami.domains}
+          />
         )}
 
         {/* Google AdSense (Auto Ads) — csak ha az ADSENSE_ENABLED kapcsoló BE

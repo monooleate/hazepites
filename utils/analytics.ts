@@ -1,7 +1,7 @@
 /**
  * analytics.ts — könnyű, kliens-biztos event-küldő az erdeireka.hu house-ad
- * réteghez. Ha az oldalon fut GA4 (`window.gtag`) vagy Plausible
- * (`window.plausible`), oda küldi az eseményt; ha egyik sincs, csendben no-op.
+ * réteghez. Ha az oldalon fut GA4 (`window.gtag`) vagy Umami
+ * (`window.umami`), oda küldi az eseményt; ha egyik sincs, csendben no-op.
  *
  * Szándékosan függőségmentes: az island-ek (ErdeirekaAnchor, ErdeirekaInterstitial)
  * importálhatják hydration-gond nélkül. Szerver-oldalon (SSR) minden hívás no-op,
@@ -16,7 +16,7 @@ interface AnalyticsEvent {
   params?: Record<string, string | number | boolean>;
 }
 
-/** Egy esemény elküldése a jelen lévő trackernek (GA4 / Plausible), különben no-op. */
+/** Egy esemény elküldése a jelen lévő trackernek (GA4 / Umami), különben no-op. */
 export function trackEvent(event: AnalyticsEvent): void {
   if (typeof window === "undefined") return;
   const w = window as AnyWindow;
@@ -24,8 +24,10 @@ export function trackEvent(event: AnalyticsEvent): void {
     if (typeof w.gtag === "function") {
       w.gtag("event", event.name, event.params ?? {});
     }
-    if (typeof w.plausible === "function") {
-      w.plausible(event.name, { props: event.params ?? {} });
+    // Umami: a hivas alakja MAS, mint a Plausible-e volt (`umami.track(nev, adat)`,
+    // nem `plausible(nev, {props})`). Ha ezt nem irjuk at, az esemenyek NEMAN elvesznek.
+    if (typeof w.umami?.track === "function") {
+      w.umami.track(event.name, event.params ?? {});
     }
   } catch {
     // A méréshiba sosem törhet meg felhasználói interakciót.

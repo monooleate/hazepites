@@ -1,5 +1,5 @@
 import type { FreshContext } from "fresh";
-import { getPlausibleOrigin, isAdsenseEnabled } from "../utils/features.ts";
+import { getUmamiOrigin, isAdsenseEnabled } from "../utils/features.ts";
 import { getErdeirekaConfig } from "../utils/erdeireka.ts";
 import type { State } from "../utils/state.ts";
 
@@ -89,22 +89,22 @@ export async function handler(ctx: FreshContext<State>) {
     ? "frame-src https://googleads.g.doubleclick.net https://tpc.googlesyndication.com https://*.adtrafficquality.google https://www.google.com"
     : "frame-src 'none'";
 
-  // Plausible: a loader origin-jét (pl. https://plausible.io) CSAK akkor
-  // whitelisteljük, ha a PLAUSIBLE_ENABLED kapcsoló BE (utils/features.ts;
+  // Umami: a loader origin-jét (pl. https://stats.jmeszaros.dev) CSAK akkor
+  // whitelisteljük, ha az UMAMI_ENABLED kapcsoló BE (utils/features.ts;
   // default: BE). A script-src a loadert, a connect-src az /api/event POST-ot
   // engedi. Az inline init-et a meglévő 'unsafe-inline' fedi.
-  const plausibleOrigin = getPlausibleOrigin();
-  const plausibleSrc = plausibleOrigin ? " " + plausibleOrigin : "";
+  const umamiOrigin = getUmamiOrigin();
+  const umamiSrc = umamiOrigin ? " " + umamiOrigin : "";
 
   const csp = [
     "default-src 'self'",
     "script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://www.googletagmanager.com https://www.google-analytics.com" +
-    adScript + plausibleSrc,
+    adScript + umamiSrc,
     "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net" + adStyle,
     "img-src 'self' data: https:",
     "font-src 'self' data: https://cdn.jsdelivr.net" + adFont,
     "connect-src 'self' https://www.google-analytics.com https://analytics.google.com" +
-    adConnect + plausibleSrc,
+    adConnect + umamiSrc,
     frameSrc,
     "object-src 'none'",
     "base-uri 'self'",

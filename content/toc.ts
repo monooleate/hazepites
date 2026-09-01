@@ -227,6 +227,7 @@ const toc: RawTableOfContents = {
         ["page", "hitel-kalkulator", "Hitelkalkulátor"],
         ["page", "tamogatas-kalkulator", "Támogatás kalkulátor"],
         ["page", "energia-kalkulator", "Energia kalkulátor"],
+        ["page", "energetikai-besorolas-kalkulator", "Energetikai besorolás kalkulátor"],
         // ["page", "negyzetmeter-ar-kalkulator", "Négyzetméter ár kalkulátor"],
         ["page", "rezsi-kalkulator", "Rezsiköltség kalkulátor"],
         // ["page", "telekmeretezesi-kalkulator", "Telekméretezési kalkulátor"],

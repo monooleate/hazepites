@@ -1,0 +1,166 @@
+---
+title: "Energetikai besorolás kalkulátor – AA++…JJ osztály becslése 2026"
+description: "Számold ki a házad energetikai besorolását: a fajlagos primerenergia-igény alapján megbecsüljük az AA++…JJ osztályt és hogy megfelel-e a BB követelménynek."
+canonical: "https://hazepitesikalauz.hu/eszkozok/energetikai-besorolas-kalkulator"
+published_at: "2026-09-01"
+refreshed_at: "2026-09-01"
+island: "EnergetikaiBesorolasCalculator"
+softwareSchema:
+  "@context": "https://schema.org"
+  "@type": "SoftwareApplication"
+  "@id": "https://hazepitesikalauz.hu/eszkozok/energetikai-besorolas-kalkulator#app"
+  "name": "Energetikai besorolás kalkulátor"
+  "applicationCategory": "UtilityApplication"
+  "operatingSystem": "Web"
+  "browserRequirements": "Requires JavaScript"
+  "description": "Interaktív kalkulátor, amely a fajlagos primerenergia-igényből megbecsüli az épület energetikai besorolását az AA++…JJ skálán, és jelzi, megfelel-e az új építésre előírt BB követelménynek."
+  "image":
+    "@type": "ImageObject"
+    "url": "https://hazepitesikalauz.hu/img/docs/eszkozok/energetikai-besorolas-kalkulator-hero.svg"
+    "width": 1200
+    "height": 630
+  "softwareVersion": "1.0"
+  "publisher":
+    "@type": "Organization"
+    "name": "Házépítési Kalauz"
+    "url": "https://hazepitesikalauz.hu"
+  "offers":
+    "@type": "Offer"
+    "price": "0"
+    "priceCurrency": "HUF"
+    "availability": "https://schema.org/InStock"
+faqPageSchema:
+  "@context": "https://schema.org"
+  "@type": "FAQPage"
+  "question1": "Hogyan számolja ki a kalkulátor az energetikai besorolást?"
+  "answer1": "A négy legnagyobb hatású tényezőből becsüli meg a fajlagos primerenergia-igényt (kWh/m²/év): hőszigetelés, nyílászárók, fűtési rendszer és szellőzés, majd ehhez adja a melegvíz- és segédenergiát, és levonja a napelem termelését. Az eredményt a viszonyítási alaphoz (új lakóépületnél kb. 100 kWh/m²/év) viszonyítja, és ez a százalék adja az AA++…JJ osztályt."
+  "question2": "Mit jelent a BB besorolás és miért fontos?"
+  "answer2": "A BB a közel nulla energiaigényű szint: a fajlagos primerenergia-igény legfeljebb 100 kWh/m²/év, azaz a követelményérték 80–100 százaléka. 2024 óta minden új építésű lakóépületnek legalább BB-t kell elérnie a használatbavételhez, és a legtöbb zöld hitel is BB vagy jobb besorolást vár el."
+  "question3": "Megegyezik a kalkulátor eredménye a hivatalos tanúsítvánnyal?"
+  "answer3": "Nem. Ez tájékoztató becslés, ami tipikusan 10–20 százalékkal eltér a hivatalos értéktől. A jogi érvényű tanúsítványt a Magyar Mérnöki Kamara névjegyzékében szereplő tanúsító készíti, helyszíni felmérés és pontos geometria alapján."
+  "question4": "AA++…JJ vagy A+++…I – melyik skálát használják 2026-ban?"
+  "answer4": "A 9/2023. ÉKM rendelet a tanúsítványokon az A+++…I egybetűs jelölést vezette be, de a mögötte lévő kWh/m²/év sávok és a közel nulla küszöb ugyanazok. A kalkulátor a széles körben ismert AA++…JJ betűskálát mutatja, ami tartalmilag megfeleltethető az új jelölésnek."
+---
+
+## Mit mutat meg ez a kalkulátor?
+
+Az energetikai besorolás egyetlen betűpárba sűríti azt, amit különben csak egy hosszú számítás mondana meg: mennyi energiát fogyaszt a ház egy évben, négyzetméterenként. Minél előrébb van a betű az ábécében, annál kevesebbet. A skála **AA++** (a legjobb) és **JJ** (a legrosszabb) között mozog.
+
+Add meg a ház négy fő jellemzőjét – szigetelés, nyílászáró, fűtés, szellőzés –, és a kalkulátor megbecsüli a fajlagos primerenergia-igényt (kWh/m²/év), ebből pedig az osztályt. Azt is megmutatja, hogy a ház átlépi-e a **BB** küszöböt, ami 2024 óta az új építés minimumkövetelménye.
+
+<InfoCard type="warn" title="Ez becslés, nem tanúsítvány">
+
+A hivatalos energetikai tanúsítványt kizárólag a Magyar Mérnöki Kamara névjegyzékében szereplő tanúsító állíthatja ki, helyszíni felméréssel. Ez a kalkulátor a nagyságrendet és a besorolási osztályt közelíti – az eltérés a valós tanúsítványtól 10–20% is lehet. Döntéselőkészítésre való, nem bank vagy hatóság elé.
+
+</InfoCard>
+
+## Mit jelentenek a betűk? – az AA++…JJ skála
+
+A besorolás jogilag nem abszolút kWh-érték, hanem a **viszonyítási alaphoz** (a rád vonatkozó követelményértékhez) mért százalék. Új lakóépületnél ez a közel nulla szint, nagyjából 100 kWh/m²/év – ezt vesszük 100%-nak. Innen jönnek a sávok:
+
+| Osztály | A követelmény %-a | kWh/m²/év (kb.) | Mit jelent |
+|---|---|---|---|
+| **AA++** | < 40% | 0–40 | Minimális energiaigényű (passzív szint) |
+| **AA+** | 40–60% | 40–60 | Kiemelkedően nagy energiahatékonyságú |
+| **AA** | 60–80% | 60–80 | Közel nulla követelménynél jobb |
+| **BB** | 80–100% | 80–100 | Közel nulla – 2024-es követelmény |
+| **CC** | 100–130% | 100–130 | Korszerű |
+| **DD** | 130–160% | 130–160 | Korszerűt megközelítő |
+| **EE** | 160–200% | 160–200 | Átlagosnál jobb |
+| **FF** | 200–250% | 200–250 | Átlagos |
+| **GG** | 250–310% | 250–310 | Átlagost megközelítő |
+| **HH** | 310–400% | 310–400 | Gyenge |
+| **II** | 400–500% | 400–500 | Rossz |
+| **JJ** | > 500% | 500+ | Kiemelkedően rossz |
+
+A határértékeket a [7/2006. (V. 24.) TNM rendelet](https://net.jogtar.hu/jogszabaly?docid=a0600007.tnm) rögzítette, a besorolási logikát a [9/2023. (V. 25.) ÉKM rendelet](https://net.jogtar.hu/jogszabaly?docid=a2300009.eko) vitte tovább. Ha részletesebben érdekel a tanúsítvány maga – mikor kötelező, mennyibe kerül –, arról külön írtunk: [energetikai tanúsítvány 2026](/energia/energetikai-tanusitvany).
+
+> [info]: ℹ️ **AA++…JJ vagy A+++…I?**
+> A 2023 novemberi váltással a tanúsítványok az A+++…I egybetűs jelölésre álltak át. A mögöttes kWh/m²/év sávok és a közel nulla küszöb nem változtak, így a régi, közismert AA++…JJ betűpárok tartalmilag ma is megfeleltethetők – ez a kalkulátor ezt a jól bevált skálát használja.
+
+## Melyik tényező mennyit nyom a latba?
+
+A besorolást négy dolog dönti el, és nem egyforma súllyal. A sorrend – hatás szerint:
+
+**1. Fűtési rendszer.** Ez a legnagyobb kar. Egy kondenzációs gázkazán primerenergia-szorzója nagyjából 1,05; egy padlófűtéses hőszivattyúé 0,52. Ugyanahhoz a hőigényhez feleannyi primer energia kell – önmagában ez egy-két osztályt mozdít. A [fűtésrendszerek összehasonlítása](/energia/futesrendszerek) végigveszi, mikor melyik éri meg.
+
+**2. Hőszigetelés.** A fűtési hőveszteség java a falakon és a tetőn át távozik. Egy szigeteletlen falszerkezetnél a 15–20 cm-es korszerű szigetelés a fűtési hőigényt akár felére viszi. A rétegrendekről: [hőszigetelés típusok](/energia/hoszigeteles-tipusok).
+
+**3. Szellőzés.** Ezt szokták kihagyni. A természetes szellőzés (ablaknyitás) a fűtött levegő egy részét egyszerűen kiengedi. Egy hővisszanyerős rendszer a távozó levegő hőjének 70–85%-át visszaforgatja – a kalkulátorban ez a fűtési hőigény nagyjából 20%-os csökkenése.
+
+**4. Nyílászárók.** A régi, egyszerű üvegezés U-értéke 2,5–3,0 W/m²K, a háromrétegűé 0,6–0,8. A csere érezhető, de általában kisebb ugrás, mint a fűtésváltás vagy a szigetelés – hacsak nem sok az üvegfelület.
+
+A napelem külön eset: nem csökkenti a hőigényt, hanem beszámít a primerenergia-mérlegbe. Egy 6–10 kWp-os rendszer egy átlagos háznál egy-két osztályt is javíthat a besoroláson. A megtakarítás forintosítva: [rezsiköltség kalkulátor](/eszkozok/rezsi-kalkulator).
+
+![Az energetikai besorolást meghatározó négy fő tényező súlya](/diagrams/docs/eszkozok/energetikai-besorolas-kalkulator-diagram-1.svg)
+
+## Hogyan lépj át egy osztályt?
+
+A kérdés ritkán az, hogy „jó vagy rossz-e a ház” – hanem hogy melyik beavatkozás hozza a legtöbb osztályugrást a legkevesebb pénzből. Néhány tipikus döntési helyzet:
+
+<ProConList
+  pros={["Régi, szigeteletlen ház (GG–HH): a homlokzati szigetelés hozza a legnagyobb ugrást, mert innen indul a legtöbb veszteség", "Már szigetelt, de gázkazános ház (CC–DD): a hőszivattyú a leggyorsabb út a BB-hez", "BB közelében billegő új építés: a napelem vagy a rekuperátor billenti át a küszöbön"]}
+  cons={["Csak nyílászárót cserélni ritkán elég egy osztályhoz, ha a fal szigeteletlen marad", "Napelem szigetelés nélkül: alacsonyabb rezsi, de a besoroláson kevesebbet javít, mint hinnéd", "Túlméretezett hőszivattyú rossz rétegrenddel: drága, és a számított igény alig csökken"]}
+/>
+
+Játssz a fenti kalkulátorral: állítsd be a jelenlegi állapotot, jegyezd fel az osztályt, majd egyesével kapcsold át az egyes tényezőket. Ami a legnagyobbat lép a skálán, az éri meg először.
+
+<InfoCard type="case" title="Egy Pest megyei felújítás számai – 2025">
+
+95 m²-es, 80-as évekbeli ház. Induló állapot: szigeteletlen fal, régi fa ablakok, gázkonvektor, természetes szellőzés – a becslés GG körül járt (kb. 290 kWh/m²/év). A tulajdonos három lépést tett: 16 cm homlokzati szigetelés, háromrétegű ablakok, és levegő-víz hőszivattyú padlófűtéssel. A becsült igény 92 kWh/m²/év-re esett – ez a BB sáv. A három beavatkozás együtt kb. 7 millió Ft volt, a fűtési költség évi ~500 ezerről ~140 ezerre csökkent. A napelemet szándékosan a végére hagyták: BB-hez már nem kellett, de a rezsit tovább vitte lefelé.
+
+</InfoCard>
+
+## Amit a besorolásról ritkán mondanak el
+
+**A tanúsítvány nem a te rezsidet méri.** Szabványos használatot feltételez: 20 °C belső hőmérséklet, adott szellőzés, átlagos melegvíz-igény. Ha 24 fokra fűtesz és sokat szellőztetsz, a valós fogyasztásod eltér – a besorolás akkor is ugyanaz marad. Ez a kalkulátorra is igaz.
+
+**A BB nem feltétlenül drága.** Új építésnél a korszerű falazat és a hőszivattyú együtt sokszor alapból behozza a BB-t; a többletköltség a gyengébb CC szinthez képest jellemzően pár százalék. A felújításnál más a helyzet – ott a szigetelés és a fűtésváltás komoly tétel.
+
+**A viszonyítási alap nem fix szám.** A követelményérték függ az épület geometriájától (a felület/térfogat aránytól). A kalkulátor a lakóépületekre jellemző ~100 kWh/m²/év közel nulla küszöböt használja – egy tömör, kompakt háznál ez jó közelítés, egy tagolt, sok külső felületű épületnél a valós követelmény kicsit más lehet.
+
+A pontos, tanúsítót kereső listát az [e-epites.hu](https://www.e-epites.hu/tanusito-kereso) portálon találod – érdemes helyszíni felmérést kérni, nem csak tervrajz alapú számítást.
+
+## Kinek melyik osztály elég?
+
+Nem mindenkinek kell AA++-ra hajtania. Döntési keret:
+
+- **Új építés:** a BB nem opció, hanem előírás – a használatbavételi engedélyhez kell. Ha a terv CC-t hoz, még a tervezőasztalnál javíts rajta.
+- **Eladás előtt álló régi ház:** itt a besorolás inkább alkupozíció. Egy FF–GG házon a részleges korszerűsítés (szigetelés + ablak) egy-két osztályt hoz, ami a hirdetésben és az árban is látszik.
+- **Zöld hitel a cél:** a legtöbb konstrukció BB vagy jobb besorolást vár el – ezt érdemes a kalkulátorral előre ellenőrizni. Részletek: [zöld hitel feltételek](/tamogatasok/zold-hitel).
+- **Csak a rezsi érdekel:** akkor a besorolás másodlagos, a tényleges fogyasztás számít – ott a [rezsiköltség kalkulátor](/eszkozok/rezsi-kalkulator) és az [energia kalkulátor](/eszkozok/energia-kalkulator) pontosabb kép.
+
+## Személyre szabott árajánlat kell?
+
+Minden ház más. Ha konkrét számokat szeretnél a te terveidhez – mennyibe kerül a BB elérése, melyik beavatkozás térül meg –, kérj ingyenes, kötelezettségmentes árajánlatot helyi kivitelezőktől.
+
+[Ingyenes árajánlatot kérek →](/ajanlatkeres)
+
+## Kapcsolódó eszközök és tartalmak
+
+- [Energetikai tanúsítvány 2026 – költség és szabályok](/energia/energetikai-tanusitvany)
+- [Energia kalkulátor](/eszkozok/energia-kalkulator)
+- [Rezsiköltség kalkulátor](/eszkozok/rezsi-kalkulator)
+- [Hőszigetelés típusok és árak](/energia/hoszigeteles-tipusok)
+- [Fűtésrendszerek összehasonlítása](/energia/futesrendszerek)
+- [Napelem rendszer családi házra](/energia/napelem-rendszer)
+
+::: faq
+### Hogyan számolja ki a kalkulátor az energetikai besorolást?
+A négy legnagyobb hatású tényezőből becsüli meg a fajlagos primerenergia-igényt (kWh/m²/év): hőszigetelés, nyílászárók, fűtési rendszer és szellőzés, majd ehhez adja a melegvíz- és segédenergiát, és levonja a napelem termelését. Az eredményt a viszonyítási alaphoz (új lakóépületnél kb. 100 kWh/m²/év) viszonyítja, és ez a százalék adja az AA++…JJ osztályt.
+:::
+
+::: faq
+### Mit jelent a BB besorolás és miért fontos?
+A BB a közel nulla energiaigényű szint: a fajlagos primerenergia-igény legfeljebb 100 kWh/m²/év, azaz a követelményérték 80–100 százaléka. 2024 óta minden új építésű lakóépületnek legalább BB-t kell elérnie a használatbavételhez, és a legtöbb zöld hitel is BB vagy jobb besorolást vár el.
+:::
+
+::: faq
+### Megegyezik a kalkulátor eredménye a hivatalos tanúsítvánnyal?
+Nem. Ez tájékoztató becslés, ami tipikusan 10–20 százalékkal eltér a hivatalos értéktől. A jogi érvényű tanúsítványt a Magyar Mérnöki Kamara névjegyzékében szereplő tanúsító készíti, helyszíni felmérés és pontos geometria alapján.
+:::
+
+::: faq
+### AA++…JJ vagy A+++…I – melyik skálát használják 2026-ban?
+A 9/2023. ÉKM rendelet a tanúsítványokon az A+++…I egybetűs jelölést vezette be, de a mögötte lévő kWh/m²/év sávok és a közel nulla küszöb ugyanazok. A kalkulátor a széles körben ismert AA++…JJ betűskálát mutatja, ami tartalmilag megfeleltethető az új jelölésnek.
+:::

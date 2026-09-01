@@ -17,6 +17,7 @@ import TamogatasCalculator from "../islands/TamogatasCalculator.tsx";
 import RezsiCalculator from "../islands/RezsiCalculator.tsx";
 import HitelCalculator from "../islands/HitelCalculator.tsx";
 import EnergiaCalculator from "../islands/EnergiaCalculator.tsx";
+import EnergetikaiBesorolasCalculator from "../islands/EnergetikaiBesorolasCalculator.tsx";
 import KeszultsegiKalkulator from "../islands/KeszultsegiKalkulator.tsx";
 import { define } from "../utils/state.ts";
 import { generateBreadcrumbSchema } from "../utils/schema.ts";
@@ -56,6 +57,7 @@ const ISLAND_REGISTRY: Record<string, ComponentType> = {
   RezsiCalculator,
   HitelCalculator,
   EnergiaCalculator,
+  EnergetikaiBesorolasCalculator,
   KeszultsegiKalkulator,
 };
 
@@ -649,6 +651,11 @@ const ESZKOZ_META: Record<string, { icon: string; description: string; color: st
     icon: "M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z",
     description: "Fűtési rendszer, szigetelés és napelem hatása a havi rezsire – éves és havi bontásban.",
     color: "from-orange-500 to-orange-600",
+  },
+  "eszkozok/energetikai-besorolas-kalkulator": {
+    icon: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+    description: "Az AA++…JJ betűskála becslése a fajlagos primerenergia-igényből – megfelel-e a BB követelménynek?",
+    color: "from-teal-500 to-teal-600",
   },
 };
 

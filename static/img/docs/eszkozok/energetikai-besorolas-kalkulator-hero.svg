@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0f172a" rx="0"/>
+  <rect x="40" y="40" width="1120" height="550" rx="24" fill="#134e4a" stroke="#0f766e" stroke-width="1"/>
+
+  <!-- AA++…JJ letter ladder -->
+  <g transform="translate(120, 90)">
+    <rect x="0" y="0" width="110" height="30" rx="4" fill="#059669"/>
+    <text x="12" y="21" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff">AA++</text>
+    <text x="122" y="21" font-family="sans-serif" font-size="12" fill="#94e6d4">0–40 kWh/m²/év</text>
+
+    <rect x="0" y="36" width="140" height="30" rx="4" fill="#22c55e"/>
+    <text x="12" y="57" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff">AA</text>
+    <text x="152" y="57" font-family="sans-serif" font-size="12" fill="#94e6d4">60–80 kWh/m²/év</text>
+
+    <rect x="0" y="72" width="175" height="30" rx="4" fill="#84cc16"/>
+    <text x="12" y="93" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff">BB</text>
+    <text x="187" y="93" font-family="sans-serif" font-size="12" fill="#d9f99d">80–100 kWh · követelmény</text>
+
+    <rect x="0" y="108" width="215" height="30" rx="4" fill="#eab308"/>
+    <text x="12" y="129" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1f2937">CC</text>
+    <text x="227" y="129" font-family="sans-serif" font-size="12" fill="#fde68a">100–130 kWh/m²/év</text>
+
+    <rect x="0" y="144" width="260" height="30" rx="4" fill="#f97316"/>
+    <text x="12" y="165" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1f2937">DD–EE</text>
+    <text x="272" y="165" font-family="sans-serif" font-size="12" fill="#fed7aa">130–200 kWh/m²/év</text>
+
+    <rect x="0" y="180" width="320" height="30" rx="4" fill="#dc2626"/>
+    <text x="12" y="201" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff">FF–JJ</text>
+    <text x="332" y="201" font-family="sans-serif" font-size="12" fill="#fecaca">200+ kWh/m²/év</text>
+
+    <!-- BB requirement marker -->
+    <line x1="175" y1="-8" x2="175" y2="216" stroke="#fbbf24" stroke-width="2" stroke-dasharray="5,4"/>
+  </g>
+
+  <!-- House with certificate -->
+  <g transform="translate(940, 250)">
+    <polygon points="-90,10 0,-60 90,10" fill="none" stroke="#5eead4" stroke-width="3"/>
+    <rect x="-68" y="10" width="136" height="90" fill="none" stroke="#5eead4" stroke-width="3" rx="4"/>
+    <rect x="-40" y="35" width="30" height="30" fill="#0f766e" stroke="#5eead4" stroke-width="2" rx="2"/>
+    <rect x="14" y="35" width="30" height="65" fill="#0f766e" stroke="#5eead4" stroke-width="2" rx="2"/>
+    <!-- certificate badge -->
+    <circle cx="60" cy="-30" r="34" fill="#065f46" stroke="#34d399" stroke-width="3"/>
+    <text x="60" y="-22" text-anchor="middle" font-family="sans-serif" font-size="26" font-weight="bold" fill="#5eead4">BB</text>
+  </g>
+
+  <!-- Title -->
+  <text x="600" y="475" text-anchor="middle" font-family="sans-serif" font-size="44" font-weight="bold" fill="#f0fdfa">Energetikai besorolás kalkulátor</text>
+  <text x="600" y="515" text-anchor="middle" font-family="sans-serif" font-size="19" fill="#99f6e4">AA++ … JJ skála · fajlagos primerenergia-igény</text>
+
+  <!-- Brand -->
+  <text x="600" y="565" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#2dd4bf">hazepitesikalauz.hu</text>
+</svg>

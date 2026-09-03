@@ -7,7 +7,7 @@ export const handler = define.handlers({
   GET(ctx) {
     ctx.state.title = "Általános Szerződési Feltételek – Házépítési Kalauz";
     ctx.state.description =
-      "A Házépítési Kalauz weboldal használatának általános szerződési feltételei (ÁSZF).";
+      "A Házépítési Kalauz általános szerződési feltételei: a szolgáltatás jellege, felelősségkorlátozás, szerzői jogok és a tartalom felhasználási feltételei.";
     ctx.state.cleanUrl = "https://hazepitesikalauz.hu/aszf";
     return page({});
   },

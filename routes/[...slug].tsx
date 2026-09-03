@@ -64,6 +64,23 @@ const ISLAND_REGISTRY: Record<string, ComponentType> = {
 // Category slugs for overview pages
 const CATEGORY_SLUGS = new Set(CATEGORIES.map((c) => c.slug));
 
+// Meta descriptions for category overview pages (150–160 karakter, SEO).
+// A látható H1-alcím a CATEGORY_DESCRIPTIONS-ből jön; ez a <meta name="description">.
+const CATEGORY_META_DESCRIPTIONS: Record<string, string> = {
+  alapok: "Házépítés előtt állsz? Az induláshoz szükséges alapismeretek egy helyen: hol kezdd, milyen döntések várnak rád, és mire figyelj az első lépéseknél 2026-ban.",
+  haztipusok: "Tégla, könnyűszerkezet, fa vagy modul – melyik háztípus illik hozzád? A technológiák előnyei, hátrányai, árai és élettartama objektíven összehasonlítva.",
+  "haztipus-osszehasonlitasok": "Háztípusok egymás mellé állítva: tégla vs könnyűszerkezet, fa vs modul – árak, energetika, élettartam és hangszigetelés valós számokkal, elfogulatlanul.",
+  koltsegek: "Mennyibe kerül ma egy ház? Négyzetméterárak, tételes bontás és rejtett költségek valós, 2026-os számokkal – hogy reális költségvetést tudj tervezni előre.",
+  tamogatasok: "CSOK Plusz, Babaváró, Zöld hitel és Falusi CSOK egy helyen: feltételek, összeghatárok és kombinációk 2026-ban – hogy tudd, mennyi támogatás jár neked.",
+  energia: "Hőszigetelés, fűtés, hőszivattyú és napelem – hogy a ház ne csak megépüljön, hanem olcsón is üzemeljen. Energetikai döntések megtérüléssel, valós számokkal.",
+  tervezes: "Építészválasztás, alaprajz, tájolás és engedélyek – a tervezési szakasz lépésről lépésre. Mit dönts el a kapavágás előtt, és milyen sorrendben haladj?",
+  jog: "Építési engedély, egyszerű bejelentés, használatbavétel és garancia – a házépítés jogi és adminisztratív teendői érthetően, a 2026-os szabályok szerint.",
+  kivitelezes: "Kivitelezőválasztás, műszaki ellenőr, szerződés és minőségellenőrzés – a megvalósítás szakasza lépésről lépésre, a gyakori buktatókkal és elkerülésükkel.",
+  telek: "Telekválasztás, közművek, tájolás és talajvizsgálat – mire figyelj a helyszín kiválasztásánál, mielőtt aláírsz. Rejtett költségek és buktatók egy helyen.",
+  gyik: "A leggyakrabban feltett kérdések a házépítésről: költségek, engedélyek, háztípusok és támogatások – rövid, konkrét és érthető válaszokkal, egy helyre gyűjtve.",
+  eszkozok: "Ingyenes online kalkulátorok a házépítés tervezéséhez: építési költség, hitel, támogatás, energetika és rezsi – becsüld meg a számokat, mielőtt döntesz.",
+};
+
 // Category descriptions for overview pages
 const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   alapok: "Házépítés előtt állsz? Itt találod az induláshoz szükséges alapismereteket.",
@@ -131,7 +148,8 @@ export const handler = define.handlers<Data>({
     if (CATEGORY_SLUGS.has(slug)) {
       const category = CATEGORIES.find((c) => c.slug === slug)!;
       ctx.state.title = `${category.title} | Házépítési Kalauz`;
-      ctx.state.description = `${category.title} – cikkek, útmutatók és kalkulátorok a Házépítési Kalauzon.`;
+      ctx.state.description = CATEGORY_META_DESCRIPTIONS[slug] ??
+        `${category.title} – cikkek, útmutatók és kalkulátorok a Házépítési Kalauzon.`;
       ctx.state.cleanUrl = `https://hazepitesikalauz.hu/${slug}`;
 
       return page({

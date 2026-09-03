@@ -5,7 +5,7 @@
  * Cache: 1 óra CDN edge, 10 perc kliens (production-ben elég,
  * tartalom úgyis ritkán változik).
  */
-import { TABLE_OF_CONTENTS } from "../data/docs.ts";
+import { CATEGORIES, TABLE_OF_CONTENTS } from "../data/docs.ts";
 import { extract } from "@std/front-matter/yaml";
 
 const DOMAIN = "https://hazepitesikalauz.hu";
@@ -68,6 +68,12 @@ export const handler = {
 
     // ÁSZF
     urls.push(entry(`${DOMAIN}/aszf`, today, "yearly", "0.3"));
+
+    // Kategória-áttekintő oldalak (silo-hubok) — a gyerek-cikkeknél magasabb
+    // prioritás, lastmod ma (a hub tartalma a listával együtt frissül).
+    for (const category of CATEGORIES) {
+      urls.push(entry(`${DOMAIN}/${category.slug}`, today, "weekly", "0.9"));
+    }
 
     // Tartalmi oldalak
     for (const slug in TABLE_OF_CONTENTS) {

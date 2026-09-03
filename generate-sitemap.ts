@@ -12,7 +12,7 @@
  * - Maximum 50,000 URL / sitemap (bőven elég)
  */
 
-import { TABLE_OF_CONTENTS } from "./data/docs.ts";
+import { CATEGORIES, TABLE_OF_CONTENTS } from "./data/docs.ts";
 import { extract } from "@std/front-matter/yaml";
 
 const DOMAIN = "https://hazepitesikalauz.hu";
@@ -101,15 +101,37 @@ async function generateSitemap(): Promise<string> {
     priority: "1.0",
   });
 
-  // 2. Kapcsolat oldal
+  // 2. Statikus oldalak (kapcsolat, adatvédelem, ÁSZF)
   entries.push({
     loc: `${DOMAIN}/kapcsolat`,
     lastmod: today,
     changefreq: "yearly",
     priority: "0.3",
   });
+  entries.push({
+    loc: `${DOMAIN}/adatvedelmi-nyilatkozat`,
+    lastmod: today,
+    changefreq: "yearly",
+    priority: "0.3",
+  });
+  entries.push({
+    loc: `${DOMAIN}/aszf`,
+    lastmod: today,
+    changefreq: "yearly",
+    priority: "0.3",
+  });
 
-  // 3. Tartalmi oldalak a TOC-ból
+  // 3. Kategória-áttekintő oldalak (silo-hubok)
+  for (const category of CATEGORIES) {
+    entries.push({
+      loc: `${DOMAIN}/${category.slug}`,
+      lastmod: today,
+      changefreq: "weekly",
+      priority: "0.9",
+    });
+  }
+
+  // 4. Tartalmi oldalak a TOC-ból
   for (const slug in TABLE_OF_CONTENTS) {
     const entry = TABLE_OF_CONTENTS[slug];
     if (entry.hidden) continue;

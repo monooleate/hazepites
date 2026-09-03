@@ -1,0 +1,40 @@
+name: IndexNow submit
+
+# Push utáni értesítés a keresőknek (Bing/IndexNow) a megváltozott URL-ekről.
+#
+# ⚠️ Szándékosan NEM build-időben fut: a deployt a Deno Deploy GitHub-
+#    integrációja végzi, ami a push után perceken belül élesíti a tartalmat.
+#    A `--wait` megvárja, míg a megváltozott URL-ek élőben 200-at adnak, és
+#    csak UTÁNA küld be — így a crawler biztosan a friss tartalmat kapja.
+#    (Buildkor beküldve a régi tartalmat crawlolnák le.)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/**"
+
+# Egyszerre csak egy fusson; az újabb push nyer.
+concurrency:
+  group: indexnow-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2 # a diffhez kell az előző commit is
+
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
+      - name: Submit changed URLs to IndexNow (deploy után)
+        run: >
+          deno run -A scripts/indexnow.ts
+          --changed "${{ github.event.before }}" "${{ github.sha }}"
+          --wait
